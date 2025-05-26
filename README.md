@@ -4,12 +4,8 @@
 
 ## 最佳实践列表
 
-### API网关（APIG）
-
-1. [使用FunctionGraph实现APIG自定义认证](docs/apig/auth/function_authorizor.md)
-   - 通过函数计算实现自定义的API认证逻辑
-   - 支持灵活的认证策略和授权控制
-   - 可与已有认证系统无缝集成
++ [API网关（APIG)](docs/apig/index.md)
++ [函数工作流 (FunctionGraph)](docs/fgs/index.md)
 
 ## 使用说明
 
