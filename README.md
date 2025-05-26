@@ -6,6 +6,7 @@
 
 + [API网关 (APIG)](docs/apig/index.md)
 + [函数工作流 (FunctionGraph)](docs/fgs/index.md)
++ [Web应用防火墙 (WAF)](docs/waf/index.md)
 + [云桌面 (Workspace)](docs/workspace/index.md)
 
 ## 使用说明
