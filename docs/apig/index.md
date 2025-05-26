@@ -17,8 +17,6 @@ API网关（API Gateway）是为企业和开发者提供的高性能、高可用
 
 ## 最佳实践目录
 
-### 认证授权类
-
 1. [使用FunctionGraph实现APIG自定义认证](./auth/function_authorizer.md)
    - 通过函数计算实现自定义的API认证逻辑
    - 支持灵活的认证策略和授权控制
