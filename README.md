@@ -4,7 +4,7 @@
 
 ## 最佳实践列表
 
-+ [API网关（APIG)](docs/apig/index.md)
++ [API网关 (APIG)](docs/apig/index.md)
 + [函数工作流 (FunctionGraph)](docs/fgs/index.md)
 
 ## 使用说明
