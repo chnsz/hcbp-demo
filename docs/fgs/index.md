@@ -70,4 +70,4 @@
 ## 参考文档
 
 - [函数工作流产品文档](https://support.huaweicloud.com/functiongraph/index.html)
-- [函数工作流最佳实践](https://support.huaweicloud.com/bestpractice-functiongraph/functiongraph_05_0100.html)
+- [函数工作流最佳实践](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/fgs)
