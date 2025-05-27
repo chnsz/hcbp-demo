@@ -76,5 +76,4 @@
 ## 参考文档
 
 - [云桌面产品文档](https://support.huaweicloud.com/workspace/index.html)
-- [云桌面最佳实践](https://support.huaweicloud.com/bestpractice-workspace/workspace_05_0001.html)
-- [Terraform部署指南](https://support.huaweicloud.com/qs-workspace/workspace_02_0314.html)
+- [云桌面最佳实践](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/workspace)

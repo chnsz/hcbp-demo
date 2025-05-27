@@ -26,86 +26,438 @@
 
 ## 资源/数据源设计
 
-本最佳实践涉及以下主要资源：
+本最佳实践涉及以下主要资源和数据源：
 
-1. **VPC网络（huaweicloud_vpc）**：
+### 数据源
+
+1. **可用区（data.huaweicloud_availability_zones）**
+   - 用途：获取可用的可用区信息
+
+2. **云桌面规格（data.huaweicloud_workspace_flavors）**
+   - 用途：获取可用的云桌面规格信息
+
+3. **云桌面镜像（data.huaweicloud_workspace_images）**
+   - 用途：获取可用的云桌面镜像信息
+
+### 资源
+
+1. **VPC网络（huaweicloud_vpc）**
    - 用途：为云桌面提供网络环境
-   - 功能：提供安全隔离的网络空间
-   - 特点：支持自定义网段配置
-   - 关键配置：VPC网段、子网配置等
-   - 安全特性：安全组规则控制
-   - 输入：网段规划
-   - 输出：VPC ID和网络环境
 
-2. **VPC子网（huaweicloud_vpc_subnet）**：
+2. **VPC子网（huaweicloud_vpc_subnet）**
    - 用途：在VPC中划分子网空间
-   - 功能：管理IP地址分配
-   - 特点：支持自定义网段和网关
-   - 关键配置：子网网段、网关IP、DNS等
-   - 安全特性：网络ACL控制
-   - 输入：子网网段规划
-   - 输出：子网ID和网络配置
 
-3. **安全组（huaweicloud_networking_secgroup）**：
+3. **安全组（huaweicloud_networking_secgroup）**
    - 用途：控制云桌面的网络访问
-   - 功能：定义入站和出站规则
-   - 特点：支持精细化的访问控制
-   - 关键配置：安全组规则、协议、端口等
-   - 安全特性：基于规则的访问控制
-   - 输入：访问控制需求
-   - 输出：安全组ID和规则集
 
-4. **安全组规则（huaweicloud_networking_secgroup_rule）**：
-   - 用途：定义具体的访问控制规则
-   - 功能：控制特定协议和端口的访问
-   - 特点：支持入站和出站规则配置
-   - 关键配置：协议类型、端口范围、源IP等
-   - 安全特性：精细化的访问控制
-   - 输入：协议、端口、IP范围
-   - 输出：安全组规则配置
-
-5. **云桌面服务（huaweicloud_workspace_service）**：
+4. **云桌面服务（huaweicloud_workspace_service）**
    - 用途：开通和配置云桌面服务
-   - 功能：提供云桌面的基础服务环境
-   - 特点：支持互联网和专线接入
-   - 关键配置：访问模式、备份策略、互访设置等
-   - 安全特性：访问控制和数据备份
-   - 输入：VPC配置、访问策略
-   - 输出：云桌面服务环境
 
-6. **云桌面实例（huaweicloud_workspace_desktop）**：
+5. **云桌面用户（huaweicloud_workspace_user）**
+   - 用途：创建和管理云桌面用户
+
+6. **云桌面实例（huaweicloud_workspace_desktop）**
    - 用途：提供虚拟桌面环境
-   - 功能：支持Windows/Linux操作系统
-   - 特点：按需计费，弹性伸缩
-   - 关键配置：规格类型、操作系统、网络配置等
-   - 性能：根据规格提供不同计算能力
-   - 输入：用户信息、规格配置
-   - 输出：云桌面实例和访问信息
 
-### 资源依赖关系
+### 资源/数据源依赖关系
 
 ```
-VPC网络（huaweicloud_vpc）
-    └── VPC子网（huaweicloud_vpc_subnet）
-         └── 云桌面实例（huaweicloud_workspace_desktop）
+data.huaweicloud_availability_zones
+    └── huaweicloud_workspace_desktop
 
-安全组（huaweicloud_networking_secgroup）
-    └── 安全组规则（huaweicloud_networking_secgroup_rule）
-         └── 云桌面实例（huaweicloud_workspace_desktop）
+data.huaweicloud_workspace_flavors
+    └── huaweicloud_workspace_desktop
 
-云桌面服务（huaweicloud_workspace_service）
-    └── 云桌面实例（huaweicloud_workspace_desktop）
+data.huaweicloud_workspace_images
+    └── huaweicloud_workspace_desktop
+
+huaweicloud_vpc
+    └── huaweicloud_vpc_subnet
+        ├── huaweicloud_workspace_service
+        └── huaweicloud_workspace_desktop
+
+huaweicloud_networking_secgroup
+    ├── huaweicloud_workspace_desktop
+    └── huaweicloud_networking_secgroup_rule
+
+huaweicloud_workspace_user
+    └── huaweicloud_workspace_desktop
 ```
 
-### 部署流程
+## 详细配置
+
+### 数据源配置
+
+#### 1. 可用区（data.huaweicloud_availability_zones）
+
+获取基于当前provider块中所指定region下的所有可用区信息，用于创建云桌面实例。
+
+```hcl
+variable "availability_zone" {
+  description = "待创建桌面所在可用区的名称，如指定则不执行对应数据源查询"
+  type        = string
+}
+
+data "huaweicloud_availability_zones" "test" {
+  count = var.availability_zone == "" ? 1 : 0
+}
+```
+
+**参数说明**：
+- **count**：当 `var.availability_zone` 为空时创建数据源，用于动态获取可用区信息
+
+#### 2. 云桌面规格（data.huaweicloud_workspace_flavors）
+
+获取基于当前provider块中所指定region下所有可用的云桌面规格信息，用于创建云桌面实例。
+
+```hcl
+variable "desktop_flavor" {
+  description = "云桌面规格，如指定则不执行对应数据源查询"
+  type        = string
+}
+
+variable "desktop_cpu_core_number" {
+  description = "云桌面CPU核数，用于筛选规格"
+  type        = number
+}
+
+variable "desktop_memory" {
+  description = "云桌面内存大小（GB），用于筛选规格"
+  type        = number
+}
+
+variable "desktop_os_type" {
+  description = "云桌面操作系统类型"
+  type        = string
+}
+
+data "huaweicloud_workspace_flavors" "test" {
+  count = var.desktop_flavor == "" ? 1 : 0
+
+  vcpus             = var.desktop_cpu_core_number
+  memory            = var.desktop_memory
+  os_type           = var.desktop_os_type
+  availability_zone = var.availability_zone
+}
+```
+
+**参数说明**：
+- **count**：当 `var.desktop_flavor` 为空时创建数据源
+- **vcpus**：CPU核数，用于筛选规格
+- **memory**：内存大小（GB），用于筛选规格
+- **os_type**：操作系统类型，可选值：windows、linux
+- **availability_zone**：在售规格的可用区，用于筛选规格
+
+#### 3. 云桌面镜像（data.huaweicloud_workspace_images）
+
+获取可用的云桌面镜像信息，用于创建云桌面实例。
+
+```hcl
+variable "desktop_image_type" {
+  description = "云桌面镜像类型"
+  type        = string
+}
+
+variable "desktop_os_type" {
+  description = "镜像的操作系统类型"
+  type        = string
+}
+
+data "huaweicloud_workspace_images" "test" {
+  image_type = var.desktop_image_type
+  os_type    = var.desktop_os_type
+}
+```
+
+**参数说明**：
+- **image_type**：镜像类型
+- **os_type**：操作系统类型
+
+### 资源配置
+
+#### 1. VPC网络（huaweicloud_vpc）
+
+创建VPC网络环境，为云桌面提供网络隔离。
+
+```hcl
+variable "vpc_name" {
+  description = "VPC名称"
+  type        = string
+}
+
+resource "huaweicloud_vpc" "test" {
+  name = var.vpc_name
+  cidr = "192.168.0.0/16"
+}
+```
+
+**参数说明**：
+- **name**：VPC名称
+- **cidr**：VPC网段，格式为CIDR，如192.168.0.0/16
+
+#### 2. VPC子网（huaweicloud_vpc_subnet）
+
+在VPC中创建子网，为云桌面提供网络空间。
+
+```hcl
+variable "subnet_name" {
+  description = "子网名称"
+  type        = string
+}
+
+resource "huaweicloud_vpc_subnet" "test" {
+  vpc_id            = huaweicloud_vpc.test.id
+  name              = var.subnet_name
+  cidr              = cidrsubnet(huaweicloud_vpc.test.cidr, 4, 1)
+  gateway_ip        = cidrhost(cidrsubnet(huaweicloud_vpc.test.cidr, 4, 1), 1)
+  availability_zone = var.availability_zone
+}
+```
+
+**参数说明**：
+- **vpc_id**：VPC ID
+- **name**：子网名称
+- **cidr**：子网网段，使用cidrsubnet函数计算
+- **gateway_ip**：网关IP，使用cidrhost函数计算
+- **availability_zone**：可用区
+
+#### 3. 安全组（huaweicloud_networking_secgroup）
+
+创建安全组，控制云桌面的网络访问。
+
+```hcl
+variable "security_group_name" {
+  description = "安全组名称"
+  type        = string
+}
+
+resource "huaweicloud_networking_secgroup" "test" {
+  name                 = var.security_group_name
+  delete_default_rules = true
+}
+```
+
+**参数说明**：
+- **name**：安全组名称
+- **delete_default_rules**：是否删除默认规则
+
+#### 4. 云桌面服务（huaweicloud_workspace_service）
+
+开通云桌面服务，这是创建云桌面实例的前置条件。
+
+```hcl
+resource "huaweicloud_workspace_service" "test" {
+  access_mode = "INTERNET"
+  vpc_id      = huaweicloud_vpc.test.id
+  network_ids = [
+    huaweicloud_vpc_subnet.test.id,
+  ]
+}
+```
+
+**参数说明**：
+- **access_mode**：访问模式
+- **vpc_id**：VPC ID
+- **network_ids**：网络ID列表，用于部署云桌面服务
+
+#### 5. 云桌面用户（huaweicloud_workspace_user）
+
+创建云桌面用户，用于访问云桌面实例。
+
+```hcl
+variable "desktop_user_name" {
+  description = "云桌面用户名"
+  type        = string
+}
+
+variable "desktop_user_email" {
+  description = "云桌面用户邮箱"
+  type        = string
+}
+
+resource "huaweicloud_workspace_user" "test" {
+  depends_on = [huaweicloud_workspace_service.test]
+
+  name  = var.desktop_user_name
+  email = var.desktop_user_email
+
+  account_expires            = "0" # 永不过期
+  password_never_expires     = false
+  enable_change_password     = true
+  next_login_change_password = true
+  disabled                   = false
+}
+```
+
+**参数说明**：
+- **name**：用户名
+- **email**：用户邮箱
+- **account_expires**：账号过期时间
+- **password_never_expires**：密码是否永不过期
+- **enable_change_password**：是否允许修改密码
+- **next_login_change_password**：下次登录是否修改密码
+- **disabled**：是否禁用用户
+
+#### 6. 云桌面实例（huaweicloud_workspace_desktop）
+
+创建云桌面实例，提供虚拟桌面环境。
+
+```hcl
+variable "desktop_user_group_name" {
+  description = "云桌面用户组名称"
+  type        = string
+}
+
+variable "cloud_desktop_name" {
+  description = "云桌面实例名称"
+  type        = string
+}
+
+variable "desktop_image_id" {
+  description = "云桌面镜像ID"
+  type        = string
+}
+
+variable "desktop_root_volume_type" {
+  description = "云桌面系统盘类型"
+  type        = string
+}
+
+variable "desktop_root_volume_size" {
+  description = "云桌面系统盘大小（GB）"
+  type        = number
+}
+
+variable "desktop_data_volumes" {
+  description = "云桌面数据盘配置列表"
+  type = list(object({
+    type = string
+    size = number
+  }))
+}
+
+resource "huaweicloud_workspace_desktop" "test" {
+  depends_on = [huaweicloud_workspace_user.test]
+
+  flavor_id         = var.desktop_flavor != "" ? var.desktop_flavor : try(data.huaweicloud_workspace_flavors.test[0].flavors[0].id, null)
+  image_type        = var.desktop_image_type
+  image_id          = var.desktop_image_id
+  availability_zone = var.availability_zone != "" ? var.availability_zone : try(data.huaweicloud_availability_zones.test[0].names[0], null)
+  vpc_id            = huaweicloud_vpc.test.id
+  security_groups   = [
+    huaweicloud_workspace_service.test.desktop_security_group.0.id,
+    huaweicloud_networking_secgroup.test.id,
+  ]
+
+  nic {
+    network_id = huaweicloud_vpc_subnet.test.id
+  }
+
+  name       = var.cloud_desktop_name
+  user_name  = huaweicloud_workspace_user.test.name
+  user_email = huaweicloud_workspace_user.test.email
+  user_group = var.desktop_user_group_name
+
+  root_volume {
+    type = var.desktop_root_volume_type
+    size = var.desktop_root_volume_size
+  }
+
+  dynamic "data_volume" {
+    for_each = var.desktop_data_volumes
+
+    content {
+      type = data_volume.value["type"]
+      size = data_volume.value["size"]
+    }
+  }
+}
+```
+
+**参数说明**：
+- **flavor_id**：规格ID，可通过对应数据源（data.huaweicloud_workspace_flavors）获取
+- **image_type**：镜像类型
+- **image_id**：镜像ID
+- **availability_zone**：可用区，可通过对应数据源（data.huaweicloud_availability_zones）获取
+- **vpc_id**：VPC ID
+- **security_groups**：安全组列表
+- **nic**：网卡配置
+  * **network_id**：网络ID
+- **name**：桌面名称
+- **user_name**：用户名
+- **user_email**：用户邮箱
+- **user_group**：用户组名称
+- **root_volume**：系统盘配置
+  * **type**：磁盘类型
+  * **size**：磁盘大小（GB）
+- **data_volume**：数据盘配置（动态块）
+  * **type**：磁盘类型
+  * **size**：磁盘大小（GB）
+
+### 可扩展配置
+
+#### 1. 安全组规则（huaweicloud_networking_secgroup_rule）
+
+创建用于访问云桌面的入方向规则。
+
+```hcl
+resource "huaweicloud_networking_secgroup_rule" "login_and_web" {
+  security_group_id = huaweicloud_networking_secgroup.workspace.id
+  direction         = "ingress"
+  ethertype         = "IPv4"
+  protocol          = "tcp"
+  ports             = "22,80,443,3389"
+  remote_ip_prefix  = "192.168.1.0/24"  # 替换为您的办公网络IP段
+  description       = "Allow access from office network"
+}
+```
+
+**参数说明**：
+- **security_group_id**：安全组ID
+- **direction**：规则方向
+- **ethertype**：网络协议版本
+- **protocol**：协议类型
+- **ports**：端口范围，支持配置多个端口，如"22,80,443,3389"
+- **remote_ip_prefix**：允许访问的IP范围，CIDR格式
+- **description**：规则描述
+
+> 注意：该规则适用于需要远程登录（22/3389）、公网ping（ICMP需单独配置）、以及网站服务（80/443）的云服务器场景。
+  该规则示例中使用了示例IP段（192.168.1.0/24），实际部署时请替换为您企业办公网络的具体IP段。
+  建议遵循最小权限原则，只开放必要的端口和IP范围，以提高安全性。
+
+## 部署流程
 
 1. 创建VPC和子网
 2. 配置安全组规则
 3. 开通云桌面服务
 4. 创建云桌面实例
-5. 配置网络和访问策略
 
-### 注意事项
+## 操作步骤
+
+1. **准备工作**
+   - 安装Terraform
+   - 配置华为云认证信息
+   - 创建工作目录
+
+2. **创建Terraform配置文件**
+   ```bash
+   touch main.tf
+   touch variables.tf
+   ```
+
+3. **初始化和部署**
+   ```bash
+   terraform init
+   terraform plan
+   terraform apply
+   ```
+
+4. **验证部署**
+   - 登录华为云控制台
+   - 检查云桌面实例状态
+   - 测试远程连接
+
+## 注意事项
 
 1. **成本控制**：
    - 选择合适的实例规格
@@ -122,305 +474,6 @@ VPC网络（huaweicloud_vpc）
    - 配置访问控制策略
    - 定期更新系统补丁
 
-## 详细配置
-
-### 1. VPC配置（huaweicloud_vpc和huaweicloud_vpc_subnet）
-
-**功能概述**
-
-创建VPC网络环境和子网，为云桌面提供网络隔离。
-
-**详细配置**
-
-```hcl
-resource "huaweicloud_vpc" "workspace" {
-  name = "workspace-vpc"
-  cidr = "172.16.0.0/16"
-
-  tags = {
-    environment = "production"
-    owner       = "terraform"
-  }
-}
-
-resource "huaweicloud_vpc_subnet" "workspace" {
-  name          = "workspace-subnet"
-  cidr          = "172.16.0.0/24"
-  gateway_ip    = "172.16.0.1"
-  vpc_id        = huaweicloud_vpc.workspace.id
-  
-  dns_list = ["100.125.1.250", "100.125.21.250"]  # 华为云DNS服务器
-
-  tags = {
-    environment = "production"
-    owner       = "terraform"
-  }
-}
-```
-
-+ **VPC配置参数**：
-  - **name**：VPC名称
-  - **cidr**：VPC网段
-  - **tags**：资源标签
-
-+ **子网配置参数**：
-  - **name**：子网名称
-  - **cidr**：子网网段
-  - **gateway_ip**：网关IP地址
-  - **vpc_id**：所属VPC的ID
-  - **dns_list**：DNS服务器列表
-  - **tags**：资源标签
-
-### 2. 安全组配置（huaweicloud_networking_secgroup和huaweicloud_networking_secgroup_rule）
-
-**功能概述**
-
-创建安全组和安全组规则，控制云桌面的网络访问。
-
-**详细配置**
-
-```hcl
-resource "huaweicloud_networking_secgroup" "workspace" {
-  name        = "workspace-secgroup"
-  description = "Security group for workspace desktops"
-
-  tags = {
-    environment = "production"
-    owner       = "terraform"
-  }
-}
-
-# RDP访问规则
-resource "huaweicloud_networking_secgroup_rule" "rdp" {
-  security_group_id = huaweicloud_networking_secgroup.workspace.id
-  direction         = "ingress"
-  ethertype        = "IPv4"
-  protocol         = "tcp"
-  port_range_min   = 3389
-  port_range_max   = 3389
-  remote_ip_prefix = "0.0.0.0/0"
-}
-
-# HTTPS访问规则
-resource "huaweicloud_networking_secgroup_rule" "https" {
-  security_group_id = huaweicloud_networking_secgroup.workspace.id
-  direction         = "ingress"
-  ethertype        = "IPv4"
-  protocol         = "tcp"
-  port_range_min   = 443
-  port_range_max   = 443
-  remote_ip_prefix = "0.0.0.0/0"
-}
-```
-
-+ **安全组配置参数**：
-  - **name**：安全组名称
-  - **description**：安全组描述
-  - **tags**：资源标签
-
-+ **安全组规则配置参数**：
-  - **security_group_id**：安全组ID
-  - **direction**：规则方向（入站/出站）
-  - **ethertype**：网络协议版本
-  - **protocol**：协议类型
-  - **port_range_min**：起始端口
-  - **port_range_max**：结束端口
-  - **remote_ip_prefix**：允许访问的IP范围
-
-### 3. 云桌面服务（huaweicloud_workspace_service）
-
-**功能概述**
-
-开通云桌面服务，这是创建云桌面实例的前置条件。
-
-**详细配置**
-
-```hcl
-resource "huaweicloud_workspace_service" "service" {
-  access_mode = "INTERNET"
-  vpc_id      = huaweicloud_vpc.workspace.id
-  
-  internet_access_port = "443"
-  
-  enable_desktop_backup  = true
-  backup_period         = "0,3,6"
-  backup_start_time     = "02:00"
-  backup_keep_day       = 7
-  
-  enable_cross_desktop_access = true
-  
-  tags = {
-    environment = "production"
-    owner       = "terraform"
-  }
-}
-```
-
-+ **基础配置参数**：
-  - **access_mode**：访问模式，支持INTERNET（互联网）和DEDICATED（专线）
-  - **vpc_id**：VPC ID，用于部署云桌面服务
-
-+ **访问控制参数**：
-  - **internet_access_port**：互联网访问端口
-  - **enable_cross_desktop_access**：是否启用跨云桌面互访
-
-+ **备份配置参数**：
-  - **enable_desktop_backup**：是否启用桌面备份
-  - **backup_period**：备份周期，0-6分别代表周日到周六
-  - **backup_start_time**：备份开始时间
-  - **backup_keep_day**：备份保留天数
-
-+ **标签配置**：
-  - **tags**：资源标签
-
-### 4. 云桌面实例（huaweicloud_workspace_desktop）
-
-**功能概述**
-
-创建按需计费的云桌面实例。支持两种用户配置方式：直接配置和预创建用户。
-
-#### 方式一：直接配置用户信息
-
-**详细配置**
-
-```hcl
-resource "huaweicloud_workspace_desktop" "test" {
-  flavor_id      = "workspace.x86.medium"
-  image_type     = "market"
-  image_id       = "workspace-win-x64"
-  vpc_id         = huaweicloud_vpc.workspace.id
-  subnet_id      = huaweicloud_vpc_subnet.workspace.id
-  security_groups = [huaweicloud_networking_secgroup.workspace.id]
-
-  name           = "test-desktop"
-  user_name      = "desktop-user"
-  user_email     = "user@example.com"
-  charging_mode  = "postPaid"
-
-  tags = {
-    environment = "production"
-    owner       = "terraform"
-  }
-
-  depends_on = [huaweicloud_workspace_service.service]
-}
-```
-
-+ **基础配置参数**：
-  - **name**：实例名称
-  - **flavor_id**：实例规格
-  - **image_type**：镜像类型
-  - **image_id**：镜像ID
-  - **charging_mode**：计费模式（按需）
-
-+ **网络配置参数**：
-  - **vpc_id**：VPC ID
-  - **subnet_id**：子网ID
-  - **security_groups**：安全组列表
-
-+ **用户配置参数**：
-  - **user_name**：用户名
-  - **user_email**：用户邮箱
-
-+ **标签配置**：
-  - **tags**：资源标签
-
-#### 方式二：预创建用户并关联
-
-**详细配置**
-
-```hcl
-# 创建云桌面用户
-resource "huaweicloud_workspace_user" "test" {
-  name         = "desktop-user"
-  email        = "user@example.com"
-  description  = "Cloud desktop user created by Terraform"
-  password     = "YourInitialPassword@123"
-  valid_days   = 365
-  policy_names = ["WORKSPACE_USER"]
-}
-
-# 创建云桌面并关联预创建的用户
-resource "huaweicloud_workspace_desktop" "test" {
-  flavor_id      = "workspace.x86.medium"
-  image_type     = "market"
-  image_id       = "workspace-win-x64"
-  vpc_id         = huaweicloud_vpc.workspace.id
-  subnet_id      = huaweicloud_vpc_subnet.workspace.id
-  security_groups = [huaweicloud_networking_secgroup.workspace.id]
-
-  name           = "test-desktop"
-  user_id        = huaweicloud_workspace_user.test.id  # 使用预创建用户的ID
-  charging_mode  = "postPaid"
-
-  tags = {
-    environment = "production"
-    owner       = "terraform"
-  }
-
-  depends_on = [huaweicloud_workspace_service.service]
-}
-```
-
-+ **用户资源配置参数**：
-  - **name**：用户名称
-  - **email**：用户邮箱
-  - **description**：用户描述
-  - **password**：初始密码（可选）
-  - **valid_days**：账号有效期（可选）
-  - **policy_names**：权限策略（可选）
-
-**两种方式的对比**：
-
-1. **直接配置方式**：
-   - 优点：配置简单，一次完成
-   - 缺点：用户管理能力有限
-   - 适用场景：快速部署，简单用户管理
-
-2. **预创建用户方式**：
-   - 优点：
-     * 更细粒度的用户管理
-     * 支持用户重用
-     * 可配置更多用户属性
-   - 缺点：需要额外的资源配置
-   - 适用场景：
-     * 企业级部署
-     * 需要详细用户管理
-     * 多桌面共享用户
-
-## 操作步骤
-
-1. **准备工作**
-   - 安装Terraform
-   - 配置华为云认证信息
-   - 创建工作目录
-
-2. **创建Terraform配置文件**
-   ```bash
-   # 创建main.tf文件
-   touch main.tf
-   
-   # 创建variables.tf文件
-   touch variables.tf
-   ```
-
-3. **初始化和部署**
-   ```bash
-   # 初始化Terraform
-   terraform init
-   
-   # 检查配置
-   terraform plan
-   
-   # 部署资源
-   terraform apply
-   ```
-
-4. **验证部署**
-   - 登录华为云控制台
-   - 检查云桌面实例状态
-   - 测试远程连接
-
 ## 最佳实践效果
 
 通过本最佳实践的实施，您将获得：
@@ -434,4 +487,4 @@ resource "huaweicloud_workspace_desktop" "test" {
 
 - [华为云云桌面产品文档](https://support.huaweicloud.com/workspace/index.html)
 - [Terraform华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [云桌面最佳实践](https://support.huaweicloud.com/bestpractice-workspace/workspace_05_0001.html)
+- [云桌面最佳实践](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/workspace/desktop/basic)
