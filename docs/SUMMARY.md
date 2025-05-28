@@ -10,6 +10,7 @@
 * [CCE](cce/)
   * [简介](cce/index.md)
   * [使用Terraform部署按需计费CCE集群](cce/postpaid_cluster.md)
+  * [使用Terraform创建带有分区的CCE节点](cce/with_partition.md)
 * [FunctionGraph](fgs/)
   * [简介](fgs/index.md)
   * [使用FunctionGraph实现OBS文件下载](fgs/obs_download.md)
