@@ -56,5 +56,4 @@ Web应用防火墙（Web Application Firewall，简称WAF）是华为云为Web�
 ## 参考文档
 
 - [WAF产品文档](https://support.huaweicloud.com/waf/index.html)
-- [WAF最佳实践](https://support.huaweicloud.com/bestpractice-waf/waf_06_0001.html)
-- [Terraform部署指南](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/waf_dedicated_instance) 
+- [WAF最佳实践](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/waf)
