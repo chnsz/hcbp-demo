@@ -76,10 +76,10 @@ huaweicloud_xxx_xxxa
 
 #### 1. 数据源A的释义（data.huaweicloud_xxx_xxxa）
 
-获取默认region（默认继承当前provider块中所指定的region）下所有的xxx信息，用于......
+获取指定region（默认继承当前provider块中所指定的region）下所有的xxx信息，用于......
 （数据源A的功能介绍，如：
     1. 数据源中声明了region，则该功能介绍例如该格式：获取特定region下所有的可用区信息，用于创建云桌面实例。
-    2. 数据源中未声明region，则该功能介绍例如该格式：获取默认region（默认继承当前provider块中所指定的region）下所有的可用区信息，用于创建云桌面实例。
+    2. 数据源中未声明region，则该功能介绍例如该格式：获取指定region（默认继承当前provider块中所指定的region）下所有的可用区信息，用于创建云桌面实例。
 本括号中的内容仅供自动生成参考，本括号及括号内的内容不在自动生成的最终结果中）
 
 ```hcl
@@ -108,10 +108,10 @@ data "huaweicloud_xxx_xxxa" "test" {
 
 #### 1. 资源A（huaweicloud_xxx_xxxa）
 
-在默认region（默认继承当前provider块中所指定的region）下创建......
+在指定region（默认继承当前provider块中所指定的region）下创建......
 （资源A的功能介绍，如：
     1. 数据源中声明了region，则该功能介绍例如该格式：在特定region下创建VPC网络，用于部署云桌面实例。
-    2. 数据源中未声明region，则该功能介绍例如该格式：在默认region（默认继承当前provider块中所指定的region）下创建VPC网络，用于部署云桌面实例。
+    2. 数据源中未声明region，则该功能介绍例如该格式：在指定region（默认继承当前provider块中所指定的region）下创建VPC网络，用于部署云桌面实例。
 本括号中的内容仅供自动生成参考，本括号及括号内的内容不在自动生成的最终结果中）
 
 ```hcl
@@ -145,10 +145,10 @@ resource "huaweicloud_xxx_xxxa" "test" {
 
 #### 1. 扩展资源A的释义（huaweicloud_xxx_extend_xxxa）
 
-在默认region（默认继承当前provider块中所指定的region）下创建......
+在指定region（默认继承当前provider块中所指定的region）下创建......
 （扩展资源A的功能介绍，如：
     1. 数据源中声明了region，则该功能介绍例如该格式：在特定region下创建安全组访问规则，用于允许某特定地址段的8080端口网络访问。
-    2. 数据源中未声明region，则该功能介绍例如该格式：在默认region（默认继承当前provider块中所指定的region）下创建安全组访问规则，用于允许某特定地址段的8080端口网络访问。
+    2. 数据源中未声明region，则该功能介绍例如该格式：在指定region（默认继承当前provider块中所指定的region）下创建安全组访问规则，用于允许某特定地址段的8080端口网络访问。
 本括号中的内容仅供自动生成参考，本括号及括号内的内容不在自动生成的最终结果中）
 
 ```hcl

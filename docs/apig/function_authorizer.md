@@ -1,10 +1,8 @@
 # 使用FunctionGraph实现APIG自定义认证
 
-## 本最佳实践概述
+## 概述
 
-在API的安全认证方面，API网关提供IAM认证、APP认证等方式，帮助用户快速开放API，同时API网关也支持用户使用自己的认证方式（以下简称自定义认证），以便更好地兼容已有业务能力。
-
-API网关支持的自定义认证需要借助函数工作流服务（FunctionGraph）实现，用户在函数工作流中创建自定义认证函数，API网关调用该函数，实现自定义认证。本最佳实践将以Basic认证为例，介绍如何使用函数服务实现自定义认证。
+华为云API网关（APIG）支持多种认证方式，包括IAM认证、APP认证等。同时，API网关也支持用户使用自己的认证方式（以下简称自定义认证），以便更好地兼容已有业务能力。本最佳实践将介绍如何使用Terraform自动化部署API网关自定义认证，以FunctionGraph函数实现认证逻辑。
 
 ### 应用场景
 
@@ -20,7 +18,7 @@ API网关支持的自定义认证需要借助函数工作流服务（FunctionGra
 - 安全性：支持多种认证方式，确保API访问安全
 - 易维护：认证逻辑集中管理，便于维护和更新
 
-### 涉及产品
+### 涉及服务
 
 - API网关（APIG）：提供API的创建、管理、维护等功能
 - 函数工作流（FunctionGraph）：提供无服务器计算平台，用于运行认证函数
@@ -28,84 +26,316 @@ API网关支持的自定义认证需要借助函数工作流服务（FunctionGra
 
 ## 资源/数据源设计
 
-本最佳实践涉及以下主要资源：
+本最佳实践涉及以下主要资源和数据源：
 
-1. **FunctionGraph函数**：
-   - 用途：实现自定义认证逻辑
-   - 功能：验证请求中的认证信息，返回认证结果
-   - 特点：支持Python等多种运行环境，可自定义认证规则
-   - 关键配置：函数代码、运行时环境、内存配置、超时时间等
-   - 输入：API请求中的认证信息（如Authorization头）
-   - 输出：认证结果（包含状态码和用户信息）
+### 数据源
 
-2. **API网关分组**：
+1. **可用区（data.huaweicloud_availability_zones）**
+   - 用途：获取可用区信息
+
+### 资源
+
+1. **VPC网络（huaweicloud_vpc）**
+   - 用途：为API网关实例提供网络环境
+
+2. **VPC子网（huaweicloud_vpc_subnet）**
+   - 用途：在VPC中划分子网空间
+
+3. **安全组（huaweicloud_networking_secgroup）**
+   - 用途：控制API网关实例的网络访问
+
+4. **安全组规则（huaweicloud_networking_secgroup_rule）**
+   - 用途：配置API网关实例的访问控制规则
+
+5. **API网关实例（huaweicloud_apig_instance）**
+   - 用途：提供API网关服务
+
+6. **API网关分组（huaweicloud_apig_group）**
    - 用途：管理和组织相关API
-   - 功能：提供API的统一管理和配置
-   - 特点：支持环境变量配置，便于多环境部署
-   - 关键配置：分组名称、描述、环境变量等
-   - 作用：作为API的逻辑分组，便于管理和维护
 
-3. **API定义**：
+7. **API定义（huaweicloud_apig_api）**
    - 用途：定义需要进行自定义认证的API接口
-   - 功能：配置API的请求方法、路径、认证方式等
-   - 特点：支持多种后端类型，可灵活配置认证方式
-   - 关键配置：请求协议、方法、路径、后端服务、认证方式等
-   - 安全特性：支持HTTPS协议，可配置自定义认证器
 
-4. **自定义认证器**：
+8. **自定义认证器（huaweicloud_apig_custom_authorizer）**
    - 用途：关联FunctionGraph函数，实现认证逻辑
-   - 功能：处理API请求的认证过程
-   - 特点：支持缓存配置，提高认证效率
-   - 关键配置：函数关联、缓存时间、身份来源等
-   - 扩展性：可自定义认证参数和处理逻辑
 
-### 资源依赖关系
+9. **函数（huaweicloud_fgs_function）**
+   - 用途：实现自定义认证逻辑
+
+### 资源/数据源依赖关系
 
 ```
-API网关分组
-    └── API定义
-         └── 自定义认证器
-              └── FunctionGraph函数
+data.huaweicloud_availability_zones
+    └── huaweicloud_apig_instance
+
+huaweicloud_vpc
+    └── huaweicloud_vpc_subnet
+        └── huaweicloud_apig_instance
+
+huaweicloud_networking_secgroup
+    └── huaweicloud_networking_secgroup_rule
+        └── huaweicloud_apig_instance
+
+huaweicloud_apig_instance
+    └── huaweicloud_apig_group
+        └── huaweicloud_apig_api
+            └── huaweicloud_apig_custom_authorizer
+                └── huaweicloud_fgs_function
 ```
 
-### 认证流程
+## 详细配置
 
-1. 客户端发起API请求，携带认证信息
-2. API网关接收请求，识别需要自定义认证
-3. 调用自定义认证器关联的FunctionGraph函数
-4. 函数验证认证信息，返回认证结果
-5. API网关根据认证结果决定是否允许访问
+### 数据源配置
 
-### 注意事项
+#### 1. 可用区（data.huaweicloud_availability_zones）
 
-1. **安全性考虑**：
-   - 使用HTTPS协议保护API通信
-   - 合理设置认证信息的缓存时间
-   - 实现完善的错误处理机制
-
-2. **性能优化**：
-   - 合理配置函数内存和超时时间
-   - 适当设置认证结果缓存
-   - 优化认证逻辑代码
-
-3. **可维护性**：
-   - 使用环境变量管理配置
-   - 统一API分组管理
-   - 做好认证日志记录
-
-### FunctionGraph函数（huaweicloud_fgs_function）
-
-**功能概述**
-
-创建一个FunctionGraph函数作为自定义认证器，用于验证API请求中的认证信息。
-
-**详细配置**
+获取指定region（默认继承当前provider块中所指定的region）下所有的可用区信息，用于创建API网关实例。
 
 ```hcl
-resource "huaweicloud_fgs_function" "authorizer" {
-  name        = "api-custom-authorizer"
+data "huaweicloud_availability_zones" "test" {}
+```
+
+### 资源配置
+
+#### 1. VPC网络（huaweicloud_vpc）
+
+在指定region（默认继承当前provider块中所指定的region）下创建VPC网络，为API网关实例提供网络隔离。
+
+```hcl
+variable "vpc_name" {
+  description = "VPC名称"
+  type        = string
+}
+
+variable "vpc_cidr" {
+  description = "VPC的CIDR块"
+  type        = string
+}
+
+resource "huaweicloud_vpc" "test" {
+  name = var.vpc_name
+  cidr = var.vpc_cidr
+}
+```
+
+**参数说明**：
+- **name**：VPC名称
+- **cidr**：VPC网段，格式为CIDR
+
+#### 2. VPC子网（huaweicloud_vpc_subnet）
+
+在指定region（默认继承当前provider块中所指定的region）下创建子网，为API网关实例提供网络空间。
+
+```hcl
+variable "subnet_name" {
+  description = "子网名称"
+  type        = string
+}
+
+variable "subnet_cidr" {
+  description = "子网的CIDR块"
+  type        = string
+}
+
+variable "subnet_gateway" {
+  description = "子网的网关地址"
+  type        = string
+}
+
+resource "huaweicloud_vpc_subnet" "test" {
+  name       = var.subnet_name
+  cidr       = var.subnet_cidr
+  gateway_ip = var.subnet_gateway
+  vpc_id     = huaweicloud_vpc.test.id
+}
+```
+
+**参数说明**：
+- **name**：子网名称
+- **cidr**：子网网段，格式为CIDR
+- **gateway_ip**：网关IP地址
+- **vpc_id**：VPC ID
+
+#### 3. 安全组（huaweicloud_networking_secgroup）
+
+在指定region（默认继承当前provider块中所指定的region）下创建安全组，控制API网关实例的网络访问。
+
+```hcl
+variable "secgroup_name" {
+  description = "安全组名称"
+  type        = string
+}
+
+resource "huaweicloud_networking_secgroup" "test" {
+  name                 = var.secgroup_name
+  delete_default_rules = true
+}
+```
+
+**参数说明**：
+- **name**：安全组名称
+- **delete_default_rules**：是否删除默认规则
+
+#### 4. 安全组规则（huaweicloud_networking_secgroup_rule）
+
+在指定region（默认继承当前provider块中所指定的region）下配置API网关实例的访问控制规则。
+
+```hcl
+resource "huaweicloud_networking_secgroup_rule" "allow_web" {
+  security_group_id = huaweicloud_networking_secgroup.test.id
+  direction         = "ingress"
+  ethertype        = "IPv4"
+  protocol         = "tcp"
+  port_range_min   = 80
+  port_range_max   = 80
+  remote_ip_prefix = "0.0.0.0/0"
+  description      = "允许HTTP访问"
+}
+```
+
+**参数说明**：
+- **security_group_id**：安全组ID
+- **direction**：规则方向
+- **ethertype**：网络协议版本
+- **protocol**：协议类型
+- **port_range_min**：起始端口
+- **port_range_max**：结束端口
+- **remote_ip_prefix**：允许访问的IP范围
+- **description**：规则描述
+
+#### 5. API网关实例（huaweicloud_apig_instance）
+
+在指定region（默认继承当前provider块中所指定的region）下创建API网关实例，提供API网关服务。
+
+```hcl
+variable "apig_name" {
+  description = "API网关实例名称"
+  type        = string
+}
+
+resource "huaweicloud_apig_instance" "test" {
+  name                  = var.apig_name
+  edition              = "BASIC"
+  vpc_id               = huaweicloud_vpc.test.id
+  subnet_id            = huaweicloud_vpc_subnet.test.id
+  security_group_id    = huaweicloud_networking_secgroup.test.id
+  availability_zones   = [data.huaweicloud_availability_zones.test.names[0]]
+  description          = "API网关实例"
+  enterprise_project_id = "0"
+}
+```
+
+**参数说明**：
+- **name**：API网关实例名称
+- **edition**：实例规格
+- **vpc_id**：VPC ID
+- **subnet_id**：子网ID
+- **security_group_id**：安全组ID
+- **availability_zones**：可用区列表
+- **description**：实例描述
+- **enterprise_project_id**：企业项目ID
+
+#### 6. API网关分组（huaweicloud_apig_group）
+
+在指定region（默认继承当前provider块中所指定的region）下创建API网关分组，用于管理和组织相关API。
+
+```hcl
+variable "group_name" {
+  description = "API分组名称"
+  type        = string
+}
+
+resource "huaweicloud_apig_group" "test" {
+  name        = var.group_name
+  description = "API分组"
+  instance_id = huaweicloud_apig_instance.test.id
+}
+```
+
+**参数说明**：
+- **name**：API分组名称
+- **description**：分组描述
+- **instance_id**：API网关实例ID
+
+#### 7. API定义（huaweicloud_apig_api）
+
+在指定region（默认继承当前provider块中所指定的region）下创建需要进行自定义认证的API定义。
+
+```hcl
+variable "api_name" {
+  description = "API名称"
+  type        = string
+}
+
+resource "huaweicloud_apig_api" "test" {
+  instance_id       = huaweicloud_apig_instance.test.id
+  group_id         = huaweicloud_apig_group.test.id
+  name             = var.api_name
+  type             = "Public"
+  request_protocol = "HTTPS"
+  request_method   = "GET"
+  request_path     = "/test"
+  security_authentication = "CUSTOM"
+  backend_type     = "HTTP"
+  backend_path     = "/test"
+  backend_method   = "GET"
+  backend_address  = "https://example.com"
+}
+```
+
+**参数说明**：
+- **instance_id**：API网关实例ID
+- **group_id**：API分组ID
+- **name**：API名称
+- **type**：API类型
+- **request_protocol**：请求协议
+- **request_method**：请求方法
+- **request_path**：请求路径
+- **security_authentication**：安全认证方式
+- **backend_type**：后端类型
+- **backend_path**：后端路径
+- **backend_method**：后端方法
+- **backend_address**：后端地址
+
+#### 8. 自定义认证器（huaweicloud_apig_custom_authorizer）
+
+在指定region（默认继承当前provider块中所指定的region）下创建自定义认证器，关联FunctionGraph函数。
+
+```hcl
+variable "authorizer_name" {
+  description = "自定义认证器名称"
+  type        = string
+}
+
+resource "huaweicloud_apig_custom_authorizer" "test" {
+  instance_id  = huaweicloud_apig_instance.test.id
+  name         = var.authorizer_name
+  type         = "FRONTEND"
+  function_urn = huaweicloud_fgs_function.test.urn
+  identities   = ["Authorization"]
+}
+```
+
+**参数说明**：
+- **instance_id**：API网关实例ID
+- **name**：自定义认证器名称
+- **type**：认证器类型
+- **function_urn**：函数URN
+- **identities**：认证参数列表
+
+#### 9. 函数（huaweicloud_fgs_function）
+
+在指定region（默认继承当前provider块中所指定的region）下创建FunctionGraph函数，实现自定义认证逻辑。
+
+```hcl
+variable "function_name" {
+  description = "函数名称"
+  type        = string
+}
+
+resource "huaweicloud_fgs_function" "test" {
+  name        = var.function_name
   app         = "default"
-  agency      = "function_agency"
   handler     = "index.handler"
   memory_size = 128
   timeout     = 30
@@ -144,152 +374,112 @@ EOF
 }
 ```
 
-+ **name**：函数名称
-+ **app**：函数所属应用
-+ **agency**：委托名称，用于授权函数访问其他云服务
-+ **handler**：函数入口，格式为 `文件名.函数名`
-+ **memory_size**：函数运行时内存大小
-+ **timeout**：函数超时时间
-+ **runtime**：运行时环境
-+ **code_type**：代码类型，这里使用内联代码
-+ **func_code**：函数代码，实现认证逻辑
+**参数说明**：
+- **name**：函数名称
+- **app**：函数所属应用
+- **handler**：函数入口
+- **memory_size**：函数运行时内存大小
+- **timeout**：函数超时时间
+- **runtime**：运行时环境
+- **code_type**：代码类型
+- **func_code**：函数代码
 
-### API网关分组（huaweicloud_apig_group）
+### 可扩展配置
 
-**功能概述**
+#### 1. HTTPS安全组规则（huaweicloud_networking_secgroup_rule）
 
-创建API网关分组，用于管理和组织相关API。
-
-**详细配置**
+在指定region（默认继承当前provider块中所指定的region）下创建允许HTTPS访问的安全组规则。
 
 ```hcl
-resource "huaweicloud_apig_group" "test" {
-  name        = "apig-group-basic"
-  description = "基础认证API分组"
-  
-  # 环境变量配置
-  environment = {
-    STAGE = "RELEASE"
-  }
+resource "huaweicloud_networking_secgroup_rule" "allow_https" {
+  security_group_id = huaweicloud_networking_secgroup.test.id
+  direction         = "ingress"
+  ethertype        = "IPv4"
+  protocol         = "tcp"
+  port_range_min   = 443
+  port_range_max   = 443
+  remote_ip_prefix = "0.0.0.0/0"
+  description      = "允许HTTPS访问"
 }
 ```
 
-+ **name**：API分组名称
-+ **description**：API分组描述
-+ **environment**：环境变量配置
+**参数说明**：
+- **security_group_id**：安全组ID
+- **direction**：规则方向
+- **ethertype**：网络协议版本
+- **protocol**：协议类型
+- **port_range_min**：起始端口
+- **port_range_max**：结束端口
+- **remote_ip_prefix**：允许访问的IP范围
+- **description**：规则描述
 
-### API定义（huaweicloud_apig_api）
+> 该规则用于允许HTTPS（443）端口访问。建议根据实际业务需求配置remote_ip_prefix，遵循最小权限原则。
 
-**功能概述**
+## 部署流程
 
-创建需要进行自定义认证的API定义。
-
-**详细配置**
-
-```hcl
-resource "huaweicloud_apig_api" "api_with_auth" {
-  group_id    = huaweicloud_apig_group.test.id
-  name        = "api-with-custom-auth"
-  type        = 1
-  description = "使用自定义认证的API"
-  
-  request_protocol = "HTTPS"
-  request_method   = "GET"
-  request_path     = "/protected/resource"
-  
-  backend_type  = "FUNCTION"
-  backend_path  = "/"
-  
-  security_authentication = "CUSTOM"
-  custom_authorizer_id    = huaweicloud_apig_custom_authorizer.basic_auth.id
-  
-  web_backend_parameters {
-    name     = "Authorization"
-    location = "HEADER"
-    type     = "STRING"
-    required = true
-  }
-  
-  response_type = "JSON"
-}
-```
-
-+ **group_id**：API所属分组ID
-+ **name**：API名称
-+ **type**：API类型，1表示公开API
-+ **request_protocol**：请求协议
-+ **request_method**：请求方法
-+ **request_path**：请求路径
-+ **backend_type**：后端类型
-+ **backend_path**：后端路径
-+ **security_authentication**：安全认证方式
-+ **custom_authorizer_id**：自定义认证器ID
-
-### 自定义认证器（huaweicloud_apig_custom_authorizer）
-
-**功能概述**
-
-创建自定义认证器，关联FunctionGraph函数。
-
-**详细配置**
-
-```hcl
-resource "huaweicloud_apig_custom_authorizer" "basic_auth" {
-  name            = "basic-auth"
-  function_urn    = huaweicloud_fgs_function.authorizer.urn
-  type            = "FRONTEND"
-  cache_age       = 60
-  identity_source = "$request.header.Authorization"
-  
-  # 认证器参数配置
-  parameters {
-    name     = "Authorization"
-    location = "HEADER"
-    value    = "$request.header.Authorization"
-  }
-}
-```
-
-+ **name**：认证器名称
-+ **function_urn**：关联的函数URN
-+ **type**：认证器类型，FRONTEND表示前端认证
-+ **cache_age**：缓存时间
-+ **identity_source**：身份来源
-+ **parameters**：认证器参数配置
+1. 创建VPC和子网
+2. 配置安全组和规则
+3. 创建API网关实例
+4. 创建API分组
+5. 创建自定义认证函数
+6. 配置自定义认证器
+7. 创建API定义
 
 ## 操作步骤
 
 1. **准备工作**
-   - 确保已安装Terraform
+   - 安装Terraform
    - 配置华为云认证信息
-   - 创建工作目录并初始化Terraform
+   - 创建工作目录
 
 2. **创建Terraform配置文件**
-   - 创建main.tf文件
-   - 配置provider信息
-   - 添加资源定义
+   ```bash
+   touch main.tf
+   touch variables.tf
+   ```
 
-3. **部署资源**
+3. **初始化和部署**
    ```bash
    terraform init
+   terraform plan
    terraform apply
    ```
 
 4. **验证部署**
-   - 在华为云控制台查看创建的资源
-   - 测试API的认证功能
+   - 登录API网关控制台
+   - 检查实例状态
+   - 测试API访问
+   - 验证认证效果
+
+## 注意事项
+
+1. **网络规划**
+   - 合理规划VPC网段
+   - 配置必要的安全组规则
+   - 确保网络连通性
+
+2. **安全配置**
+   - 使用HTTPS协议
+   - 合理设置认证参数
+   - 实现完善的错误处理
+
+3. **性能优化**
+   - 合理配置函数内存和超时时间
+   - 适当设置认证结果缓存
+   - 优化认证逻辑代码
 
 ## 最佳实践效果
 
 通过本最佳实践的实施，您将获得：
 
-1. 一个完整的APIG自定义认证解决方案
-2. 可复用的Terraform配置脚本
-3. 灵活可定制的认证逻辑
-4. 安全可靠的API访问控制
+1. 自动化部署的API网关自定义认证
+2. 灵活的认证逻辑实现
+3. 安全的API访问控制
+4. 可维护的认证系统
 
 ## 参考信息
 
-- [API网关自定义认证说明](https://support.huaweicloud.com/usermanual-apig/apig-ug-180621090.html)
-- [FunctionGraph开发指南](https://support.huaweicloud.com/devg-functiongraph/functiongraph_02_0101.html)
+- [API网关产品文档](https://support.huaweicloud.com/apig/index.html)
+- [函数工作流产品文档](https://support.huaweicloud.com/functiongraph/index.html)
 - [Terraform华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs) 
+- [APIG最佳实践](https://github.com/huaweicloud/terraform-provider-huaweicloud/blob/master/examples/apig/api-custom-authorizer)
