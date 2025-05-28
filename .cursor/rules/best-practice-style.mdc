@@ -1,0 +1,19 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Markdown文档风格
+
+- 涉及概述的部分结合华为云提供的产品说明文档适当补充部分内容
+- 涉及数据源/资源介绍的参数定义和介绍的部分严格按照对应脚本进行生成，不要凭空捏造不存在的参数定义
+- 注意文档中各个部分的排序，比如数据源/资源的顺序、参数顺序
+
+# Terraform代码风格
+
+- HCL脚本符合Terraform推荐的代码风格
+- 如涉及HCL脚本，则为根据每个hcl代码块的variable定义（如果有的话）分别生成对应的variable块，各自生成在对应的hcl块中，只定义description和type即可
+
+# 公共部分
+
+- 检查/README.md、/docs/README.md及/docs/SUMMARY.md是否需要同步更新
