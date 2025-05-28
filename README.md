@@ -6,6 +6,7 @@
 
 + [API网关 (APIG)](docs/apig/index.md)
 + [弹性伸缩 (AS)](docs/as/index.md)
++ [云容器引擎 (CCE)](docs/cce/index.md)
 + [函数工作流 (FunctionGraph)](docs/fgs/index.md)
 + [Web应用防火墙 (WAF)](docs/waf/index.md)
 + [云桌面 (Workspace)](docs/workspace/index.md)
@@ -89,6 +90,7 @@
 - [Terraform华为云Provider](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
 - [API网关服务文档](https://support.huaweicloud.com/apig/index.html)
 - [弹性伸缩服务文档](https://support.huaweicloud.com/as/index.html)
+- [云容器引擎服务文档](https://support.huaweicloud.com/cce/index.html)
 - [函数工作流服务文档](https://support.huaweicloud.com/functiongraph/index.html)
 - [云桌面服务文档](https://support.huaweicloud.com/workspace/index.html)
 
