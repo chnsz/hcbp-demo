@@ -18,7 +18,7 @@
 - 可靠性：自动维护资源池的健康状态
 - 灵活性：支持多种伸缩策略和触发条件
 
-### 涉及产品
+### 涉及服务
 
 - 弹性伸缩服务（AS）：提供资源自动伸缩能力
 - 虚拟私有云（VPC）：提供网络环境
@@ -74,7 +74,7 @@ huaweicloud_kps_keypair.acc_key
 
 #### 1. 可用区（data.huaweicloud_availability_zones）
 
-获取基于当前provider块中所指定region下的所有可用区信息。
+获取默认region（默认继承当前provider块中所指定的region）下所有的可用区信息，用于获取实例规格。
 
 ```hcl
 data "huaweicloud_availability_zones" "test" {}
@@ -85,7 +85,7 @@ data "huaweicloud_availability_zones" "test" {}
 
 #### 2. 镜像（data.huaweicloud_images_image）
 
-获取弹性伸缩实例使用的操作系统镜像信息。
+获取默认region（默认继承当前provider块中所指定的region）下的操作系统镜像信息，用于创建弹性伸缩实例。
 
 ```hcl
 data "huaweicloud_images_image" "test" {
@@ -102,7 +102,7 @@ data "huaweicloud_images_image" "test" {
 
 #### 3. 实例规格（data.huaweicloud_compute_flavors）
 
-获取指定可用区下的实例规格信息。
+获取默认region（默认继承当前provider块中所指定的region）下指定可用区的实例规格信息，用于创建弹性伸缩实例。
 
 ```hcl
 data "huaweicloud_compute_flavors" "test" {
@@ -123,7 +123,7 @@ data "huaweicloud_compute_flavors" "test" {
 
 #### 1. 安全组（huaweicloud_networking_secgroup）
 
-创建安全组，控制实例的网络访问。
+在默认region（默认继承当前provider块中所指定的region）下创建安全组，控制实例的网络访问。
 
 ```hcl
 resource "huaweicloud_networking_secgroup" "test" {
@@ -138,7 +138,7 @@ resource "huaweicloud_networking_secgroup" "test" {
 
 #### 2. 密钥对（huaweicloud_kps_keypair）
 
-创建密钥对，为弹性伸缩实例提供SSH密钥认证。
+在默认region（默认继承当前provider块中所指定的region）下创建密钥对，为弹性伸缩实例提供SSH密钥认证。
 
 ```hcl
 variable "public_key" {
@@ -158,7 +158,7 @@ resource "huaweicloud_kps_keypair" "acc_key" {
 
 #### 3. AS配置（huaweicloud_as_configuration）
 
-创建AS配置，定义弹性伸缩实例的模板。
+在默认region（默认继承当前provider块中所指定的region）下创建AS配置，定义弹性伸缩实例的模板。
 
 ```hcl
 resource "huaweicloud_as_configuration" "acc_as_config" {
@@ -199,22 +199,24 @@ EOT
 
 **参数说明**：
 - **scaling_configuration_name**：配置名称
-- **image**：镜像ID
-- **flavor**：实例规格
-- **key_name**：密钥对ID
-- **security_group_ids**：安全组ID列表
-- **metadata**：元数据配置
-- **user_data**：实例启动脚本
-- **disk**：磁盘配置
-  * **size**：磁盘大小（GB）
-  * **volume_type**：磁盘类型
-  * **disk_type**：磁盘用途
-- **public_ip**：公网IP配置
-  * **ip_type**：公网IP类型
-  * **bandwidth**：带宽配置
-    - **size**：带宽大小
-    - **share_type**：带宽类型
-    - **charging_mode**：计费模式
+- **instance_config**：实例配置
+  * **image**：镜像ID
+  * **flavor**：实例规格
+  * **key_name**：密钥对ID
+  * **security_group_ids**：安全组ID列表
+  * **metadata**：元数据配置
+  * **user_data**：实例启动脚本
+  * **disk**：磁盘配置
+    - **size**：磁盘大小（GB）
+    - **volume_type**：磁盘类型
+    - **disk_type**：磁盘用途
+  * **public_ip**：公网IP配置
+    - **eip**：弹性IP配置
+      + **ip_type**：公网IP类型，如5_bgp表示动态BGP
+      + **bandwidth**：带宽配置
+        - **size**：带宽大小，单位为Mbps
+        - **share_type**：带宽类型，PER表示独享带宽
+        - **charging_mode**：计费模式，traffic表示按流量计费
 
 ## 部署流程
 
@@ -244,22 +246,22 @@ EOT
    ```
 
 4. **验证部署**
-   - 登录AS控制台
+   - 登录华为云控制台
    - 检查AS配置状态
    - 验证配置参数
 
 ## 注意事项
 
-1. **实例配置**
+1. **实例配置**：
    - 选择合适的实例规格
    - 确保镜像可用性
    - 正确配置密钥对
 
-2. **安全配置**
+2. **安全配置**：
    - 配置正确的安全组规则
    - 确保密钥对安全保存
 
-3. **成本控制**
+3. **成本控制**：
    - 合理配置实例规格
    - 及时清理不需要的资源
    - 选择合适的计费方式
@@ -275,6 +277,6 @@ EOT
 
 ## 参考信息
 
-- [弹性伸缩服务介绍](https://support.huaweicloud.com/intl/zh-cn/as/index.html)
+- [华为云弹性伸缩服务产品文档](https://support.huaweicloud.com/intl/zh-cn/as/index.html)
 - [Terraform华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
 - [AS最佳实践](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/as/configuration-basic)
