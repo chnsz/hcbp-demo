@@ -33,7 +33,7 @@
 ### 数据源
 
 1. **可用区（data.huaweicloud_availability_zones）**
-   - 用途：获取当前provider块中所指定region下的所有可用区信息
+   - 用途：获取可用区信息
 
 ### 资源
 
@@ -79,7 +79,7 @@ huaweicloud_vpc_eip
 
 #### 1. 可用区（data.huaweicloud_availability_zones）
 
-获取默认region（默认继承当前provider块中所指定的region）下所有的可用区信息，用于创建WAF专业版实例。
+获取指定region（默认继承当前provider块中所指定的region）下所有的可用区信息，用于创建WAF专业版实例。
 
 ```hcl
 data "huaweicloud_availability_zones" "test" {}
@@ -89,7 +89,7 @@ data "huaweicloud_availability_zones" "test" {}
 
 #### 1. VPC网络（huaweicloud_vpc）
 
-在默认region（默认继承当前provider块中所指定的region）下创建VPC网络，用于为WAF实例提供网络隔离。
+在指定region（默认继承当前provider块中所指定的region）下创建VPC网络，用于为WAF实例提供网络隔离。
 
 ```hcl
 variable "vpc_name" {
@@ -114,7 +114,7 @@ resource "huaweicloud_vpc" "test" {
 
 #### 2. VPC子网（huaweicloud_vpc_subnet）
 
-在默认region（默认继承当前provider块中所指定的region）下的VPC网络中创建子网，用于为WAF实例提供网络空间。
+在指定region（默认继承当前provider块中所指定的region）下的VPC网络中创建子网，用于为WAF实例提供网络空间。
 
 ```hcl
 variable "subnet_name" {
@@ -148,7 +148,7 @@ resource "huaweicloud_vpc_subnet" "test" {
 
 #### 3. 安全组（huaweicloud_networking_secgroup）
 
-在默认region（默认继承当前provider块中所指定的region）下创建安全组，用于控制WAF实例的网络访问。
+在指定region（默认继承当前provider块中所指定的region）下创建安全组，用于控制WAF实例的网络访问。
 
 ```hcl
 variable "secgroup_name" {
@@ -168,7 +168,7 @@ resource "huaweicloud_networking_secgroup" "test" {
 
 #### 4. 安全组规则（huaweicloud_networking_secgroup_rule）
 
-在默认region（默认继承当前provider块中所指定的region）下配置WAF实例的访问控制规则。
+在指定region（默认继承当前provider块中所指定的region）下配置WAF实例的访问控制规则。
 
 ```hcl
 resource "huaweicloud_networking_secgroup_rule" "allow_web" {
@@ -195,7 +195,7 @@ resource "huaweicloud_networking_secgroup_rule" "allow_web" {
 
 #### 5. 弹性公网IP（huaweicloud_vpc_eip）
 
-在默认region（默认继承当前provider块中所指定的region）下创建弹性公网IP，用于为WAF实例提供公网访问能力。
+在指定region（默认继承当前provider块中所指定的region）下创建弹性公网IP，用于为WAF实例提供公网访问能力。
 
 ```hcl
 variable "bandwidth_name" {
@@ -231,7 +231,7 @@ resource "huaweicloud_vpc_eip" "test" {
 
 #### 6. WAF专业版实例（huaweicloud_waf_dedicated_instance）
 
-在默认region（默认继承当前provider块中所指定的region）下创建WAF专业版实例，用于提供Web应用防护服务。
+在指定region（默认继承当前provider块中所指定的region）下创建WAF专业版实例，用于提供Web应用防护服务。
 
 ```hcl
 variable "waf_instance_name" {
@@ -265,7 +265,7 @@ resource "huaweicloud_waf_dedicated_instance" "test" {
 
 #### 1. HTTPS安全组规则（huaweicloud_networking_secgroup_rule）
 
-在默认region（默认继承当前provider块中所指定的region）下创建允许HTTPS访问的安全组规则。
+在指定region（默认继承当前provider块中所指定的region）下创建允许HTTPS访问的安全组规则。
 
 ```hcl
 resource "huaweicloud_networking_secgroup_rule" "allow_https" {
