@@ -12,7 +12,7 @@ API网关（API Gateway）是为企业和开发者提供的高性能、高可用
 
 弹性伸缩（Auto Scaling）是一种根据用户的业务需求和策略，自动调整计算资源的服务，帮助您实现资源的动态调配和成本优化。
 
-### [云容器引擎（CCE）最佳实践](cce/postpaid_cluster.md)
+### [云容器引擎（CCE）最佳实践](cce/index.md)
 
 云容器引擎（Cloud Container Engine, CCE）是一个高可靠高性能的企业级容器管理服务，支持Kubernetes社区原生应用和工具，提供容器化应用的全生命周期管理能力。
 
