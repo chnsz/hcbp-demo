@@ -1,15 +1,10 @@
 # 华为云最佳实践示例
 
-本项目包含了一系列华为云服务的最佳实践示例，旨在帮助用户更好地使用华为云服务，解决实际业务场景中的问题。
-
-## 最佳实践列表
-
-+ [API网关 (APIG)](docs/apig/index.md)
-+ [弹性伸缩 (AS)](docs/as/index.md)
-+ [云容器引擎 (CCE)](docs/cce/index.md)
-+ [函数工作流 (FunctionGraph)](docs/fgs/index.md)
-+ [Web应用防火墙 (WAF)](docs/waf/index.md)
-+ [云桌面 (Workspace)](docs/workspace/index.md)
+本项目包含了一系列华为云服务的最佳实践示例，旨在帮助用户更好地使用华为云服务，解决实际业务场景中的问题。通过Terraform实现基础设施即代码（Infrastructure as Code），您可以：
+- 使用代码管理云资源，实现基础设施版本控制
+- 通过模板化配置，快速复制和部署环境
+- 自动化资源的创建、更新和删除，提高运维效率
+- 遵循最佳实践，避免常见错误和安全风险
 
 ## 使用说明
 
