@@ -1,6 +1,0 @@
----
-description: 
-globs: docs/*/index.md
-alwaysApply: false
----
-* 最佳实践目录部分的排序的依据是链接的英文

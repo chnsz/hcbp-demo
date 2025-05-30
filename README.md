@@ -83,11 +83,6 @@
 
 - [华为云官方文档](https://support.huaweicloud.com/)
 - [Terraform华为云Provider](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [API网关服务文档](https://support.huaweicloud.com/apig/index.html)
-- [弹性伸缩服务文档](https://support.huaweicloud.com/as/index.html)
-- [云容器引擎服务文档](https://support.huaweicloud.com/cce/index.html)
-- [函数工作流服务文档](https://support.huaweicloud.com/functiongraph/index.html)
-- [云桌面服务文档](https://support.huaweicloud.com/workspace/index.html)
 
 ## 许可证
 
