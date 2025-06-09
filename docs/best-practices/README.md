@@ -16,6 +16,10 @@ API网关（API Gateway）是为企业和开发者提供的高性能、高可用
 
 云容器引擎（Cloud Container Engine, CCE）是一个高可靠高性能的企业级容器管理服务，支持Kubernetes社区原生应用和工具，提供容器化应用的全生命周期管理能力。
 
+### [弹性云服务器（ECS）最佳实践](ecs/index.md)
+
+弹性云服务器（Elastic Cloud Server, ECS）是由CPU、内存、操作系统、云硬盘组成的基础的计算组件，为您的应用提供可靠、安全、灵活、高效的计算环境。
+
 ### [函数工作流（FunctionGraph）最佳实践](fgs/index.md)
 
 函数工作流（FunctionGraph）是一项基于事件驱动的无服务器计算服务，支持多种编程语言和触发方式，让您无需管理服务器即可快速构建应用。
