@@ -350,7 +350,62 @@ resource "huaweicloud_workspace_desktop" "test" {
   - **type**：磁盘类型，通过引用输入变量desktop_data_volumes中的类型值进行赋值
   - **size**：磁盘大小，通过引用输入变量desktop_data_volumes中的大小值进行赋值
 
-### 10. 初始化并应用Terraform配置
+### 10. 预设资源部署所需的入参（可选）
+
+本实践中，部分资源、数据源使用了输入变量对配置内容进行赋值，这些输入参数在后续部署时需要手工输入。
+同时，Terraform提供了通过`.tfvars`文件预设这些配置的方法，可以避免每次执行时重复输入。
+
+在工作目录下创建`terraform.tfvars`文件，内容如下：
+
+```hcl
+# 资源命名相关变量
+vpc_name            = "workspace-vpc"
+subnet_name         = "workspace-subnet"
+security_group_name = "workspace-secgroup"
+cloud_desktop_name  = "workspace-desktop"
+
+# 云桌面规格和可用区
+availability_zone     = "cn-north-4a"
+desktop_flavor        = "workspace.x86.medium.win"
+desktop_cpu_core_number = 2
+desktop_memory          = 4
+desktop_os_type         = "windows"
+
+# 云桌面镜像
+desktop_image_type     = "market"
+desktop_image_id       = "workspace-windows-x64-10-20230628143608"
+
+# 云桌面用户
+desktop_user_name      = "workspace-user"
+desktop_user_email     = "user@example.com"
+desktop_user_group_name = "default-group"
+
+# 云桌面存储
+desktop_root_volume_type = "SSD"
+desktop_root_volume_size = 100
+desktop_data_volumes = [
+  {
+    type = "SSD"
+    size = 100
+  }
+]
+```
+
+**使用方法**：
+
+1. 将上述内容保存为工作目录下的`terraform.tfvars`文件
+2. 根据实际需要修改参数值
+3. 执行`terraform plan`或`terraform apply`时，Terraform会自动读取该文件中的变量值
+
+除了使用`terraform.tfvars`文件外，还可以通过以下方式设置变量值：
+
+1. 命令行参数：`terraform apply -var="vpc_name=my-vpc" -var="subnet_name=my-subnet"`
+2. 环境变量：`export TF_VAR_vpc_name=my-vpc`
+3. 自定义命名的变量文件：`terraform apply -var-file="custom.tfvars"`
+
+> 注意：如果同一个变量通过多种方式进行设置，Terraform会按照以下优先级使用变量值：命令行参数 > 变量文件 > 环境变量 > 默认值。
+
+### 11. 初始化并应用Terraform配置
 
 完成以上脚本配置后，执行以下步骤来创建资源：
 
