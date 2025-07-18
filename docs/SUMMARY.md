@@ -25,6 +25,7 @@
     * [使用FunctionGraph实现OBS文件下载](best-practices/fgs/obs_download.md)
   * [WAF](best-practices/waf/)
     * [简介](best-practices/waf/index.md)
+    * [部署WAF专业版Domain](best-practices/waf/dedicated_domain.md)
     * [部署WAF专业版实例](best-practices/waf/dedicated_instance.md)
   * [Workspace](best-practices/workspace/)
     * [简介](best-practices/workspace/index.md)
