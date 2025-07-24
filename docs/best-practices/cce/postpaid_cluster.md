@@ -1,119 +1,80 @@
 # 使用Terraform部署按需计费CCE集群
 
-## 概述
+## 应用场景
 
-华为云云容器引擎（Cloud Container Engine，CCE）是一个高可靠高性能的企业级容器管理服务，支持Kubernetes社区原生应用和工具。本最佳实践将介绍如何使用Terraform自动化部署按需计费的CCE集群。
+华为云云容器引擎（Cloud Container Engine，CCE）是一个高可靠高性能的企业级容器管理服务，支持Kubernetes社区原生应用和工具。通过部署按需计费的CCE集群，企业可以快速构建容器化应用环境，实现微服务架构部署，并根据实际使用量进行计费，有效控制成本。本最佳实践将介绍如何使用Terraform自动化部署按需计费的CCE集群，包括VPC、子网、CCE集群和节点的创建。
 
-### 应用场景
-
-- 企业需要快速部署和管理容器集群
-- 需要自动化部署和管理Kubernetes环境
-- 需要统一管理多个容器集群
-- 需要实现容器应用的弹性伸缩
-- 需要按需使用和计费的弹性容器解决方案
-- 临时项目或短期容器化需求
-
-### 方案优势
-
-- 自动化部署：使用Terraform实现基础设施即代码
-- 按需付费：根据实际使用量计费，降低成本
-- 弹性伸缩：支持节点和容器的自动扩缩容
-- 安全可靠：提供多维度安全防护，支持网络隔离
-- 快速交付：快速创建和配置容器环境
-- 统一管理：集中管理容器资源和配置
-
-### 涉及产品
-
-- 云容器引擎（CCE）：提供容器集群管理服务
-- 虚拟私有云（VPC）：提供隔离的网络环境
-- 弹性云服务器（ECS）：作为集群节点
-- 统一身份认证服务（IAM）：提供身份认证和权限管理
-
-## 资源/数据源设计
+## 相关资源/数据源
 
 本最佳实践涉及以下主要资源和数据源：
 
 ### 数据源
 
-1. **可用区（data.huaweicloud_availability_zones）**
-   - 用途：获取可用的可用区信息，用于创建CCE节点和ECS实例
-
-2. **镜像（data.huaweicloud_images_image）**
-   - 用途：获取ECS实例使用的操作系统镜像
+- [可用区列表查询数据源（data.huaweicloud_availability_zones）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/data-sources/availability_zones)
+- [镜像查询数据源（data.huaweicloud_images_image）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/data-sources/images_image)
 
 ### 资源
 
-1. **VPC网络（huaweicloud_vpc）**
-   - 用途：为CCE集群提供网络环境
-
-2. **VPC子网（huaweicloud_vpc_subnet）**
-   - 用途：在VPC中划分子网空间
-
-3. **弹性公网IP（huaweicloud_vpc_eip）**
-   - 用途：为CCE集群提供公网访问能力
-
-4. **密钥对（huaweicloud_compute_keypair）**
-   - 用途：为节点提供SSH密钥认证
-
-5. **CCE集群（huaweicloud_cce_cluster）**
-   - 用途：管理容器化应用
-
-6. **CCE节点（huaweicloud_cce_node）**
-   - 用途：作为CCE集群的工作节点
-
-7. **计算实例（huaweicloud_compute_instance）**
-   - 用途：创建ECS实例作为CCE集群的工作节点
-
-8. **CCE节点挂载（huaweicloud_cce_node_attach）**
-   - 用途：将已有ECS实例挂载到CCE集群
+- [VPC资源（huaweicloud_vpc）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/vpc)
+- [VPC子网资源（huaweicloud_vpc_subnet）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/vpc_subnet)
+- [弹性公网IP资源（huaweicloud_vpc_eip）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/vpc_eip)
+- [密钥对资源（huaweicloud_compute_keypair）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/compute_keypair)
+- [CCE集群资源（huaweicloud_cce_cluster）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/cce_cluster)
+- [CCE节点资源（huaweicloud_cce_node）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/cce_node)
+- [计算实例资源（huaweicloud_compute_instance）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/compute_instance)
+- [CCE节点挂载资源（huaweicloud_cce_node_attach）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/cce_node_attach)
 
 ### 资源/数据源依赖关系
 
 ```
-data.huaweicloud_availability_zones.myaz
-    ├── huaweicloud_cce_node.mynode
-    └── huaweicloud_compute_instance.myecs
+data.huaweicloud_availability_zones
+    ├── huaweicloud_cce_node
+    └── huaweicloud_compute_instance
 
-data.huaweicloud_images_image.myimage
-    └── huaweicloud_compute_instance.myecs
+data.huaweicloud_images_image
+    └── huaweicloud_compute_instance
 
-huaweicloud_vpc.myvpc
-    └── huaweicloud_vpc_subnet.mysubnet
-        ├── huaweicloud_cce_cluster.mycce
-        │   ├── huaweicloud_cce_node.mynode
-        │   └── huaweicloud_cce_node_attach.test
-        └── huaweicloud_compute_instance.myecs
+huaweicloud_vpc
+    └── huaweicloud_vpc_subnet
+        ├── huaweicloud_cce_cluster
+        │   ├── huaweicloud_cce_node
+        │   └── huaweicloud_cce_node_attach
+        └── huaweicloud_compute_instance
 
-huaweicloud_vpc_eip.myeip
-    └── huaweicloud_cce_cluster.mycce
+huaweicloud_vpc_eip
+    └── huaweicloud_cce_cluster
 
-huaweicloud_compute_keypair.mykeypair
-    ├── huaweicloud_cce_node.mynode
-    ├── huaweicloud_compute_instance.myecs
-    └── huaweicloud_cce_node_attach.test
+huaweicloud_compute_keypair
+    ├── huaweicloud_cce_node
+    ├── huaweicloud_compute_instance
+    └── huaweicloud_cce_node_attach
 
-huaweicloud_compute_instance.myecs
-    └── huaweicloud_cce_node_attach.test
+huaweicloud_compute_instance
+    └── huaweicloud_cce_node_attach
 ```
 
-## 详细配置
+## 操作步骤
 
-### 数据源配置
+### 1. 脚本准备
 
-#### 1. 可用区（data.huaweicloud_availability_zones）
+在指定工作空间中准备好用于编写当前最佳实践脚本的TF文件（如main.tf），确保其中（也可以是其他同级目录下的TF文件）包含部署资源所需的provider版本声明和华为云鉴权信息。
+配置介绍参考[部署华为云资源前的准备工作](../../introductions/prepare_before_deploy.md)一文中的介绍。
 
-获取基于当前provider块中所指定region下的所有可用区信息，用于创建CCE节点和ECS实例。
+### 2. 通过数据源查询CCE集群资源创建所需的可用区
+
+在TF文件（如main.tf）中添加以下脚本以告知Terraform进行一次数据源查询，其查询结果用于创建CCE集群：
 
 ```hcl
+# 获取指定region（region参数缺省时默认继承当前provider块中所指定的region）下所有的可用区信息，用于创建CCE集群
 data "huaweicloud_availability_zones" "myaz" {}
 ```
 
 **参数说明**：
-无需参数配置，默认获取当前区域下所有可用区信息。
+此数据源无需额外参数，默认查询当前区域下所有可用的可用区信息。
 
-#### 2. 镜像（data.huaweicloud_images_image）
+### 3. 通过数据源查询CCE集群资源创建所需的镜像
 
-获取ECS实例使用的操作系统镜像信息。
+在TF文件中添加以下脚本以告知Terraform查询符合条件的镜像：
 
 ```hcl
 variable "image_name" {
@@ -121,6 +82,7 @@ variable "image_name" {
   type        = string
 }
 
+# 获取指定region（region参数缺省时默认继承当前provider块中所指定的region）下所有符合特定条件的镜像信息，用于创建CCE集群
 data "huaweicloud_images_image" "myimage" {
   name        = var.image_name
   most_recent = true
@@ -128,14 +90,12 @@ data "huaweicloud_images_image" "myimage" {
 ```
 
 **参数说明**：
-- **name**：镜像名称
-- **most_recent**：是否使用最新版本的镜像
+- **name**：镜像名称，通过引用输入变量image_name进行赋值
+- **most_recent**：是否使用最新版本的镜像，设置为true表示使用最新版本
 
-### 资源配置
+### 4. 创建VPC资源
 
-#### 1. VPC网络（huaweicloud_vpc）
-
-创建VPC网络环境，为CCE集群提供网络隔离。
+在TF文件（如main.tf）中添加以下脚本以告知Terraform创建VPC资源：
 
 ```hcl
 variable "vpc_name" {
@@ -148,6 +108,7 @@ variable "vpc_cidr" {
   type        = string
 }
 
+# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建VPC资源，用于部署CCE集群
 resource "huaweicloud_vpc" "myvpc" {
   name = var.vpc_name
   cidr = var.vpc_cidr
@@ -155,12 +116,12 @@ resource "huaweicloud_vpc" "myvpc" {
 ```
 
 **参数说明**：
-- **name**：VPC名称
-- **cidr**：VPC网段，格式为CIDR
+- **name**：VPC名称，通过引用输入变量vpc_name进行赋值
+- **cidr**：VPC的CIDR网段，通过引用输入变量vpc_cidr进行赋值
 
-#### 2. VPC子网（huaweicloud_vpc_subnet）
+### 5. 创建VPC子网资源
 
-在VPC中创建子网，为CCE集群提供网络空间。
+在TF文件中添加以下脚本以告知Terraform创建VPC子网资源：
 
 ```hcl
 variable "subnet_name" {
@@ -188,6 +149,7 @@ variable "secondary_dns" {
   type        = string
 }
 
+# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建VPC子网资源，用于部署CCE集群
 resource "huaweicloud_vpc_subnet" "mysubnet" {
   name       = var.subnet_name
   cidr       = var.subnet_cidr
@@ -201,16 +163,16 @@ resource "huaweicloud_vpc_subnet" "mysubnet" {
 ```
 
 **参数说明**：
-- **name**：子网名称
-- **cidr**：子网网段，格式为CIDR
-- **gateway_ip**：网关IP地址
-- **primary_dns**：主DNS服务器地址
-- **secondary_dns**：备DNS服务器地址
-- **vpc_id**：VPC ID
+- **name**：子网名称，通过引用输入变量subnet_name进行赋值
+- **cidr**：子网网段，通过引用输入变量subnet_cidr进行赋值
+- **gateway_ip**：网关IP地址，通过引用输入变量subnet_gateway进行赋值
+- **primary_dns**：主DNS服务器地址，通过引用输入变量primary_dns进行赋值
+- **secondary_dns**：备DNS服务器地址，通过引用输入变量secondary_dns进行赋值
+- **vpc_id**：子网所属的VPC的ID，引用前面创建的VPC资源的ID
 
-#### 3. 弹性公网IP（huaweicloud_vpc_eip）
+### 6. 创建弹性公网IP资源
 
-创建弹性公网IP，为CCE集群提供公网访问能力。
+在TF文件中添加以下脚本以告知Terraform创建弹性公网IP资源：
 
 ```hcl
 variable "bandwidth_name" {
@@ -218,6 +180,7 @@ variable "bandwidth_name" {
   type        = string
 }
 
+# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建弹性公网IP资源，用于部署CCE集群
 resource "huaweicloud_vpc_eip" "myeip" {
   publicip {
     type = "5_bgp"
@@ -232,15 +195,15 @@ resource "huaweicloud_vpc_eip" "myeip" {
 ```
 
 **参数说明**：
-- **type**：弹性公网IP类型
-- **name**：带宽名称
-- **size**：带宽大小（Mbit/s）
-- **share_type**：带宽共享类型
-- **charge_mode**：计费模式
+- **type**：弹性公网IP类型，设置为"5_bgp"
+- **name**：带宽名称，通过引用输入变量bandwidth_name进行赋值
+- **size**：带宽大小（Mbit/s），设置为8Mbps
+- **share_type**：带宽共享类型，设置为"PER"表示独享
+- **charge_mode**：计费模式，设置为"traffic"表示按流量计费
 
-#### 4. 密钥对（huaweicloud_compute_keypair）
+### 7. 创建密钥对资源
 
-创建密钥对，为节点提供SSH密钥认证。
+在TF文件中添加以下脚本以告知Terraform创建密钥对资源：
 
 ```hcl
 variable "key_pair_name" {
@@ -248,17 +211,18 @@ variable "key_pair_name" {
   type        = string
 }
 
+# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建密钥对资源，用于部署CCE集群
 resource "huaweicloud_compute_keypair" "mykeypair" {
   name = var.key_pair_name
 }
 ```
 
 **参数说明**：
-- **name**：密钥对名称
+- **name**：密钥对名称，通过引用输入变量key_pair_name进行赋值
 
-#### 5. CCE集群（huaweicloud_cce_cluster）
+### 8. 创建CCE集群资源
 
-创建CCE集群，提供容器编排和管理能力。
+在TF文件中添加以下脚本以告知Terraform创建CCE集群资源：
 
 ```hcl
 variable "cce_cluster_name" {
@@ -271,6 +235,7 @@ variable "cce_cluster_flavor" {
   type        = string
 }
 
+# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建CCE集群资源
 resource "huaweicloud_cce_cluster" "mycce" {
   name                   = var.cce_cluster_name
   flavor_id              = var.cce_cluster_flavor
@@ -282,16 +247,16 @@ resource "huaweicloud_cce_cluster" "mycce" {
 ```
 
 **参数说明**：
-- **name**：集群名称
-- **flavor_id**：集群规格
-- **vpc_id**：VPC ID
-- **subnet_id**：子网ID
-- **container_network_type**：容器网络类型
-- **eip**：弹性公网IP地址
+- **name**：集群名称，通过引用输入变量cce_cluster_name进行赋值
+- **flavor_id**：集群规格，通过引用输入变量cce_cluster_flavor进行赋值
+- **vpc_id**：VPC的ID，引用前面创建的VPC资源的ID
+- **subnet_id**：子网的ID，引用前面创建的子网资源的ID
+- **container_network_type**：容器网络类型，设置为"overlay_l2"
+- **eip**：弹性公网IP地址，引用前面创建的弹性公网IP资源的地址
 
-#### 6. CCE节点（huaweicloud_cce_node）
+### 9. 创建CCE节点资源
 
-创建CCE节点，作为集群的工作节点。
+在TF文件中添加以下脚本以告知Terraform创建CCE节点资源：
 
 ```hcl
 variable "node_name" {
@@ -324,6 +289,7 @@ variable "data_volume_type" {
   type        = string
 }
 
+# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建CCE节点资源
 resource "huaweicloud_cce_node" "mynode" {
   cluster_id        = huaweicloud_cce_cluster.mycce.id
   name              = var.node_name
@@ -343,19 +309,19 @@ resource "huaweicloud_cce_node" "mynode" {
 ```
 
 **参数说明**：
-- **cluster_id**：CCE集群ID
-- **name**：节点名称
-- **flavor_id**：节点规格
-- **availability_zone**：可用区
-- **key_pair**：密钥对名称
-- **root_volume.size**：系统盘大小
-- **root_volume.volumetype**：系统盘类型
-- **data_volumes.size**：数据盘大小
-- **data_volumes.volumetype**：数据盘类型
+- **cluster_id**：CCE集群的ID，引用前面创建的CCE集群资源的ID
+- **name**：节点名称，通过引用输入变量node_name进行赋值
+- **flavor_id**：节点规格，通过引用输入变量node_flavor进行赋值
+- **availability_zone**：可用区，使用可用区列表查询数据源的第一个可用区
+- **key_pair**：密钥对名称，引用前面创建的密钥对资源的名称
+- **root_volume.size**：系统盘大小，通过引用输入变量root_volume_size进行赋值
+- **root_volume.volumetype**：系统盘类型，通过引用输入变量root_volume_type进行赋值
+- **data_volumes.size**：数据盘大小，通过引用输入变量data_volume_size进行赋值
+- **data_volumes.volumetype**：数据盘类型，通过引用输入变量data_volume_type进行赋值
 
-#### 7. 计算实例（huaweicloud_compute_instance）
+### 10. 创建计算实例资源
 
-创建ECS实例，作为CCE集群的工作节点。
+在TF文件中添加以下脚本以告知Terraform创建计算实例资源：
 
 ```hcl
 variable "ecs_name" {
@@ -368,6 +334,7 @@ variable "ecs_flavor" {
   type        = string
 }
 
+# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建计算实例资源
 resource "huaweicloud_compute_instance" "myecs" {
   name                        = var.ecs_name
   image_id                    = data.huaweicloud_images_image.myimage.id
@@ -391,21 +358,21 @@ resource "huaweicloud_compute_instance" "myecs" {
 ```
 
 **参数说明**：
-- **name**：实例名称
-- **image_id**：镜像ID
-- **flavor_id**：实例规格
-- **availability_zone**：可用区
-- **key_pair**：密钥对名称
-- **delete_disks_on_termination**：实例删除时是否删除磁盘
-- **system_disk_type**：系统盘类型
-- **system_disk_size**：系统盘大小
-- **data_disks.type**：数据盘类型
-- **data_disks.size**：数据盘大小
-- **network.uuid**：网络ID
+- **name**：实例名称，通过引用输入变量ecs_name进行赋值
+- **image_id**：镜像ID，使用镜像查询数据源的ID
+- **flavor_id**：实例规格，通过引用输入变量ecs_flavor进行赋值
+- **availability_zone**：可用区，使用可用区列表查询数据源的第一个可用区
+- **key_pair**：密钥对名称，引用前面创建的密钥对资源的名称
+- **delete_disks_on_termination**：实例删除时是否删除磁盘，设置为true
+- **system_disk_type**：系统盘类型，通过引用输入变量root_volume_type进行赋值
+- **system_disk_size**：系统盘大小，通过引用输入变量root_volume_size进行赋值
+- **data_disks.type**：数据盘类型，通过引用输入变量data_volume_type进行赋值
+- **data_disks.size**：数据盘大小，通过引用输入变量data_volume_size进行赋值
+- **network.uuid**：网络ID，引用前面创建的子网资源的ID
 
-#### 8. CCE节点挂载（huaweicloud_cce_node_attach）
+### 11. 创建CCE节点挂载资源
 
-将ECS实例挂载到CCE集群作为工作节点。
+在TF文件中添加以下脚本以告知Terraform创建CCE节点挂载资源：
 
 ```hcl
 variable "os" {
@@ -413,6 +380,7 @@ variable "os" {
   type        = string
 }
 
+# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建CCE节点挂载资源
 resource "huaweicloud_cce_node_attach" "test" {
   cluster_id = huaweicloud_cce_cluster.mycce.id
   server_id  = huaweicloud_compute_instance.myecs.id
@@ -422,77 +390,89 @@ resource "huaweicloud_cce_node_attach" "test" {
 ```
 
 **参数说明**：
-- **cluster_id**：CCE集群ID
-- **server_id**：ECS实例ID
-- **key_pair**：密钥对名称
-- **os**：操作系统类型
+- **cluster_id**：CCE集群的ID，引用前面创建的CCE集群资源的ID
+- **server_id**：ECS实例的ID，引用前面创建的计算实例资源的ID
+- **key_pair**：密钥对名称，引用前面创建的密钥对资源的名称
+- **os**：操作系统类型，通过引用输入变量os进行赋值
 
-## 部署流程
+### 12. 预设资源部署所需的入参（可选）
 
-1. 创建VPC和子网
-2. 配置安全组和密钥对
-3. 创建CCE集群
-4. 部署工作节点
+本实践中，部分资源、数据源使用了输入变量对配置内容进行赋值，这些输入参数在后续部署时需要手工输入。
+同时，Terraform提供了通过`.tfvars`文件预设这些配置的方法，可以避免每次执行时重复输入。
 
-## 操作步骤
+在工作目录下创建`terraform.tfvars`文件，示例内容如下：
 
-1. **准备工作**
-   - 安装Terraform
-   - 配置华为云认证信息
-   - 创建工作目录
+```hcl
+# 华为云认证信息
+region_name = "cn-north-4"
+access_key  = "your-access-key"
+secret_key  = "your-secret-key"
 
-2. **创建Terraform配置文件**
-   ```bash
-   touch main.tf
-   touch variables.tf
-   ```
+# 镜像配置
+image_name = "Ubuntu 18.04 server 64bit"
 
-3. **初始化和部署**
-   ```bash
-   terraform init
-   terraform plan
-   terraform apply
-   ```
+# VPC配置
+vpc_name = "tf_test_vpc"
+vpc_cidr = "192.168.0.0/16"
 
-4. **验证部署**
-   - 登录CCE控制台
-   - 检查集群和节点状态
-   - 部署测试应用
-   - 验证应用访问
+# 子网配置
+subnet_name = "tf_test_subnet"
+subnet_cidr = "192.168.1.0/24"
+subnet_gateway = "192.168.1.1"
+primary_dns = "8.8.8.8"
+secondary_dns = "8.8.4.4"
 
-## 注意事项
+# 弹性公网IP配置
+bandwidth_name = "tf_test_bandwidth"
 
-1. **网络规划**
-   - 确保VPC网段和容器网段不重叠
-   - 合理规划子网地址空间，预留扩展空间
+# 密钥对配置
+key_pair_name = "tf_test_keypair"
 
-2. **安全配置**
-   - 启用RBAC认证
-   - 配置合适的安全组规则
-   - 妥善保管集群证书和密钥
+# CCE集群配置
+cce_cluster_name = "tf_test_cluster"
+cce_cluster_flavor = "cce.s1.small"
 
-3. **高可用设计**
-   - 节点跨可用区部署
-   - 合理配置节点的自动恢复策略
-   - 关键应用配置多副本
+# CCE节点配置
+node_name = "tf_test_node"
+node_flavor = "s6.large.2"
+root_volume_size = 40
+root_volume_type = "SSD"
+data_volume_size = 100
+data_volume_type = "SSD"
 
-4. **成本优化**
-   - 选择合适的节点规格
-   - 及时清理不使用的资源
-   - 合理使用按需计费模式
+# ECS实例配置
+ecs_name = "tf_test_ecs"
+ecs_flavor = "s6.large.2"
 
-## 最佳实践效果
+# 操作系统配置
+os = "EulerOS 2.5"
+```
 
-通过本最佳实践的实施，您将获得：
+**使用方法**：
 
-1. 自动化部署的CCE集群环境
-2. 按需计费的资源使用模式
-3. 安全可控的容器运行环境
-4. 可重复使用的Terraform配置
-5. 标准化的容器部署流程
+1. 将上述内容保存为工作目录下的`terraform.tfvars`文件（该文件名可使用户在执行terraform命令时自动导入该`tfvars`文件中的内容，其他命名则需要在tfvars前补充`.auto`定义，如`variables.auto.tfvars`）
+2. 根据实际需要修改参数值
+3. 执行`terraform plan`或`terraform apply`时，Terraform会自动读取该文件中的变量值
+
+除了使用`terraform.tfvars`文件外，还可以通过以下方式设置变量值：
+
+1. 命令行参数：`terraform apply -var="vpc_name=my-vpc" -var="subnet_name=my-subnet"`
+2. 环境变量：`export TF_VAR_vpc_name=my-vpc`
+3. 自定义命名的变量文件：`terraform apply -var-file="custom.tfvars"`
+
+> 注意：如果同一个变量通过多种方式进行设置，Terraform会按照以下优先级使用变量值：命令行参数 > 变量文件 > 环境变量 > 默认值。
+
+### 13. 初始化并应用Terraform配置
+
+完成以上脚本配置后，执行以下步骤来创建资源：
+
+1. 运行 `terraform init` 初始化环境
+2. 运行 `terraform plan` 查看资源创建计划
+3. 确认资源计划无误后，运行 `terraform apply` 开始创建CCE集群
+4. 运行 `terraform show` 查看已创建的CCE集群详情
 
 ## 参考信息
 
-- [CCE产品文档](https://support.huaweicloud.com/intl/zh-cn/cce/)
-- [Terraform华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [CCE最佳实践](https://github.com/huaweicloud/terraform-provider-huaweicloud/blob/master/examples/cce/basic)
+- [华为云CCE产品文档](https://support.huaweicloud.com/cce/index.html)
+- [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
+- [CCE集群最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cce)

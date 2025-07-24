@@ -1,74 +1,20 @@
 # 云容器引擎（CCE）最佳实践
 
-## 产品介绍
+## 概述
 
 云容器引擎（Cloud Container Engine，CCE）是一个高可靠高性能的企业级容器管理服务，支持Kubernetes社区原生应用和工具。它提供了多种类型的容器集群，方便用户部署、管理和扩展容器化应用。通过CCE，您可以轻松构建基于Kubernetes的容器化应用，并实现微服务架构。
 
-### 主要特性
+CCE支持Standard和Turbo两种集群类型，提供全生命周期管理，支持多种类型节点包括ECS和BMS，提供弹性扩缩容能力。它支持VPC网络和容器隧道网络，实现容器间高效通信，并提供多种存储类型满足不同应用场景需求。
 
-- **集群管理**：支持Standard和Turbo两种集群类型，提供全生命周期管理
-- **节点管理**：支持多种类型节点，包括ECS和BMS，提供弹性扩缩容能力
-- **容器网络**：支持VPC网络和容器隧道网络，实现容器间高效通信
-- **容器存储**：提供多种存储类型，满足不同应用场景需求
-- **应用编排**：支持Kubernetes原生资源编排和Helm应用市场
-- **安全防护**：提供多层次安全机制和权限管理
-- **监控运维**：集成监控、日志、告警等运维特性
+本章节提供了使用Terraform自动化部署和管理华为云云容器引擎（CCE）的最佳实践示例，帮助您了解如何利用Infrastructure as Code（IaC）的方式高效地管理云上的容器资源。
 
-## 最佳实践目录
+## 最佳实践列表
 
-1. [使用Terraform部署按需计费CCE集群](./postpaid_cluster.md)
-   - 自动化部署集群和节点
-   - 网络环境配置最佳实践
-   - 提供可复用的Terraform配置脚本
+本章节包含以下最佳实践：
 
-## 使用场景
+* [使用Terraform部署按需计费CCE集群](postpaid_cluster.md) - 介绍如何使用Terraform自动化部署按需计费的CCE集群，包括VPC、子网、CCE集群和节点的创建。
 
-1. **容器化应用部署**
-   - 微服务应用托管
-   - DevOps持续交付
-   - 无状态应用部署
-   - 有状态服务编排
+## 参考资料
 
-2. **弹性伸缩场景**
-   - 业务峰值应对
-   - 成本优化管理
-   - 自动化运维
-   - 资源智能调度
-
-3. **混合云部署**
-   - 多云应用管理
-   - 容器跨云迁移
-   - 统一应用编排
-   - 混合云资源调度
-
-## 产品优势
-
-1. **高可用可靠**
-   - 多可用区部署
-   - 节点故障自愈
-   - 容器健康检查
-   - 服务级别保障
-
-2. **简单易用**
-   - 图形化控制台
-   - 开箱即用工具集
-   - 丰富的运维功能
-   - 完善的监控体系
-
-3. **安全可控**
-   - 多租户隔离
-   - 细粒度权限控制
-   - 网络安全防护
-   - 容器安全加固
-
-4. **弹性扩展**
-   - 秒级弹性伸缩
-   - 智能资源调度
-   - 按需资源分配
-   - 高效资源利用
-
-## 参考文档
-
-- [CCE产品文档](https://support.huaweicloud.com/cce/index.html)
-- [CCE功能介绍](https://support.huaweicloud.com/function-cce/index.html)
-- [CCE最佳实践](https://github.com/huaweicloud/terraform-provider-huaweicloud/blob/master/examples/cce)
+- [华为云CCE产品文档](https://support.huaweicloud.com/cce/index.html)
+- [Terraform官方文档](https://www.terraform.io/docs/index.html)
