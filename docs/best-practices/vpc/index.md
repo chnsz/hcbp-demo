@@ -11,6 +11,7 @@
 本章节包含以下最佳实践：
 
 * [基础VPC网络部署](basic.md) - 介绍如何使用Terraform自动化部署基础VPC及子网。
+* [VPC Peering连接](peering.md) - 介绍如何使用Terraform自动化部署两个VPC及其子网，并建立VPC Peering连接和路由。
 
 ## 参考资料
 
