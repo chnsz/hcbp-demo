@@ -27,6 +27,7 @@
     * [简介](best-practices/vpc/index.md)
     * [基础VPC网络部署](best-practices/vpc/basic.md)
     * [VPC Peering连接](best-practices/vpc/peering.md)
+    * [VPC安全组](best-practices/vpc/security_group.md)
   * [WAF](best-practices/waf/)
     * [简介](best-practices/waf/index.md)
     * [部署WAF专业版Domain](best-practices/waf/dedicated_domain.md)
