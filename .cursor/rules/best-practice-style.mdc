@@ -16,8 +16,8 @@ alwaysApply: true
 # 公共部分
 
 - 每当提到需要生成最佳实践时，你需要参考的最佳实践脚本来源于该链接中的某个目录：@https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples
-- 每次生成最佳实践时，其脚本严格按照最佳实践生成模板@templates/best_practice.md 的要求进行生成，不要自由发挥、胡编乱造，更不要自行新增标题。
+- 每次生成最佳实践时，其脚本严格按照最佳实践生成模板 [best_practice.md](mdc:templates/best_practice.md) 的要求进行生成，不要自由发挥、胡编乱造，更不要自行新增标题。
 - 如果生成最佳实践时，其服务分类目录未创建，则根据对应服务在华为云上定义的简称生成一个全小写字母的目录。
-- 新增服务目录后在其中添加一个index.md文件，其内容严格按照模板@templates/category_index.md 的要求进行生成，不要自由发挥、胡编乱造，更不要自行新增标题。
-- 新增服务目录后将其跳转信息同步在@docs/README.md 下的## 文档导航 一栏中，注意根据跳转链接的英文升序进行排列。
+- 新增服务目录后在其中添加一个index.md文件，其内容严格按照模板 [category_index.md](mdc:templates/category_index.md) 的要求进行生成，不要自由发挥、胡编乱造，更不要自行新增标题。
+- 新增服务目录后将其跳转信息同步在 [README.md](mdc:docs/zh-cn/best-practices/README.md) 下的## 文档导航 一栏中，注意根据跳转链接的英文升序进行排列。
 - 如果生成最佳实践时其服务目录存在，则仅需在对应目录下的index.md 文件中的## 最佳实践列表 一栏添加对应最佳实践的跳转链接，注意根据跳转链接的英文升序进行排列。
