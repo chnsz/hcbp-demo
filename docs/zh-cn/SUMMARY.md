@@ -35,4 +35,5 @@
     * [部署WAF专业版实例](best-practices/waf/dedicated_instance.md)
   * [Workspace](best-practices/workspace/)
     * [简介](best-practices/workspace/index.md)
+    * [使用Terraform部署云应用服务器组](best-practices/workspace/app_server_group.md)
     * [使用Terraform部署按需计费的云桌面](best-practices/workspace/postpaid_desktop.md)
