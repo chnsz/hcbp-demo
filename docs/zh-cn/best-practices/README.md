@@ -16,6 +16,10 @@ API网关（API Gateway）是为企业和开发者提供的高性能、高可用
 
 云容器引擎（Cloud Container Engine, CCE）是一个高可靠高性能的企业级容器管理服务，支持Kubernetes社区原生应用和工具，提供容器化应用的全生命周期管理能力。
 
+### [分布式消息服务（DMS）最佳实践](dms/index.md)
+
+分布式消息服务（Distributed Message Service, DMS）是一种基于分布式架构设计的消息中间件服务，核心作用是在分布式系统中实现异步通信、解耦系统组件、削峰填谷，并保障消息的可靠传输与高效流转。
+
 ### [弹性云服务器（ECS）最佳实践](ecs/index.md)
 
 弹性云服务器（Elastic Cloud Server, ECS）是由CPU、内存、操作系统、云硬盘组成的基础的计算组件，为您的应用提供可靠、安全、灵活、高效的计算环境。
@@ -74,6 +78,7 @@ Web应用防火墙（WAF）为Web应用提供一站式安全防护，支持多�
 您可以通过以下方式浏览文档：
 
 1. **GitBook方式**
+
    ```bash
    # 安装GitBook CLI
    npm install -g gitbook-cli
@@ -90,12 +95,14 @@ Web应用防火墙（WAF）为Web应用提供一站式安全防护，支持多�
 ### 离线阅读
 
 1. **下载PDF版本**
+
    ```bash
    # 在docs目录下生成PDF
    gitbook pdf ./ ./华为云最佳实践手册.pdf
    ```
 
 2. **克隆仓库到本地**
+
    ```bash
    git clone https://github.com/your-org/hcbp-demo.git
    ```
