@@ -14,6 +14,7 @@
 
 * [使用Terraform创建CTS数据跟踪器](./data_tracker.md) - 通过数据跟踪器实现云资源操作的自动记录和存储，支持安全审计、合规监控等功能，提供完整的Terraform配置和参数说明。
 * [使用Terraform创建CTS通知](./notification.md) - 通过CTS通知实现云资源操作的实时监控和告警，支持安全事件监控、异常操作告警等功能，提供完整的Terraform配置和参数说明。
+* [使用Terraform创建CTS系统追踪器](./system_tracker.md) - 通过系统追踪器实现云资源操作的自动记录和存储，支持安全审计、合规监控等功能，提供完整的Terraform配置和参数说明。
 
 ## 参考资料
 
