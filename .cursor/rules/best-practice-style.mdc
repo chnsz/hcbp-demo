@@ -21,3 +21,4 @@ alwaysApply: true
 - 新增服务目录后在其中添加一个index.md文件，其内容严格按照模板 [category_index.md](mdc:templates/category_index.md) 的要求进行生成，不要自由发挥、胡编乱造，更不要自行新增标题。
 - 新增服务目录后将其跳转信息同步在 [README.md](mdc:docs/zh-cn/best-practices/README.md) 下的## 文档导航 一栏中，注意根据跳转链接的英文升序进行排列。
 - 如果生成最佳实践时其服务目录存在，则仅需在对应目录下的index.md 文件中的## 最佳实践列表 一栏添加对应最佳实践的跳转链接，注意根据跳转链接的英文升序进行排列。
+- 新增最佳实践时，注意同步更新 [SUMMARY.md](mdc:docs/zh-cn/SUMMARY.md) 中关于新最佳实践的跳转链接（如果缺失index的话也需要同步新增简介）。
