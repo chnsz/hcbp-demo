@@ -44,6 +44,7 @@
   * [SFS Turbo](best-practices/sfs-turbo/)
     * [简介](best-practices/sfs-turbo/index.md)
     * [部署OBS目标配置](best-practices/sfs-turbo/obs_target_configuration.md)
+    * [部署权限规则](best-practices/sfs-turbo/permission_rule.md)
   * [VPC](best-practices/vpc/)
     * [简介](best-practices/vpc/index.md)
     * [部署基础VPC网络](best-practices/vpc/basic.md)
