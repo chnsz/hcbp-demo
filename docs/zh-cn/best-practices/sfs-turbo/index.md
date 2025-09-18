@@ -12,6 +12,7 @@
 
 本章节包含以下最佳实践：
 
+* [部署文件系统](file_system.md) - 介绍如何使用Terraform自动化部署SFS Turbo文件系统，包括VPC网络、安全组和SFS Turbo文件系统的创建，支持高性能文件存储和多种协议访问。
 * [部署OBS目标配置](obs_target_configuration.md) - 介绍如何使用Terraform自动化部署SFS Turbo的OBS目标配置，包括VPC网络、SFS Turbo文件系统和OBS目标配置的创建，支持数据自动导出和权限管理等功能。
 * [部署权限规则](permission_rule.md) - 介绍如何使用Terraform自动化部署SFS Turbo的权限规则，包括VPC网络、安全组、SFS Turbo文件系统和权限规则的创建，支持访问控制和安全隔离等功能。
 

@@ -43,6 +43,7 @@
     * [部署定时触发器](best-practices/fgs/timer_trigger.md)
   * [SFS Turbo](best-practices/sfs-turbo/)
     * [简介](best-practices/sfs-turbo/index.md)
+    * [部署文件系统](best-practices/sfs-turbo/file_system.md)
     * [部署OBS目标配置](best-practices/sfs-turbo/obs_target_configuration.md)
     * [部署权限规则](best-practices/sfs-turbo/permission_rule.md)
   * [VPC](best-practices/vpc/)
