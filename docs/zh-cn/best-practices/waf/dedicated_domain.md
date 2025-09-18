@@ -1,4 +1,4 @@
-# 部署WAF专业版Domain
+# 部署专业版Domain
 
 ## 应用场景
 

@@ -1,4 +1,4 @@
-# 使用FunctionGraph创建CTS触发器
+# 部署CTS触发器
 
 ## 应用场景
 

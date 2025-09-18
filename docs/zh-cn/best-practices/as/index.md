@@ -12,7 +12,7 @@
 
 本章节包含以下最佳实践：
 
-* [基础配置最佳实践](basic_configuration.md) - 介绍如何使用Terraform自动化部署基础AS配置，包括伸缩组、伸缩配置和伸缩策略的创建。
+* [部署基础弹性伸缩配置](basic_configuration.md) - 介绍如何使用Terraform自动化部署基础AS配置，包括伸缩组、伸缩配置和伸缩策略的创建。
 
 ## 参考资料
 
