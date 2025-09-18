@@ -12,6 +12,7 @@
 
 本章节包含以下最佳实践：
 
+* [使用FunctionGraph创建CTS触发器](./cts_trigger.md) - 通过CTS触发器实现云资源操作监控和响应，支持安全审计、合规监控、自动化运维等功能，提供完整的Terraform配置和参数说明。
 * [使用FunctionGraph实现OBS文件下载](./obs_download.md) - 通过函数服务实现OBS文件的自动下载，支持事件触发的文件处理，提供可复用的Terraform配置脚本。
 * [使用FunctionGraph创建定时触发器](./timer_trigger.md) - 通过定时触发器实现周期性任务执行，支持Cron表达式和固定间隔两种调度方式，提供完整的Terraform配置和参数说明。
 
