@@ -4,7 +4,7 @@
 
 ## 安装Terraform
 
-Terraform的安装方式因操作系统而异，我们提供了详细的安装指南文档：[如何安装Terraform](./how_to_install_terraform.md)
+Terraform的安装方式因操作系统而异，我们提供了详细的安装指南文档：[如何安装Terraform](how_to_install_terraform.md)
 请根据文档的指引进行操作。
 
 ## 准备部署脚本的工作目录
