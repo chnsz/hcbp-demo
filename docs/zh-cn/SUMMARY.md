@@ -44,6 +44,7 @@
   * [LTS](best-practices/lts/)
     * [简介](best-practices/lts/index.md)
     * [部署日志流](best-practices/lts/log_stream.md)
+    * [部署日志转储](best-practices/lts/log_transfer.md)
   * [SFS Turbo](best-practices/sfs-turbo/)
     * [简介](best-practices/sfs-turbo/index.md)
     * [部署文件系统](best-practices/sfs-turbo/file_system.md)
