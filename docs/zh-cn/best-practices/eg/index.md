@@ -15,6 +15,7 @@
 本章节包含以下最佳实践：
 
 * [部署事件订阅（自定义事件源，EG事件目标）](event_subscription_custom_to_eg.md) - 介绍如何使用Terraform自动化部署事件订阅，通过自定义事件源和EG事件目标实现事件订阅和路由，支持事件过滤、转换和分发等功能。
+* [部署事件订阅（OBS事件源、Kafka事件目标）](event_subscription_obs_to_kafka.md) - 介绍如何使用Terraform自动化部署事件订阅，通过OBS事件源和Kafka事件目标实现事件订阅和路由，支持OBS存储操作事件的实时推送和Kafka消息队列集成。
 
 ## 参考资料
 
