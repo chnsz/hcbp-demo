@@ -12,7 +12,7 @@ CCE支持Standard和Turbo两种集群类型，提供全生命周期管理，支�
 
 本章节包含以下最佳实践：
 
-* [使用Terraform部署按需计费CCE集群](postpaid_cluster.md) - 介绍如何使用Terraform自动化部署按需计费的CCE集群，包括VPC、子网、CCE集群和节点的创建。
+* [部署按需计费集群](postpaid_cluster.md) - 介绍如何使用Terraform自动化部署按需计费的CCE集群，包括VPC、子网、CCE集群和节点的创建。
 
 ## 参考资料
 

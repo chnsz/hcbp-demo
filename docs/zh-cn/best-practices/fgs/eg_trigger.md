@@ -1,4 +1,4 @@
-# 使用FunctionGraph创建EG触发器
+# 部署EG触发器
 
 ## 应用场景
 

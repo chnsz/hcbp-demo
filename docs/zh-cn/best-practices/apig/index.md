@@ -12,7 +12,7 @@ API网关提供完整的API生命周期管理功能，支持多种安全认证�
 
 本章节包含以下最佳实践：
 
-* [使用FunctionGraph实现APIG自定义认证](function_authorizer.md) - 介绍如何使用Terraform自动化部署API网关自定义认证，以FunctionGraph函数实现认证逻辑。
+* [部署带有自定义认证的API](function_authorizer.md) - 介绍如何使用Terraform自动化部署带有自定义认证的API以及如何使用FunctionGraph函数实现API的前端认证。
 
 ## 参考资料
 
