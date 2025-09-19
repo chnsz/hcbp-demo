@@ -25,6 +25,7 @@
     * [部署云堡垒机主备实例](best-practices/cbh/ha_instance.md)
   * [CBR](best-practices/cbr/)
     * [简介](best-practices/cbr/index.md)
+    * [部署磁盘类型存储库](best-practices/cbr/disk_vault.md)
     * [部署服务器类型存储库](best-practices/cbr/server_vault.md)
     * [部署SFS Turbo类型存储库](best-practices/cbr/sfs_turbo_vault.md)
   * [CCE](best-practices/cce/)
