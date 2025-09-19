@@ -13,6 +13,7 @@
 本章节包含以下最佳实践：
 
 * [部署灾难恢复演练](disaster_recovery_drill.md) - 介绍如何使用Terraform自动化部署BRS灾难恢复演练环境，包括保护组、受保护实例和灾难恢复演练的创建。
+* [部署保护组](protection_group.md) - 介绍如何使用Terraform自动化部署BRS保护组环境，包括保护组的创建。
 * [部署保护实例](protected_instance.md) - 介绍如何使用Terraform自动化部署BRS保护实例环境，包括保护组和受保护实例的创建。
 
 ## 参考资料

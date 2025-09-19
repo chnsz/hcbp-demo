@@ -31,6 +31,7 @@
   * [BRS](best-practices/brs/)
     * [简介](best-practices/brs/index.md)
     * [部署灾难恢复演练](best-practices/brs/disaster_recovery_drill.md)
+    * [部署保护组](best-practices/brs/protection_group.md)
     * [部署保护实例](best-practices/brs/protected_instance.md)
   * [ECS](best-practices/ecs/)
     * [简介](best-practices/ecs/index.md)
