@@ -13,6 +13,7 @@
 本章节包含以下最佳实践：
 
 * [部署MySQL单机实例](mysql_single_instance.md) - 介绍如何使用Terraform自动化部署RDS MySQL单机实例，包括VPC网络、安全组、RDS实例、数据库账户和数据库的创建，支持完整的MySQL数据库管理功能。
+* [部署绑定EIP的MySQL单机实例](mysql_single_instance_with_eip.md) - 介绍如何使用Terraform自动化部署绑定EIP的RDS MySQL单机实例，包括VPC网络、安全组、RDS实例、EIP和EIP绑定的创建，支持公网访问的MySQL数据库功能。
 
 ## 参考资料
 

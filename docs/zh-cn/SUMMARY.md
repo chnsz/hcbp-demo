@@ -49,6 +49,7 @@
   * [RDS](best-practices/rds/)
     * [简介](best-practices/rds/index.md)
     * [部署MySQL单机实例](best-practices/rds/mysql_single_instance.md)
+    * [部署绑定EIP的MySQL单机实例](best-practices/rds/mysql_single_instance_with_eip.md)
   * [SFS Turbo](best-practices/sfs-turbo/)
     * [简介](best-practices/sfs-turbo/index.md)
     * [部署文件系统](best-practices/sfs-turbo/file_system.md)
