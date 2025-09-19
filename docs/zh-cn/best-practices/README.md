@@ -16,6 +16,10 @@ API网关（API Gateway）是为企业和开发者提供的高性能、高可用
 
 业务恢复服务（Business Recovery Service, BRS）是一种为弹性云服务器（ECS）和云硬盘（EVS）等服务提供容灾的服务。通过主机层复制、数据冗余和缓存加速等多项技术，提供给用户高级别的数据可靠性以及业务连续性。
 
+### [云堡垒机（CBH）最佳实践](cbh/index.md)
+
+云堡垒机（Cloud Bastion Host, CBH）是华为云提供的一款安全运维管理服务，为企业提供统一的安全运维入口。云堡垒机通过集中化的身份认证、权限管理、操作审计等功能，帮助企业建立安全、合规的运维管理体系。
+
 ### [云容器引擎（CCE）最佳实践](cce/postpaid_cluster.md)
 
 云容器引擎（Cloud Container Engine, CCE）是一个高可靠高性能的企业级容器管理服务，支持Kubernetes社区原生应用和工具，提供容器化应用的全生命周期管理能力。
