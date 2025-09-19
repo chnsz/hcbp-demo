@@ -17,6 +17,7 @@
 本章节包含以下最佳实践：
 
 * [部署服务器类型存储库](server_vault.md) - 介绍如何使用Terraform自动化部署一个CBR服务器类型存储库，包括ECS实例、备份策略和存储库的创建。
+* [部署SFS Turbo类型存储库](sfs_turbo_vault.md) - 介绍如何使用Terraform自动化部署一个CBR SFS Turbo类型存储库，包括SFS Turbo文件系统、备份策略和存储库的创建。
 
 ## 参考资料
 

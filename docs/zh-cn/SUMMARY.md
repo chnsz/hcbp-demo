@@ -26,6 +26,7 @@
   * [CBR](best-practices/cbr/)
     * [简介](best-practices/cbr/index.md)
     * [部署服务器类型存储库](best-practices/cbr/server_vault.md)
+    * [部署SFS Turbo类型存储库](best-practices/cbr/sfs_turbo_vault.md)
   * [CCE](best-practices/cce/)
     * [简介](best-practices/cce/index.md)
     * [部署按需计费集群](best-practices/cce/postpaid_cluster.md)
