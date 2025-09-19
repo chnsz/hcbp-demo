@@ -22,6 +22,7 @@
   * [CBH](best-practices/cbh/)
     * [简介](best-practices/cbh/index.md)
     * [部署云堡垒机单机实例](best-practices/cbh/single_instance.md)
+    * [部署云堡垒机主备实例](best-practices/cbh/ha_instance.md)
   * [CCE](best-practices/cce/)
     * [简介](best-practices/cce/index.md)
     * [部署按需计费集群](best-practices/cce/postpaid_cluster.md)
