@@ -16,6 +16,7 @@
 * [部署绑定EIP的MySQL单机实例](mysql_single_instance_with_eip.md) - 介绍如何使用Terraform自动化部署绑定EIP的RDS MySQL单机实例，包括VPC网络、安全组、RDS实例、EIP和EIP绑定的创建，支持公网访问的MySQL数据库功能。
 * [部署MySQL只读备份实例](mysql_read_replica_instance.md) - 介绍如何使用Terraform自动化部署RDS MySQL主备实例和只读备份实例，包括VPC网络、安全组、RDS实例和只读备份实例的创建，支持数据库的高可用和读写分离功能。
 * [部署PostgreSQL主备实例](postgresql_ha_instance.md) - 介绍如何使用Terraform自动化部署RDS PostgreSQL主备实例，包括VPC网络、安全组、RDS实例、PostgreSQL账户、数据库、Schema和备份的创建，支持高可用的PostgreSQL数据库功能。
+* [部署SQL Server单机实例](sqlserver_single_instance.md) - 介绍如何使用Terraform自动化部署RDS SQL Server单机实例，包括VPC网络、安全组、RDS实例的创建，支持完整的SQL Server数据库管理功能。
 
 ## 参考资料
 

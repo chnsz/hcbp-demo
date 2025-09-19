@@ -52,6 +52,7 @@
     * [部署绑定EIP的MySQL单机实例](best-practices/rds/mysql_single_instance_with_eip.md)
     * [部署MySQL只读备份实例](best-practices/rds/mysql_read_replica_instance.md)
     * [部署PostgreSQL主备实例](best-practices/rds/postgresql_ha_instance.md)
+    * [部署SQL Server单机实例](best-practices/rds/sqlserver_single_instance.md)
   * [SFS Turbo](best-practices/sfs-turbo/)
     * [简介](best-practices/sfs-turbo/index.md)
     * [部署文件系统](best-practices/sfs-turbo/file_system.md)
