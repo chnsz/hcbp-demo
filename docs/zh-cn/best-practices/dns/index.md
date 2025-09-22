@@ -17,6 +17,7 @@ DNS服务支持多种解析类型，包括A记录、AAAA记录、CNAME记录、M
 本章节包含以下最佳实践：
 
 * [部署自定义线路](custom_line.md) - 介绍如何使用Terraform自动化部署DNS自定义线路，包括线路创建和IP地址段配置。
+* [部署终端节点](endpoint.md) - 介绍如何使用Terraform自动化部署DNS终端节点，包括VPC创建、子网配置和终端节点部署。
 
 ## 参考资料
 
