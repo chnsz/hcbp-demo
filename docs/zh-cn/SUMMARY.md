@@ -98,6 +98,7 @@
     * [简介](best-practices/obs/index.md)
     * [部署KMS加密桶](best-practices/obs/kms_encrypted_bucket.md)
     * [部署桶静态网站托管配置](best-practices/obs/static_website_hosting.md)
+    * [部署通过静态文本上传的桶对象](best-practices/obs/object_upload_with_content.md)
   * [RDS](best-practices/rds/)
     * [简介](best-practices/rds/index.md)
     * [部署MySQL单机实例](best-practices/rds/mysql_single_instance.md)

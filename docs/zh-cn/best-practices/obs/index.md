@@ -18,6 +18,7 @@
 
 * [部署KMS加密桶](kms_encrypted_bucket.md) - 介绍如何使用Terraform自动化部署OBS KMS加密桶，包括KMS密钥创建和OBS桶配置。
 * [部署桶静态网站托管配置](static_website_hosting.md) - 介绍如何使用Terraform自动化部署OBS桶静态网站托管配置，包括KMS密钥创建、OBS桶配置、网站配置和访问策略设置。
+* [部署通过静态文本上传的桶对象](object_upload_with_content.md) - 介绍如何使用Terraform自动化部署通过静态文本上传的桶对象，包括KMS密钥创建、OBS桶配置和对象上传。
 
 ## 参考资料
 
