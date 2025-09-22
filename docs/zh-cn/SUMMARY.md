@@ -75,6 +75,7 @@
     * [部署实例通过UserData执行脚本](best-practices/ecs/instance_with_userdata.md)
   * [EVS](best-practices/evs/)
     * [简介](best-practices/evs/index.md)
+    * [部署云硬盘](best-practices/evs/volume.md)
     * [部署磁盘快照](best-practices/evs/snapshot.md)
     * [部署磁盘快照组](best-practices/evs/snapshot_group.md)
   * [EG](best-practices/eg/)
