@@ -65,6 +65,7 @@
   * [ECS](best-practices/ecs/)
     * [简介](best-practices/ecs/index.md)
     * [部署基础弹性云服务器](best-practices/ecs/simple_instance.md)
+    * [部署绑定EIP的实例](best-practices/ecs/instance_with_eip.md)
   * [EG](best-practices/eg/)
     * [简介](best-practices/eg/index.md)
     * [部署事件订阅（自定义事件源，EG事件目标）](best-practices/eg/event_subscription_custom_to_eg.md)

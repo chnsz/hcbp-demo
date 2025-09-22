@@ -17,6 +17,7 @@
 本章节包含以下最佳实践：
 
 * [部署基础弹性云服务器](simple_instance.md) - 介绍如何使用Terraform自动化部署一个基础的ECS实例，包括VPC、子网和安全组的创建。
+* [部署绑定EIP的实例](instance_with_eip.md) - 介绍如何使用Terraform自动化部署绑定EIP的ECS实例，包括网络环境创建、安全组配置、实例创建和EIP绑定。
 
 ## 参考资料
 
