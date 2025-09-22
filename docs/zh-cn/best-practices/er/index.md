@@ -1,0 +1,27 @@
+# 简介
+
+## 什么是企业路由器（ER）
+
+企业路由器（Enterprise Router，ER）是华为云提供的高性能、高可用的企业级路由器服务，支持多VPC互通、专线接入、VPN连接等企业级网络功能。作为华为云网络服务的核心组件之一，ER提供灵活的路由策略和丰富的网络连接能力，满足企业复杂的网络架构需求。
+
+通过ER，您可以构建企业级的网络架构，实现多VPC之间的互通、专线接入、VPN连接等功能，享受高性能、高可靠性、灵活扩展等企业级网络优势。华为云ER支持与VPC、专线、VPN等服务的无缝集成，为您提供完整的网络解决方案。
+
+## 最佳实践简述
+
+本章节提供了使用Terraform自动化部署和管理华为云企业路由器（ER）的最佳实践示例，帮助您了解如何利用Infrastructure as Code（IaC）的方式高效地管理云上的网络资源。
+
+通过本章节的最佳实践，您可以学习到主要的企业路由器资源的部署流程，这些最佳实践将帮助您快速上手企业路由器的自动化部署，并为后续的ER管理和运维工作奠定坚实基础。
+
+## 最佳实践列表
+
+本章节包含以下最佳实践：
+
+* [部署流日志](flow_log.md) - 介绍如何使用Terraform自动化部署流日志，包括VPC创建、ER实例创建、VPC连接、LTS日志组创建和流日志配置。
+* [部署路由表](route_table.md) - 介绍如何使用Terraform自动化部署路由表，包括VPC创建、ER实例创建和路由表配置。
+* [部署VPC连接](vpc_attachment.md) - 介绍如何使用Terraform自动化部署VPC连接，包括VPC创建、ER实例创建和VPC连接配置。
+* [部署共享实例](share_instance.md) - 介绍如何使用Terraform自动化部署ER共享实例，包括ER实例创建、RAM资源共享、跨账户VPC连接和附件接受。
+
+## 参考资料
+
+- [华为云ER产品文档](https://support.huaweicloud.com/er/index.html)
+- [Terraform官方文档](https://www.terraform.io/docs/index.html)
