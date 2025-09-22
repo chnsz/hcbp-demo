@@ -17,6 +17,7 @@
 本章节包含以下最佳实践：
 
 * [部署脚本](script.md) - 介绍如何使用Terraform自动化部署COC脚本，包括脚本创建和参数配置。
+* [部署脚本执行](script_execution.md) - 介绍如何使用Terraform自动化部署COC脚本执行，包括ECS实例、脚本创建和脚本执行的完整流程。
 * [部署脚本订单执行](script_order_execution.md) - 介绍如何使用Terraform自动化部署COC脚本订单执行，包括ECS实例、脚本创建、脚本执行和订单操作的完整流程。
 
 ## 参考资料
