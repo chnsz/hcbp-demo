@@ -33,6 +33,7 @@
     * [部署按需计费集群](best-practices/cce/postpaid_cluster.md)
   * [COC](best-practices/coc/)
     * [简介](best-practices/coc/index.md)
+    * [部署脚本](best-practices/coc/script.md)
     * [部署脚本订单执行](best-practices/coc/script_order_execution.md)
   * [CTS](best-practices/cts/)
     * [简介](best-practices/cts/index.md)
