@@ -77,6 +77,7 @@
     * [简介](best-practices/er/index.md)
     * [部署流日志](best-practices/er/flow_log.md)
     * [部署路由表](best-practices/er/route_table.md)
+    * [部署VPC连接](best-practices/er/vpc_attachment.md)
     * [部署共享实例](best-practices/er/share_instance.md)
   * [FunctionGraph](best-practices/fgs/)
     * [简介](best-practices/fgs/index.md)

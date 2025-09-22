@@ -18,6 +18,7 @@
 
 * [部署流日志](flow_log.md) - 介绍如何使用Terraform自动化部署流日志，包括VPC创建、ER实例创建、VPC连接、LTS日志组创建和流日志配置。
 * [部署路由表](route_table.md) - 介绍如何使用Terraform自动化部署路由表，包括VPC创建、ER实例创建和路由表配置。
+* [部署VPC连接](vpc_attachment.md) - 介绍如何使用Terraform自动化部署VPC连接，包括VPC创建、ER实例创建和VPC连接配置。
 * [部署共享实例](share_instance.md) - 介绍如何使用Terraform自动化部署ER共享实例，包括ER实例创建、RAM资源共享、跨账户VPC连接和附件接受。
 
 ## 参考资料
