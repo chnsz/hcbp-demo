@@ -17,6 +17,7 @@
 本章节包含以下最佳实践：
 
 * [部署互连网关](connect_gateway.md) - 介绍如何使用Terraform自动化部署DC互连网关，包括网关创建和配置。
+* [部署全域接入网关](global_gateway.md) - 介绍如何使用Terraform自动化部署DC全域接入网关，包括网关创建、BGP配置和标签管理。
 
 ## 参考资料
 

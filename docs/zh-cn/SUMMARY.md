@@ -44,6 +44,7 @@
   * [DC](best-practices/dc/)
     * [简介](best-practices/dc/index.md)
     * [部署互连网关](best-practices/dc/connect_gateway.md)
+    * [部署全域接入网关](best-practices/dc/global_gateway.md)
   * [DMS](best-practices/dms/)
     * [简介](best-practices/dms/index.md)
     * [部署RocketMQ基础实例](best-practices/dms/rocketmq/basic_instance.md)
