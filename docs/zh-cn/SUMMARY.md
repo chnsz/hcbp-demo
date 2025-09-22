@@ -76,6 +76,7 @@
   * [ER](best-practices/er/)
     * [简介](best-practices/er/index.md)
     * [部署流日志](best-practices/er/flow_log.md)
+    * [部署路由表](best-practices/er/route_table.md)
   * [FunctionGraph](best-practices/fgs/)
     * [简介](best-practices/fgs/index.md)
     * [部署CTS触发器](best-practices/fgs/cts_trigger.md)
