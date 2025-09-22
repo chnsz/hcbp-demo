@@ -67,6 +67,7 @@
     * [部署基础弹性云服务器](best-practices/ecs/simple_instance.md)
     * [部署绑定EIP的实例](best-practices/ecs/instance_with_eip.md)
     * [部署实例通过provisioner远程登录](best-practices/ecs/instance_with_provisioner.md)
+    * [部署实例通过UserData执行脚本](best-practices/ecs/instance_with_userdata.md)
   * [EG](best-practices/eg/)
     * [简介](best-practices/eg/index.md)
     * [部署事件订阅（自定义事件源，EG事件目标）](best-practices/eg/event_subscription_custom_to_eg.md)
