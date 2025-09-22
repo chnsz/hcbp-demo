@@ -100,6 +100,7 @@
     * [部署桶静态网站托管配置](best-practices/obs/static_website_hosting.md)
     * [部署通过静态文本上传的桶对象](best-practices/obs/object_upload_with_content.md)
     * [部署通过加密文本上传的桶对象](best-practices/obs/object_upload_with_encryption.md)
+    * [部署通过本地文件上传的桶对象](best-practices/obs/object_upload_with_source.md)
   * [RDS](best-practices/rds/)
     * [简介](best-practices/rds/index.md)
     * [部署MySQL单机实例](best-practices/rds/mysql_single_instance.md)
