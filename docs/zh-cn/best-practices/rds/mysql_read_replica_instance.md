@@ -487,4 +487,3 @@ replica_instance_name       = "tf_test_mysql_replica_instance"
 - [华为云关系型数据库服务产品文档](https://support.huaweicloud.com/rds/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
 - [RDS只读备份实例最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/rds/read_replica)
-

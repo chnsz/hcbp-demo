@@ -496,8 +496,7 @@ instance_configs = [
 
 **使用方法**：
 
-1. 将上述内容保存为工作目录下的`terraform.tfvars`文件（该文件名可使用户在执行terraform命令时自动导入该`tfvars`文件中的内容，
-   其他命名则需要在tfvars前补充`.auto`定义，如`variables.auto.tfvars`）
+1. 将上述内容保存为工作目录下的`terraform.tfvars`文件（该文件名可使用户在执行terraform命令时自动导入该`tfvars`文件中的内容，其他命名则需要在tfvars前补充`.auto`定义，如`variables.auto.tfvars`）
 2. 根据实际需要修改参数值
 3. 执行`terraform plan`或`terraform apply`时，Terraform会自动读取该文件中的变量值
 

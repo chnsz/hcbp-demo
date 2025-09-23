@@ -524,4 +524,3 @@ cloud_desktop_name  = "tf-test-desktop"
 - [华为云云桌面产品文档](https://support.huaweicloud.com/workspace/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
 - [云桌面最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/workspace/desktop/basic)
-
