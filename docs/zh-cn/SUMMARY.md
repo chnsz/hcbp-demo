@@ -1,7 +1,7 @@
 # Summary
 
 * [产品介绍](introductions/)
-  * [Terrafrom简介](introductions/terraform_introduction.md)
+  * [Terraform简介](introductions/terraform_introduction.md)
   * [部署华为云资源前的准备工作](introductions/prepare_before_deploy.md)
   * [如何安装Terraform](introductions/how_to_install_terraform.md)
 * [快速入门](getting-started/)

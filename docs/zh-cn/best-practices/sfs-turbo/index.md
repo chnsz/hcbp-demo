@@ -22,5 +22,5 @@
 
 ## 参考资料
 
-- [华为云弹性文件服务产品文档](https://support.huaweicloud.com/sfs-turbo/index.html)
+- [华为云弹性文件服务产品文档](https://support.huaweicloud.com/sfsturbo/index.html)
 - [Terraform官方文档](https://www.terraform.io/docs/index.html)
