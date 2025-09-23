@@ -40,6 +40,7 @@
     * [简介](best-practices/config/index.md)
     * [部署合规规则包](best-practices/config/compliance_package.md)
     * [部署合规规则](best-practices/config/compliance_rule.md)
+    * [部署资源聚合器](best-practices/config/resource_aggregator.md)
   * [CTS](best-practices/cts/)
     * [简介](best-practices/cts/index.md)
     * [部署数据跟踪器](best-practices/cts/data_tracker.md)
