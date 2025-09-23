@@ -17,6 +17,7 @@
 本章节包含以下最佳实践：
 
 * [部署合规规则包](compliance_package.md) - 介绍如何使用Terraform自动化部署Config合规规则包，包括规则包模板查询和合规规则包创建。
+* [部署合规规则](compliance_rule.md) - 介绍如何使用Terraform自动化部署Config合规规则，包括VPC创建、ECS实例创建、合规规则配置和规则评估。
 
 ## 参考资料
 
