@@ -10,19 +10,33 @@
 
 2. 准备本地 Provider 环境所属的工作目录。
 
-- **Linux**: ~/.terraform.d/plugins/<local-registry>/<organization>/huaweicloud/<version>/<os_arch>
-- **Windows**: %APPDATA%\terraform.d\plugins\<local-registry>\<organization>\huaweicloud\<version>\<os_arch>
-- **MacOS**: ~/.terraform.d/plugins/<local-registry>/<organization>/huaweicloud/<version>/<os_arch>
+- **Linux**:
 
-  注：
+  ```
+  ~/.terraform.d/plugins/<local-registry>/<organization>/huaweicloud/<version>/<os_arch>
+  ```
+
+- **Windows**:
+
+  ```
+  %APPDATA%\terraform.d\plugins\<local-registry>\<organization>\huaweicloud\<version>\<os_arch>
+  ```
+
+- **MacOS**:
+
+  ```
+  ~/.terraform.d/plugins/<local-registry>/<organization>/huaweicloud/<version>/<os_arch>
+  ```
+
+  **注：**
   - **local-registry**: 本地注册目录的名称，可自定义。
   - **organization**: 组织名称，可自定义。
   - **version**: 版本号，格式为`a.b.c`。
   - **os_arch**: 执行机架构类型，如windows_amd64（注：现已不支持32位操作系统）。对于MacOS，Apple Silicon的架构类型为darwin_arm64，Intel为darwin_amd64
 
-3. 解压缩至步骤2准备的工作目录，可仅提取其中的terraform-provider-huaweicloud名称（前缀）的可执行文件。
+3. 解压缩至步骤2准备的工作目录，可仅提取其中的terraform-provider-huaweicloud（前缀）名称的可执行文件。
 
-   注：不要将压缩包放至在步骤2准备的工作目录中。
+   **注：** 不要将压缩包放至在步骤2准备的工作目录中。
 
 4. Linux及MacOS用户请检查可执行文件的权限是否包含当前操作用户所在组的读权限和可执行权限。
 
