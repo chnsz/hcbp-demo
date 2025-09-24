@@ -10,11 +10,25 @@ You can quickly set up a usable Provider environment locally through the followi
 
 2. Prepare the working directory for the local Provider environment.
 
-- **Linux**: ~/.terraform.d/plugins/<local-registry>/<organization>/huaweicloud/<version>/<os_arch>
-- **Windows**: %APPDATA%\terraform.d\plugins\<local-registry>\<organization>\huaweicloud\<version>\<os_arch>
-- **MacOS**: ~/.terraform.d/plugins/<local-registry>/<organization>/huaweicloud/<version>/<os_arch>
+- **Linux**:
 
-  Note:
+  ```
+  ~/.terraform.d/plugins/<local-registry>/<organization>/huaweicloud/<version>/<os_arch>
+  ```
+
+- **Windows**:
+
+  ```
+  %APPDATA%\terraform.d\plugins\<local-registry>\<organization>\huaweicloud\<version>\<os_arch>
+  ```
+
+- **MacOS**:
+
+  ```
+  ~/.terraform.d/plugins/<local-registry>/<organization>/huaweicloud/<version>/<os_arch>
+  ```
+
+  **Note:**
   - **local-registry**: The name of the local registry directory, can be customized.
   - **organization**: Organization name, can be customized.
   - **version**: Version number, format is `a.b.c`.
@@ -22,7 +36,7 @@ You can quickly set up a usable Provider environment locally through the followi
 
 3. Extract the compressed package to the working directory prepared in step 2, you can only extract the executable file with the terraform-provider-huaweicloud (prefix) name.
 
-   Note: Do not place the compressed package in the working directory prepared in step 2.
+   **Note:** Do not place the compressed package in the working directory prepared in step 2.
 
 4. Linux and MacOS users please check whether the executable file permissions include read and execute permissions for the group where the current operating user belongs.
 
