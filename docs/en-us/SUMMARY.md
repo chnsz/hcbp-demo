@@ -136,3 +136,5 @@
     * [Introduction](best-practices/workspace/index.md)
     * [Deploy App Server Group](best-practices/workspace/app_server_group.md)
     * [Deploy Postpaid Desktop](best-practices/workspace/postpaid_desktop.md)
+* [Help](helpers/)
+  * [Frequently Asked Questions](helpers/faq.md)
