@@ -303,6 +303,6 @@ After completing the above script configuration, execute the following steps to 
 
 ## Reference Information
 
-- [Huawei Cloud Scalable File Service Product Documentation](https://support.huaweicloud.com/sfs-turbo/index.html)
+- [Huawei Cloud Scalable File Service Product Documentation](https://support.huaweicloud.com/sfsturbo/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
 - [SFS Turbo Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/sfs-turbo)

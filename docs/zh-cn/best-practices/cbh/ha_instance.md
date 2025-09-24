@@ -310,4 +310,4 @@ instance_password   = "YourCBHHAInstancePassword!"
 
 - [华为云云堡垒机产品文档](https://support.huaweicloud.com/cbh/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [云堡垒机最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cbh/ha)
+- [云堡垒机最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cbh)

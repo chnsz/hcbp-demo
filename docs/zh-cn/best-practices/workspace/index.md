@@ -28,5 +28,5 @@
 
 ## 参考资料
 
-- [华为云云桌面产品文档](https://support.huaweicloud.com/workspace/index.html)
+- [华为云Workspace产品文档](https://support.huaweicloud.com/workspace/index.html)
 - [Terraform官方文档](https://www.terraform.io/docs/index.html)

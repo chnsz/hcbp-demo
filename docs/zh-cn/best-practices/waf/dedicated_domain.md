@@ -234,4 +234,4 @@ dedicated_mode_domain_name = "www.example.com"
 
 - [华为云WAF产品文档](https://support.huaweicloud.com/waf/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [WAF最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/waf/waf-dedicated-domain)
+- [WAF最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/waf)

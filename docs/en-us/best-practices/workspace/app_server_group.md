@@ -124,6 +124,6 @@ After completing the above script configuration, execute the following steps to 
 
 ## Reference Information
 
-- [Huawei Cloud Cloud Desktop Product Documentation](https://support.huaweicloud.com/workspace/index.html)
+- [Huawei Cloud Workspace Product Documentation](https://support.huaweicloud.com/workspace/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [Workspace Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/workspace/app_server_group)
+- [Workspace Cloud Application Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/workspace/app)
