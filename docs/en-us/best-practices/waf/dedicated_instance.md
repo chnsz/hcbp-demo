@@ -300,4 +300,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud WAF Product Documentation](https://support.huaweicloud.com/waf/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [WAF Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/waf/waf-dedicated-instance)
+- [WAF Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/waf)

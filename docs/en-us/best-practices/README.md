@@ -204,7 +204,7 @@ We highly value your feedback and suggestions:
 
 ## Related Resources
 
-- [Huawei Cloud Official Documentation Center](https://support.huaweicloud.com/)
+- [Huawei Cloud Official Documentation Center](https://support.huaweicloud.com)
 - [Terraform Best Practices (GitHub)](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples)
 
 ## Disclaimer

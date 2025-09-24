@@ -28,5 +28,5 @@ This section contains the following best practices:
 
 ## Reference Materials
 
-- [Huawei Cloud Cloud Desktop Product Documentation](https://support.huaweicloud.com/workspace/index.html)
+- [Huawei Cloud Workspace Product Documentation](https://support.huaweicloud.com/workspace/index.html)
 - [Terraform Official Documentation](https://www.terraform.io/docs/index.html)

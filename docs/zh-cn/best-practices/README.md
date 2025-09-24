@@ -204,7 +204,7 @@ Web应用防火墙（WAF）为Web应用提供一站式安全防护，支持多�
 
 ## 相关资源
 
-- [华为云官方文档中心](https://support.huaweicloud.com/)
+- [华为云官方文档中心](https://support.huaweicloud.com)
 - [Terraform最佳实践（GitHub）](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples)
 
 ## 免责声明
