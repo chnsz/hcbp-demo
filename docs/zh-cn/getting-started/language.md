@@ -53,7 +53,7 @@ terraform {
 variable "region_name" {}
 
 provider "huaweicloud" {
-  region = var.region
+  region = var.region_name
 }
 
 variable "vpc_name" {
@@ -87,7 +87,7 @@ resource "huaweicloud_vpc_subnet" "test" {
   # 对于每个子网，使用指定的可用区之一
   availability_zone = var.availability_zones[count.index]
 
-  # 通过引用huaweicloud_vpc.test对象的属性构建隐式依赖（必填参数由于其值在创建前已经确定，故不构成隐式依赖），让Terraform知道子网待VPC创建完成后才能开始创建
+  # 通过引用huaweicloud_vpc.test对象的属性构建隐式依赖（必填参数由于其值在创建前已经确定，故不构成隐式依赖），让Terraform知道子网必须待VPC创建完成后才能开始创建
   vpc_id = huaweicloud_vpc.test.id
 
   name = var.subnet_name

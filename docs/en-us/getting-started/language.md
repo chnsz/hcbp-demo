@@ -53,7 +53,7 @@ terraform {
 variable "region_name" {}
 
 provider "huaweicloud" {
-  region = var.region
+  region = var.region_name
 }
 
 variable "vpc_name" {
@@ -87,7 +87,7 @@ resource "huaweicloud_vpc_subnet" "test" {
   # For each subnet, use one of the specified availability zones
   availability_zone = var.availability_zones[count.index]
 
-  # Build implicit dependencies by referencing properties of the huaweicloud_vpc.test object (required parameters do not constitute implicit dependencies since their values are determined before creation), letting Terraform know that subnets can only start creating after VPC creation is complete
+  # Build implicit dependencies by referencing properties of the huaweicloud_vpc.test object (required parameters do not constitute implicit dependencies since their values are determined before creation), letting Terraform know that subnets must wait for VPC creation to complete before starting creation
   vpc_id = huaweicloud_vpc.test.id
 
   name = var.subnet_name
