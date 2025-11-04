@@ -10,6 +10,7 @@
   * [Introduction](best-practices/README.md)
   * [APIG](best-practices/apig/)
     * [Introduction](best-practices/apig/index.md)
+    * [Create proxy_cache Plugin](best-practices/apig/proxy_cache_plugin.md)
     * [Deploy API with Custom Authentication](best-practices/apig/function_authorizer.md)
   * [AS](best-practices/as/)
     * [Introduction](best-practices/as/index.md)
