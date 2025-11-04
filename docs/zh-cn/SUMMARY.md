@@ -10,6 +10,7 @@
   * [简介](best-practices/README.md)
   * [APIG](best-practices/apig/)
     * [简介](best-practices/apig/index.md)
+    * [创建proxy_cache插件](best-practices/apig/proxy_cache_plugin.md)
     * [部署带有自定义认证的API](best-practices/apig/function_authorizer.md)
   * [AS](best-practices/as/)
     * [简介](best-practices/as/index.md)
