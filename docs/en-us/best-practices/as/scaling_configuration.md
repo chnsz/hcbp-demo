@@ -1,8 +1,8 @@
-# Deploy Basic Auto Scaling Configuration
+# Deploy a Scaling Configuration
 
 ## Application Scenario
 
-Huawei Cloud Auto Scaling service is a service that automatically adjusts computing resources, capable of automatically adjusting the number of elastic computing instances based on business needs and policies. By configuring AS configuration, you can define templates for elastic scaling instances, including image, specification, security group, and other configurations, providing a foundation for subsequent scaling group creation. This best practice will introduce how to use Terraform to automatically deploy basic AS configuration, including the creation of security groups, key pairs, and AS configuration.
+Huawei Cloud Auto Scaling service is a service that automatically adjusts computing resources, capable of automatically adjusting the number of elastic computing instances based on business needs and policies. By configuring a scaling configuration, you can define templates for elastic scaling instances, including image, specification, security group, and other configurations, providing a foundation for subsequent scaling group creation. This best practice will introduce how to use Terraform to automatically deploy a scaling configuration, including the creation of security groups, key pairs, and scaling configuration.
 
 ## Related Resources/Data Sources
 
@@ -44,24 +44,24 @@ huaweicloud_kps_keypair
 Prepare the TF file (such as main.tf) for writing the current best practice script in the specified workspace, ensuring that it (or other TF files in the same directory) contains the provider version declaration and Huawei Cloud authentication information required for deploying resources.
 For configuration introduction, refer to the introduction in [Preparation Before Deploying Huawei Cloud Resources](../../introductions/prepare_before_deploy.md).
 
-### 2. Query Availability Zones Required for AS Configuration Resource Creation Through Data Source
+### 2. Query Availability Zones Required for Scaling Configuration Resource Creation Through Data Source
 
-Add the following script to the TF file (such as main.tf) to inform Terraform to perform a data source query, the query results are used to create AS configuration:
+Add the following script to the TF file (such as main.tf) to inform Terraform to perform a data source query, the query results are used to create scaling configuration:
 
 ```hcl
-# Get all availability zone information in the specified region (defaults to inheriting the region specified in the current provider block when region parameter is missing) for creating AS configuration
+# Get all availability zone information in the specified region (defaults to inheriting the region specified in the current provider block when region parameter is missing) for creating scaling configuration
 data "huaweicloud_availability_zones" "test" {}
 ```
 
 **Parameter Description**:
 This data source does not require additional parameters and queries all available availability zone information in the current region by default.
 
-### 3. Query Images Required for AS Configuration Resource Creation Through Data Source
+### 3. Query Images Required for Scaling Configuration Resource Creation Through Data Source
 
 Add the following script to the TF file to inform Terraform to query images that meet the conditions:
 
 ```hcl
-# Get all image information that meets specific conditions in the specified region (defaults to inheriting the region specified in the current provider block when region parameter is missing) for creating AS configuration
+# Get all image information that meets specific conditions in the specified region (defaults to inheriting the region specified in the current provider block when region parameter is missing) for creating scaling configuration
 data "huaweicloud_images_image" "test" {
   name        = "Ubuntu 18.04 server 64bit"
   visibility  = "public"
@@ -74,12 +74,12 @@ data "huaweicloud_images_image" "test" {
 - **visibility**: Image visibility, set to "public" for public images
 - **most_recent**: Whether to use the latest version of the image, set to true to use the latest version
 
-### 4. Query Instance Flavors Required for AS Configuration Resource Creation Through Data Source
+### 4. Query Instance Flavors Required for Scaling Configuration Resource Creation Through Data Source
 
 Add the following script to the TF file to inform Terraform to query instance flavors that meet the conditions:
 
 ```hcl
-# Get all instance flavor information that meets specific conditions in the specified region (defaults to inheriting the region specified in the current provider block when region parameter is missing) for creating AS configuration
+# Get all instance flavor information that meets specific conditions in the specified region (defaults to inheriting the region specified in the current provider block when region parameter is missing) for creating scaling configuration
 data "huaweicloud_compute_flavors" "test" {
   availability_zone = data.huaweicloud_availability_zones.test.names[0]
   performance_type  = "normal"
@@ -99,7 +99,7 @@ data "huaweicloud_compute_flavors" "test" {
 Add the following script to the TF file to inform Terraform to create security group resources:
 
 ```hcl
-# Create security group resource in the specified region (defaults to inheriting the region specified in the current provider block when region parameter is missing) for deploying AS configuration
+# Create security group resource in the specified region (defaults to inheriting the region specified in the current provider block when region parameter is missing) for deploying scaling configuration
 resource "huaweicloud_networking_secgroup" "test" {
   name                 = "test-secgroup-demo"
   delete_default_rules = true
@@ -120,7 +120,7 @@ variable "public_key" {
   type        = string
 }
 
-# Create key pair resource in the specified region (defaults to inheriting the region specified in the current provider block when region parameter is missing) for deploying AS configuration
+# Create key pair resource in the specified region (defaults to inheriting the region specified in the current provider block when region parameter is missing) for deploying scaling configuration
 resource "huaweicloud_kps_keypair" "acc_key" {
   name       = "test-keypair-demo"
   public_key = var.public_key
@@ -131,12 +131,12 @@ resource "huaweicloud_kps_keypair" "acc_key" {
 - **name**: Key pair name, set to "test-keypair-demo"
 - **public_key**: Public key content, assigned by referencing input variable public_key
 
-### 7. Create AS Configuration Resource
+### 7. Create Scaling Configuration Resource
 
-Add the following script to the TF file to inform Terraform to create AS configuration resources:
+Add the following script to the TF file to inform Terraform to create scaling configuration resources:
 
 ```hcl
-# Create AS configuration resource in the specified region (defaults to inheriting the region specified in the current provider block when region parameter is missing)
+# Create scaling configuration resource in the specified region (defaults to inheriting the region specified in the current provider block when region parameter is missing)
 resource "huaweicloud_as_configuration" "acc_as_config" {
   scaling_configuration_name = "test-as-configuration-demo"
   instance_config {
@@ -174,7 +174,7 @@ EOT
 ```
 
 **Parameter Description**:
-- **scaling_configuration_name**: AS configuration name, set to "test-as-configuration-demo"
+- **scaling_configuration_name**: Scaling configuration name, set to "test-as-configuration-demo"
 - **instance_config**: Instance configuration block
   - **image**: Image ID, using the ID from the image query data source
   - **flavor**: Instance flavor, using the first flavor ID from the instance flavor query data source
@@ -231,11 +231,11 @@ After completing the above script configuration, execute the following steps to 
 
 1. Run `terraform init` to initialize the environment
 2. Run `terraform plan` to view the resource creation plan
-3. After confirming the resource plan is correct, run `terraform apply` to start creating AS configuration
-4. Run `terraform show` to view the details of the created AS configuration
+3. After confirming the resource plan is correct, run `terraform apply` to start creating scaling configuration
+4. Run `terraform show` to view the details of the created scaling configuration
 
 ## Reference Information
 
 - [Huawei Cloud Auto Scaling Product Documentation](https://support.huaweicloud.com/as/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [AS Basic Configuration Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/as)
+- [AS Scaling Configuration Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/as)

@@ -14,7 +14,7 @@
     * [部署带有自定义认证的API](best-practices/apig/function_authorizer.md)
   * [AS](best-practices/as/)
     * [简介](best-practices/as/index.md)
-    * [部署基础弹性伸缩配置](best-practices/as/basic_configuration.md)
+    * [部署一个伸缩配置](best-practices/as/scaling_configuration.md)
   * [BRS](best-practices/brs/)
     * [简介](best-practices/brs/index.md)
     * [部署灾难恢复演练](best-practices/brs/disaster_recovery_drill.md)

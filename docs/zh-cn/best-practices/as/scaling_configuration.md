@@ -1,8 +1,8 @@
-# 部署基础弹性伸缩配置
+# 部署一个伸缩配置
 
 ## 应用场景
 
-华为云弹性伸缩服务（Auto Scaling）是一种自动调整计算资源的服务，能够根据业务需求和策略，自动调整弹性计算实例的数量。通过配置AS配置，可以定义弹性伸缩实例的模板，包括镜像、规格、安全组等配置，为后续创建伸缩组提供基础。本最佳实践将介绍如何使用Terraform自动化部署基础AS配置，包括安全组、密钥对和AS配置的创建。
+华为云弹性伸缩服务（Auto Scaling）是一种自动调整计算资源的服务，能够根据业务需求和策略，自动调整弹性计算实例的数量。通过配置伸缩配置，可以定义弹性伸缩实例的模板，包括镜像、规格、安全组等配置，为后续创建伸缩组提供基础。本最佳实践将介绍如何使用Terraform自动化部署一个伸缩配置，包括安全组、密钥对和伸缩配置的创建。
 
 ## 相关资源/数据源
 
@@ -44,24 +44,24 @@ huaweicloud_kps_keypair
 在指定工作空间中准备好用于编写当前最佳实践脚本的TF文件（如main.tf），确保其中（也可以是其他同级目录下的TF文件）包含部署资源所需的provider版本声明和华为云鉴权信息。
 配置介绍参考[部署华为云资源前的准备工作](../../introductions/prepare_before_deploy.md)一文中的介绍。
 
-### 2. 通过数据源查询AS配置资源创建所需的可用区
+### 2. 通过数据源查询伸缩配置资源创建所需的可用区
 
-在TF文件（如main.tf）中添加以下脚本以告知Terraform进行一次数据源查询，其查询结果用于创建AS配置：
+在TF文件（如main.tf）中添加以下脚本以告知Terraform进行一次数据源查询，其查询结果用于创建伸缩配置：
 
 ```hcl
-# 获取指定region（region参数缺省时默认继承当前provider块中所指定的region）下所有的可用区信息，用于创建AS配置
+# 获取指定region（region参数缺省时默认继承当前provider块中所指定的region）下所有的可用区信息，用于创建伸缩配置
 data "huaweicloud_availability_zones" "test" {}
 ```
 
 **参数说明**：
 此数据源无需额外参数，默认查询当前区域下所有可用的可用区信息。
 
-### 3. 通过数据源查询AS配置资源创建所需的镜像
+### 3. 通过数据源查询伸缩配置资源创建所需的镜像
 
 在TF文件中添加以下脚本以告知Terraform查询符合条件的镜像：
 
 ```hcl
-# 获取指定region（region参数缺省时默认继承当前provider块中所指定的region）下所有符合特定条件的镜像信息，用于创建AS配置
+# 获取指定region（region参数缺省时默认继承当前provider块中所指定的region）下所有符合特定条件的镜像信息，用于创建伸缩配置
 data "huaweicloud_images_image" "test" {
   name        = "Ubuntu 18.04 server 64bit"
   visibility  = "public"
@@ -74,12 +74,12 @@ data "huaweicloud_images_image" "test" {
 - **visibility**：镜像可见性，设置为"public"表示公共镜像
 - **most_recent**：是否使用最新版本的镜像，设置为true表示使用最新版本
 
-### 4. 通过数据源查询AS配置资源创建所需的实例规格
+### 4. 通过数据源查询伸缩配置资源创建所需的实例规格
 
 在TF文件中添加以下脚本以告知Terraform查询符合条件的实例规格：
 
 ```hcl
-# 获取指定region（region参数缺省时默认继承当前provider块中所指定的region）下所有符合特定条件的实例规格信息，用于创建AS配置
+# 获取指定region（region参数缺省时默认继承当前provider块中所指定的region）下所有符合特定条件的实例规格信息，用于创建伸缩配置
 data "huaweicloud_compute_flavors" "test" {
   availability_zone = data.huaweicloud_availability_zones.test.names[0]
   performance_type  = "normal"
@@ -99,7 +99,7 @@ data "huaweicloud_compute_flavors" "test" {
 在TF文件中添加以下脚本以告知Terraform创建安全组资源：
 
 ```hcl
-# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建安全组资源，用于部署AS配置
+# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建安全组资源，用于部署伸缩配置
 resource "huaweicloud_networking_secgroup" "test" {
   name                 = "test-secgroup-demo"
   delete_default_rules = true
@@ -120,7 +120,7 @@ variable "public_key" {
   type        = string
 }
 
-# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建密钥对资源，用于部署AS配置
+# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建密钥对资源，用于部署伸缩配置
 resource "huaweicloud_kps_keypair" "acc_key" {
   name       = "test-keypair-demo"
   public_key = var.public_key
@@ -131,12 +131,12 @@ resource "huaweicloud_kps_keypair" "acc_key" {
 - **name**：密钥对名称，设置为"test-keypair-demo"
 - **public_key**：公钥内容，通过引用输入变量public_key进行赋值
 
-### 7. 创建AS配置资源
+### 7. 创建伸缩配置资源
 
-在TF文件中添加以下脚本以告知Terraform创建AS配置资源：
+在TF文件中添加以下脚本以告知Terraform创建伸缩配置资源：
 
 ```hcl
-# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建AS配置资源
+# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建伸缩配置资源
 resource "huaweicloud_as_configuration" "acc_as_config" {
   scaling_configuration_name = "test-as-configuration-demo"
   instance_config {
@@ -174,7 +174,7 @@ EOT
 ```
 
 **参数说明**：
-- **scaling_configuration_name**：AS配置名称，设置为"test-as-configuration-demo"
+- **scaling_configuration_name**：伸缩配置名称，设置为"test-as-configuration-demo"
 - **instance_config**：实例配置块
   - **image**：镜像ID，使用镜像查询数据源的ID
   - **flavor**：实例规格，使用实例规格查询数据源的第一个规格ID
@@ -231,11 +231,11 @@ public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC..."
 
 1. 运行 `terraform init` 初始化环境
 2. 运行 `terraform plan` 查看资源创建计划
-3. 确认资源计划无误后，运行 `terraform apply` 开始创建AS配置
-4. 运行 `terraform show` 查看已创建的AS配置详情
+3. 确认资源计划无误后，运行 `terraform apply` 开始创建伸缩配置
+4. 运行 `terraform show` 查看已创建的伸缩配置详情
 
 ## 参考信息
 
 - [华为云弹性伸缩产品文档](https://support.huaweicloud.com/as/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [AS基础配置最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/as)
+- [AS伸缩配置最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/as)
