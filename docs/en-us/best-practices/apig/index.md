@@ -16,7 +16,7 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
-* [Create proxy_cache Plugin](proxy_cache_plugin.md) - Introduces how to use Terraform to automatically create the proxy_cache plugin for API Gateway to implement API response data cache management.
+* [Create Proxy Cache Plugin](proxy_cache_plugin.md) - Introduces how to use Terraform to automatically create the proxy cache plugin for API Gateway to implement API response data cache management.
 * [Deploy API with Custom Authentication](function_authorizer.md) - Introduces how to use Terraform to automatically deploy APIs with custom authentication and how to use FunctionGraph functions to implement frontend authentication for APIs.
 
 ## Reference Materials

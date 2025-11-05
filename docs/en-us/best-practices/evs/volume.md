@@ -229,4 +229,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud EVS Product Documentation](https://support.huaweicloud.com/evs/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [EVS Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/evs)
+- [Best Practice Source Code Reference For EVS Cloud Volume](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/evs/volume)

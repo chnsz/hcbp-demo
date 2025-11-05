@@ -216,4 +216,4 @@ EOF
 
 - [华为云ECS产品文档](https://support.huaweicloud.com/ecs/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [ECS最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/ecs)
+- [ECS实例通过UserData执行脚本最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/ecs/instance-with-userdata)

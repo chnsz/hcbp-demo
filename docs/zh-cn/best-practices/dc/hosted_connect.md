@@ -144,4 +144,4 @@ peer_location              = "Beijing Data Center"
 
 - [华为云DC产品文档](https://support.huaweicloud.com/dc/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [DC最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dc)
+- [DC托管连接最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dc/hosted_connect)

@@ -470,4 +470,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud BRS Product Documentation](https://support.huaweicloud.com/sdrs/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [BRS Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/sdrs)
+- [Best Practice Source Code Reference For BRS Disaster Recovery Drill](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/sdrs/drill)

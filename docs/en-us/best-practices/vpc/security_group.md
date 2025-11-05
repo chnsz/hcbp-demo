@@ -160,4 +160,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud VPC Product Documentation](https://support.huaweicloud.com/vpc/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [VPC Security Group Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/vpc)
+- [Best Practice Source Code Reference For VPC Security Group](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/vpc/security-group)

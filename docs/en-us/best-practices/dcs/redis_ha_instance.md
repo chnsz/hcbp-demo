@@ -443,4 +443,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud DCS Product Documentation](https://support.huaweicloud.com/dcs/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [DCS Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dcs)
+- [Best Practice Source Code Reference For DCS Master-Standby Redis Instance](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dcs/redis-high-availability-instance)

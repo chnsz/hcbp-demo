@@ -434,4 +434,4 @@ authorizer_name = "tf_test_authorizer"
 
 - [华为云API网关产品文档](https://support.huaweicloud.com/apig/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [APIG自定义认证最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/apig)
+- [APIG自定义认证最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/apig/api-custom-authorizer-with-functiongraph)

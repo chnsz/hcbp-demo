@@ -1,12 +1,12 @@
-# 部署RocketMQ消费者组
+# 部署RocketMQ消费组
 
 ## 应用场景
 
 华为云分布式消息服务RocketMQ版是一种高可用、高可靠、高性能的分布式消息中间件服务，广泛应用于电商、金融、IoT等行业的分布式系统中。
-消费者组是RocketMQ消息消费的重要概念，用于管理消息的消费行为，确保消息能够被正确、高效地消费。
+消费组是RocketMQ消息消费的重要概念，用于管理消息的消费行为，确保消息能够被正确、高效地消费。
 
-通过RocketMQ消费者组，企业可以实现消息的负载均衡消费、消费进度管理、消费失败重试等功能，满足不同业务场景下的消息消费需求。
-本最佳实践将介绍如何使用Terraform自动化部署一个RocketMQ消费者组，包括RocketMQ实例和消费者组的创建。
+通过RocketMQ消费组，企业可以实现消息的负载均衡消费、消费进度管理、消费失败重试等功能，满足不同业务场景下的消息消费需求。
+本最佳实践将介绍如何使用Terraform自动化部署一个RocketMQ消费组，包括RocketMQ实例和消费组的创建。
 
 ## 相关资源/数据源
 
@@ -24,7 +24,7 @@
 - [VPC子网资源（huaweicloud_vpc_subnet）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/vpc_subnet)
 - [安全组资源（huaweicloud_networking_secgroup）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/networking_secgroup)
 - [RocketMQ实例资源（huaweicloud_dms_rocketmq_instance）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/dms_rocketmq_instance)
-- [RocketMQ消费者组资源（huaweicloud_dms_rocketmq_consumer_group）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/dms_rocketmq_consumer_group)
+- [RocketMQ消费组资源（huaweicloud_dms_rocketmq_consumer_group）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/dms_rocketmq_consumer_group)
 
 ### 资源/数据源依赖关系
 
@@ -341,7 +341,7 @@ resource "huaweicloud_dms_rocketmq_instance" "test" {
 
 ### 8. 通过数据源查询RocketMQ Broker信息
 
-在TF文件（如main.tf）中添加以下脚本以告知Terraform进行一次数据源查询，其查询结果用于创建消费者组：
+在TF文件（如main.tf）中添加以下脚本以告知Terraform进行一次数据源查询，其查询结果用于创建消费组：
 
 ```hcl
 variable "consumer_group_brokers" {
@@ -351,7 +351,7 @@ variable "consumer_group_brokers" {
   nullable    = false
 }
 
-# 获取指定region（region参数缺省时默认继承当前provider块中所指定的region）下所有的RocketMQ Broker信息，用于创建消费者组
+# 获取指定region（region参数缺省时默认继承当前provider块中所指定的region）下所有的RocketMQ Broker信息，用于创建消费组
 data "huaweicloud_dms_rocketmq_broker" "test" {
   count = length(var.consumer_group_brokers) == 0 && huaweicloud_dms_rocketmq_instance.test.engine_version == "4.8.0" ? 1 : 0
 
@@ -361,12 +361,12 @@ data "huaweicloud_dms_rocketmq_broker" "test" {
 
 **参数说明**：
 
-- **count**：数据源的创建数，用于控制是否执行Broker查询数据源，仅当未指定消费者组Broker列表且RocketMQ实例版本为4.8.0时创建数据源
+- **count**：数据源的创建数，用于控制是否执行Broker查询数据源，仅当未指定消费组Broker列表且RocketMQ实例版本为4.8.0时创建数据源
 - **instance_id**：RocketMQ实例ID，引用前面创建的RocketMQ实例资源的ID
 
-### 9. 创建RocketMQ消费者组
+### 9. 创建RocketMQ消费组
 
-在TF文件（如main.tf）中添加以下脚本以告知Terraform创建RocketMQ消费者组资源：
+在TF文件（如main.tf）中添加以下脚本以告知Terraform创建RocketMQ消费组资源：
 
 ```hcl
 variable "consumer_group_name" {
@@ -404,7 +404,7 @@ variable "consumer_group_consume_orderly" {
   default     = false
 }
 
-# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建RocketMQ消费者组资源
+# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建RocketMQ消费组资源
 resource "huaweicloud_dms_rocketmq_consumer_group" "test" {
   instance_id     = huaweicloud_dms_rocketmq_instance.test.id
   name            = var.consumer_group_name
@@ -420,11 +420,11 @@ resource "huaweicloud_dms_rocketmq_consumer_group" "test" {
 **参数说明**：
 
 - **instance_id**：RocketMQ实例ID，引用前面创建的RocketMQ实例资源的ID
-- **name**：消费者组名称
+- **name**：消费组名称
 - **retry_max_times**：消费失败重试最大次数，优先使用输入变量中指定的消费失败重试最大次数，如未指定则默认为16次
-- **enabled**：是否启用消费者组，优先使用输入变量中指定的是否启用消费者组，如未指定则默认为true
+- **enabled**：是否启用消费组，优先使用输入变量中指定的是否启用消费组，如未指定则默认为true
 - **broadcast**：是否启用广播模式，优先使用输入变量中指定的是否启用广播模式，如未指定则默认为false
-- **description**：消费者组的描述
+- **description**：消费组的描述
 - **brokers**：Broker列表，优先使用输入变量中指定的Broker列表，如未指定则使用Broker查询数据源的结果
 - **consume_orderly**：是否启用顺序消费，优先使用输入变量中指定的是否启用顺序消费，如未指定则默认为false，仅在RocketMQ实例版本为5.x时有效
 
@@ -445,7 +445,7 @@ security_group_name = "tf_test_security_group"
 instance_name       = "tf_test_instance"
 instance_broker_num = 1
 
-# 消费者组基本信息
+# 消费组基本信息
 consumer_group_name = "tf_test_consumer_group"
 ```
 
@@ -469,11 +469,11 @@ consumer_group_name = "tf_test_consumer_group"
 
 1. 运行 `terraform init` 初始化环境
 2. 运行 `terraform plan` 查看资源创建计划
-3. 确认资源计划无误后，运行 `terraform apply` 开始创建RocketMQ消费者组
-4. 运行 `terraform show` 查看已创建的RocketMQ消费者组
+3. 确认资源计划无误后，运行 `terraform apply` 开始创建RocketMQ消费组
+4. 运行 `terraform show` 查看已创建的RocketMQ消费组
 
 ## 参考信息
 
 - [华为云分布式消息服务RocketMQ产品文档](https://support.huaweicloud.com/hrm/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [RocketMQ消费者组最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dms/rocketmq)
+- [RocketMQ消费组最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dms/rocketmq/consumer-group)

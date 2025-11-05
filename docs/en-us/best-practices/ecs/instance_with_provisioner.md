@@ -406,4 +406,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud ECS Product Documentation](https://support.huaweicloud.com/ecs/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [ECS Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/ecs)
+- [Best Practice Source Code Reference For ECS Instance with Provisioner Remote Login](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/ecs/instance-provisioners)

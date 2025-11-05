@@ -259,4 +259,4 @@ bucket_name = "tf-test-log-transfer-obs-bucket"
 
 - [华为云云日志服务产品文档](https://support.huaweicloud.com/lts/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [LTS最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/lts)
+- [LTS日志转储最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/lts/log-transfer)

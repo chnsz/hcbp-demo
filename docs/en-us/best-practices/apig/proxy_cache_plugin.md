@@ -1,8 +1,8 @@
-# Create proxy_cache Plugin
+# Create Proxy Cache Plugin
 
 ## Application Scenario
 
-The proxy_cache plugin of API Gateway is a plugin used to cache API response data, which can significantly improve API response speed and reduce the load on backend services. The proxy_cache plugin supports configuring cache keys, cache policies, TTL (Time To Live), and other parameters to help you achieve flexible API response cache management. By properly configuring cache policies, you can reduce the pressure of repeated requests on backend services and improve the overall system performance and availability. This best practice will introduce how to use Terraform to automatically create the proxy_cache plugin for API Gateway.
+The proxy cache plugin of API Gateway is a plugin used to cache API response data, which can significantly improve API response speed and reduce the load on backend services. The proxy cache plugin supports configuring cache keys, cache policies, TTL (Time To Live), and other parameters to help you achieve flexible API response cache management. By properly configuring cache policies, you can reduce the pressure of repeated requests on backend services and improve the overall system performance and availability. This best practice will introduce how to use Terraform to automatically create the proxy cache plugin for API Gateway.
 
 ## Related Resources/Data Sources
 
@@ -307,11 +307,11 @@ After completing the above script configuration, execute the following steps to 
 
 1. Run `terraform init` to initialize the environment
 2. Run `terraform plan` to view the resource creation plan
-3. After confirming that the resource plan is correct, run `terraform apply` to start creating the proxy_cache plugin
-4. Run `terraform show` to view the details of the created proxy_cache plugin
+3. After confirming that the resource plan is correct, run `terraform apply` to start creating the proxy cache plugin
+4. Run `terraform show` to view the details of the created proxy cache plugin
 
 ## Reference Information
 
 - [Huawei Cloud API Gateway Product Documentation](https://support.huaweicloud.com/apig/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [APIG proxy_cache Plugin Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/apig/proxy-cache-plugin)
+- [Best Practice Source Code Reference For APIG Proxy Cache Plugin](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/apig/proxy-cache-plugin)

@@ -1,4 +1,4 @@
-# Deploy a Scaling Configuration
+# Deploy Scaling Configuration
 
 ## Application Scenario
 
@@ -238,4 +238,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud Auto Scaling Product Documentation](https://support.huaweicloud.com/as/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [AS Scaling Configuration Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/as)
+- [Best Practice Source Code Reference For AS Scaling Configuration](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/as/scaling-configuration)

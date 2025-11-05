@@ -441,4 +441,4 @@ bandwidth_policy_configurations = [
 
 - [华为云OMS产品文档](https://support.huaweicloud.com/oms/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [OMS最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/oms)
+- [OMS通过任务分组迁移对象最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/oms/migrate-objects-by-group)

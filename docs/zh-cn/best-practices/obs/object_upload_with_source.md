@@ -281,4 +281,4 @@ EOT
 
 - [华为云OBS产品文档](https://support.huaweicloud.com/obs/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [OBS最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/obs)
+- [OBS通过本地文件上传的桶对象最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/obs/object-upload-with-source)

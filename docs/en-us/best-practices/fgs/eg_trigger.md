@@ -483,4 +483,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud FunctionGraph Product Documentation](https://support.huaweicloud.com/functiongraph/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [FunctionGraph Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/fgs)
+- [Best Practice Source Code Reference For FunctionGraph EG Trigger](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/fgs/triggers/eg)

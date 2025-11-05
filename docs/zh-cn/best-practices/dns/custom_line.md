@@ -98,4 +98,4 @@ dns_custom_line_ip_segments = ["100.100.100.102-100.100.100.102", "100.100.100.1
 
 - [华为云DNS产品文档](https://support.huaweicloud.com/dns/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [DNS最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dns)
+- [DNS自定义线路最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dns/custom-line)

@@ -298,4 +298,4 @@ target_url        = "https://test.com/example"
 
 - [华为云事件网格产品文档](https://support.huaweicloud.com/eg/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [事件网格最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/eg)
+- [事件网格事件订阅（自定义事件源，EG事件目标）最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/eg/event-subscriptions/custom)

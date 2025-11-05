@@ -483,4 +483,4 @@ trigger_name_suffix  = "demo"
 
 - [华为云FunctionGraph产品文档](https://support.huaweicloud.com/functiongraph/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [FunctionGraph最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/fgs)
+- [FunctionGraph EG触发器最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/fgs/triggers/eg)

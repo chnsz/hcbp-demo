@@ -1,4 +1,4 @@
-# Terraform Configuration Language
+# Language Introduction
 
 The Terraform Configuration Language (abbreviated as HCL) is an important credential for describing and operating infrastructure managed through Terraform.
 

@@ -16,9 +16,9 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
-* [Deploy File System](file_system.md) - Introduces how to use Terraform to automatically deploy SFS Turbo file systems, including VPC network, security group, and SFS Turbo file system creation, supporting high-performance file storage and multiple protocol access.
+* [Deploy Turbo File System](file_system.md) - Introduces how to use Terraform to automatically deploy SFS Turbo file systems, including VPC network, security group, and SFS Turbo file system creation, supporting high-performance file storage and multiple protocol access.
 * [Deploy OBS Target Configuration](obs_target_configuration.md) - Introduces how to use Terraform to automatically deploy SFS Turbo OBS target configuration, including VPC network, SFS Turbo file system, and OBS target configuration creation, supporting automatic data export and permission management functions.
-* [Deploy Permission Rules](permission_rule.md) - Introduces how to use Terraform to automatically deploy SFS Turbo permission rules, including VPC network, security group, SFS Turbo file system, and permission rule creation, supporting access control and security isolation functions.
+* [Deploy Permission Rule](permission_rule.md) - Introduces how to use Terraform to automatically deploy SFS Turbo permission rules, including VPC network, security group, SFS Turbo file system, and permission rule creation, supporting access control and security isolation functions.
 
 ## Reference Materials
 

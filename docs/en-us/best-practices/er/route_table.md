@@ -219,4 +219,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud ER Product Documentation](https://support.huaweicloud.com/er/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [ER Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/er)
+- [Best Practice Source Code Reference For ER Route Table](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/er/route-table)

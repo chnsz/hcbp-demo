@@ -393,4 +393,4 @@ After completing the above script configuration, execute the following steps to 
 - [Huawei Cloud CBR Product Documentation](https://support.huaweicloud.com/cbr/index.html)
 - [Huawei Cloud SFS Turbo Product Documentation](https://support.huaweicloud.com/sfsturbo/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [CBR Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cbr)
+- [Best Practice Source Code Reference For CBR STS Turbo Vault](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cbr/vault-turbo)

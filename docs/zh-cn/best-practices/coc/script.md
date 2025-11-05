@@ -179,4 +179,4 @@ script_parameters = [
 
 - [华为云COC产品文档](https://support.huaweicloud.com/coc/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [COC最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/coc)
+- [COC脚本最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/coc/script)

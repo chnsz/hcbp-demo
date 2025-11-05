@@ -1,4 +1,4 @@
-# 部署一个伸缩配置
+# 部署伸缩配置
 
 ## 应用场景
 
@@ -238,4 +238,4 @@ public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC..."
 
 - [华为云弹性伸缩产品文档](https://support.huaweicloud.com/as/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [AS伸缩配置最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/as)
+- [AS伸缩配置最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/as/scaling-configuration)

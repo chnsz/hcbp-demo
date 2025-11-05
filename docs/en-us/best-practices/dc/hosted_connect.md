@@ -144,4 +144,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud DC Product Documentation](https://support.huaweicloud.com/dc/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [DC Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dc)
+- [Best Practice Source Code Reference For DC Hosted Connect](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dc/hosted_connect)

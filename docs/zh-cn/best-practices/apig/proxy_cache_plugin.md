@@ -1,8 +1,8 @@
-# 创建proxy_cache插件
+# 创建代理缓存插件
 
 ## 应用场景
 
-API网关（API Gateway）的proxy_cache插件是一种用于缓存API响应数据的插件，可以显著提升API的响应速度和降低后端服务的负载。proxy_cache插件支持配置缓存键、缓存策略、TTL（Time To Live）等参数，帮助您实现灵活的API响应缓存管理。通过合理配置缓存策略，可以减少重复请求对后端服务的压力，提高整体系统的性能和可用性。本最佳实践将介绍如何使用Terraform自动化创建API网关的proxy_cache插件。
+API网关（API Gateway）的代理缓存插件是一种用于缓存API响应数据的插件，可以显著提升API的响应速度和降低后端服务的负载。代理缓存插件支持配置缓存键、缓存策略、TTL（Time To Live）等参数，帮助您实现灵活的API响应缓存管理。通过合理配置缓存策略，可以减少重复请求对后端服务的压力，提高整体系统的性能和可用性。本最佳实践将介绍如何使用Terraform自动化创建API网关的代理缓存插件。
 
 ## 相关资源/数据源
 
@@ -307,11 +307,11 @@ plugin_description    = "Created by Terraform script"
 
 1. 运行 `terraform init` 初始化环境
 2. 运行 `terraform plan` 查看资源创建计划
-3. 确认资源计划无误后，运行 `terraform apply` 开始创建proxy_cache插件
-4. 运行 `terraform show` 查看已创建的proxy_cache插件详情
+3. 确认资源计划无误后，运行 `terraform apply` 开始创建代理缓存插件
+4. 运行 `terraform show` 查看已创建的代理缓存插件详情
 
 ## 参考信息
 
 - [华为云API网关产品文档](https://support.huaweicloud.com/apig/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [APIG proxy_cache插件最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/apig/proxy-cache-plugin)
+- [APIG代理缓存插件最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/apig/proxy-cache-plugin)

@@ -383,4 +383,4 @@ alarm_rule_notification_user_name = "your_notification_user_name"
 
 - [华为云云日志服务产品文档](https://support.huaweicloud.com/lts/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [LTS最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/lts)
+- [LTS SQL告警规则最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/lts/sql-alarm-rule)

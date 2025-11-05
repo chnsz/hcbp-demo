@@ -188,4 +188,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud CTS Product Documentation](https://support.huaweicloud.com/cts/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [CTS Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cts)
+- [Best Practice Source Code Reference For CTS Data Tracker](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cts/data-tracker)

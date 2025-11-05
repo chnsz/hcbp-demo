@@ -236,4 +236,4 @@ notification_operation_users = [
 
 - [华为云CTS产品文档](https://support.huaweicloud.com/cts/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [CTS最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cts)
+- [CTS通知最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cts/notification)
