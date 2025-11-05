@@ -14,7 +14,7 @@
     * [Deploy API with Custom Authentication](best-practices/apig/function_authorizer.md)
   * [AS](best-practices/as/)
     * [Introduction](best-practices/as/index.md)
-    * [Deploy Basic Auto Scaling Configuration](best-practices/as/basic_configuration.md)
+    * [Deploy a Scaling Configuration](best-practices/as/scaling_configuration.md)
   * [BRS](best-practices/brs/)
     * [Introduction](best-practices/brs/index.md)
     * [Deploy Disaster Recovery Drill](best-practices/brs/disaster_recovery_drill.md)
