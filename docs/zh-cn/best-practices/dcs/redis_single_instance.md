@@ -308,4 +308,4 @@ instance_password = "YourRedisInstancePassword!"
 
 - [华为云DCS产品文档](https://support.huaweicloud.com/dcs/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [DCS最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dcs)
+- [DCS单机Redis实例最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dcs/redis-single-instance)

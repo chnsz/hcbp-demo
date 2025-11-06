@@ -16,7 +16,7 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
-* [Deploy a Scaling Configuration](scaling_configuration.md) - Introduces how to use Terraform to automatically deploy a scaling configuration, including the creation of security groups, key pairs, and scaling configuration.
+* [Deploy Scaling Configuration](scaling_configuration.md) - Introduces how to use Terraform to automatically deploy a scaling configuration, including the creation of security groups, key pairs, and scaling configuration.
 
 ## Reference Materials
 

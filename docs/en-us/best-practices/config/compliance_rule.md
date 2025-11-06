@@ -375,4 +375,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud Config Product Documentation](https://support.huaweicloud.com/rms/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [Config Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/rms)
+- [Best Practice Source Code Reference For Config Compliance Rule](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/rms/policy-assignment)

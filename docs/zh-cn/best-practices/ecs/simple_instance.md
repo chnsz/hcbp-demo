@@ -1,4 +1,4 @@
-# 部署基础弹性云服务器
+# 部署基础实例
 
 ## 应用场景
 
@@ -266,4 +266,4 @@ administrator_password = "YourPassword123!"
 
 - [华为云ECS产品文档](https://support.huaweicloud.com/ecs/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [ECS最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/ecs)
+- [ECS基础实例最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/ecs/basic)

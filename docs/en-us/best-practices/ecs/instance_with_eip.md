@@ -48,7 +48,9 @@ huaweicloud_networking_secgroup.test
 
 huaweicloud_vpc_eip.test
     └── huaweicloud_compute_eip_associate.test
-        └── huaweicloud_compute_instance.test
+
+huaweicloud_compute_instance.test
+    └── huaweicloud_compute_eip_associate.test
 ```
 
 ## Operation Steps
@@ -175,8 +177,8 @@ Add the following script to the TF file (e.g., main.tf) to instruct Terraform to
 ```hcl
 # Create an EIP binding resource under the specified region (if the region parameter is omitted, it defaults to the region specified in the current provider block)
 resource "huaweicloud_compute_eip_associate" "test" {
-  public_ip   = var.associate_eip_address == "" ? huaweicloud_vpc_eip.test[0].address : var.associate_eip_address
   instance_id = huaweicloud_compute_instance.test.id
+  public_ip   = var.associate_eip_address == "" ? try(huaweicloud_vpc_eip.test[0].address, null) : var.associate_eip_address
 }
 ```
 
@@ -244,4 +246,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud ECS Product Documentation](https://support.huaweicloud.com/ecs/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [ECS Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/ecs)
+- [Best Practice Source Code Reference For ECS Instance with EIP](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/ecs/instance-associate-eip)

@@ -686,4 +686,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud EventGrid Product Documentation](https://support.huaweicloud.com/eg/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [EventGrid Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/eg)
+- [Best Practice Source Code Reference For EventGrid Event Subscription (OBS Event Source, Kafka Event Target)](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/eg/event-subscriptions/obs-to-kafka)

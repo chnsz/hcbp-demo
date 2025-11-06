@@ -300,4 +300,4 @@ security_group_name = "tf_test_secgroup"
 
 - [华为云WAF产品文档](https://support.huaweicloud.com/waf/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [WAF最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/waf)
+- [WAF专业版实例最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/waf/dedicated-instance)

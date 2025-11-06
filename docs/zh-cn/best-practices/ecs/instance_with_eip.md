@@ -48,7 +48,9 @@ huaweicloud_networking_secgroup.test
 
 huaweicloud_vpc_eip.test
     └── huaweicloud_compute_eip_associate.test
-        └── huaweicloud_compute_instance.test
+
+huaweicloud_compute_instance.test
+    └── huaweicloud_compute_eip_associate.test
 ```
 
 ## 操作步骤
@@ -175,8 +177,8 @@ resource "huaweicloud_vpc_eip" "test" {
 ```hcl
 # 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建EIP绑定资源
 resource "huaweicloud_compute_eip_associate" "test" {
-  public_ip   = var.associate_eip_address == "" ? huaweicloud_vpc_eip.test[0].address : var.associate_eip_address
   instance_id = huaweicloud_compute_instance.test.id
+  public_ip   = var.associate_eip_address == "" ? try(huaweicloud_vpc_eip.test[0].address, null) : var.associate_eip_address
 }
 ```
 
@@ -244,4 +246,4 @@ bandwidth_charge_mode  = "traffic"
 
 - [华为云ECS产品文档](https://support.huaweicloud.com/ecs/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [ECS最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/ecs)
+- [ECS绑定EIP的实例最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/ecs/instance-associate-eip)

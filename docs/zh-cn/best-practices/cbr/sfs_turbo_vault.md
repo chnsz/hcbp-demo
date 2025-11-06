@@ -393,4 +393,4 @@ tags = {
 - [华为云CBR产品文档](https://support.huaweicloud.com/cbr/index.html)
 - [华为云SFS Turbo产品文档](https://support.huaweicloud.com/sfsturbo/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [CBR最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cbr)
+- [CBR SFS Turbo类型存储库最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cbr/vault-turbo)

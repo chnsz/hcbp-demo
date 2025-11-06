@@ -1,4 +1,4 @@
-# Terraform配置语言
+# 语法介绍
 
 Terraform配置语言（简称称HCL，Terraform Configuration Language）是描述并操作通过Terraform管理的基础设施的重要凭据。
 

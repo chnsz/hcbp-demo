@@ -305,4 +305,4 @@ turbo_name = "tf_test_perm_rule_demo"
 
 - [华为云弹性文件服务产品文档](https://support.huaweicloud.com/sfsturbo/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [SFS Turbo最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/sfs-turbo)
+- [SFS Turbo权限规则最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/sfs-turbo/permission-rule)

@@ -112,4 +112,4 @@ address_family              = "ipv4"
 
 - [华为云DC产品文档](https://support.huaweicloud.com/dc/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [DC最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dc)
+- [DC互连网关最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dc/connect-gateway)

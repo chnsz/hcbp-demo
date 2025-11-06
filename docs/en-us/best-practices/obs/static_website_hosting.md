@@ -338,4 +338,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud OBS Product Documentation](https://support.huaweicloud.com/obs/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [OBS Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/obs)
+- [Best Practice Source Code Reference For OBS Bucket Static Website Hosting Configuration](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/obs/bucket-with-website)

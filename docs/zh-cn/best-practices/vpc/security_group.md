@@ -160,4 +160,4 @@ security_group_rule_configurations = [
 
 - [华为云VPC产品文档](https://support.huaweicloud.com/vpc/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [VPC安全组最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/vpc)
+- [VPC安全组最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/vpc/security-group)

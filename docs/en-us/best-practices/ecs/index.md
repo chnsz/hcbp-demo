@@ -16,7 +16,7 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
-* [Deploy Basic Elastic Cloud Server](simple_instance.md) - Introduces how to use Terraform to automatically deploy a basic ECS instance, including VPC, subnet, and security group creation.
+* [Deploy Basic Instance](simple_instance.md) - Introduces how to use Terraform to automatically deploy a basic ECS instance, including VPC, subnet, and security group creation.
 * [Deploy Instance with EIP](instance_with_eip.md) - Introduces how to use Terraform to automatically deploy ECS instances with EIP binding, including network environment creation, security group configuration, instance creation, and EIP binding.
 * [Deploy Instance with Provisioner Remote Login](instance_with_provisioner.md) - Introduces how to use Terraform to automatically deploy ECS instances with provisioner remote login, including key pair creation, network environment configuration, EIP binding, and remote command execution.
 * [Deploy Instance with UserData Script Execution](instance_with_userdata.md) - Introduces how to use Terraform to automatically deploy ECS instances with UserData script execution, including network environment creation, security group configuration, key pair creation, instance creation, and script execution.

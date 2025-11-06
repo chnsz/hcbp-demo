@@ -434,4 +434,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud API Gateway Product Documentation](https://support.huaweicloud.com/apig/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [APIG Custom Authentication Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/apig)
+- [Best Practice Source Code Reference For APIG Custom Authentication](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/apig/api-custom-authorizer-with-functiongraph)

@@ -1,4 +1,4 @@
-# Deploy Flow Logs
+# Deploy Flow Log
 
 ## Application Scenario
 
@@ -341,4 +341,4 @@ After completing the above script configuration, execute the following steps to 
 - [Huawei Cloud ER Product Documentation](https://support.huaweicloud.com/er/index.html)
 - [Huawei Cloud LTS Product Documentation](https://support.huaweicloud.com/lts/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [ER Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/er)
+- [Best Practice Source Code Reference For ER Flow Log](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/er/flow-log)

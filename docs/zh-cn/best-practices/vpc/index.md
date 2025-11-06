@@ -14,7 +14,7 @@
 
 本章节包含以下最佳实践：
 
-* [部署基础VPC网络](basic.md) - 介绍如何使用Terraform自动化部署基础VPC及子网。
+* [部署基础网络](basic.md) - 介绍如何使用Terraform自动化部署基础VPC及子网。
 * [部署对等连接](peering.md) - 介绍如何使用Terraform自动化部署两个VPC及其子网，并建立VPC Peering连接和路由。
 * [部署安全组](security_group.md) - 介绍如何使用Terraform自动化部署安全组及其规则配置。
 * [部署VIP并关联实例](vip_associate.md) - 介绍如何使用Terraform自动化部署VIP关联，实现高可用性部署。

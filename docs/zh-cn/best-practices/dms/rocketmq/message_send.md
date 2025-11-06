@@ -532,4 +532,4 @@ message_properties = [
 
 - [华为云分布式消息服务RocketMQ产品文档](https://support.huaweicloud.com/hrm/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [RocketMQ消息发送最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dms/rocketmq)
+- [RocketMQ消息发送最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dms/rocketmq/message-send)

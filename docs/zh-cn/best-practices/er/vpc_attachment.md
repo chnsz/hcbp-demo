@@ -234,4 +234,4 @@ er_vpc_attachment_name = "tf_test_er_vpc_attachment"
 
 - [华为云ER产品文档](https://support.huaweicloud.com/er/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [ER最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/er)
+- [ER VPC连接最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/er/vpc-attachment)

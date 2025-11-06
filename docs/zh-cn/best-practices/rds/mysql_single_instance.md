@@ -564,4 +564,4 @@ instance_backup_keep_days   = 1
 
 - [华为云关系型数据库服务产品文档](https://support.huaweicloud.com/rds/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [RDS最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/rds)
+- [RDS MySQL单机实例最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/rds/mysql-single-instance)

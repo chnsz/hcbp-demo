@@ -399,4 +399,4 @@ target_obs_endpoint = "obs.cn-north-4.myhuaweicloud.com"
 
 - [华为云弹性文件服务产品文档](https://support.huaweicloud.com/sfsturbo/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [SFS Turbo最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/sfs-turbo)
+- [SFS Turbo OBS目标配置最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/sfs-turbo/obs-target)

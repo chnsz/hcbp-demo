@@ -107,4 +107,4 @@ account_ids     = ["account-id-1", "account-id-2", "account-id-3"]
 
 - [华为云Config产品文档](https://support.huaweicloud.com/rms/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [Config最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/rms)
+- [Config资源聚合器最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/rms/resource-aggregator)

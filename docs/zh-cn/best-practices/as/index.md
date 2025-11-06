@@ -16,7 +16,7 @@
 
 本章节包含以下最佳实践：
 
-* [部署一个伸缩配置](scaling_configuration.md) - 介绍如何使用Terraform自动化部署一个伸缩配置，包括安全组、密钥对和伸缩配置的创建。
+* [部署伸缩配置](scaling_configuration.md) - 介绍如何使用Terraform自动化部署一个伸缩配置，包括安全组、密钥对和伸缩配置的创建。
 
 ## 参考资料
 

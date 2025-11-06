@@ -1,4 +1,4 @@
-# Deploy Permission Rules
+# Deploy Permission Rule
 
 ## Application Scenario
 
@@ -305,4 +305,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud Scalable File Service Product Documentation](https://support.huaweicloud.com/sfsturbo/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [SFS Turbo Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/sfs-turbo)
+- [Best Practice Source Code Reference For SFS Turbo Permission Rule](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/sfs-turbo/permission-rule)

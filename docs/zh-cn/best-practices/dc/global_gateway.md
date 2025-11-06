@@ -149,4 +149,4 @@ global_gateway_tags = {
 
 - [华为云DC产品文档](https://support.huaweicloud.com/dc/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [DC最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dc)
+- [DC全域接入网关最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dc/global-gateway)

@@ -14,10 +14,10 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
-* [Deploy Basic VPC Network](basic.md) - Introduces how to use Terraform to automatically deploy basic VPC and subnets.
-* [Deploy VPC Peering](peering.md) - Introduces how to use Terraform to automatically deploy two VPCs and their subnets, and establish VPC Peering connections and routes.
+* [Deploy Basic Network](basic.md) - Introduces how to use Terraform to automatically deploy basic VPC and subnets.
+* [Deploy Peering Connection](peering.md) - Introduces how to use Terraform to automatically deploy two VPCs and their subnets, and establish VPC Peering connections and routes.
 * [Deploy Security Group](security_group.md) - Introduces how to use Terraform to automatically deploy security groups and their rule configurations.
-* [Deploy VIP and Associate Instances](vip_associate.md) - Introduces how to use Terraform to automatically deploy VIP associations, implementing high availability deployment.
+* [Deploy VIP and Associate Instance](vip_associate.md) - Introduces how to use Terraform to automatically deploy VIP associations, implementing high availability deployment.
 
 ## Reference Materials
 

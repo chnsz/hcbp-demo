@@ -1,4 +1,4 @@
-# Deploy Object Migration Through Tasks
+# Deploy Object Migration Through Task
 
 ## Application Scenario
 
@@ -441,4 +441,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud OMS Product Documentation](https://support.huaweicloud.com/oms/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [OMS Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/oms)
+- [Best Practice Source Code Reference For OMS Object Migration Through Task](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/oms/migrate-objects-by-task)

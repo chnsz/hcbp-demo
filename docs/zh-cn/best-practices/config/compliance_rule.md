@@ -375,4 +375,4 @@ policy_assignment_tags = {
 
 - [华为云Config产品文档](https://support.huaweicloud.com/rms/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [Config最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/rms)
+- [Config合规规则最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/rms/policy-assignment)

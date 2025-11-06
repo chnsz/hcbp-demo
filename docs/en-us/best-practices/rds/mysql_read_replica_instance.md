@@ -486,4 +486,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud Relational Database Service Product Documentation](https://support.huaweicloud.com/rds/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [RDS Read Replica Instance Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/rds)
+- [Best Practice Source Code Reference For RDS MySQL Read Replica Instance](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/rds/read-replica-instance)

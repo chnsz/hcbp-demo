@@ -341,4 +341,4 @@ er_flow_log_name = "tf_test_er_flow_log"
 - [华为云ER产品文档](https://support.huaweicloud.com/er/index.html)
 - [华为云LTS产品文档](https://support.huaweicloud.com/lts/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [ER最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/er)
+- [ER流日志最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/er/flow-log)

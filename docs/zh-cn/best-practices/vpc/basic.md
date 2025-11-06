@@ -1,4 +1,4 @@
-# 部署基础VPC网络
+# 部署基础网络
 
 ## 应用场景
 
@@ -159,4 +159,4 @@ dns_list       = ["114.114.114.114", "8.8.8.8"]
 
 - [华为云VPC产品文档](https://support.huaweicloud.com/vpc/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [VPC最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/vpc)
+- [VPC基础网络最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/vpc/basic)

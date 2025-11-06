@@ -98,4 +98,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud DNS Product Documentation](https://support.huaweicloud.com/dns/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [DNS Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dns)
+- [Best Practice Source Code Reference For DNS Custom Line](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dns/custom-line)

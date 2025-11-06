@@ -470,4 +470,4 @@ target_availability_zone = ""
 
 - [华为云BRS产品文档](https://support.huaweicloud.com/sdrs/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [BRS最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/sdrs)
+- [BRS灾难恢复演练最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/sdrs/drill)
