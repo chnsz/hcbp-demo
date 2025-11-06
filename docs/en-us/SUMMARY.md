@@ -34,6 +34,7 @@
   * [CCE](best-practices/cce/)
     * [Introduction](best-practices/cce/index.md)
     * [Deploy Node](best-practices/cce/node.md)
+    * [Deploy Node Partition](best-practices/cce/node_partition.md)
     * [Deploy Node Pool](best-practices/cce/node_pool.md)
     * [Deploy Standard Cluster](best-practices/cce/standard_cluster.md)
     * [Deploy Turbo Cluster](best-practices/cce/turbo_cluster.md)

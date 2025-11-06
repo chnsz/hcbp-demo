@@ -34,6 +34,7 @@
   * [CCE](best-practices/cce/)
     * [简介](best-practices/cce/index.md)
     * [部署节点](best-practices/cce/node.md)
+    * [部署节点分区](best-practices/cce/node_partition.md)
     * [部署节点池](best-practices/cce/node_pool.md)
     * [部署Standard集群](best-practices/cce/standard_cluster.md)
     * [部署Turbo集群](best-practices/cce/turbo_cluster.md)

@@ -17,6 +17,7 @@ CCE支持Standard和Turbo两种集群类型，提供全生命周期管理，支�
 本章节包含以下最佳实践：
 
 * [部署节点](node.md) - 介绍如何使用Terraform自动化部署一个CCE节点，包括可用区、实例规格的查询，以及VPC、子网、弹性公网IP、CCE集群、密钥对和节点的创建。
+* [部署节点分区](node_partition.md) - 介绍如何使用Terraform自动化部署一个CCE节点分区，包括可用区、实例规格的查询，以及VPC、子网、ENI子网、CCE集群、节点分区、节点和节点池的创建。
 * [部署节点池](node_pool.md) - 介绍如何使用Terraform自动化部署一个CCE节点池，包括可用区、实例规格的查询，以及VPC、子网、弹性公网IP、CCE集群、密钥对和节点池的创建。
 * [部署Standard集群](standard_cluster.md) - 介绍如何使用Terraform自动化部署一个CCE Standard集群，包括可用区查询，以及VPC、子网、弹性公网IP和CCE集群的创建。
 * [部署Turbo集群](turbo_cluster.md) - 介绍如何使用Terraform自动化部署一个CCE Turbo集群，包括可用区查询，以及VPC、子网、ENI子网、弹性公网IP和CCE集群的创建。
