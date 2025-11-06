@@ -16,6 +16,7 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
+* [Deploy Node Pool](node_pool.md) - Introduces how to use Terraform to automatically deploy a CCE node pool, including querying availability zones and instance flavors, as well as creating VPC, subnet, Elastic IP, CCE cluster, key pair, and node pool.
 * [Deploy Standard Cluster](standard_cluster.md) - Introduces how to use Terraform to automatically deploy a CCE Standard cluster, including querying availability zones, as well as creating VPC, subnet, Elastic IP, and CCE cluster.
 * [Deploy Turbo Cluster](turbo_cluster.md) - Introduces how to use Terraform to automatically deploy a CCE Turbo cluster, including querying availability zones, as well as creating VPC, subnet, ENI subnet, Elastic IP, and CCE cluster.
 
