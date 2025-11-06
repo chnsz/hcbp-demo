@@ -16,7 +16,7 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
-(No best practices available)
+* [Deploy Standard Cluster](standard_cluster.md) - Introduces how to use Terraform to automatically deploy a CCE Standard cluster, including querying availability zones, as well as creating VPC, subnet, Elastic IP, and CCE cluster.
 
 ## Reference Materials
 
