@@ -18,6 +18,7 @@
 
 * [部署告警策略](alarm_policy.md) - 介绍如何使用Terraform自动化部署告警策略，包括VPC网络、安全组、密钥对、AS配置、AS组、SMN主题、CES告警规则和告警策略的创建。
 * [部署伸缩配置](scaling_configuration.md) - 介绍如何使用Terraform自动化部署一个伸缩配置，包括安全组、密钥对和伸缩配置的创建。
+* [部署弹性伸缩组](scaling_group.md) - 介绍如何使用Terraform自动化部署一个弹性伸缩组，包括可用区、实例规格、镜像的查询，以及安全组、密钥对、AS配置、VPC网络和弹性伸缩组的创建。
 
 ## 参考资料
 
