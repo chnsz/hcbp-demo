@@ -34,6 +34,7 @@
   * [CCE](best-practices/cce/)
     * [简介](best-practices/cce/index.md)
     * [部署Standard集群](best-practices/cce/standard_cluster.md)
+    * [部署Turbo集群](best-practices/cce/turbo_cluster.md)
   * [COC](best-practices/coc/)
     * [简介](best-practices/coc/index.md)
     * [部署脚本](best-practices/coc/script.md)
