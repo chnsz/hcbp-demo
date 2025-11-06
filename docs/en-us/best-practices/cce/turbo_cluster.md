@@ -400,4 +400,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud CCE Product Documentation](https://support.huaweicloud.com/cce/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [CCE Turbo Cluster Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cce/turbo-cluster)
+- [Best Practice Source Code Reference For CCE Turbo Cluster](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cce/turbo-cluster)
