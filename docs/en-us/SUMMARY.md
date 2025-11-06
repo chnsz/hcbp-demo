@@ -16,6 +16,7 @@
     * [Introduction](best-practices/as/index.md)
     * [Deploy Alarm Policy](best-practices/as/alarm_policy.md)
     * [Deploy Scaling Configuration](best-practices/as/scaling_configuration.md)
+    * [Deploy Scaling Group](best-practices/as/scaling_group.md)
   * [BRS](best-practices/brs/)
     * [Introduction](best-practices/brs/index.md)
     * [Deploy Disaster Recovery Drill](best-practices/brs/disaster_recovery_drill.md)
