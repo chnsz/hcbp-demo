@@ -33,6 +33,7 @@
     * [部署SFS Turbo类型存储库](best-practices/cbr/sfs_turbo_vault.md)
   * [CCE](best-practices/cce/)
     * [简介](best-practices/cce/index.md)
+    * [部署节点](best-practices/cce/node.md)
     * [部署节点池](best-practices/cce/node_pool.md)
     * [部署Standard集群](best-practices/cce/standard_cluster.md)
     * [部署Turbo集群](best-practices/cce/turbo_cluster.md)
