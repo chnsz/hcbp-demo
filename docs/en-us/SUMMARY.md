@@ -33,7 +33,7 @@
     * [Deploy SFS Turbo Type Vault](best-practices/cbr/sfs_turbo_vault.md)
   * [CCE](best-practices/cce/)
     * [Introduction](best-practices/cce/index.md)
-    * [Deploy Postpaid Cluster](best-practices/cce/postpaid_cluster.md)
+    * [Deploy Standard Cluster](best-practices/cce/standard_cluster.md)
   * [COC](best-practices/coc/)
     * [Introduction](best-practices/coc/index.md)
     * [Deploy Script](best-practices/coc/script.md)
