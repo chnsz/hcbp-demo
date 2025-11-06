@@ -34,6 +34,7 @@
   * [CCE](best-practices/cce/)
     * [Introduction](best-practices/cce/index.md)
     * [Deploy Standard Cluster](best-practices/cce/standard_cluster.md)
+    * [Deploy Turbo Cluster](best-practices/cce/turbo_cluster.md)
   * [COC](best-practices/coc/)
     * [Introduction](best-practices/coc/index.md)
     * [Deploy Script](best-practices/coc/script.md)
