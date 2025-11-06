@@ -16,7 +16,7 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
-* [Deploy Postpaid Cluster](postpaid_cluster.md) - Introduces how to use Terraform to automatically deploy a postpaid CCE cluster, including the creation of VPC, subnet, CCE cluster, and nodes.
+(No best practices available)
 
 ## Reference Materials
 

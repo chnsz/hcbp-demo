@@ -33,7 +33,6 @@
     * [部署SFS Turbo类型存储库](best-practices/cbr/sfs_turbo_vault.md)
   * [CCE](best-practices/cce/)
     * [简介](best-practices/cce/index.md)
-    * [部署按需计费集群](best-practices/cce/postpaid_cluster.md)
   * [COC](best-practices/coc/)
     * [简介](best-practices/coc/index.md)
     * [部署脚本](best-practices/coc/script.md)
