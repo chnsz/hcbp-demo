@@ -1014,4 +1014,4 @@ deployment_containers = [
 - [华为云OBS产品文档](https://support.huaweicloud.com/obs/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
 - [Kubernetes Provider文档](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs)
-- [Kubernetes通过OBS管理PVC最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cce/kubenetes/pvc-with-existing-obs-bucket)
+- [CCE使用现有OBS部署Kubernetes PVC最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cce/kubenetes/pvc-with-existing-obs-bucket)
