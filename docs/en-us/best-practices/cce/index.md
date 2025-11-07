@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy AutoScaler Addon](addon_autoscaler.md) - Introduces how to use Terraform to automatically deploy a CCE AutoScaler addon, including querying CCE clusters, addon templates, and IAM projects, as well as creating CCE addons.
 * [Deploy CoreDNS Addon](addon_coredns.md) - Introduces how to use Terraform to automatically deploy a CCE CoreDNS addon, including querying CCE clusters and addon templates, as well as creating CCE addons.
+* [Deploy Kubernetes Namespace](kubernetes_namespace.md) - Introduces how to use Terraform to automatically deploy a Kubernetes namespace, including querying availability zones and instance flavors, as well as creating infrastructure such as VPC, subnet, Elastic IP, CCE cluster, node, and Kubernetes namespace.
 * [Deploy Node](node.md) - Introduces how to use Terraform to automatically deploy a CCE node, including querying availability zones and instance flavors, as well as creating VPC, subnet, Elastic IP, CCE cluster, key pair, and node.
 * [Deploy Node Partition](node_partition.md) - Introduces how to use Terraform to automatically deploy a CCE node partition, including querying availability zones and instance flavors, as well as creating VPC, subnet, ENI subnet, CCE cluster, node partition, node, and node pool.
 * [Deploy Node Pool](node_pool.md) - Introduces how to use Terraform to automatically deploy a CCE node pool, including querying availability zones and instance flavors, as well as creating VPC, subnet, Elastic IP, CCE cluster, key pair, and node pool.
