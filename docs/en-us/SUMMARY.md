@@ -35,6 +35,7 @@
     * [Introduction](best-practices/cce/index.md)
     * [Deploy AutoScaler Addon](best-practices/cce/addon_autoscaler.md)
     * [Deploy CoreDNS Addon](best-practices/cce/addon_coredns.md)
+    * [Deploy Kubernetes and Authenticate with Config](best-practices/cce/kubernetes_authentication_with_config.md)
     * [Deploy Kubernetes Namespace](best-practices/cce/kubernetes_namespace.md)
     * [Deploy Node](best-practices/cce/node.md)
     * [Deploy Node Partition](best-practices/cce/node_partition.md)

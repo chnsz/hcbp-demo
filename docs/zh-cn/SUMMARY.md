@@ -35,6 +35,7 @@
     * [简介](best-practices/cce/index.md)
     * [部署AutoScaler插件](best-practices/cce/addon_autoscaler.md)
     * [部署CoreDNS插件](best-practices/cce/addon_coredns.md)
+    * [部署Kubernetes并使用Config进行认证](best-practices/cce/kubernetes_authentication_with_config.md)
     * [部署Kubernetes命名空间](best-practices/cce/kubernetes_namespace.md)
     * [部署节点](best-practices/cce/node.md)
     * [部署节点分区](best-practices/cce/node_partition.md)
