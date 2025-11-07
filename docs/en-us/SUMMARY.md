@@ -37,7 +37,7 @@
     * [Deploy CoreDNS Addon](best-practices/cce/addon_coredns.md)
     * [Deploy Kubernetes and Authenticate with Config](best-practices/cce/kubernetes_authentication_with_config.md)
     * [Deploy Kubernetes Namespace](best-practices/cce/kubernetes_namespace.md)
-    * [Deploy Kubernetes PVC using Existing OBS](best-practices/cce/kubernetes_pvc_with_obs.md)
+    * [Deploy Kubernetes PVC using Existing OBS](best-practices/cce/kubernetes_pvc_with_existing_obs.md)
     * [Deploy Node](best-practices/cce/node.md)
     * [Deploy Node Partition](best-practices/cce/node_partition.md)
     * [Deploy Node Pool](best-practices/cce/node_pool.md)
