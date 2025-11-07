@@ -33,6 +33,7 @@
     * [Deploy SFS Turbo Type Vault](best-practices/cbr/sfs_turbo_vault.md)
   * [CCE](best-practices/cce/)
     * [Introduction](best-practices/cce/index.md)
+    * [Deploy AutoScaler Addon](best-practices/cce/addon_autoscaler.md)
     * [Deploy Node](best-practices/cce/node.md)
     * [Deploy Node Partition](best-practices/cce/node_partition.md)
     * [Deploy Node Pool](best-practices/cce/node_pool.md)
