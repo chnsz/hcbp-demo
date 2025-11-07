@@ -20,6 +20,7 @@ CCE支持Standard和Turbo两种集群类型，提供全生命周期管理，支�
 * [部署CoreDNS插件](addon_coredns.md) - 介绍如何使用Terraform自动化部署一个CCE CoreDNS插件，包括CCE集群和插件模板的查询，以及CCE插件的创建。
 * [部署Kubernetes并使用Config进行认证](kubernetes_authentication_with_config.md) - 介绍如何使用Terraform自动化配置Kubernetes provider，通过将CCE集群的KubeConfig配置保存到本地文件，然后使用该配置文件来配置Kubernetes provider，实现与CCE集群的连接。
 * [部署Kubernetes命名空间](kubernetes_namespace.md) - 介绍如何使用Terraform自动化部署一个Kubernetes命名空间，包括可用区、实例规格的查询，以及VPC、子网、弹性公网IP、CCE集群、节点等基础设施的创建，以及Kubernetes命名空间的创建。
+* [使用现有OBS部署Kubernetes PVC](kubernetes_pvc_with_obs.md) - 介绍如何使用Terraform自动化部署一个通过OBS管理PVC的完整方案，包括可用区、实例规格的查询，以及VPC、子网、弹性公网IP、CCE集群、节点、OBS桶等基础设施的创建，以及Kubernetes Secret、Persistent Volume、Persistent Volume Claim和Deployment的创建。
 * [部署节点](node.md) - 介绍如何使用Terraform自动化部署一个CCE节点，包括可用区、实例规格的查询，以及VPC、子网、弹性公网IP、CCE集群、密钥对和节点的创建。
 * [部署节点分区](node_partition.md) - 介绍如何使用Terraform自动化部署一个CCE节点分区，包括可用区、实例规格的查询，以及VPC、子网、ENI子网、CCE集群、节点分区、节点和节点池的创建。
 * [部署节点池](node_pool.md) - 介绍如何使用Terraform自动化部署一个CCE节点池，包括可用区、实例规格的查询，以及VPC、子网、弹性公网IP、CCE集群、密钥对和节点池的创建。

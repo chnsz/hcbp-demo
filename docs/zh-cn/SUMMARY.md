@@ -37,6 +37,7 @@
     * [部署CoreDNS插件](best-practices/cce/addon_coredns.md)
     * [部署Kubernetes并使用Config进行认证](best-practices/cce/kubernetes_authentication_with_config.md)
     * [部署Kubernetes命名空间](best-practices/cce/kubernetes_namespace.md)
+    * [使用现有OBS部署Kubernetes PVC](best-practices/cce/kubernetes_pvc_with_obs.md)
     * [部署节点](best-practices/cce/node.md)
     * [部署节点分区](best-practices/cce/node_partition.md)
     * [部署节点池](best-practices/cce/node_pool.md)
