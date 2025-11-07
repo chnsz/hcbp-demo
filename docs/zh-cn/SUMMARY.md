@@ -34,6 +34,7 @@
   * [CCE](best-practices/cce/)
     * [简介](best-practices/cce/index.md)
     * [部署AutoScaler插件](best-practices/cce/addon_autoscaler.md)
+    * [部署CoreDNS插件](best-practices/cce/addon_coredns.md)
     * [部署节点](best-practices/cce/node.md)
     * [部署节点分区](best-practices/cce/node_partition.md)
     * [部署节点池](best-practices/cce/node_pool.md)
