@@ -1,10 +1,10 @@
-# 使用现有OBS部署Kubernetes PVC
+# 使用新OBS部署Kubernetes PVC
 
 ## 应用场景
 
 云容器引擎（Cloud Container Engine，CCE）是一个高可靠高性能的企业级容器管理服务，支持Kubernetes社区原生应用和工具。持久化卷声明（Persistent Volume Claim，PVC）是Kubernetes中用于请求存储资源的抽象接口，允许Pod通过声明的方式请求存储资源，而无需关心底层存储的具体实现。对象存储服务（Object Storage Service，OBS）是华为云提供的高可用、高可靠、高性能、安全、低成本的对象存储服务，可以作为Kubernetes集群的持久化存储后端。
 
-通过将OBS桶作为Kubernetes的持久化存储，可以为容器应用提供可扩展、高可用的存储解决方案。这种方式特别适合需要共享存储、大容量存储或跨可用区数据复制的应用场景。本最佳实践将介绍如何使用Terraform自动化部署一个通过OBS管理PVC的完整方案，包括可用区、实例规格的查询，以及VPC、子网、弹性公网IP、CCE集群、节点、OBS桶等基础设施的创建，以及Kubernetes Secret、Persistent Volume、Persistent Volume Claim和Deployment的创建。
+通过将OBS桶作为Kubernetes的持久化存储，可以为容器应用提供可扩展、高可用的存储解决方案。这种方式特别适合需要共享存储、大容量存储或跨可用区数据复制的应用场景。与使用现有OBS桶的方式不同，本最佳实践通过PVC自动创建OBS桶和Persistent Volume，简化了部署流程。本最佳实践将介绍如何使用Terraform自动化部署一个通过新OBS管理PVC的完整方案，包括可用区、实例规格的查询，以及VPC、子网、弹性公网IP、CCE集群、节点等基础设施的创建，以及Kubernetes Secret、Persistent Volume Claim和Deployment的创建。
 
 ## 相关资源/数据源
 
@@ -23,9 +23,7 @@
 - [CCE集群资源（huaweicloud_cce_cluster）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/cce_cluster)
 - [密钥对资源（huaweicloud_kps_keypair）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/kps_keypair)
 - [CCE节点资源（huaweicloud_cce_node）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/cce_node)
-- [OBS桶资源（huaweicloud_obs_bucket）](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/obs_bucket)
 - [Kubernetes Secret资源（kubernetes_secret）](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/secret)
-- [Kubernetes持久化卷资源（kubernetes_persistent_volume）](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/persistent_volume)
 - [Kubernetes持久化卷声明资源（kubernetes_persistent_volume_claim）](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/persistent_volume_claim)
 - [Kubernetes Deployment资源（kubernetes_deployment）](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/deployment)
 
@@ -52,14 +50,9 @@ huaweicloud_kps_keypair
     └── huaweicloud_cce_node
         └── kubernetes_deployment
 
-huaweicloud_obs_bucket
-    └── kubernetes_persistent_volume
-        └── kubernetes_persistent_volume_claim
-            └── kubernetes_deployment
-
 kubernetes_secret
-    ├── kubernetes_persistent_volume
     └── kubernetes_persistent_volume_claim
+        └── kubernetes_deployment
 ```
 
 ## 操作步骤
@@ -520,34 +513,7 @@ resource "huaweicloud_cce_node" "test" {
   - **volumetype**：数据卷类型，通过引用输入变量中的数据卷配置进行赋值
   - **size**：数据卷大小（GB），通过引用输入变量中的数据卷配置进行赋值
 
-### 11. 创建OBS桶资源
-
-在TF文件中添加以下脚本以告知Terraform创建OBS桶资源：
-
-```hcl
-variable "bucket_name" {
-  description = "OBS桶的名称"
-  type        = string
-}
-
-variable "bucket_multi_az" {
-  description = "是否启用OBS桶的多可用区"
-  type        = bool
-  default     = true
-}
-
-# 在指定region（region参数缺省时默认继承当前provider块中所指定的region）下创建OBS桶资源，用于作为Kubernetes持久化存储的后端
-resource "huaweicloud_obs_bucket" "test" {
-  bucket   = var.bucket_name
-  multi_az = var.bucket_multi_az
-}
-```
-
-**参数说明**：
-- **bucket**：OBS桶的名称，通过引用输入变量 `bucket_name` 进行赋值
-- **multi_az**：是否启用多可用区，通过引用输入变量 `bucket_multi_az` 进行赋值，默认为true表示启用多可用区
-
-### 12. 创建Kubernetes Secret资源
+### 11. 创建Kubernetes Secret资源
 
 在TF文件中添加以下脚本以告知Terraform创建Kubernetes Secret资源：
 
@@ -610,137 +576,7 @@ resource "kubernetes_secret" "test" {
 - **type**：Secret的类型，通过引用输入变量 `secret_type` 进行赋值，默认为"cfe/secure-opaque"
 - **lifecycle**：生命周期配置块，用于忽略`data`参数的更改，因为Secret的数据可能会在外部被修改
 
-### 13. 创建Kubernetes Persistent Volume资源
-
-在TF文件中添加以下脚本以告知Terraform创建Kubernetes Persistent Volume资源：
-
-```hcl
-variable "pv_name" {
-  description = "持久化卷的名称"
-  type        = string
-}
-
-variable "pv_csi_provisioner_identity" {
-  description = "CSI provisioner的身份标识"
-  type        = string
-  default     = "everest-csi-provisioner"
-}
-
-variable "pv_access_modes" {
-  description = "持久化卷的访问模式"
-  type        = list(string)
-  default     = ["ReadWriteMany"]
-}
-
-variable "pv_storage" {
-  description = "持久化卷的存储大小"
-  type        = string
-  default     = "1Gi"
-}
-
-variable "pv_driver" {
-  description = "持久化卷的驱动"
-  type        = string
-  default     = "obs.csi.everest.io"
-}
-
-variable "pv_fstype" {
-  description = "持久化卷的文件系统类型"
-  type        = string
-  default     = "s3fs"
-}
-
-variable "pv_obs_volume_type" {
-  description = "持久化卷的OBS卷类型"
-  type        = string
-  default     = "standard"
-}
-
-variable "pv_reclaim_policy" {
-  description = "持久化卷的回收策略"
-  type        = string
-  default     = "Retain"
-}
-
-variable "pv_storage_class_name" {
-  description = "持久化卷的存储类名称"
-  type        = string
-  default     = "csi-obs"
-}
-
-variable "region_name" {
-  description = "资源所在的region"
-  type        = string
-}
-
-variable "enterprise_project_id" {
-  description = "企业项目ID"
-  type        = string
-  default     = "0"
-}
-
-# 创建Kubernetes Persistent Volume资源，用于定义OBS存储卷
-resource "kubernetes_persistent_volume" "test" {
-  metadata {
-    name = var.pv_name
-
-    annotations = {
-      "pv.kubernetes.io/provisioned-by" = var.pv_csi_provisioner_identity
-    }
-  }
-
-  spec {
-    access_modes = var.pv_access_modes
-
-    capacity = {
-      storage = var.pv_storage
-    }
-
-    persistent_volume_source {
-      csi {
-        driver        = var.pv_driver
-        fs_type       = var.pv_fstype
-        volume_handle = huaweicloud_obs_bucket.test.bucket
-
-        volume_attributes = {
-          "storage.kubernetes.io/csiProvisionerIdentity" = var.pv_csi_provisioner_identity
-          "everest.io/obs-volume-type"                   = var.pv_obs_volume_type
-          "everest.io/region"                            = var.region_name
-          "everest.io/enterprise-project-id"             = var.enterprise_project_id
-        }
-
-        node_publish_secret_ref {
-          name      = kubernetes_secret.test.metadata[0].name
-          namespace = var.namespace_name
-        }
-      }
-    }
-
-    persistent_volume_reclaim_policy = var.pv_reclaim_policy
-    storage_class_name               = var.pv_storage_class_name
-  }
-}
-```
-
-**参数说明**：
-- **metadata**：元数据配置块
-  - **name**：Persistent Volume的名称，通过引用输入变量 `pv_name` 进行赋值
-  - **annotations**：注解，包含CSI provisioner的身份标识
-- **spec**：规格配置块
-  - **access_modes**：访问模式列表，通过引用输入变量 `pv_access_modes` 进行赋值，默认为["ReadWriteMany"]表示多节点读写
-  - **capacity**：容量配置块
-    - **storage**：存储大小，通过引用输入变量 `pv_storage` 进行赋值，默认为"1Gi"
-  - **persistent_volume_source**：持久化卷源配置块
-    - **csi**：CSI配置块
-      - **driver**：CSI驱动，通过引用输入变量 `pv_driver` 进行赋值，默认为"obs.csi.everest.io"
-      - **fs_type**：文件系统类型，通过引用输入变量 `pv_fstype` 进行赋值，默认为"s3fs"
-      - **volume_handle**：卷句柄，引用OBS桶资源（huaweicloud_obs_bucket.test）的桶名称进行赋值
-      - **volume_attributes**：卷属性，包含CSI provisioner身份标识、OBS卷类型、region和企业项目ID
-      - **node_publish_secret_ref**：节点发布密钥引用配置块，引用Kubernetes Secret资源（kubernetes_secret.test）的名称和命名空间
-  - **persistent_volume_reclaim_policy**：回收策略，通过引用输入变量 `pv_reclaim_policy` 进行赋值，默认为"Retain"表示保留
-  - **storage_class_name**：存储类名称，通过引用输入变量 `pv_storage_class_name` 进行赋值，默认为"csi-obs"
-
-### 14. 创建Kubernetes Persistent Volume Claim资源
+### 12. 创建Kubernetes Persistent Volume Claim资源
 
 在TF文件中添加以下脚本以告知Terraform创建Kubernetes Persistent Volume Claim资源：
 
@@ -750,16 +586,51 @@ variable "pvc_name" {
   type        = string
 }
 
-# 创建Kubernetes Persistent Volume Claim资源，用于请求Persistent Volume
+variable "pvc_obs_volume_type" {
+  description = "PVC的OBS卷类型"
+  type        = string
+  default     = "standard"
+}
+
+variable "pvc_fstype" {
+  description = "PVC的文件系统类型"
+  type        = string
+  default     = "s3fs"
+}
+
+variable "pvc_access_modes" {
+  description = "PVC的访问模式"
+  type        = list(string)
+  default     = ["ReadWriteMany"]
+}
+
+variable "pvc_storage" {
+  description = "PVC的存储大小"
+  type        = string
+  default     = "1Gi"
+}
+
+variable "pvc_storage_class_name" {
+  description = "PVC的存储类名称"
+  type        = string
+  default     = "csi-obs"
+}
+
+variable "enterprise_project_id" {
+  description = "企业项目ID"
+  type        = string
+  default     = "0"
+}
+
+# 创建Kubernetes Persistent Volume Claim资源，用于请求存储资源，PVC会自动创建Persistent Volume和OBS桶
 resource "kubernetes_persistent_volume_claim" "test" {
   metadata {
     name      = var.pvc_name
     namespace = var.namespace_name
 
     annotations = {
-      "volume.beta.kubernetes.io/storage-provisioner"    = var.pv_csi_provisioner_identity
-      "everest.io/obs-volume-type"                       = var.pv_obs_volume_type
-      "csi.storage.k8s.io/fstype"                        = var.pv_fstype
+      "everest.io/obs-volume-type"                       = var.pvc_obs_volume_type
+      "csi.storage.k8s.io/fstype"                        = var.pvc_fstype
       "csi.storage.k8s.io/node-publish-secret-name"      = kubernetes_secret.test.metadata[0].name
       "csi.storage.k8s.io/node-publish-secret-namespace" = var.namespace_name
       "everest.io/enterprise-project-id"                 = var.enterprise_project_id
@@ -767,16 +638,15 @@ resource "kubernetes_persistent_volume_claim" "test" {
   }
 
   spec {
-    access_modes = var.pv_access_modes
+    access_modes = var.pvc_access_modes
 
     resources {
       requests = {
-        storage = var.pv_storage
+        storage = var.pvc_storage
       }
     }
 
-    storage_class_name = var.pv_storage_class_name
-    volume_name        = kubernetes_persistent_volume.test.metadata.0.name
+    storage_class_name = var.pvc_storage_class_name
   }
 }
 ```
@@ -785,16 +655,17 @@ resource "kubernetes_persistent_volume_claim" "test" {
 - **metadata**：元数据配置块
   - **name**：Persistent Volume Claim的名称，通过引用输入变量 `pvc_name` 进行赋值
   - **namespace**：Persistent Volume Claim所在的命名空间，通过引用输入变量 `namespace_name` 进行赋值
-  - **annotations**：注解，包含存储provisioner、OBS卷类型、文件系统类型、Secret引用和企业项目ID
+  - **annotations**：注解，包含OBS卷类型、文件系统类型、Secret引用和企业项目ID
 - **spec**：规格配置块
-  - **access_modes**：访问模式列表，通过引用输入变量 `pv_access_modes` 进行赋值
+  - **access_modes**：访问模式列表，通过引用输入变量 `pvc_access_modes` 进行赋值，默认为["ReadWriteMany"]表示多节点读写
   - **resources**：资源请求配置块
     - **requests**：资源请求，包含存储大小请求
-      - **storage**：存储大小，通过引用输入变量 `pv_storage` 进行赋值
-  - **storage_class_name**：存储类名称，通过引用输入变量 `pv_storage_class_name` 进行赋值
-  - **volume_name**：卷名称，引用Kubernetes Persistent Volume资源（kubernetes_persistent_volume.test）的名称进行赋值
+      - **storage**：存储大小，通过引用输入变量 `pvc_storage` 进行赋值，默认为"1Gi"
+  - **storage_class_name**：存储类名称，通过引用输入变量 `pvc_storage_class_name` 进行赋值，默认为"csi-obs"，当使用该存储类时，Kubernetes会自动创建Persistent Volume和OBS桶
 
-### 15. 创建Kubernetes Deployment资源
+> 注意：与使用现有OBS桶的方式不同，本最佳实践通过PVC直接使用存储类（storage_class_name），Kubernetes会自动创建Persistent Volume和OBS桶，无需手动创建这些资源。
+
+### 13. 创建Kubernetes Deployment资源
 
 在TF文件中添加以下脚本以告知Terraform创建Kubernetes Deployment资源：
 
@@ -830,16 +701,9 @@ variable "deployment_volume_name" {
 
 variable "deployment_image_pull_secrets" {
   description = "Deployment的镜像拉取密钥"
-  type = list(object({
-    name = string
-  }))
-
-  default = [
-    {
-      name = "default-secret"
-    }
-  ]
-  nullable = false
+  type        = list(string)
+  default     = ["default-secret"]
+  nullable    = false
 }
 
 # 创建Kubernetes Deployment资源，用于部署使用PVC的应用
@@ -888,7 +752,7 @@ resource "kubernetes_deployment" "test" {
           for_each = var.deployment_image_pull_secrets
 
           content {
-            name = image_pull_secrets.value.name
+            name = image_pull_secrets.value
           }
         }
 
@@ -926,14 +790,14 @@ resource "kubernetes_deployment" "test" {
           - **name**：卷名称，通过引用输入变量 `deployment_volume_name` 进行赋值，默认为"pvc-obs-volume"
           - **mount_path**：挂载路径，通过引用输入变量中的卷挂载配置进行赋值
       - **image_pull_secrets**：镜像拉取密钥配置块（动态块），根据输入变量 `deployment_image_pull_secrets` 动态创建
-        - **name**：密钥名称，通过引用输入变量中的镜像拉取密钥配置进行赋值
+        - **name**：密钥名称，通过引用输入变量中的镜像拉取密钥字符串进行赋值
       - **volume**：卷配置块
         - **name**：卷名称，通过引用输入变量 `deployment_volume_name` 进行赋值
         - **persistent_volume_claim**：持久化卷声明配置块
           - **claim_name**：声明名称，引用Kubernetes Persistent Volume Claim资源（kubernetes_persistent_volume_claim.test）的名称进行赋值
 - **depends_on**：显式依赖，确保CCE节点资源创建完成后再创建Deployment
 
-### 16. 预设资源部署所需的入参（可选）
+### 14. 预设资源部署所需的入参（可选）
 
 本实践中，部分资源、数据源使用了输入变量对配置内容进行赋值，这些输入参数在后续部署时需要手工输入。
 同时，Terraform提供了通过`tfvars`文件预设这些配置的方法，可以避免每次执行时重复输入。
@@ -968,8 +832,6 @@ secret_data = {
   "secret.key" = "your_secret_key"
 }
 
-bucket_name           = "tf-test-bucket"
-pv_name               = "tf-test-pv-obs"
 pvc_name              = "tf-test-pvc-obs"
 deployment_name       = "tf-test-deployment"
 deployment_containers = [
@@ -999,14 +861,14 @@ deployment_containers = [
 
 > 注意：如果同一个变量通过多种方式进行设置，Terraform会按照以下优先级使用变量值：命令行参数 > 变量文件 > 环境变量 > 默认值。
 
-### 17. 初始化并应用Terraform配置
+### 15. 初始化并应用Terraform配置
 
 完成以上脚本配置后，执行以下步骤来创建资源：
 
 1. 运行 `terraform init` 初始化环境
 2. 运行 `terraform plan` 查看资源创建计划
-3. 确认资源计划无误后，运行 `terraform apply` 开始创建通过OBS管理PVC的完整方案
-4. 运行 `terraform show` 查看已创建的通过OBS管理PVC的完整方案
+3. 确认资源计划无误后，运行 `terraform apply` 开始创建通过新OBS管理PVC的完整方案
+4. 运行 `terraform show` 查看已创建的通过新OBS管理PVC的完整方案
 
 ## 参考信息
 
@@ -1014,4 +876,4 @@ deployment_containers = [
 - [华为云OBS产品文档](https://support.huaweicloud.com/obs/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
 - [Kubernetes Provider文档](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs)
-- [CCE使用现有OBS部署Kubernetes PVC最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cce/kubenetes/pvc-with-existing-obs-bucket)
+- [CCE使用新OBS部署Kubernetes PVC最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cce/kubenetes/pvc-with-new-obs-bucket)

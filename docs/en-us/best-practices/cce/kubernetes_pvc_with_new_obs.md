@@ -1,10 +1,10 @@
-# Deploy Kubernetes PVC using Existing OBS
+# Deploy Kubernetes PVC using New OBS
 
 ## Application Scenario
 
 Cloud Container Engine (CCE) is a high-reliability, high-performance enterprise-grade container management service that supports Kubernetes community native applications and tools. Persistent Volume Claim (PVC) is an abstract interface in Kubernetes for requesting storage resources, allowing Pods to request storage resources declaratively without caring about the specific implementation of the underlying storage. Object Storage Service (OBS) is a highly available, highly reliable, high-performance, secure, and low-cost object storage service provided by Huawei Cloud, which can serve as a persistent storage backend for Kubernetes clusters.
 
-By using OBS buckets as persistent storage for Kubernetes, you can provide scalable and highly available storage solutions for container applications. This approach is particularly suitable for application scenarios that require shared storage, large-capacity storage, or cross-availability zone data replication. This best practice will introduce how to use Terraform to automatically deploy a complete solution for managing PVC with OBS, including querying availability zones and instance flavors, as well as creating infrastructure such as VPC, subnet, Elastic IP, CCE cluster, node, OBS bucket, and Kubernetes Secret, Persistent Volume, Persistent Volume Claim, and Deployment.
+By using OBS buckets as persistent storage for Kubernetes, you can provide scalable and highly available storage solutions for container applications. This approach is particularly suitable for application scenarios that require shared storage, large-capacity storage, or cross-availability zone data replication. Unlike using existing OBS buckets, this best practice automatically creates OBS buckets and Persistent Volumes through PVC, simplifying the deployment process. This best practice will introduce how to use Terraform to automatically deploy a complete solution for managing PVC with new OBS, including querying availability zones and instance flavors, as well as creating infrastructure such as VPC, subnet, Elastic IP, CCE cluster, node, and Kubernetes Secret, Persistent Volume Claim, and Deployment.
 
 ## Related Resources/Data Sources
 
@@ -23,9 +23,7 @@ This best practice involves the following main resources and data sources:
 - [CCE Cluster Resource (huaweicloud_cce_cluster)](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/cce_cluster)
 - [Key Pair Resource (huaweicloud_kps_keypair)](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/kps_keypair)
 - [CCE Node Resource (huaweicloud_cce_node)](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/cce_node)
-- [OBS Bucket Resource (huaweicloud_obs_bucket)](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/obs_bucket)
 - [Kubernetes Secret Resource (kubernetes_secret)](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/secret)
-- [Kubernetes Persistent Volume Resource (kubernetes_persistent_volume)](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/persistent_volume)
 - [Kubernetes Persistent Volume Claim Resource (kubernetes_persistent_volume_claim)](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/persistent_volume_claim)
 - [Kubernetes Deployment Resource (kubernetes_deployment)](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/deployment)
 
@@ -52,14 +50,9 @@ huaweicloud_kps_keypair
     └── huaweicloud_cce_node
         └── kubernetes_deployment
 
-huaweicloud_obs_bucket
-    └── kubernetes_persistent_volume
-        └── kubernetes_persistent_volume_claim
-            └── kubernetes_deployment
-
 kubernetes_secret
-    ├── kubernetes_persistent_volume
     └── kubernetes_persistent_volume_claim
+        └── kubernetes_deployment
 ```
 
 ## Implementation Steps
@@ -520,34 +513,7 @@ resource "huaweicloud_cce_node" "test" {
   - **volumetype**: Data volume type, assigned by referencing the data volume configuration in the input variable
   - **size**: Data volume size (GB), assigned by referencing the data volume configuration in the input variable
 
-### 11. Create OBS Bucket Resource
-
-Add the following script to the TF file to inform Terraform to create an OBS bucket resource:
-
-```hcl
-variable "bucket_name" {
-  description = "The name of the OBS bucket"
-  type        = string
-}
-
-variable "bucket_multi_az" {
-  description = "Whether to enable multi-AZ for the OBS bucket"
-  type        = bool
-  default     = true
-}
-
-# Create OBS bucket resource in the specified region (when the region parameter is omitted, it defaults to the region specified in the current provider block), used as the backend for Kubernetes persistent storage
-resource "huaweicloud_obs_bucket" "test" {
-  bucket   = var.bucket_name
-  multi_az = var.bucket_multi_az
-}
-```
-
-**Parameter Description**:
-- **bucket**: The name of the OBS bucket, assigned by referencing the input variable `bucket_name`
-- **multi_az**: Whether to enable multi-availability zone, assigned by referencing the input variable `bucket_multi_az`, default is true indicating multi-availability zone enabled
-
-### 12. Create Kubernetes Secret Resource
+### 11. Create Kubernetes Secret Resource
 
 Add the following script to the TF file to inform Terraform to create a Kubernetes Secret resource:
 
@@ -610,137 +576,7 @@ resource "kubernetes_secret" "test" {
 - **type**: The type of the Secret, assigned by referencing the input variable `secret_type`, default is "cfe/secure-opaque"
 - **lifecycle**: Lifecycle configuration block, used to ignore changes to the `data` parameter, because Secret data may be modified externally
 
-### 13. Create Kubernetes Persistent Volume Resource
-
-Add the following script to the TF file to inform Terraform to create a Kubernetes Persistent Volume resource:
-
-```hcl
-variable "pv_name" {
-  description = "The name of the persistent volume"
-  type        = string
-}
-
-variable "pv_csi_provisioner_identity" {
-  description = "The identity of the CSI provisioner"
-  type        = string
-  default     = "everest-csi-provisioner"
-}
-
-variable "pv_access_modes" {
-  description = "The access modes of the persistent volume"
-  type        = list(string)
-  default     = ["ReadWriteMany"]
-}
-
-variable "pv_storage" {
-  description = "The storage of the persistent volume"
-  type        = string
-  default     = "1Gi"
-}
-
-variable "pv_driver" {
-  description = "The driver of the persistent volume"
-  type        = string
-  default     = "obs.csi.everest.io"
-}
-
-variable "pv_fstype" {
-  description = "The instance type of the persistent volume"
-  type        = string
-  default     = "s3fs"
-}
-
-variable "pv_obs_volume_type" {
-  description = "The type of the OBS volume of the persistent volume"
-  type        = string
-  default     = "standard"
-}
-
-variable "pv_reclaim_policy" {
-  description = "The reclaim policy of the persistent volume"
-  type        = string
-  default     = "Retain"
-}
-
-variable "pv_storage_class_name" {
-  description = "The name of the storage class of the persistent volume"
-  type        = string
-  default     = "csi-obs"
-}
-
-variable "region_name" {
-  description = "The region where the resources are located"
-  type        = string
-}
-
-variable "enterprise_project_id" {
-  description = "The enterprise project ID"
-  type        = string
-  default     = "0"
-}
-
-# Create Kubernetes Persistent Volume resource for defining OBS storage volume
-resource "kubernetes_persistent_volume" "test" {
-  metadata {
-    name = var.pv_name
-
-    annotations = {
-      "pv.kubernetes.io/provisioned-by" = var.pv_csi_provisioner_identity
-    }
-  }
-
-  spec {
-    access_modes = var.pv_access_modes
-
-    capacity = {
-      storage = var.pv_storage
-    }
-
-    persistent_volume_source {
-      csi {
-        driver        = var.pv_driver
-        fs_type       = var.pv_fstype
-        volume_handle = huaweicloud_obs_bucket.test.bucket
-
-        volume_attributes = {
-          "storage.kubernetes.io/csiProvisionerIdentity" = var.pv_csi_provisioner_identity
-          "everest.io/obs-volume-type"                   = var.pv_obs_volume_type
-          "everest.io/region"                            = var.region_name
-          "everest.io/enterprise-project-id"             = var.enterprise_project_id
-        }
-
-        node_publish_secret_ref {
-          name      = kubernetes_secret.test.metadata[0].name
-          namespace = var.namespace_name
-        }
-      }
-    }
-
-    persistent_volume_reclaim_policy = var.pv_reclaim_policy
-    storage_class_name               = var.pv_storage_class_name
-  }
-}
-```
-
-**Parameter Description**:
-- **metadata**: Metadata configuration block
-  - **name**: The name of the Persistent Volume, assigned by referencing the input variable `pv_name`
-  - **annotations**: Annotations, containing CSI provisioner identity
-- **spec**: Specification configuration block
-  - **access_modes**: Access mode list, assigned by referencing the input variable `pv_access_modes`, default is ["ReadWriteMany"] indicating multi-node read-write
-  - **capacity**: Capacity configuration block
-    - **storage**: Storage size, assigned by referencing the input variable `pv_storage`, default is "1Gi"
-  - **persistent_volume_source**: Persistent volume source configuration block
-    - **csi**: CSI configuration block
-      - **driver**: CSI driver, assigned by referencing the input variable `pv_driver`, default is "obs.csi.everest.io"
-      - **fs_type**: File system type, assigned by referencing the input variable `pv_fstype`, default is "s3fs"
-      - **volume_handle**: Volume handle, assigned by referencing the bucket name of the OBS bucket resource (huaweicloud_obs_bucket.test)
-      - **volume_attributes**: Volume attributes, containing CSI provisioner identity, OBS volume type, region, and enterprise project ID
-      - **node_publish_secret_ref**: Node publish secret reference configuration block, referencing the name and namespace of the Kubernetes Secret resource (kubernetes_secret.test)
-  - **persistent_volume_reclaim_policy**: Reclaim policy, assigned by referencing the input variable `pv_reclaim_policy`, default is "Retain" indicating retain
-  - **storage_class_name**: Storage class name, assigned by referencing the input variable `pv_storage_class_name`, default is "csi-obs"
-
-### 14. Create Kubernetes Persistent Volume Claim Resource
+### 12. Create Kubernetes Persistent Volume Claim Resource
 
 Add the following script to the TF file to inform Terraform to create a Kubernetes Persistent Volume Claim resource:
 
@@ -750,16 +586,51 @@ variable "pvc_name" {
   type        = string
 }
 
-# Create Kubernetes Persistent Volume Claim resource for requesting Persistent Volume
+variable "pvc_obs_volume_type" {
+  description = "The type of the OBS volume of the PVC"
+  type        = string
+  default     = "standard"
+}
+
+variable "pvc_fstype" {
+  description = "The file system type of the PVC"
+  type        = string
+  default     = "s3fs"
+}
+
+variable "pvc_access_modes" {
+  description = "The access modes of the PVC"
+  type        = list(string)
+  default     = ["ReadWriteMany"]
+}
+
+variable "pvc_storage" {
+  description = "The storage of the PVC"
+  type        = string
+  default     = "1Gi"
+}
+
+variable "pvc_storage_class_name" {
+  description = "The name of the storage class of the PVC"
+  type        = string
+  default     = "csi-obs"
+}
+
+variable "enterprise_project_id" {
+  description = "The enterprise project ID"
+  type        = string
+  default     = "0"
+}
+
+# Create Kubernetes Persistent Volume Claim resource for requesting Persistent Volume, PVC will automatically create Persistent Volume and OBS bucket
 resource "kubernetes_persistent_volume_claim" "test" {
   metadata {
     name      = var.pvc_name
     namespace = var.namespace_name
 
     annotations = {
-      "volume.beta.kubernetes.io/storage-provisioner"    = var.pv_csi_provisioner_identity
-      "everest.io/obs-volume-type"                       = var.pv_obs_volume_type
-      "csi.storage.k8s.io/fstype"                        = var.pv_fstype
+      "everest.io/obs-volume-type"                       = var.pvc_obs_volume_type
+      "csi.storage.k8s.io/fstype"                        = var.pvc_fstype
       "csi.storage.k8s.io/node-publish-secret-name"      = kubernetes_secret.test.metadata[0].name
       "csi.storage.k8s.io/node-publish-secret-namespace" = var.namespace_name
       "everest.io/enterprise-project-id"                 = var.enterprise_project_id
@@ -767,16 +638,15 @@ resource "kubernetes_persistent_volume_claim" "test" {
   }
 
   spec {
-    access_modes = var.pv_access_modes
+    access_modes = var.pvc_access_modes
 
     resources {
       requests = {
-        storage = var.pv_storage
+        storage = var.pvc_storage
       }
     }
 
-    storage_class_name = var.pv_storage_class_name
-    volume_name        = kubernetes_persistent_volume.test.metadata.0.name
+    storage_class_name = var.pvc_storage_class_name
   }
 }
 ```
@@ -785,16 +655,17 @@ resource "kubernetes_persistent_volume_claim" "test" {
 - **metadata**: Metadata configuration block
   - **name**: The name of the Persistent Volume Claim, assigned by referencing the input variable `pvc_name`
   - **namespace**: The namespace where the Persistent Volume Claim is located, assigned by referencing the input variable `namespace_name`
-  - **annotations**: Annotations, containing storage provisioner, OBS volume type, file system type, Secret reference, and enterprise project ID
+  - **annotations**: Annotations, containing OBS volume type, file system type, Secret reference, and enterprise project ID
 - **spec**: Specification configuration block
-  - **access_modes**: Access mode list, assigned by referencing the input variable `pv_access_modes`
+  - **access_modes**: Access mode list, assigned by referencing the input variable `pvc_access_modes`, default is ["ReadWriteMany"] indicating multi-node read-write
   - **resources**: Resource request configuration block
     - **requests**: Resource requests, containing storage size request
-      - **storage**: Storage size, assigned by referencing the input variable `pv_storage`
-  - **storage_class_name**: Storage class name, assigned by referencing the input variable `pv_storage_class_name`
-  - **volume_name**: Volume name, assigned by referencing the name of the Kubernetes Persistent Volume resource (kubernetes_persistent_volume.test)
+      - **storage**: Storage size, assigned by referencing the input variable `pvc_storage`, default is "1Gi"
+  - **storage_class_name**: Storage class name, assigned by referencing the input variable `pvc_storage_class_name`, default is "csi-obs", when using this storage class, Kubernetes will automatically create Persistent Volume and OBS bucket
 
-### 15. Create Kubernetes Deployment Resource
+> Note: Unlike using existing OBS buckets, this best practice uses the storage class (storage_class_name) directly through PVC, and Kubernetes will automatically create Persistent Volume and OBS bucket without manually creating these resources.
+
+### 13. Create Kubernetes Deployment Resource
 
 Add the following script to the TF file to inform Terraform to create a Kubernetes Deployment resource:
 
@@ -830,16 +701,9 @@ variable "deployment_volume_name" {
 
 variable "deployment_image_pull_secrets" {
   description = "The image pull secrets of the deployment"
-  type = list(object({
-    name = string
-  }))
-
-  default = [
-    {
-      name = "default-secret"
-    }
-  ]
-  nullable = false
+  type        = list(string)
+  default     = ["default-secret"]
+  nullable    = false
 }
 
 # Create Kubernetes Deployment resource for deploying applications using PVC
@@ -888,7 +752,7 @@ resource "kubernetes_deployment" "test" {
           for_each = var.deployment_image_pull_secrets
 
           content {
-            name = image_pull_secrets.value.name
+            name = image_pull_secrets.value
           }
         }
 
@@ -926,14 +790,14 @@ resource "kubernetes_deployment" "test" {
           - **name**: Volume name, assigned by referencing the input variable `deployment_volume_name`, default is "pvc-obs-volume"
           - **mount_path**: Mount path, assigned by referencing the volume mount configuration in the input variable
       - **image_pull_secrets**: Image pull secrets configuration block (dynamic block), dynamically created based on the input variable `deployment_image_pull_secrets`
-        - **name**: Secret name, assigned by referencing the image pull secrets configuration in the input variable
+        - **name**: Secret name, assigned by referencing the image pull secrets string in the input variable
       - **volume**: Volume configuration block
         - **name**: Volume name, assigned by referencing the input variable `deployment_volume_name`
         - **persistent_volume_claim**: Persistent volume claim configuration block
           - **claim_name**: Claim name, assigned by referencing the name of the Kubernetes Persistent Volume Claim resource (kubernetes_persistent_volume_claim.test)
 - **depends_on**: Explicit dependency, ensuring that the CCE node resource is created before creating the Deployment
 
-### 16. Preset Input Parameters Required for Resource Deployment (Optional)
+### 14. Preset Input Parameters Required for Resource Deployment (Optional)
 
 In this practice, some resources and data sources use input variables to assign configuration content, and these input parameters need to be manually entered during subsequent deployment.
 At the same time, Terraform provides a method to preset these configurations through `tfvars` files, which can avoid repeated input each time it is executed.
@@ -968,8 +832,6 @@ secret_data = {
   "secret.key" = "your_secret_key"
 }
 
-bucket_name           = "tf-test-bucket"
-pv_name               = "tf-test-pv-obs"
 pvc_name              = "tf-test-pvc-obs"
 deployment_name       = "tf-test-deployment"
 deployment_containers = [
@@ -999,14 +861,14 @@ In addition to using the `terraform.tfvars` file, you can also set variable valu
 
 > Note: If the same variable is set through multiple methods, Terraform will use variable values according to the following priority: command line parameters > variable file > environment variables > default values.
 
-### 17. Initialize and Apply Terraform Configuration
+### 15. Initialize and Apply Terraform Configuration
 
 After completing the above script configuration, execute the following steps to create resources:
 
 1. Run `terraform init` to initialize the environment
 2. Run `terraform plan` to view the resource creation plan
-3. After confirming that the resource plan is correct, run `terraform apply` to start creating the complete solution for managing PVC with OBS
-4. Run `terraform show` to view the created complete solution for managing PVC with OBS
+3. After confirming that the resource plan is correct, run `terraform apply` to start creating the complete solution for managing PVC with new OBS
+4. Run `terraform show` to view the created complete solution for managing PVC with new OBS
 
 ## Reference Information
 
@@ -1014,4 +876,4 @@ After completing the above script configuration, execute the following steps to 
 - [Huawei Cloud OBS Product Documentation](https://support.huaweicloud.com/obs/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
 - [Kubernetes Provider Documentation](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs)
-- [Best Practice Source Code Reference For CCE Kubernetes PVC using Existing OBS](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cce/kubenetes/pvc-with-existing-obs-bucket)
+- [Best Practice Source Code Reference For CCE Kubernetes PVC using New OBS](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cce/kubenetes/pvc-with-new-obs-bucket)
