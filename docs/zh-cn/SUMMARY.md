@@ -92,6 +92,7 @@
   * [ELB](best-practices/elb/)
     * [简介](best-practices/elb/index.md)
     * [部署拥有后端实例的专享版弹性负载均衡器](best-practices/elb/dedicated_loadbalancer_with_member.md)
+    * [部署拥有后端实例的共享版弹性负载均衡器](best-practices/elb/shared_loadbalancer_with_member.md)
   * [EVS](best-practices/evs/)
     * [简介](best-practices/evs/index.md)
     * [部署云硬盘](best-practices/evs/volume.md)

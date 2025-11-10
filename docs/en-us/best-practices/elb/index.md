@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Dedicated Load Balancer with Backend Member](dedicated_loadbalancer_with_member.md) - Introduces how to use Terraform to automatically deploy a dedicated load balancer with backend members, including VPC, subnet, load balancer, listener, backend server group, health check, security group, ECS instance, and backend member creation.
+* [Deploy Shared Load Balancer with Backend Member](shared_loadbalancer_with_member.md) - Introduces how to use Terraform to automatically deploy a shared load balancer with backend members, including VPC, subnet, load balancer, EIP binding, certificate management, listener, backend server group, health check, security group, security group rules, ECS instance, and backend member creation.
 
 ## Reference Materials
 

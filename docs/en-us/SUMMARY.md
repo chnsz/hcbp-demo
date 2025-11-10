@@ -92,6 +92,7 @@
   * [ELB](best-practices/elb/)
     * [Introduction](best-practices/elb/index.md)
     * [Deploy Dedicated Load Balancer with Backend Member](best-practices/elb/dedicated_loadbalancer_with_member.md)
+    * [Deploy Shared Load Balancer with Backend Member](best-practices/elb/shared_loadbalancer_with_member.md)
   * [EVS](best-practices/evs/)
     * [Introduction](best-practices/evs/index.md)
     * [Deploy Cloud Volume](best-practices/evs/volume.md)
