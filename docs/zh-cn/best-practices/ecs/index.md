@@ -19,6 +19,7 @@
 * [部署基础实例](simple_instance.md) - 介绍如何使用Terraform自动化部署一个基础的ECS实例，包括VPC、子网和安全组的创建。
 * [部署绑定EIP的实例](instance_with_eip.md) - 介绍如何使用Terraform自动化部署绑定EIP的ECS实例，包括网络环境创建、安全组配置、实例创建和EIP绑定。
 * [部署绑定磁盘的实例](instance_with_volume.md) - 介绍如何使用Terraform自动化部署绑定云硬盘的ECS实例，包括网络环境创建、安全组配置、实例创建和云硬盘绑定。
+* [部署绑定网络接口的实例](instance_with_interface.md) - 介绍如何使用Terraform自动化部署绑定网络接口的ECS实例，包括网络环境创建、多个子网配置、安全组配置、实例创建和网络接口绑定。
 * [部署实例通过provisioner远程登录](instance_with_provisioner.md) - 介绍如何使用Terraform自动化部署通过provisioner远程登录的ECS实例，包括密钥对创建、网络环境配置、EIP绑定和远程命令执行。
 * [部署包周期实例](prepaid_instance.md) - 介绍如何使用Terraform自动化部署一个包周期ECS实例，包括VPC、子网和安全组的创建，以及包周期计费模式的配置。
 * [部署实例通过UserData执行脚本](instance_with_userdata.md) - 介绍如何使用Terraform自动化部署通过UserData执行脚本的ECS实例，包括网络环境创建、安全组配置、密钥对创建、实例创建和脚本执行。
