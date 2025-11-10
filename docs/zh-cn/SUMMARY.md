@@ -85,6 +85,7 @@
     * [部署基础实例](best-practices/ecs/simple_instance.md)
     * [部署绑定EIP的实例](best-practices/ecs/instance_with_eip.md)
     * [部署实例通过provisioner远程登录](best-practices/ecs/instance_with_provisioner.md)
+    * [部署包周期实例](best-practices/ecs/prepaid_instance.md)
     * [部署实例通过UserData执行脚本](best-practices/ecs/instance_with_userdata.md)
   * [EVS](best-practices/evs/)
     * [简介](best-practices/evs/index.md)
