@@ -1,8 +1,8 @@
-# Deploy Instance with Volume
+# Deploy Instance with Network Interface
 
 ## Application Scenario
 
-Elastic Cloud Server (ECS) is a fundamental computing component composed of CPU, memory, operating system, and cloud disks. After an Elastic Cloud Server is successfully created, you can use it in the cloud just like using your own local PC or physical server. Huawei Cloud provides various types of Elastic Cloud Servers to meet different usage scenarios. Elastic Volume Service (EVS) is a highly reliable and high-performance block storage service that can provide persistent data storage for ECS instances. By attaching cloud volumes to ECS instances, you can provide additional storage space for instances to meet data storage, backup, expansion, and other needs. Before creating, you need to confirm the specification type, image type, disk type, and other parameters of the Elastic Cloud Server according to the actual application scenario, and select appropriate network parameters and security group rules. This best practice will introduce how to use Terraform to automatically deploy an ECS instance with attached cloud volume, including VPC, subnet, security group, ECS instance, and cloud volume creation.
+Elastic Cloud Server (ECS) is a fundamental computing component composed of CPU, memory, operating system, and cloud disks. After an Elastic Cloud Server is successfully created, you can use it in the cloud just like using your own local PC or physical server. Huawei Cloud provides various types of Elastic Cloud Servers to meet different usage scenarios. A network interface is a connection point between an ECS instance and a network. An ECS instance can attach multiple network interfaces to achieve multi-NIC functionality. By attaching additional network interfaces to ECS instances, you can achieve network isolation, load balancing, high availability, and other requirements. Before creating, you need to confirm the specification type, image type, disk type, and other parameters of the Elastic Cloud Server according to the actual application scenario, and select appropriate network parameters and security group rules. This best practice will introduce how to use Terraform to automatically deploy an ECS instance with attached network interface, including VPC, multiple subnets, security group, ECS instance, and network interface attachment creation.
 
 ## Related Resources/Data Sources
 
@@ -20,7 +20,7 @@ This best practice involves the following main resources and data sources:
 - [VPC Subnet Resource (huaweicloud_vpc_subnet)](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/vpc_subnet)
 - [Security Group Resource (huaweicloud_networking_secgroup)](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/networking_secgroup)
 - [ECS Instance Resource (huaweicloud_compute_instance)](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/compute_instance)
-- [Cloud Volume Resource (huaweicloud_evs_volume)](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/evs_volume)
+- [Network Interface Attachment Resource (huaweicloud_compute_interface_attach)](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs/resources/compute_interface_attach)
 
 ### Resource/Data Source Dependencies
 
@@ -29,16 +29,16 @@ data.huaweicloud_availability_zones
     ├── data.huaweicloud_compute_flavors
     │   └── data.huaweicloud_images_images
     │       └── huaweicloud_compute_instance
-    └── huaweicloud_evs_volume
+    └── huaweicloud_compute_interface_attach
 
 huaweicloud_vpc
     └── huaweicloud_vpc_subnet
-        └── huaweicloud_compute_instance
-            └── huaweicloud_evs_volume
+        ├── huaweicloud_compute_instance
+        └── huaweicloud_compute_interface_attach
 
 huaweicloud_networking_secgroup
     └── huaweicloud_compute_instance
-        └── huaweicloud_evs_volume
+        └── huaweicloud_compute_interface_attach
 ```
 
 ## Implementation Steps
@@ -184,79 +184,58 @@ resource "huaweicloud_vpc" "test" {
 - **name**: The name of the VPC, assigned by referencing the input variable `vpc_name`
 - **cidr**: The CIDR block of the VPC, assigned by referencing the input variable `vpc_cidr`, default is "192.168.0.0/16" block
 
-### 6. Create VPC Subnet Resource
+### 6. Create VPC Subnet Resources
 
-Add the following script to the TF file to instruct Terraform to create a VPC subnet resource:
+Add the following script to the TF file to instruct Terraform to create multiple VPC subnet resources (at least 2 subnets are required, one for the primary network and one for the attached network interface):
 
 ```hcl
-variable "subnet_name" {
-  description = "The name of the subnet"
-  type        = string
+variable "subnet_configurations" {
+  description = "The list of subnet configurations for ECS instance."
+  type = list(object({
+    subnet_name       = string
+    subnet_cidr       = optional(string)
+    subnet_gateway_ip = optional(string)
+  }))
 }
 
-variable "subnet_cidr" {
-  description = "The CIDR block of the subnet"
-  type        = string
-  default     = ""
-  nullable    = false
-}
-
-variable "subnet_gateway_ip" {
-  description = "The gateway IP address of the subnet"
-  type        = string
-  default     = ""
-  nullable    = false
-}
-
-# Create a VPC subnet resource in the specified region (defaults to the region specified in the current provider block when the region parameter is omitted) for deploying ECS instances
+# Create multiple VPC subnet resources in the specified region (defaults to the region specified in the current provider block when the region parameter is omitted) for deploying ECS instances
 resource "huaweicloud_vpc_subnet" "test" {
+  count = length(var.subnet_configurations)
+
   vpc_id     = huaweicloud_vpc.test.id
-  name       = var.subnet_name
-  cidr       = var.subnet_cidr != "" ? var.subnet_cidr : cidrsubnet(huaweicloud_vpc.test.cidr, 8, 0)
-  gateway_ip = var.subnet_gateway_ip != "" ? var.subnet_gateway_ip : cidrhost(cidrsubnet(huaweicloud_vpc.test.cidr, 8, 0), 1)
+  name       = lookup(var.subnet_configurations[count.index], "subnet_name", null)
+  cidr       = try(coalesce(lookup(var.subnet_configurations[count.index], "subnet_cidr", null), cidrsubnet(huaweicloud_vpc.test.cidr, 8, count.index)), null)
+  gateway_ip = try(coalesce(lookup(var.subnet_configurations[count.index], "subnet_gateway_ip", null), cidrhost(cidrsubnet(huaweicloud_vpc.test.cidr, 8, count.index), 1)), null)
 }
 ```
 
 **Parameter Description**:
+- **count**: The number of resource creations, dynamically creating subnet resources based on the length of the input variable `subnet_configurations`
 - **vpc_id**: The ID of the VPC to which the subnet belongs, referencing the ID of the VPC resource created earlier
-- **name**: The name of the subnet, assigned by referencing the input variable `subnet_name`
-- **cidr**: The CIDR block of the subnet, if subnet CIDR is specified, use that value, otherwise use the cidrsubnet function to divide a subnet segment from the VPC's CIDR block
-- **gateway_ip**: The gateway IP of the subnet, if gateway IP is specified, use that value, otherwise use the cidrhost function to get the first IP address from the subnet segment as the gateway IP
+- **name**: The name of the subnet, obtained from the input variable `subnet_configurations`
+- **cidr**: The CIDR block of the subnet, if subnet CIDR is specified in the configuration, use that value, otherwise use the cidrsubnet function to divide a subnet segment from the VPC's CIDR block
+- **gateway_ip**: The gateway IP of the subnet, if gateway IP is specified in the configuration, use that value, otherwise use the cidrhost function to get the first IP address from the subnet segment as the gateway IP
+
+> Note: This best practice requires creating at least 2 subnets. The first subnet is used for the ECS instance's primary network, and the second subnet is used for the attached network interface. If `attached_network_id` is not provided, `subnet_configurations` must contain at least 2 elements.
 
 ### 7. Create Security Group Resource
 
 Add the following script to the TF file to instruct Terraform to create a security group resource:
 
 ```hcl
-variable "security_group_ids" {
-  description = "The list of security group IDs of the ECS instance"
-  type        = list(string)
-  default     = []
-  nullable    = false
-}
-
 variable "security_group_name" {
   description = "The name of the security group"
   type        = string
-  default     = ""
-
-  validation {
-    condition     = !(length(var.security_group_ids) < 1 && var.security_group_name == "")
-    error_message = "The security group name cannot be empty if the security group ID list is not set"
-  }
 }
 
 # Create a security group resource in the specified region (defaults to the region specified in the current provider block when the region parameter is omitted) for deploying ECS instances
 resource "huaweicloud_networking_secgroup" "test" {
-  count = length(var.security_group_ids) < 1 ? 1 : 0
-
   name                 = var.security_group_name
   delete_default_rules = true
 }
 ```
 
 **Parameter Description**:
-- **count**: The number of resource creations, used to control whether to create a security group resource, only when the security group ID list is empty, create a security group resource
 - **name**: The name of the security group, assigned by referencing the input variable `security_group_name`
 - **delete_default_rules**: Whether to delete default rules, set to true to delete default rules
 
@@ -276,24 +255,24 @@ variable "instance_admin_password" {
   sensitive   = true
 }
 
-variable "enterprise_project_id" {
-  description = "The ID of the enterprise project"
-  type        = string
-  default     = null
-}
-
 # Create an ECS instance resource in the specified region (defaults to the region specified in the current provider block when the region parameter is omitted)
 resource "huaweicloud_compute_instance" "test" {
-  name                  = var.instance_name
-  image_id              = var.instance_image_id != "" ? var.instance_image_id : try(data.huaweicloud_images_images.test[0].images[0].id, null)
-  flavor_id             = var.instance_flavor_id != "" ? var.instance_flavor_id : try(data.huaweicloud_compute_flavors.test[0].flavors[0].id, null)
-  security_group_ids    = length(var.security_group_ids) > 0 ? var.security_group_ids : huaweicloud_networking_secgroup.test[*].id
-  availability_zone     = var.availability_zone != "" ? var.availability_zone : try(data.huaweicloud_availability_zones.test[0].names[0], null)
-  admin_pass            = var.instance_admin_password
-  enterprise_project_id = var.enterprise_project_id
+  name               = var.instance_name
+  image_id           = var.instance_image_id != "" ? var.instance_image_id : try(data.huaweicloud_images_images.test[0].images[0].id, null)
+  flavor_id          = var.instance_flavor_id != "" ? var.instance_flavor_id : try(data.huaweicloud_compute_flavors.test[0].flavors[0].id, null)
+  security_group_ids = [huaweicloud_networking_secgroup.test.id]
+  availability_zone  = var.availability_zone != "" ? var.availability_zone : try(data.huaweicloud_availability_zones.test[0].names[0], null)
+  admin_pass         = var.instance_admin_password
 
   network {
-    uuid = huaweicloud_vpc_subnet.test.id
+    uuid = try(huaweicloud_vpc_subnet.test[0].id, null)
+  }
+
+  # When using huaweicloud_compute_interface_attach, if the security group is not specified, the default security group will be automatically added to the ECS instance.
+  lifecycle {
+    ignore_changes = [
+      security_group_ids
+    ]
   }
 }
 ```
@@ -302,87 +281,59 @@ resource "huaweicloud_compute_instance" "test" {
 - **name**: The name of the ECS instance, assigned by referencing the input variable `instance_name`
 - **image_id**: The image ID used by the ECS instance, if image ID is specified, use that value, otherwise assign based on the return result of the image list query data source
 - **flavor_id**: The flavor ID used by the ECS instance, if instance flavor ID is specified, use that value, otherwise assign based on the return result of the compute flavor list query data source
-- **security_group_ids**: The list of security group IDs associated with the ECS instance, if security group ID list is specified, use that value, otherwise use the ID of the created security group resource
+- **security_group_ids**: The list of security group IDs associated with the ECS instance, using the ID of the created security group resource
 - **availability_zone**: The availability zone where the ECS instance is located, if availability zone is specified, use that value, otherwise use the first availability zone from the availability zone list query data source
 - **admin_pass**: The administrator password of the ECS instance, assigned by referencing the input variable `instance_admin_password`
-- **enterprise_project_id**: The enterprise project ID to which the ECS instance belongs, assigned by referencing the input variable `enterprise_project_id`
-- **network**: Network configuration block, specifying the network to which the ECS instance connects
-  - **uuid**: The unique identifier of the network, using the ID of the subnet resource created earlier
+- **network**: Network configuration block, specifying the primary network to which the ECS instance connects
+  - **uuid**: The unique identifier of the network, using the ID of the first subnet resource
+- **lifecycle**: Lifecycle configuration block, used to control the lifecycle behavior of resources
+  - **ignore_changes**: Specifies attribute changes to be ignored in subsequent applies, set to ignore changes to `security_group_ids`, because when using `huaweicloud_compute_interface_attach`, if the security group is not specified, the system will automatically add the default security group to the ECS instance
 
-### 9. Create Cloud Volume Resource
+### 9. Create Network Interface Attachment Resource
 
-Add the following script to the TF file to instruct Terraform to create a cloud volume resource and attach it to the ECS instance:
+Add the following script to the TF file to instruct Terraform to create a network interface attachment resource:
 
 ```hcl
-variable "volume_name" {
-  description = "The name of the data volume"
+variable "attached_network_id" {
+  description = "The ID of the network to which the ECS instance to be attached"
   type        = string
+  default     = ""
+  nullable    = false
+
+  validation {
+    condition     = var.attached_network_id != "" || length(var.subnet_configurations) == 2
+    error_message = "When attached_network_id is not provided, subnet_configurations must have exactly 2 elements."
+  }
 }
 
-variable "volume_type" {
-  description = "The type of the data volume"
-  type        = string
-  default     = "SSD"
-}
-
-variable "volume_size" {
-  description = "The size of the data volume in GB"
-  type        = number
-  default     = 10
-}
-
-variable "volume_iops" {
-  description = "The IOPS(Input/Output Operations Per Second) for the data volume"
-  type        = number
-  default     = null
-}
-
-variable "volume_throughput" {
-  description = "The throughput for the data volume"
-  type        = number
-  default     = null
-}
-
-variable "volume_backup_id" {
-  description = "The backup ID from which to create the disk"
+variable "attached_interface_fixed_ip" {
+  description = "The fixed IP address of the ECS instance to be attached"
   type        = string
   default     = null
 }
 
-variable "volume_snapshot_id" {
-  description = "The snapshot ID from which to create the disk"
-  type        = string
+variable "attached_security_group_ids" {
+  description = "The list of security group IDs of the ECS instance to be attached"
+  type        = list(string)
   default     = null
 }
 
-# Create a cloud volume resource in the specified region (defaults to the region specified in the current provider block when the region parameter is omitted) and attach it to the ECS instance
-resource "huaweicloud_evs_volume" "test" {
-  server_id             = huaweicloud_compute_instance.test.id
-  name                  = var.volume_name
-  availability_zone     = var.availability_zone != "" ? var.availability_zone : try(data.huaweicloud_availability_zones.test[0].names[0], null)
-  volume_type           = var.volume_type
-  size                  = var.volume_size
-  iops                  = var.volume_iops
-  throughput            = var.volume_throughput
-  backup_id             = var.volume_backup_id
-  snapshot_id           = var.volume_snapshot_id
-  enterprise_project_id = var.enterprise_project_id
+# Create a network interface attachment resource in the specified region (defaults to the region specified in the current provider block when the region parameter is omitted)
+resource "huaweicloud_compute_interface_attach" "test" {
+  instance_id        = huaweicloud_compute_instance.test.id
+  network_id         = var.attached_network_id != "" ? var.attached_network_id : try(huaweicloud_vpc_subnet.test[1].id, null)
+  fixed_ip           = var.attached_interface_fixed_ip
+  security_group_ids = var.attached_security_group_ids
 }
 ```
 
 **Parameter Description**:
-- **server_id**: The ECS instance ID to which the cloud volume is attached, referencing the ID of the ECS instance resource created earlier
-- **name**: The name of the cloud volume, assigned by referencing the input variable `volume_name`
-- **availability_zone**: The availability zone where the cloud volume is located, if availability zone is specified, use that value, otherwise use the first availability zone from the availability zone list query data source, must be in the same availability zone as the ECS instance
-- **volume_type**: The type of the cloud volume, assigned by referencing the input variable `volume_type`, default is "SSD" indicating SSD cloud volume
-- **size**: The size of the cloud volume (GB), assigned by referencing the input variable `volume_size`, default is 10GB
-- **iops**: The IOPS (Input/Output Operations Per Second) of the cloud volume, assigned by referencing the input variable `volume_iops`
-- **throughput**: The throughput of the cloud volume, assigned by referencing the input variable `volume_throughput`
-- **backup_id**: The backup ID from which to create the disk, assigned by referencing the input variable `volume_backup_id`
-- **snapshot_id**: The snapshot ID from which to create the disk, assigned by referencing the input variable `volume_snapshot_id`
-- **enterprise_project_id**: The enterprise project ID to which the cloud volume belongs, assigned by referencing the input variable `enterprise_project_id`
+- **instance_id**: The ECS instance ID to which the network interface is attached, referencing the ID of the ECS instance resource created earlier
+- **network_id**: The network ID to be attached, if `attached_network_id` is specified, use that value, otherwise use the ID of the second subnet resource
+- **fixed_ip**: The fixed IP address of the network interface, assigned by referencing the input variable `attached_interface_fixed_ip`, if not specified, it will be automatically assigned by the system
+- **security_group_ids**: The list of security group IDs for the network interface, assigned by referencing the input variable `attached_security_group_ids`, if not specified, the default security group will be used
 
-> Note: The cloud volume must be in the same availability zone as the ECS instance to be successfully attached. After specifying the ECS instance ID through the `server_id` parameter, the cloud volume will be automatically attached to that instance. After the cloud volume is successfully created, you need to mount and format it within the ECS instance before it can be used.
+> Note: When using `huaweicloud_compute_interface_attach`, if the security group is not specified, the system will automatically add the default security group to the ECS instance. Therefore, the `lifecycle.ignore_changes` is configured in the ECS instance resource to ignore changes to `security_group_ids` to avoid configuration conflicts caused by automatically adding the default security group.
 
 ### 10. Preset Input Parameters Required for Resource Deployment (Optional)
 
@@ -393,16 +344,22 @@ Create a `terraform.tfvars` file in the working directory, with example content 
 
 ```hcl
 # Network resource configuration
-vpc_name                = "tf_test_vpc"
-subnet_name             = "tf_test_subnet"
+vpc_name              = "tf_test_vpc"
+subnet_configurations = [
+  {
+    subnet_name = "tf_test_main"
+  },
+  {
+    subnet_name = "tf_test_standby"
+  },
+]
+
+# Security group configuration
 security_group_name     = "tf_test_security_group"
 
 # ECS instance configuration
 instance_name           = "tf_test_instace"
 instance_admin_password = "YourPassword!"
-
-# Cloud volume configuration
-volume_name             = "tf_test_volume"
 ```
 
 **Usage**:
@@ -425,12 +382,11 @@ After completing the above script configuration, execute the following steps to 
 
 1. Run `terraform init` to initialize the environment
 2. Run `terraform plan` to view the resource creation plan
-3. After confirming that the resource plan is correct, run `terraform apply` to start creating the ECS instance with attached cloud volume
-4. Run `terraform show` to view the created ECS instance with attached cloud volume details
+3. After confirming that the resource plan is correct, run `terraform apply` to start creating the ECS instance with attached network interface
+4. Run `terraform show` to view the created ECS instance with attached network interface details
 
 ## Reference Information
 
 - [Huawei Cloud ECS Product Documentation](https://support.huaweicloud.com/ecs/index.html)
-- [Huawei Cloud EVS Product Documentation](https://support.huaweicloud.com/evs/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [Best Practice Source Code Reference For ECS Instance with Attached Volume](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/ecs/attached-volume)
+- [Best Practice Source Code Reference For ECS Instance with Network Interface](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/ecs/attached-interface)
