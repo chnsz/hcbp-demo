@@ -164,6 +164,7 @@
     * [Deploy Professional Edition Instance](best-practices/waf/dedicated_instance.md)
   * [Workspace](best-practices/workspace/)
     * [Introduction](best-practices/workspace/index.md)
+    * [Deploy Cloud Application Policy Group](best-practices/workspace/app_policy_group.md)
     * [Deploy Cloud Application Server Group](best-practices/workspace/app_server_group.md)
     * [Deploy Pay-per-Use Cloud Desktop](best-practices/workspace/postpaid_desktop.md)
 * [Help](helpers/)
