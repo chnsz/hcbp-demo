@@ -19,6 +19,7 @@ This section contains the following best practices:
 * [Deploy Custom Line](custom_line.md) - Introduces how to use Terraform to automatically deploy DNS custom lines, including line creation and IP address segment configuration.
 * [Deploy Endpoint](endpoint.md) - Introduces how to use Terraform to automatically deploy DNS endpoints, including VPC creation, subnet configuration, and endpoint deployment.
 * [Deploy Public Zone](public_zone.md) - Introduces how to use Terraform to automatically deploy DNS public zones, including domain creation, TTL configuration, DNSSEC settings, and router association.
+* [Deploy Public Zone Cross Accounts](public_zone_cross_accounts.md) - Introduces how to use Terraform to automatically deploy cross-account public zone creation, including domain authorization, recordset creation, authorization verification, and subdomain zone creation.
 
 ## Reference Materials
 

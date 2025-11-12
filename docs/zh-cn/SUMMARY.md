@@ -80,6 +80,7 @@
     * [部署自定义线路](best-practices/dns/custom_line.md)
     * [部署终端节点](best-practices/dns/endpoint.md)
     * [部署公网域名](best-practices/dns/public_zone.md)
+    * [跨账号创建公网域名](best-practices/dns/public_zone_cross_accounts.md)
   * [ECS](best-practices/ecs/)
     * [简介](best-practices/ecs/index.md)
     * [部署基础实例](best-practices/ecs/simple_instance.md)
