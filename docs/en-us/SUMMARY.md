@@ -80,6 +80,7 @@
     * [Deploy Custom Line](best-practices/dns/custom_line.md)
     * [Deploy Endpoint](best-practices/dns/endpoint.md)
     * [Deploy Public Zone](best-practices/dns/public_zone.md)
+    * [Deploy Public Zone Cross Accounts](best-practices/dns/public_zone_cross_accounts.md)
   * [ECS](best-practices/ecs/)
     * [Introduction](best-practices/ecs/index.md)
     * [Deploy Basic Instance](best-practices/ecs/simple_instance.md)

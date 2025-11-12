@@ -19,6 +19,7 @@ DNS服务支持多种解析类型，包括A记录、AAAA记录、CNAME记录、M
 * [部署自定义线路](custom_line.md) - 介绍如何使用Terraform自动化部署DNS自定义线路，包括线路创建和IP地址段配置。
 * [部署终端节点](endpoint.md) - 介绍如何使用Terraform自动化部署DNS终端节点，包括VPC创建、子网配置和终端节点部署。
 * [部署公网域名](public_zone.md) - 介绍如何使用Terraform自动化部署DNS公网域名，包括域名创建、TTL配置、DNSSEC设置和路由器关联。
+* [跨账号创建公网域名](public_zone_cross_accounts.md) - 介绍如何使用Terraform自动化部署跨账号公网域名创建，包括域名授权、记录集创建、授权验证和子域名创建。
 
 ## 参考资料
 
