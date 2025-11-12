@@ -165,6 +165,7 @@
   * [Workspace](best-practices/workspace/)
     * [简介](best-practices/workspace/index.md)
     * [部署云应用策略组](best-practices/workspace/app_policy_group.md)
+    * [部署云应用策略组伸缩策略](best-practices/workspace/app_policy_group_scaling_policy.md)
     * [部署云应用服务器组](best-practices/workspace/app_server_group.md)
     * [部署按需计费的云桌面](best-practices/workspace/postpaid_desktop.md)
 * [帮助](helpers/)

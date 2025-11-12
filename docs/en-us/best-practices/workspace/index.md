@@ -21,6 +21,7 @@ This section contains the following best practices:
 ### Cloud Application Best Practices
 
 * [Deploy Cloud Application Policy Group](app_policy_group.md) - Introduces how to use Terraform to automatically deploy Workspace cloud application policy groups, including cloud application server group creation, cloud application group creation, and policy group configuration.
+* [Deploy Cloud Application Policy Group Scaling Policy](app_policy_group_scaling_policy.md) - Introduces how to use Terraform to automatically deploy Workspace cloud application policy group scaling policies, including cloud application server group creation, cloud application group creation, policy group configuration, and scaling policy configuration.
 * [Deploy Cloud Application Server Group](app_server_group.md) - Introduces how to use Terraform to automatically deploy Workspace cloud application server groups, including service query, server group creation, and configuration management.
 
 ### Cloud Desktop Best Practices
