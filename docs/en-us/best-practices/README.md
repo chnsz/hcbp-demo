@@ -64,6 +64,10 @@ Elastic Cloud Server (ECS) is a basic computing component composed of CPU, memor
 
 EventGrid (EG) is an event-driven architecture service provided by Huawei Cloud, supporting event production, routing, transformation, and consumption, helping enterprises build loosely coupled and scalable distributed application systems.
 
+### [Identity and Access Management (IAM) Best Practices](iam/index.md)
+
+Identity and Access Management (IAM) is a fundamental identity authentication and access management service provided by Huawei Cloud, offering core functions such as identity management, permission management, and access control for Huawei Cloud users. IAM service supports fine-grained permission control, helping enterprises achieve unified, secure, and efficient cloud resource access management through flexible combinations of users, user groups, roles, and policies.
+
 ### [Enterprise Router (ER) Best Practices](er/index.md)
 
 Enterprise Router (ER) is a high-performance, high-availability enterprise-grade router service provided by Huawei Cloud, supporting enterprise-level network functions such as multi-VPC interconnection, dedicated line access, and VPN connections.
