@@ -4,6 +4,10 @@
 
 ## 文档导航
 
+### [Anti-DDoS最佳实践](anti-ddos/index.md)
+
+Anti-DDoS（Anti-Distributed Denial of Service）是华为云提供的分布式拒绝服务攻击防护服务，能够有效防护针对公网IP的DDoS攻击，保障业务的稳定运行。
+
 ### [API网关（APIG）最佳实践](apig/index.md)
 
 API网关（API Gateway）是为企业和开发者提供的高性能、高可用、高安全的云原生网关服务。
