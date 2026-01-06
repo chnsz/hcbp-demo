@@ -11,6 +11,7 @@
   * [Anti-DDoS](best-practices/anti-ddos/)
     * [Introduction](best-practices/anti-ddos/index.md)
     * [Deploy Anti-DDoS Basic Protection](best-practices/anti-ddos/basic.md)
+    * [Deploy Anti-DDoS Default Protection Policy](best-practices/anti-ddos/default_protection_policy.md)
   * [APIG](best-practices/apig/)
     * [Introduction](best-practices/apig/index.md)
     * [Create Proxy Cache Plugin](best-practices/apig/proxy_cache_plugin.md)
