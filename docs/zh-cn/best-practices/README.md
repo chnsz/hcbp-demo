@@ -8,6 +8,10 @@
 
 Anti-DDoS（Anti-Distributed Denial of Service）是华为云提供的分布式拒绝服务攻击防护服务，能够有效防护针对公网IP的DDoS攻击，保障业务的稳定运行。
 
+### [应用运维管理（AOM）最佳实践](aom/index.md)
+
+应用运维管理（Application Operations Management, AOM）是华为云提供的一站式应用运维管理平台，为企业提供统一的应用运维管理入口。AOM通过应用监控、日志管理、告警管理等功能，帮助企业实现自动化运维和智能化管理，提升运维效率和质量。
+
 ### [API网关（APIG）最佳实践](apig/index.md)
 
 API网关（API Gateway）是为企业和开发者提供的高性能、高可用、高安全的云原生网关服务。
