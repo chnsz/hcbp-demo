@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy AOM Alarm Action Callback](action_callback.md) - Introduces how to use Terraform to automatically deploy AOM alarm action callbacks, including creating SMN topics and subscriptions, AOM message templates, and configuring AOM alarm action rules.
+* [Deploy AOM Distribute Alarms by Tags](distribute_alarm.md) - Introduces how to use Terraform to automatically deploy AOM distribute alarms by tags, including creating Prometheus instances, cloud service access, alarm rules, and configuring alarm action rules and tag management.
 
 ## Reference Materials
 
