@@ -20,6 +20,7 @@
     * [部署AOM防止ELB告警风暴](best-practices/aom/prevent_elb_alarm_storm.md)
   * [APIG](best-practices/apig/)
     * [简介](best-practices/apig/index.md)
+    * [创建Kafka转发插件](best-practices/apig/kafka_forward_plugin.md)
     * [创建代理缓存插件](best-practices/apig/proxy_cache_plugin.md)
     * [部署带有自定义认证的API](best-practices/apig/function_authorizer.md)
   * [AS](best-practices/as/)
