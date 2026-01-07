@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy Anti-DDoS Basic Protection](basic.md) - Introduces how to use Terraform to automatically deploy Anti-DDoS Basic Protection, including creating Elastic IP, Simple Message Notification topics and subscriptions, and configuring Anti-DDoS Basic Protection.
 * [Deploy Anti-DDoS Default Protection Policy](default_protection_policy.md) - Introduces how to use Terraform to automatically deploy an Anti-DDoS default protection policy, which provides a unified protection configuration for all EIPs in your account.
+* [Deploy Anti-DDoS LTS Configuration](lts_config.md) - Introduces how to use Terraform to automatically deploy Anti-DDoS LTS configuration, including creating LTS log groups, log streams, and configuring the integration between Anti-DDoS and LTS.
 
 ## Reference Materials
 

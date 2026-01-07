@@ -85,4 +85,4 @@ After completing the above script configuration, execute the following steps to 
 
 - [Huawei Cloud Anti-DDoS Product Documentation](https://support.huaweicloud.com/antiddos/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [Best Practice Source Code Reference For Anti-DDoS Default Protection Policy](https://github.com/Lance52259/terraform-provider-huaweicloud/tree/master/examples/antiddos/default-protection-policy)
+- [Best Practice Source Code Reference For Anti-DDoS Default Protection Policy](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/antiddos/default-protection-policy)
