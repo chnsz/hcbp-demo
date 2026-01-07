@@ -20,6 +20,10 @@ API Gateway (APIG) is a high-performance, high-availability, and high-security c
 
 Auto Scaling (AS) is a service that automatically adjusts computing resources based on user business needs and strategies, helping you achieve dynamic resource allocation and cost optimization.
 
+### [Bare Metal Server (BMS) Best Practices](bms/index.md)
+
+Bare Metal Server (BMS) is a physical server that can be obtained at any time, with high performance and high availability, providing dedicated physical server resources without virtualization overhead, meeting business scenarios with high performance requirements such as high-performance computing, databases, and big data analysis.
+
 ### [Business Recovery Service (BRS) Best Practices](brs/index.md)
 
 Business Recovery Service (BRS) is a disaster recovery service for Elastic Cloud Server (ECS) and Elastic Volume Service (EVS). Through host-level replication, data redundancy, and cache acceleration technologies, it provides users with high-level data reliability and business continuity.
