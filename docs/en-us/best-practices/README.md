@@ -8,6 +8,10 @@ Welcome to the Huawei Cloud Best Practices Documentation Center. This documentat
 
 Anti-DDoS (Anti-Distributed Denial of Service) is a distributed denial-of-service attack protection service provided by Huawei Cloud, which can effectively protect public IPs from DDoS attacks and ensure stable business operations.
 
+### [Application Operations Management (AOM) Best Practices](aom/index.md)
+
+Application Operations Management (AOM) is a one-stop application operations management platform provided by Huawei Cloud, offering enterprises a unified application operations management entry point. AOM helps enterprises achieve automated operations and intelligent management through application monitoring, log management, alarm management, and other functions, improving operational efficiency and quality.
+
 ### [API Gateway (APIG) Best Practices](apig/index.md)
 
 API Gateway (APIG) is a high-performance, high-availability, and high-security cloud-native gateway service provided for enterprises and developers.
