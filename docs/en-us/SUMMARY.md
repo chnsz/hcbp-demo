@@ -31,6 +31,7 @@
   * [BMS](best-practices/bms/)
     * [Introduction](best-practices/bms/index.md)
     * [Deploy Basic Instance](best-practices/bms/basic.md)
+    * [Deploy Reset Instance Password](best-practices/bms/reset_password.md)
   * [BRS](best-practices/brs/)
     * [Introduction](best-practices/brs/index.md)
     * [Deploy Disaster Recovery Drill](best-practices/brs/disaster_recovery_drill.md)
