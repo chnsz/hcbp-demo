@@ -16,6 +16,7 @@
 
 本章节包含以下最佳实践：
 
+* [部署修改实例类型](change_instance_type.md) - 介绍如何使用Terraform自动化修改单节点CBH实例的类型，满足业务需求的变化。
 * [部署云堡垒机单机实例](single_instance.md) - 介绍如何使用Terraform自动化部署一个云堡垒机单机实例，包括VPC、子网和安全组的创建。
 * [部署云堡垒机主备实例](ha_instance.md) - 介绍如何使用Terraform自动化部署一个云堡垒机主备实例，提供高可用性保障，包括VPC、子网和安全组的创建。
 

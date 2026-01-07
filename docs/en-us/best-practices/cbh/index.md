@@ -16,6 +16,7 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
+* [Deploy Change Instance Type](change_instance_type.md) - Introduces how to use Terraform to automatically modify the type of a single-node CBH instance to meet changing business requirements.
 * [Deploy Cloud Bastion Host Single Instance](single_instance.md) - Introduces how to use Terraform to automatically deploy a cloud bastion host single instance, including the creation of VPC, subnet, and security group.
 * [Deploy Cloud Bastion Host HA Instance](ha_instance.md) - Introduces how to use Terraform to automatically deploy a cloud bastion host HA instance, providing high availability assurance, including the creation of VPC, subnet, and security group.
 
