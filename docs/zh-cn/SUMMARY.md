@@ -40,6 +40,7 @@
     * [部署保护实例](best-practices/brs/protected_instance.md)
   * [CBH](best-practices/cbh/)
     * [简介](best-practices/cbh/index.md)
+    * [部署修改实例类型](best-practices/cbh/change_instance_type.md)
     * [部署云堡垒机单机实例](best-practices/cbh/single_instance.md)
     * [部署云堡垒机主备实例](best-practices/cbh/ha_instance.md)
   * [CBR](best-practices/cbr/)

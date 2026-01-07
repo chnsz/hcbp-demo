@@ -40,6 +40,7 @@
     * [Deploy Protected Instance](best-practices/brs/protected_instance.md)
   * [CBH](best-practices/cbh/)
     * [Introduction](best-practices/cbh/index.md)
+    * [Deploy Change Instance Type](best-practices/cbh/change_instance_type.md)
     * [Deploy Cloud Bastion Host Single Instance](best-practices/cbh/single_instance.md)
     * [Deploy Cloud Bastion Host HA Instance](best-practices/cbh/ha_instance.md)
   * [CBR](best-practices/cbr/)
