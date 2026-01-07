@@ -1,4 +1,4 @@
-# Deploy Anti-DDoS Default Protection Policy
+# Deploy Default Protection Policy
 
 ## Application Scenario
 

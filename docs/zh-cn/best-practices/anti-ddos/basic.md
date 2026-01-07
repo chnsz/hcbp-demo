@@ -1,10 +1,10 @@
-# 部署Anti-DDoS基础防护
+# 部署基础防护
 
 ## 应用场景
 
 Anti-DDoS（Anti-Distributed Denial of Service）是华为云提供的分布式拒绝服务攻击防护服务，能够有效防护针对公网IP的DDoS攻击，保障业务的稳定运行。Anti-DDoS基础防护为华为云用户提供免费的DDoS攻击防护能力，当检测到DDoS攻击时，系统会自动启动流量清洗，将攻击流量过滤后，仅将正常流量转发给源站服务器。
 
-本最佳实践将介绍如何使用Terraform自动化部署Anti-DDoS基础防护，包括创建弹性公网IP（EIP）、消息通知服务（SMN）主题和订阅，以及配置Anti-DDoS基础防护。
+本最佳实践将介绍如何使用Terraform自动化部署基础防护，包括创建弹性公网IP（EIP）、消息通知服务（SMN）主题和订阅，以及配置Anti-DDoS基础防护。
 
 ## 相关资源/数据源
 

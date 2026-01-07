@@ -1,4 +1,4 @@
-# Deploy Anti-DDoS LTS Configuration
+# Deploy LTS Configuration
 
 ## Application Scenario
 
