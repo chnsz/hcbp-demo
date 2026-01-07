@@ -32,6 +32,10 @@ Business Recovery Service (BRS) is a disaster recovery service for Elastic Cloud
 
 Cloud Bastion Host (CBH) is a secure operation and maintenance management service provided by Huawei Cloud, offering enterprises a unified secure operation and maintenance entry point. CBH helps enterprises establish secure and compliant operation and maintenance management systems through centralized identity authentication, permission management, operation auditing, and other functions.
 
+### [Cloud Connect (CC) Best Practices](cc/index.md)
+
+Cloud Connect (CC) is a global network connection service provided by Huawei Cloud, supporting multiple network instance access, helping customers build a global network. Cloud Connect service provides full network interconnection capabilities, enabling any two points in the cloud network to interconnect, ensuring one-hop network forwarding without transit.
+
 ### [Cloud Backup and Recovery (CBR) Best Practices](cbr/index.md)
 
 Cloud Backup and Recovery (CBR) is a data protection service provided by Huawei Cloud, offering simple and easy-to-use backup services for cloud and on-premises resources. When events such as virus intrusion, human error deletion, or hardware/software failures occur, data can be restored to any backup point.
