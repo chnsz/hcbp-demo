@@ -18,6 +18,7 @@ Anti-DDoS服务支持多种攻击类型的防护，包括SYN Flood、UDP Flood�
 
 * [部署Anti-DDoS基础防护](basic.md) - 介绍如何使用Terraform自动化部署Anti-DDoS基础防护，包括创建弹性公网IP、消息通知服务主题和订阅，以及配置Anti-DDoS基础防护。
 * [部署Anti-DDoS默认防护策略](default_protection_policy.md) - 介绍如何使用Terraform自动化部署Anti-DDoS默认防护策略，为账户下所有EIP提供统一的防护配置。
+* [部署Anti-DDoS LTS配置](lts_config.md) - 介绍如何使用Terraform自动化部署Anti-DDoS LTS配置，包括创建LTS日志组、日志流，以及配置Anti-DDoS与LTS的集成。
 
 ## 参考资料
 
