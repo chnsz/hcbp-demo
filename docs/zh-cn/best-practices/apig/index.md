@@ -16,8 +16,9 @@ API网关提供完整的API生命周期管理功能，支持多种安全认证�
 
 本章节包含以下最佳实践：
 
-* [部署带有自定义认证的API](function_authorizer.md) - 介绍如何使用Terraform自动化部署带有自定义认证的API以及如何使用FunctionGraph函数实现API的前端认证。
+* [创建Kafka转发插件](kafka_forward_plugin.md) - 介绍如何使用Terraform自动化创建API网关的Kafka转发插件，实现API请求的异步转发和消息队列集成。
 * [创建代理缓存插件](proxy_cache_plugin.md) - 介绍如何使用Terraform自动化创建API网关的代理缓存插件，实现API响应数据的缓存管理。
+* [部署带有自定义认证的API](function_authorizer.md) - 介绍如何使用Terraform自动化部署带有自定义认证的API以及如何使用FunctionGraph函数实现API的前端认证。
 
 ## 参考资料
 

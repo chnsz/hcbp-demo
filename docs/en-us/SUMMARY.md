@@ -20,6 +20,7 @@
     * [Deploy AOM Prevent ELB Alarm Storm](best-practices/aom/prevent_elb_alarm_storm.md)
   * [APIG](best-practices/apig/)
     * [Introduction](best-practices/apig/index.md)
+    * [Create Kafka Forward Plugin](best-practices/apig/kafka_forward_plugin.md)
     * [Create Proxy Cache Plugin](best-practices/apig/proxy_cache_plugin.md)
     * [Deploy API with Custom Authentication](best-practices/apig/function_authorizer.md)
   * [AS](best-practices/as/)
