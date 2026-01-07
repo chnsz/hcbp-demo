@@ -32,6 +32,7 @@
     * [简介](best-practices/bms/index.md)
     * [部署基础实例](best-practices/bms/basic.md)
     * [部署实例密码重置](best-practices/bms/reset_password.md)
+    * [部署挂载云硬盘](best-practices/bms/volume_attach.md)
   * [BRS](best-practices/brs/)
     * [简介](best-practices/brs/index.md)
     * [部署灾难恢复演练](best-practices/brs/disaster_recovery_drill.md)
