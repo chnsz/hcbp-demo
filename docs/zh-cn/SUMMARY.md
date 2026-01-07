@@ -11,6 +11,7 @@
   * [Anti-DDoS](best-practices/anti-ddos/)
     * [简介](best-practices/anti-ddos/index.md)
     * [部署Anti-DDoS基础防护](best-practices/anti-ddos/basic.md)
+    * [部署Anti-DDoS默认防护策略](best-practices/anti-ddos/default_protection_policy.md)
   * [APIG](best-practices/apig/)
     * [简介](best-practices/apig/index.md)
     * [创建代理缓存插件](best-practices/apig/proxy_cache_plugin.md)
