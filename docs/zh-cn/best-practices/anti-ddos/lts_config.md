@@ -1,10 +1,10 @@
-# 部署Anti-DDoS LTS配置
+# 部署LTS配置
 
 ## 应用场景
 
 Anti-DDoS（Anti-Distributed Denial of Service）是华为云提供的分布式拒绝服务攻击防护服务，能够有效防护针对公网IP的DDoS攻击，保障业务的稳定运行。通过配置Anti-DDoS与云日志服务（LTS）的集成，可以将Anti-DDoS的攻击日志实时传输到LTS，便于进行日志分析、审计和监控。LTS配置可以帮助用户集中管理和分析Anti-DDoS防护日志，及时发现和应对安全威胁。
 
-本最佳实践将介绍如何使用Terraform自动化部署Anti-DDoS LTS配置，包括创建LTS日志组、日志流，以及配置Anti-DDoS与LTS的集成。
+本最佳实践将介绍如何使用Terraform自动化部署LTS配置，包括创建LTS日志组、日志流，以及配置Anti-DDoS与LTS的集成。
 
 ## 相关资源/数据源
 

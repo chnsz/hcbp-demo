@@ -1,4 +1,4 @@
-# Deploy Anti-DDoS Basic Protection
+# Deploy Basic Protection
 
 ## Application Scenario
 
