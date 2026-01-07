@@ -16,6 +16,7 @@
   * [AOM](best-practices/aom/)
     * [Introduction](best-practices/aom/index.md)
     * [Deploy AOM Alarm Action Callback](best-practices/aom/action_callback.md)
+    * [Deploy AOM Distribute Alarms by Tags](best-practices/aom/distribute_alarm.md)
   * [APIG](best-practices/apig/)
     * [Introduction](best-practices/apig/index.md)
     * [Create Proxy Cache Plugin](best-practices/apig/proxy_cache_plugin.md)

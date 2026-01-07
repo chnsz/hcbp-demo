@@ -17,6 +17,7 @@ AOM服务支持多种监控指标和告警规则，提供完整的应用生命�
 本章节包含以下最佳实践：
 
 * [部署AOM告警动作回调](action_callback.md) - 介绍如何使用Terraform自动化部署AOM告警动作回调，包括创建SMN主题和订阅、AOM消息模板，以及配置AOM告警动作规则。
+* [部署AOM按标签分发告警](distribute_alarm.md) - 介绍如何使用Terraform自动化部署AOM按标签分发告警，包括创建Prometheus实例、云服务接入、告警规则，以及配置告警动作规则和标签管理。
 
 ## 参考资料
 
