@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Basic Instance](basic.md) - Introduces how to use Terraform to automatically deploy a basic BMS instance, including the creation of VPC, subnet, security group, and key pair.
+* [Deploy Reset Instance Password](reset_password.md) - Introduces how to use Terraform to automatically reset the password of a BMS instance, ensuring standardized and secure password management.
 
 ## Reference Materials
 
