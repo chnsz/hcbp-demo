@@ -85,4 +85,4 @@ antiddos_traffic_threshold = 200
 
 - [华为云Anti-DDoS产品文档](https://support.huaweicloud.com/antiddos/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [Anti-DDoS默认防护策略最佳实践源码参考](https://github.com/Lance52259/terraform-provider-huaweicloud/tree/master/examples/antiddos/default-protection-policy)
+- [Anti-DDoS默认防护策略最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/antiddos/default-protection-policy)
