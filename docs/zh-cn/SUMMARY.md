@@ -17,6 +17,7 @@
     * [简介](best-practices/aom/index.md)
     * [部署AOM告警动作回调](best-practices/aom/action_callback.md)
     * [部署AOM按标签分发告警](best-practices/aom/distribute_alarm.md)
+    * [部署AOM防止ELB告警风暴](best-practices/aom/prevent_elb_alarm_storm.md)
   * [APIG](best-practices/apig/)
     * [简介](best-practices/apig/index.md)
     * [创建代理缓存插件](best-practices/apig/proxy_cache_plugin.md)
