@@ -36,6 +36,10 @@ Cloud Bastion Host (CBH) is a secure operation and maintenance management servic
 
 Cloud Connect (CC) is a global network connection service provided by Huawei Cloud, supporting multiple network instance access, helping customers build a global network. Cloud Connect service provides full network interconnection capabilities, enabling any two points in the cloud network to interconnect, ensuring one-hop network forwarding without transit.
 
+### [Cloud Container Instance (CCI) Best Practices](cci/index.md)
+
+Cloud Container Instance (CCI) is a Serverless container service provided by Huawei Cloud, allowing you to run container applications directly without creating and managing server clusters. CCI provides second-level startup, pay-as-you-go, and per-second billing container services, supporting Kubernetes native APIs.
+
 ### [Cloud Backup and Recovery (CBR) Best Practices](cbr/index.md)
 
 Cloud Backup and Recovery (CBR) is a data protection service provided by Huawei Cloud, offering simple and easy-to-use backup services for cloud and on-premises resources. When events such as virus intrusion, human error deletion, or hardware/software failures occur, data can be restored to any backup point.
