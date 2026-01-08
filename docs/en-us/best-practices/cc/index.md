@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy Bandwidth Package](bandwidth_package.md) - Introduces how to use Terraform to automatically create a Cloud Connect bandwidth package, uniformly managing and allocating bandwidth resources across regions and networks.
 * [Deploy Central Network](central_network.md) - Introduces how to use Terraform to automatically create a Cloud Connect central network, building a centralized network architecture to achieve unified management and interconnection across regions and networks.
+* [Deploy Global Connection Bandwidth](global_connection_bandwidth.md) - Introduces how to use Terraform to automatically create a Cloud Connect global connection bandwidth, uniformly managing and allocating network bandwidth resources globally, achieving cross-border network connections.
 
 ## Reference Materials
 

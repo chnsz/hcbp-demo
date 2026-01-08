@@ -47,6 +47,7 @@
     * [Introduction](best-practices/cc/index.md)
     * [Deploy Bandwidth Package](best-practices/cc/bandwidth_package.md)
     * [Deploy Central Network](best-practices/cc/central_network.md)
+    * [Deploy Global Connection Bandwidth](best-practices/cc/global_connection_bandwidth.md)
   * [CBR](best-practices/cbr/)
     * [Introduction](best-practices/cbr/index.md)
     * [Deploy Disk Type Vault](best-practices/cbr/disk_vault.md)
