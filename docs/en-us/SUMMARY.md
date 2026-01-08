@@ -51,6 +51,7 @@
   * [CDN](best-practices/cdn/)
     * [Introduction](best-practices/cdn/index.md)
     * [Deploy Cache Management](best-practices/cdn/cache_management.md)
+    * [Deploy HTTPS and Cache Domain](best-practices/cdn/domain_with_https_and_cache.md)
   * [CCI](best-practices/cci/)
     * [Introduction](best-practices/cci/index.md)
     * [Deploy Stateless Workload](best-practices/cci/deployment.md)

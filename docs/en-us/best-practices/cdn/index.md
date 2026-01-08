@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Cache Management](cache_management.md) - Introduces how to use Terraform to automatically execute CDN cache refresh and preheat operations, managing cached content on CDN nodes to ensure users get the latest resources and improve access speed.
+* [Deploy HTTPS and Cache Domain](domain_with_https_and_cache.md) - Introduces how to use Terraform to automatically create a CDN domain, including HTTPS and cache rule configuration, achieving content acceleration and secure transmission.
 
 ## Reference Information
 
