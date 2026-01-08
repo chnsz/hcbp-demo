@@ -46,6 +46,7 @@
   * [CC](best-practices/cc/)
     * [简介](best-practices/cc/index.md)
     * [部署带宽包](best-practices/cc/bandwidth_package.md)
+    * [部署中心网络](best-practices/cc/central_network.md)
   * [CBR](best-practices/cbr/)
     * [简介](best-practices/cbr/index.md)
     * [部署磁盘类型存储库](best-practices/cbr/disk_vault.md)
