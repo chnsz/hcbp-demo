@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy Stateless Workload](deployment.md) - Introduces how to use Terraform to automatically create a CCI stateless workload, including namespace creation, achieving automatic scaling, rolling updates, and fault recovery for containers.
 * [Deploy Network](network.md) - Introduces how to use Terraform to automatically create a CCI network, including the creation of VPC, subnet, security group, and namespace, achieving interconnection between containers and other cloud resources.
+* [Deploy Service](service.md) - Introduces how to use Terraform to automatically create a CCI service, including the creation of VPC, subnet, security group, namespace, and ELB load balancer, achieving service load balancing and traffic distribution.
 
 ## Reference Materials
 

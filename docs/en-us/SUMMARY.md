@@ -52,6 +52,7 @@
     * [Introduction](best-practices/cci/index.md)
     * [Deploy Stateless Workload](best-practices/cci/deployment.md)
     * [Deploy Network](best-practices/cci/network.md)
+    * [Deploy Service](best-practices/cci/service.md)
   * [CBR](best-practices/cbr/)
     * [Introduction](best-practices/cbr/index.md)
     * [Deploy Disk Type Vault](best-practices/cbr/disk_vault.md)
