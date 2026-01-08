@@ -51,6 +51,7 @@
   * [CDN](best-practices/cdn/)
     * [简介](best-practices/cdn/index.md)
     * [部署缓存管理](best-practices/cdn/cache_management.md)
+    * [部署HTTPS和缓存域名](best-practices/cdn/domain_with_https_and_cache.md)
   * [CCI](best-practices/cci/)
     * [简介](best-practices/cci/index.md)
     * [部署无状态负载](best-practices/cci/deployment.md)
