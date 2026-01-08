@@ -18,6 +18,7 @@
 
 * [部署带宽包](bandwidth_package.md) - 介绍如何使用Terraform自动化创建云连接带宽包，统一管理和分配跨区域、跨网络的带宽资源。
 * [部署中心网络](central_network.md) - 介绍如何使用Terraform自动化创建云连接中心网络，构建集中式的网络架构，实现跨区域、跨网络的统一管理和互联。
+* [部署全球连接带宽](global_connection_bandwidth.md) - 介绍如何使用Terraform自动化创建云连接全球连接带宽，统一管理和分配全球范围内的网络带宽资源，实现跨境网络连接。
 
 ## 参考资料
 
