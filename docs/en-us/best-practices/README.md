@@ -36,6 +36,10 @@ Cloud Bastion Host (CBH) is a secure operation and maintenance management servic
 
 Cloud Connect (CC) is a global network connection service provided by Huawei Cloud, supporting multiple network instance access, helping customers build a global network. Cloud Connect service provides full network interconnection capabilities, enabling any two points in the cloud network to interconnect, ensuring one-hop network forwarding without transit.
 
+### [Content Delivery Network (CDN) Best Practices](cdn/index.md)
+
+Content Delivery Network (CDN) is a content acceleration and distribution service provided by Huawei Cloud, which provides users with nearby access acceleration experience by caching content to globally distributed edge nodes. CDN service supports multiple scenarios such as static content acceleration, dynamic content acceleration, video on-demand and live streaming acceleration, helping users improve website access speed and reduce origin server pressure.
+
 ### [Cloud Container Instance (CCI) Best Practices](cci/index.md)
 
 Cloud Container Instance (CCI) is a Serverless container service provided by Huawei Cloud, allowing you to run container applications directly without creating and managing server clusters. CCI provides second-level startup, pay-as-you-go, and per-second billing container services, supporting Kubernetes native APIs.
