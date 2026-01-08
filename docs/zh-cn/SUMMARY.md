@@ -51,6 +51,7 @@
   * [CCI](best-practices/cci/)
     * [简介](best-practices/cci/index.md)
     * [部署无状态负载](best-practices/cci/deployment.md)
+    * [部署网络](best-practices/cci/network.md)
   * [CBR](best-practices/cbr/)
     * [简介](best-practices/cbr/index.md)
     * [部署磁盘类型存储库](best-practices/cbr/disk_vault.md)
