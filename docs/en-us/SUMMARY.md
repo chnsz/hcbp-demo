@@ -52,6 +52,7 @@
     * [Introduction](best-practices/ces/index.md)
     * [Deploy Alarm Template](best-practices/ces/alarm_template.md)
     * [Deploy Dashboard](best-practices/ces/dashboard.md)
+    * [Deploy Resource Group](best-practices/ces/resource_group.md)
   * [CDN](best-practices/cdn/)
     * [Introduction](best-practices/cdn/index.md)
     * [Deploy Cache Management](best-practices/cdn/cache_management.md)
