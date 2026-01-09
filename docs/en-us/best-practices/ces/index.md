@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the deployment process
 This section contains the following best practices:
 
 * [Deploy Alarm Template](alarm_template.md) - Introduces how to use Terraform to automatically create CES alarm templates, define unified alarm policies, and quickly create multiple alarm rules based on templates, improving the efficiency and consistency of alarm configuration.
+* [Deploy Dashboard](dashboard.md) - Introduces how to use Terraform to automatically create CES dashboards, centrally display multiple monitoring metrics and resource status, create custom monitoring views, making it convenient for operation personnel to quickly understand the overall running status of cloud resources.
 
 ## Reference Materials
 
