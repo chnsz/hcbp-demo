@@ -316,3 +316,4 @@ namespace_name = "tf-test-namespace"
 - [华为云CCI产品文档](https://support.huaweicloud.com/cci/index.html)
 - [华为云Provider文档](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
 - [服务最佳实践源码参考](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/cci/service)
+
