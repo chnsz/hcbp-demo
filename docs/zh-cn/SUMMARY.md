@@ -52,6 +52,7 @@
     * [简介](best-practices/ces/index.md)
     * [部署告警模板](best-practices/ces/alarm_template.md)
     * [部署仪表板](best-practices/ces/dashboard.md)
+    * [部署资源组](best-practices/ces/resource_group.md)
   * [CDN](best-practices/cdn/)
     * [简介](best-practices/cdn/index.md)
     * [部署缓存管理](best-practices/cdn/cache_management.md)
