@@ -18,6 +18,7 @@ CDN服务提供灵活的缓存策略配置、HTTPS加速、防盗链、访问控
 
 * [部署缓存管理](cache_management.md) - 介绍如何使用Terraform自动化执行CDN缓存刷新和预热操作，管理CDN节点上的缓存内容，确保用户获取到最新的资源并提高访问速度。
 * [部署HTTPS和缓存域名](domain_with_https_and_cache.md) - 介绍如何使用Terraform自动化创建CDN域名，包括HTTPS和缓存规则的配置，实现内容加速和安全传输。
+* [部署规则引擎](rule_engine.md) - 介绍如何使用Terraform自动化配置CDN规则引擎规则，根据不同的请求条件执行相应的动作，实现精细化的CDN加速控制。
 
 ## 参考资料
 
