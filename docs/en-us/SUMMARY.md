@@ -119,6 +119,7 @@
   * [DMS](best-practices/dms/)
     * [Introduction](best-practices/dms/index.md)
     * [Deploy Instance Configuration](best-practices/dms/kafka/instance_configuration.md)
+    * [Deploy Public Access Instance Network](best-practices/dms/kafka/public_access_instance_network.md)
     * [Deploy RocketMQ Basic Instance](best-practices/dms/rocketmq/basic_instance.md)
     * [Deploy RocketMQ Consumer Group](best-practices/dms/rocketmq/consumer_group.md)
     * [Deploy RocketMQ Message Send](best-practices/dms/rocketmq/message_send.md)
