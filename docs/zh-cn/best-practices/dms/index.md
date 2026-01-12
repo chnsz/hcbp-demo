@@ -19,6 +19,7 @@ DMS支持多种消息模式，包括点对点、发布订阅等，能够满足�
 ### Kafka最佳实践
 
 * [部署实例配置](kafka/instance_configuration.md) - 介绍如何使用Terraform自动化配置Kafka实例，包括VPC、子网、安全组和Kafka实例的创建。
+* [部署公网访问实例网络](kafka/public_access_instance_network.md) - 介绍如何使用Terraform自动化部署支持公网访问的Kafka实例网络配置，包括VPC、子网、安全组、EIP和Kafka实例的公网访问配置。
 
 ### RocketMQ最佳实践
 
