@@ -106,6 +106,7 @@
     * [简介](best-practices/deh/index.md)
     * [部署实例](best-practices/deh/instance.md)
     * [部署关联ECS实例](best-practices/deh/associate_ecs_instance.md)
+    * [部署查询资源配额](best-practices/deh/query_resource_quota.md)
   * [DCS](best-practices/dcs/)
     * [简介](best-practices/dcs/index.md)
     * [部署单机Redis实例](best-practices/dcs/redis_single_instance.md)

@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy Instance](instance.md) - Introduces how to use Terraform to automatically create dedicated host instances, obtain full control of physical servers, achieve physical isolation of resources, and meet compliance requirements.
 * [Deploy Associate ECS Instance](associate_ecs_instance.md) - Introduces how to use Terraform to automatically deploy ECS instances on dedicated hosts, associate ECS instances with dedicated hosts through scheduler_hints, achieving physical isolation and full control of resources.
+* [Deploy Query Resource Quota](query_resource_quota.md) - Introduces how to use Terraform to automatically query DEH resource quotas, understand the quota usage of dedicated host resources under the current account, including used quotas, available quotas, and exhausted quotas, helping to reasonably plan resource usage.
 
 ## Reference Materials
 

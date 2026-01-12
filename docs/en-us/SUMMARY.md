@@ -106,6 +106,7 @@
     * [Introduction](best-practices/deh/index.md)
     * [Deploy Instance](best-practices/deh/instance.md)
     * [Deploy Associate ECS Instance](best-practices/deh/associate_ecs_instance.md)
+    * [Deploy Query Resource Quota](best-practices/deh/query_resource_quota.md)
   * [DCS](best-practices/dcs/)
     * [Introduction](best-practices/dcs/index.md)
     * [Deploy Single-Node Redis Instance](best-practices/dcs/redis_single_instance.md)
