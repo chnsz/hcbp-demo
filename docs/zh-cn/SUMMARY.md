@@ -104,6 +104,7 @@
     * [部署虚拟接口](best-practices/dc/virtual_interface.md)
   * [DEH](best-practices/deh/)
     * [简介](best-practices/deh/index.md)
+    * [部署实例](best-practices/deh/instance.md)
     * [部署关联ECS实例](best-practices/deh/associate_ecs_instance.md)
   * [DCS](best-practices/dcs/)
     * [简介](best-practices/dcs/index.md)

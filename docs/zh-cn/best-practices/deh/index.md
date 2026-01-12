@@ -16,6 +16,7 @@
 
 本章节包含以下最佳实践：
 
+* [部署实例](instance.md) - 介绍如何使用Terraform自动化创建专属主机实例，获得物理服务器的完全控制权，实现资源的物理隔离，满足合规性要求。
 * [部署关联ECS实例](associate_ecs_instance.md) - 介绍如何使用Terraform自动化在专属主机上部署ECS实例，通过scheduler_hints将ECS实例关联到专属主机，实现资源的物理隔离和完全控制。
 
 ## 参考资料
