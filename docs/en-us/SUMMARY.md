@@ -118,6 +118,7 @@
     * [Deploy Master-Standby Redis Instance](best-practices/dcs/redis_ha_instance.md)
   * [DMS](best-practices/dms/)
     * [Introduction](best-practices/dms/index.md)
+    * [Deploy Instance Configuration](best-practices/dms/kafka/instance_configuration.md)
     * [Deploy RocketMQ Basic Instance](best-practices/dms/rocketmq/basic_instance.md)
     * [Deploy RocketMQ Consumer Group](best-practices/dms/rocketmq/consumer_group.md)
     * [Deploy RocketMQ Message Send](best-practices/dms/rocketmq/message_send.md)

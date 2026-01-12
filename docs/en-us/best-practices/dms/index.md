@@ -16,6 +16,10 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
+### Kafka Best Practices
+
+* [Deploy Instance Configuration](kafka/instance_configuration.md) - Introduces how to use Terraform to automatically configure Kafka instances, including VPC, subnet, security group, and Kafka instance creation.
+
 ### RocketMQ Best Practices
 
 * [Deploy RocketMQ Basic Instance](rocketmq/basic_instance.md) - Introduces how to use Terraform to automatically deploy a basic RocketMQ instance, including VPC, subnet, security group, and EIP creation.
