@@ -16,6 +16,7 @@ Through the best practices in this section, you can learn the deployment process
 
 This section contains the following best practices:
 
+* [Deploy Instance](instance.md) - Introduces how to use Terraform to automatically create dedicated host instances, obtain full control of physical servers, achieve physical isolation of resources, and meet compliance requirements.
 * [Deploy Associate ECS Instance](associate_ecs_instance.md) - Introduces how to use Terraform to automatically deploy ECS instances on dedicated hosts, associate ECS instances with dedicated hosts through scheduler_hints, achieving physical isolation and full control of resources.
 
 ## Reference Materials

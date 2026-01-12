@@ -104,6 +104,7 @@
     * [Deploy Virtual Interface](best-practices/dc/virtual_interface.md)
   * [DEH](best-practices/deh/)
     * [Introduction](best-practices/deh/index.md)
+    * [Deploy Instance](best-practices/deh/instance.md)
     * [Deploy Associate ECS Instance](best-practices/deh/associate_ecs_instance.md)
   * [DCS](best-practices/dcs/)
     * [Introduction](best-practices/dcs/index.md)
