@@ -120,6 +120,7 @@
     * [简介](best-practices/dms/index.md)
     * [部署实例配置](best-practices/dms/kafka/instance_configuration.md)
     * [部署公网访问实例网络](best-practices/dms/kafka/public_access_instance_network.md)
+    * [部署实例数据复制](best-practices/dms/kafka/replicate_instance_data.md)
     * [部署RocketMQ基础实例](best-practices/dms/rocketmq/basic_instance.md)
     * [部署RocketMQ消费组](best-practices/dms/rocketmq/consumer_group.md)
     * [部署RocketMQ消息发送](best-practices/dms/rocketmq/message_send.md)
