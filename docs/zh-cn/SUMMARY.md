@@ -110,6 +110,7 @@
   * [DEW](best-practices/dew/)
     * [简介](best-practices/dew/index.md)
     * [部署CSMS密钥](best-practices/dew/csms_secret.md)
+    * [部署密钥对](best-practices/dew/keypair.md)
     * [部署KMS密钥](best-practices/dew/kms_key.md)
   * [DCS](best-practices/dcs/)
     * [简介](best-practices/dcs/index.md)
