@@ -110,6 +110,7 @@
   * [DEW](best-practices/dew/)
     * [Introduction](best-practices/dew/index.md)
     * [Deploy CSMS Secret](best-practices/dew/csms_secret.md)
+    * [Deploy KMS Key](best-practices/dew/kms_key.md)
   * [DCS](best-practices/dcs/)
     * [Introduction](best-practices/dcs/index.md)
     * [Deploy Single-Node Redis Instance](best-practices/dcs/redis_single_instance.md)

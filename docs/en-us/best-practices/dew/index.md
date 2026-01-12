@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the deployment process
 This section contains the following best practices:
 
 * [Deploy CSMS Secret](csms_secret.md) - Introduces how to use Terraform to automatically create CSMS secrets, securely store and manage sensitive information such as passwords, API keys, certificates, etc., achieving unified management and secure access to secrets.
+* [Deploy KMS Key](kms_key.md) - Introduces how to use Terraform to automatically create KMS keys, generate and manage keys for data encryption, support multiple encryption algorithms and key types, achieve encrypted storage and transmission of data, and ensure data security.
 
 ## Reference Materials
 
