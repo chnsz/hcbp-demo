@@ -1,4 +1,4 @@
-# Deploy Public Access Instance Network
+# Deploy Kafka Public Access Instance Network
 
 ## Application Scenario
 

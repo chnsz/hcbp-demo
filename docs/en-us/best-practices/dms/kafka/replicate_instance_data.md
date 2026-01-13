@@ -1,4 +1,4 @@
-# Deploy Instance Data Replication
+# Deploy Kafka Instance Data Replication
 
 ## Application Scenario
 
