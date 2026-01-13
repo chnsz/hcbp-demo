@@ -18,10 +18,10 @@ This section contains the following best practices:
 
 ### Kafka Best Practices
 
-* [Deploy Instance Configuration](kafka/instance_configuration.md) - Introduces how to use Terraform to automatically configure Kafka instances, including VPC, subnet, security group, and Kafka instance creation.
-* [Deploy Public Access Instance Network](kafka/public_access_instance_network.md) - Introduces how to use Terraform to automatically deploy Kafka instance network configuration that supports public network access, including VPC, subnet, security group, EIP, and Kafka instance public access configuration.
-* [Deploy Instance Data Replication](kafka/replicate_instance_data.md) - Introduces how to use Terraform to automatically deploy Kafka instance data replication, including creating multiple Kafka instances, Smart Connect, and Smart Connect tasks.
-* [Deploy Topic Message Produce](kafka/topic_message_produce.md) - Introduces how to use Terraform to automatically deploy Kafka topic message production, including creating Kafka instances, topics, and message production.
+* [Deploy Kafka Instance Configuration](kafka/instance_configuration.md) - Introduces how to use Terraform to automatically configure Kafka instances, including VPC, subnet, security group, and Kafka instance creation.
+* [Deploy Kafka Public Access Instance Network](kafka/public_access_instance_network.md) - Introduces how to use Terraform to automatically deploy Kafka instance network configuration that supports public network access, including VPC, subnet, security group, EIP, and Kafka instance public access configuration.
+* [Deploy Kafka Instance Data Replication](kafka/replicate_instance_data.md) - Introduces how to use Terraform to automatically deploy Kafka instance data replication, including creating multiple Kafka instances, Smart Connect, and Smart Connect tasks.
+* [Deploy Kafka Topic Message Produce](kafka/topic_message_produce.md) - Introduces how to use Terraform to automatically deploy Kafka topic message production, including creating Kafka instances, topics, and message production.
 
 ### RocketMQ Best Practices
 

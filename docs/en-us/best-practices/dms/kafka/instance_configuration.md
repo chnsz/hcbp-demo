@@ -1,4 +1,4 @@
-# Deploy Instance Configuration
+# Deploy Kafka Instance Configuration
 
 ## Application Scenario
 
