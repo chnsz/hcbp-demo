@@ -143,6 +143,7 @@
     * [Deploy Instance with UserData Script Execution](best-practices/ecs/instance_with_userdata.md)
   * [ELB](best-practices/elb/)
     * [Introduction](best-practices/elb/index.md)
+    * [Deploy Dedicated Load Balancer with Auto Scaling](best-practices/elb/dedicated_loadbalancer_with_as.md)
     * [Deploy Dedicated Load Balancer with Backend Member](best-practices/elb/dedicated_loadbalancer_with_member.md)
     * [Deploy Shared Load Balancer with Backend Member](best-practices/elb/shared_loadbalancer_with_member.md)
   * [EVS](best-practices/evs/)

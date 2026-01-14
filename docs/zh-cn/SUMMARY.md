@@ -143,6 +143,7 @@
     * [部署实例通过UserData执行脚本](best-practices/ecs/instance_with_userdata.md)
   * [ELB](best-practices/elb/)
     * [简介](best-practices/elb/index.md)
+    * [部署专用负载均衡器与弹性伸缩](best-practices/elb/dedicated_loadbalancer_with_as.md)
     * [部署拥有后端实例的专享版弹性负载均衡器](best-practices/elb/dedicated_loadbalancer_with_member.md)
     * [部署拥有后端实例的共享版弹性负载均衡器](best-practices/elb/shared_loadbalancer_with_member.md)
   * [EVS](best-practices/evs/)
