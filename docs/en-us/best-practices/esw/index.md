@@ -16,6 +16,7 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
+* [Deploy Instance](instance.md) - Introduces how to use Terraform to automatically deploy ESW instances, including VPC, subnet, and ESW instance creation.
 * [Deploy Connection](connection.md) - Introduces how to use Terraform to automatically deploy ESW connections, including VPC, subnet, ESW instance, and ESW connection creation.
 * [Deploy Connection with Virtual Port Binding](connection_vport_bind.md) - Introduces how to use Terraform to automatically deploy ESW connection with virtual port binding, including VPC, subnet, ESW instance, ESW connection, VPC subnet private IP, and connection virtual port binding creation.
 
