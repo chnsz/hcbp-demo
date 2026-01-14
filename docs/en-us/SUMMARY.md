@@ -167,6 +167,7 @@
     * [Deploy Shared Instance](best-practices/er/share_instance.md)
   * [ESW](best-practices/esw/)
     * [Introduction](best-practices/esw/index.md)
+    * [Deploy Connection](best-practices/esw/connection.md)
     * [Deploy Connection with Virtual Port Binding](best-practices/esw/connection_vport_bind.md)
   * [FunctionGraph](best-practices/fgs/)
     * [Introduction](best-practices/fgs/index.md)

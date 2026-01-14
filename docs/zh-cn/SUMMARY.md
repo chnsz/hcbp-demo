@@ -167,6 +167,7 @@
     * [部署共享实例](best-practices/er/share_instance.md)
   * [ESW](best-practices/esw/)
     * [简介](best-practices/esw/index.md)
+    * [部署连接](best-practices/esw/connection.md)
     * [部署连接与虚拟端口绑定](best-practices/esw/connection_vport_bind.md)
   * [FunctionGraph](best-practices/fgs/)
     * [简介](best-practices/fgs/index.md)
