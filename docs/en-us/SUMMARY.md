@@ -173,6 +173,7 @@
   * [HSS](best-practices/hss/)
     * [Introduction](best-practices/hss/index.md)
     * [Deploy Host Group](best-practices/hss/host_group.md)
+    * [Deploy Host Protection](best-practices/hss/host_protection.md)
   * [FunctionGraph](best-practices/fgs/)
     * [Introduction](best-practices/fgs/index.md)
     * [Deploy CTS Trigger](best-practices/fgs/cts_trigger.md)
