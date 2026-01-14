@@ -173,6 +173,7 @@
   * [HSS](best-practices/hss/)
     * [简介](best-practices/hss/index.md)
     * [部署主机组](best-practices/hss/host_group.md)
+    * [部署主机防护](best-practices/hss/host_protection.md)
   * [FunctionGraph](best-practices/fgs/)
     * [简介](best-practices/fgs/index.md)
     * [部署CTS触发器](best-practices/fgs/cts_trigger.md)

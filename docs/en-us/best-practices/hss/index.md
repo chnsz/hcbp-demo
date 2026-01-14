@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Host Group](host_group.md) - Introduces how to use Terraform to automatically deploy HSS host groups, including VPC, subnet, security group, ECS instance (with HSS agent), and HSS host group creation.
+* [Deploy Host Protection](host_protection.md) - Introduces how to use Terraform to automatically deploy HSS host protection, enabling pay-per-use HSS protection services for existing hosts.
 
 ## Reference Materials
 

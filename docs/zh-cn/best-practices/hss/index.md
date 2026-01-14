@@ -17,6 +17,7 @@ HSS服务提供主机分组管理功能，支持将多个主机进行分组管�
 本章节包含以下最佳实践：
 
 * [部署主机组](host_group.md) - 介绍如何使用Terraform自动化部署HSS主机组，包括VPC、子网、安全组、ECS实例（带HSS agent）和HSS主机组的创建。
+* [部署主机防护](host_protection.md) - 介绍如何使用Terraform自动化部署HSS主机防护，为已存在的主机启用按需计费的HSS防护服务。
 
 ## 参考资料
 
