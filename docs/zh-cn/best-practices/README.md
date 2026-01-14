@@ -96,6 +96,10 @@ API网关（API Gateway）是为企业和开发者提供的高性能、高可用
 
 企业路由器（Enterprise Router, ER）是华为云提供的高性能、高可用的企业级路由器服务，支持多VPC互通、专线接入、VPN连接等企业级网络功能。
 
+### [企业交换机（ESW）最佳实践](esw/index.md)
+
+企业交换机（Enterprise Switch, ESW）是华为云提供的高性能、高可用的企业级网络交换服务，支持大二层网络互通，实现跨可用区的二层网络连接。ESW服务提供虚拟化网络交换能力，支持VPC内和跨VPC的二层网络互通，满足企业级网络组网需求。
+
 ### [云硬盘（EVS）最佳实践](evs/index.md)
 
 云硬盘（Elastic Volume Service, EVS）是华为云提供的高性能、高可靠、可扩展的块存储服务，为ECS实例提供持久化存储。EVS支持多种存储类型，包括SSD、SAS、SATA等，满足不同业务场景的存储需求。
