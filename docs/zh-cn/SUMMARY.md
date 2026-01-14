@@ -158,6 +158,7 @@
     * [部署事件订阅（VPC事件源、EG事件目标）](best-practices/eg/event_subscription_vpc_to_eg.md)
   * [IAM](best-practices/iam/)
     * [简介](best-practices/iam/index.md)
+    * [部署用户组与策略关联](best-practices/iam/group_policies_associate.md)
     * [通过用户组授权用户](best-practices/iam/users_authorized_through_group.md)
   * [ER](best-practices/er/)
     * [简介](best-practices/er/index.md)

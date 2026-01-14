@@ -158,6 +158,7 @@
     * [Deploy Event Subscription (VPC Event Source, EG Event Target)](best-practices/eg/event_subscription_vpc_to_eg.md)
   * [IAM](best-practices/iam/)
     * [Introduction](best-practices/iam/index.md)
+    * [Deploy Group Policies Associate](best-practices/iam/group_policies_associate.md)
     * [Deploy Users Authorized Through Group](best-practices/iam/users_authorized_through_group.md)
   * [ER](best-practices/er/)
     * [Introduction](best-practices/er/index.md)
