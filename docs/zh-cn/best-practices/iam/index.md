@@ -16,6 +16,7 @@ IAM服务提供完整的身份认证和授权体系，支持多种认证方式�
 
 本章节包含以下最佳实践：
 
+* [部署用户组与策略关联](group_policies_associate.md) - 介绍如何使用Terraform自动化部署IAM用户组与策略关联，包括查询IAM策略、创建用户组和将策略关联到用户组。
 * [通过用户组授权用户](users_authorized_through_group.md) - 介绍如何使用Terraform自动化部署IAM角色、用户组和用户，并通过用户组为用户授权，实现基于用户组的权限管理。
 
 ## 参考资料
