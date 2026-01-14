@@ -16,6 +16,7 @@ ESW服务支持高可用部署模式，提供主备可用区部署，确保网�
 
 本章节包含以下最佳实践：
 
+* [部署实例](instance.md) - 介绍如何使用Terraform自动化部署ESW实例，包括VPC、子网和ESW实例的创建。
 * [部署连接](connection.md) - 介绍如何使用Terraform自动化部署ESW连接，包括VPC、子网、ESW实例和ESW连接的创建。
 * [部署连接与虚拟端口绑定](connection_vport_bind.md) - 介绍如何使用Terraform自动化部署ESW连接与虚拟端口绑定，包括VPC、子网、ESW实例、ESW连接、VPC子网私有IP和连接虚拟端口绑定的创建。
 
