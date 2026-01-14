@@ -100,6 +100,10 @@ Enterprise Router (ER) is a high-performance, high-availability enterprise-grade
 
 Enterprise Switch (ESW) is a high-performance, highly available enterprise-grade network switching service provided by Huawei Cloud, supporting large Layer 2 network interconnection and achieving Layer 2 network connections across availability zones. ESW service provides virtualized network switching capabilities, supporting Layer 2 network interconnection within VPCs and across VPCs, meeting enterprise-grade network requirements.
 
+### [Host Security Service (HSS) Best Practices](hss/index.md)
+
+Host Security Service (HSS) is a host security protection service provided by Huawei Cloud, offering asset management, vulnerability management, intrusion detection, baseline checks, and other functions to help you comprehensively protect the security of cloud hosts. HSS service supports multiple operating systems, including Linux and Windows, providing real-time monitoring, threat detection, security hardening, and other capabilities, meeting enterprise-grade host security protection requirements.
+
 ### [Elastic Volume Service (EVS) Best Practices](evs/index.md)
 
 Elastic Volume Service (EVS) is a high-performance, highly reliable, and scalable block storage service provided by Huawei Cloud, providing persistent storage for ECS instances. EVS supports multiple storage types, including SSD, SAS, and SATA, meeting storage requirements for different business scenarios.
