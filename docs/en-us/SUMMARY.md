@@ -159,6 +159,7 @@
   * [IAM](best-practices/iam/)
     * [Introduction](best-practices/iam/index.md)
     * [Deploy Group Policies Associate](best-practices/iam/group_policies_associate.md)
+    * [Deploy Password Policy](best-practices/iam/password_policy.md)
     * [Deploy Users Authorized Through Group](best-practices/iam/users_authorized_through_group.md)
   * [ER](best-practices/er/)
     * [Introduction](best-practices/er/index.md)

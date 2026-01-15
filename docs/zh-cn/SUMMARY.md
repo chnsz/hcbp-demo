@@ -159,6 +159,7 @@
   * [IAM](best-practices/iam/)
     * [简介](best-practices/iam/index.md)
     * [部署用户组与策略关联](best-practices/iam/group_policies_associate.md)
+    * [部署密码策略](best-practices/iam/password_policy.md)
     * [通过用户组授权用户](best-practices/iam/users_authorized_through_group.md)
   * [ER](best-practices/er/)
     * [简介](best-practices/er/index.md)
