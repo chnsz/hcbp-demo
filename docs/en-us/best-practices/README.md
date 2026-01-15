@@ -96,6 +96,10 @@ Identity and Access Management (IAM) is a fundamental identity authentication an
 
 Identity Center is a unified identity management service provided by Huawei Cloud, supporting unified identity authentication and authorization management across clouds and applications. Identity Center provides centralized user management, group management, permission policy configuration, and other functions, helping enterprises achieve unified identity management and access control, meeting enterprise-level identity management and compliance requirements.
 
+### [Image Management Service (IMS) Best Practices](ims/index.md)
+
+Image Management Service (IMS) is an image management service provided by Huawei Cloud, supporting image creation, sharing, copying, importing, exporting, and other functions. IMS service provides various image types including private images, shared images, and market images, supporting image creation from cloud servers, cloud disks, external image files, and other methods, meeting image management requirements for different scenarios.
+
 ### [Enterprise Router (ER) Best Practices](er/index.md)
 
 Enterprise Router (ER) is a high-performance, high-availability enterprise-grade router service provided by Huawei Cloud, supporting enterprise-level network functions such as multi-VPC interconnection, dedicated line access, and VPN connections.
