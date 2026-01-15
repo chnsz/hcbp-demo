@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Group Policies Associate](group_policies_associate.md) - Introduces how to use Terraform to automatically deploy IAM user group and policy associations, including querying IAM policies, creating user groups, and associating policies with user groups.
+* [Deploy Password Policy](password_policy.md) - Introduces how to use Terraform to automatically deploy IAM password policies, including configuration of security policies such as password length, character combination, validity period, reuse rules, etc.
 * [Deploy Users Authorized Through Group](users_authorized_through_group.md) - Introduces how to use Terraform to automatically deploy IAM roles, user groups, and users, and authorize users through user groups, implementing group-based permission management.
 
 ## Reference Materials
