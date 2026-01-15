@@ -132,6 +132,10 @@ Object Storage Service (OBS) is a high-availability, highly reliable, high-perfo
 
 Object Storage Migration Service (OMS) is a one-stop data migration service provided by Huawei Cloud, helping users quickly, securely, and efficiently migrate data from other cloud service providers or local environments to Huawei Cloud Object Storage Service (OBS). OMS service supports multiple data sources, including mainstream cloud storage services such as AWS S3, Alibaba Cloud OSS, Tencent Cloud COS, and local file systems.
 
+### [Resource Governance Center (RGC) Best Practices](rgc/index.md)
+
+Resource Governance Center (RGC) is a resource governance service provided by Huawei Cloud, supporting multi-account management, organizational unit management, blueprint configuration, and other functions to help you uniformly manage and govern cloud resources. RGC service provides centralized resource management capabilities, supporting cross-account resource governance, compliance checks, and automated deployment, meeting enterprise-level resource management and compliance requirements.
+
 ### [Relational Database Service (RDS) Best Practices](rds/index.md)
 
 Relational Database Service (RDS) is a highly available, high-performance, and easily scalable relational database cloud service provided by Huawei Cloud, supporting multiple database engines such as MySQL, PostgreSQL, and SQL Server, providing enterprise-level functions such as automatic backup and monitoring alerts.
