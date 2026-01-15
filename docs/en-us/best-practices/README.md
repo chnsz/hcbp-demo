@@ -92,6 +92,10 @@ EventGrid (EG) is an event-driven architecture service provided by Huawei Cloud,
 
 Identity and Access Management (IAM) is a fundamental identity authentication and access management service provided by Huawei Cloud, offering core functions such as identity management, permission management, and access control for Huawei Cloud users. IAM service supports fine-grained permission control, helping enterprises achieve unified, secure, and efficient cloud resource access management through flexible combinations of users, user groups, roles, and policies.
 
+### [Identity Center Best Practices](identity-center/index.md)
+
+Identity Center is a unified identity management service provided by Huawei Cloud, supporting unified identity authentication and authorization management across clouds and applications. Identity Center provides centralized user management, group management, permission policy configuration, and other functions, helping enterprises achieve unified identity management and access control, meeting enterprise-level identity management and compliance requirements.
+
 ### [Enterprise Router (ER) Best Practices](er/index.md)
 
 Enterprise Router (ER) is a high-performance, high-availability enterprise-grade router service provided by Huawei Cloud, supporting enterprise-level network functions such as multi-VPC interconnection, dedicated line access, and VPN connections.
