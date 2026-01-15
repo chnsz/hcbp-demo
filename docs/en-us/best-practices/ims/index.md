@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Cross Account Migration with Data Image](cross_account_migration_with_data_image.md) - Introduces how to use Terraform to automatically deploy cross-account migration with data images, including creating ECS instances, data disks, and data images in the sharer account, sharing images to the accepter account, accepting shared images in the accepter account, and creating data disks using shared images.
+* [Deploy Cross Account Migration with Whole Image](cross_account_migration_with_whole_image.md) - Introduces how to use Terraform to automatically deploy cross-account migration with whole images, including creating ECS instances, CBR vaults, and whole images in the sharer account, sharing images to the accepter account, accepting shared images in the accepter account, and creating new ECS instances using shared images.
 
 ## Reference Materials
 
