@@ -210,6 +210,7 @@
     * [部署通过任务迁移对象](best-practices/oms/task_migration.md)
   * [RGC](best-practices/rgc/)
     * [简介](best-practices/rgc/index.md)
+    * [部署账号](best-practices/rgc/account.md)
     * [部署账号注册](best-practices/rgc/account_enroll.md)
   * [RDS](best-practices/rds/)
     * [简介](best-practices/rds/index.md)
