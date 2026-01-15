@@ -164,6 +164,7 @@
   * [Identity Center](best-practices/identity-center/)
     * [简介](best-practices/identity-center/index.md)
     * [部署用户组](best-practices/identity-center/group.md)
+    * [部署实例配置](best-practices/identity-center/instance_configuration.md)
   * [ER](best-practices/er/)
     * [简介](best-practices/er/index.md)
     * [部署流日志](best-practices/er/flow_log.md)

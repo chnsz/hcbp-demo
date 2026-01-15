@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Group](group.md) - Introduces how to use Terraform to automatically deploy Identity Center groups, including querying or creating Identity Center instances, registering regions (optional), and creating groups.
+* [Deploy Instance Configuration](instance_configuration.md) - Introduces how to use Terraform to automatically deploy Identity Center instance configuration, including querying or creating Identity Center instances, registering regions (optional), and configuring SSO configuration.
 
 ## Reference Materials
 
