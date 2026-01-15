@@ -165,6 +165,7 @@
     * [Introduction](best-practices/identity-center/index.md)
     * [Deploy Group](best-practices/identity-center/group.md)
     * [Deploy Instance Configuration](best-practices/identity-center/instance_configuration.md)
+    * [Deploy Password Policy](best-practices/identity-center/password_policy.md)
   * [ER](best-practices/er/)
     * [Introduction](best-practices/er/index.md)
     * [Deploy Flow Log](best-practices/er/flow_log.md)
