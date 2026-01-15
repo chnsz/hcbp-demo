@@ -16,6 +16,7 @@ RGC服务支持组织单元（Organizational Unit）的层级管理，通过创�
 
 本章节包含以下最佳实践：
 
+* [部署账号](account.md) - 介绍如何使用Terraform自动化部署RGC账号，包括账号基本信息、身份存储信息和组织单元信息的配置。
 * [部署账号注册](account_enroll.md) - 介绍如何使用Terraform自动化部署RGC账号注册，包括创建组织单元（可选）和账号注册（带蓝图配置）。
 
 ## 参考资料

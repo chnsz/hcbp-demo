@@ -210,6 +210,7 @@
     * [Deploy Object Migration Through Task](best-practices/oms/task_migration.md)
   * [RGC](best-practices/rgc/)
     * [Introduction](best-practices/rgc/index.md)
+    * [Deploy Account](best-practices/rgc/account.md)
     * [Deploy Account Enroll](best-practices/rgc/account_enroll.md)
   * [RDS](best-practices/rds/)
     * [Introduction](best-practices/rds/index.md)
