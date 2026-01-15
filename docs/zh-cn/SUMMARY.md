@@ -170,6 +170,7 @@
     * [简介](best-practices/ims/index.md)
     * [部署跨账号迁移数据镜像](best-practices/ims/cross_account_migration_with_data_image.md)
     * [部署跨账号迁移整机镜像](best-practices/ims/cross_account_migration_with_whole_image.md)
+    * [部署导出镜像到OBS](best-practices/ims/export_image_to_obs.md)
   * [ER](best-practices/er/)
     * [简介](best-practices/er/index.md)
     * [部署流日志](best-practices/er/flow_log.md)

@@ -18,6 +18,7 @@ IMS服务支持跨区域、跨账号的镜像共享，提供完整的镜像生�
 
 * [部署跨账号迁移数据镜像](cross_account_migration_with_data_image.md) - 介绍如何使用Terraform自动化部署跨账号迁移数据镜像，包括在共享账号中创建ECS实例、数据盘和数据镜像，将镜像共享给接受账号，在接受账号中接受共享镜像并使用共享镜像创建数据盘。
 * [部署跨账号迁移整机镜像](cross_account_migration_with_whole_image.md) - 介绍如何使用Terraform自动化部署跨账号迁移整机镜像，包括在共享账号中创建ECS实例、CBR备份库和整机镜像，将镜像共享给接受账号，在接受账号中接受共享镜像并使用共享镜像创建新的ECS实例。
+* [部署导出镜像到OBS](export_image_to_obs.md) - 介绍如何使用Terraform自动化部署导出镜像到OBS，包括查询私有镜像、创建OBS桶和导出镜像到OBS桶。
 
 ## 参考资料
 

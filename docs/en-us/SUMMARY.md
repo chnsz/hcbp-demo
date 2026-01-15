@@ -170,6 +170,7 @@
     * [Introduction](best-practices/ims/index.md)
     * [Deploy Cross Account Migration with Data Image](best-practices/ims/cross_account_migration_with_data_image.md)
     * [Deploy Cross Account Migration with Whole Image](best-practices/ims/cross_account_migration_with_whole_image.md)
+    * [Deploy Export Image to OBS](best-practices/ims/export_image_to_obs.md)
   * [ER](best-practices/er/)
     * [Introduction](best-practices/er/index.md)
     * [Deploy Flow Log](best-practices/er/flow_log.md)
