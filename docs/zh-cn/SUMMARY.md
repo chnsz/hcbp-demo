@@ -212,6 +212,7 @@
     * [简介](best-practices/rgc/index.md)
     * [部署账号](best-practices/rgc/account.md)
     * [部署账号注册](best-practices/rgc/account_enroll.md)
+    * [部署模板](best-practices/rgc/template.md)
   * [RDS](best-practices/rds/)
     * [简介](best-practices/rds/index.md)
     * [部署MySQL单机实例](best-practices/rds/mysql_single_instance.md)

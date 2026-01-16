@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy Account](account.md) - Introduces how to use Terraform to automatically deploy RGC accounts, including account basic information, identity store information, and organizational unit information configuration.
 * [Deploy Account Enroll](account_enroll.md) - Introduces how to use Terraform to automatically deploy RGC account enrollment, including creating organizational units (optional) and account enrollment (with blueprint configuration).
+* [Deploy Template](template.md) - Introduces how to use Terraform to automatically deploy RGC templates, including the creation of predefined templates and customized templates.
 
 ## Reference Materials
 
