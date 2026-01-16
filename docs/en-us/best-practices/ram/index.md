@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy Automated Resource Share Invitation Processing](automated_resource_share_invitation_processing.md) - Introduces how to use Terraform to automatically process resource share invitations, including querying pending invitations and batch accepting or rejecting invitations.
 * [Deploy Cross-Account Resource Share](cross_account_resource_share.md) - Introduces how to use Terraform to automatically deploy cross-account resource sharing, including resource share instance creation, principal configuration, resource URN configuration, and permission configuration.
+* [Deploy Fine-Grained Permission Management](fine_grained_permission_management.md) - Introduces how to use Terraform to automatically deploy fine-grained permission management, including querying available permissions and associating permissions with resource shares.
 
 ## Reference Information
 
