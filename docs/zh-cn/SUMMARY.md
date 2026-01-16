@@ -227,6 +227,7 @@
   * [SecMaster](best-practices/secmaster/)
     * [简介](best-practices/secmaster/index.md)
     * [部署剧本规则并通过事件触发](best-practices/secmaster/playbook_rule_trigger_by_event.md)
+    * [部署工作流版本](best-practices/secmaster/workflow_version.md)
   * [SFS Turbo](best-practices/sfs-turbo/)
     * [简介](best-practices/sfs-turbo/index.md)
     * [部署文件系统](best-practices/sfs-turbo/file_system.md)

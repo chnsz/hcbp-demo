@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Playbook Rule and Trigger by Event](playbook_rule_trigger_by_event.md) - Introduces how to use Terraform to automatically deploy a security playbook rule and trigger it by event, including workspace query, playbook creation, version management, rule configuration, action configuration, approval, and enablement steps.
+* [Deploy Workflow Version](workflow_version.md) - Introduces how to use Terraform to automatically deploy workflow versions, including workspace query, workflow query, and workflow version creation.
 
 ## Reference Materials
 

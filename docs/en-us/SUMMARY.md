@@ -227,6 +227,7 @@
   * [SecMaster](best-practices/secmaster/)
     * [Introduction](best-practices/secmaster/index.md)
     * [Deploy Playbook Rule and Trigger by Event](best-practices/secmaster/playbook_rule_trigger_by_event.md)
+    * [Deploy Workflow Version](best-practices/secmaster/workflow_version.md)
   * [SFS Turbo](best-practices/sfs-turbo/)
     * [Introduction](best-practices/sfs-turbo/index.md)
     * [Deploy Turbo File System](best-practices/sfs-turbo/file_system.md)
