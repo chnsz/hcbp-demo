@@ -211,6 +211,7 @@
   * [RAM](best-practices/ram/)
     * [Introduction](best-practices/ram/index.md)
     * [Deploy Automated Resource Share Invitation Processing](best-practices/ram/automated_resource_share_invitation_processing.md)
+    * [Deploy Cross-Account Resource Share](best-practices/ram/cross_account_resource_share.md)
   * [RGC](best-practices/rgc/)
     * [Introduction](best-practices/rgc/index.md)
     * [Deploy Account](best-practices/rgc/account.md)
