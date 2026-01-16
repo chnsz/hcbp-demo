@@ -17,6 +17,7 @@ RAM服务支持多种资源类型的共享，包括VPC、子网、安全组、�
 本章节包含以下最佳实践：
 
 * [部署自动化资源分享邀请处理](automated_resource_share_invitation_processing.md) - 介绍如何使用Terraform自动化处理资源分享邀请，包括查询待处理的邀请和批量接受或拒绝邀请。
+* [部署跨账号资源分享](cross_account_resource_share.md) - 介绍如何使用Terraform自动化部署跨账号资源分享，包括资源分享实例的创建、主体配置、资源URN配置和权限配置。
 
 ## 参考资料
 

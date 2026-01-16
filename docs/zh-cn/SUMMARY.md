@@ -211,6 +211,7 @@
   * [RAM](best-practices/ram/)
     * [简介](best-practices/ram/index.md)
     * [部署自动化资源分享邀请处理](best-practices/ram/automated_resource_share_invitation_processing.md)
+    * [部署跨账号资源分享](best-practices/ram/cross_account_resource_share.md)
   * [RGC](best-practices/rgc/)
     * [简介](best-practices/rgc/index.md)
     * [部署账号](best-practices/rgc/account.md)
