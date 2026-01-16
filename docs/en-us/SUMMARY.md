@@ -212,6 +212,7 @@
     * [Introduction](best-practices/rgc/index.md)
     * [Deploy Account](best-practices/rgc/account.md)
     * [Deploy Account Enroll](best-practices/rgc/account_enroll.md)
+    * [Deploy Template](best-practices/rgc/template.md)
   * [RDS](best-practices/rds/)
     * [Introduction](best-practices/rds/index.md)
     * [Deploy MySQL Single Instance](best-practices/rds/mysql_single_instance.md)
