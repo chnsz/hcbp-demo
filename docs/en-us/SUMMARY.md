@@ -233,6 +233,7 @@
   * [SMN](best-practices/smn/)
     * [Introduction](best-practices/smn/index.md)
     * [Deploy CES Event Alarm Rule](best-practices/smn/ces_event_alarm_rule.md)
+    * [Deploy Message Publish](best-practices/smn/publish_message.md)
   * [SFS Turbo](best-practices/sfs-turbo/)
     * [Introduction](best-practices/sfs-turbo/index.md)
     * [Deploy Turbo File System](best-practices/sfs-turbo/file_system.md)

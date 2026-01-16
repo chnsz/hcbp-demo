@@ -17,6 +17,7 @@ SMN服务支持多种订阅协议，包括邮件、短信、HTTP/HTTPS、函数�
 本章节包含以下最佳实践：
 
 * [部署CES事件告警规则](ces_event_alarm_rule.md) - 介绍如何使用Terraform自动化部署CES事件告警规则，包括创建SMN主题和配置CES告警规则，实现SMN主题事件的监控和告警。
+* [部署消息发布](publish_message.md) - 介绍如何使用Terraform自动化部署消息发布，包括创建SMN主题、订阅、消息模板（可选）和发布消息。
 
 ## 参考资料
 

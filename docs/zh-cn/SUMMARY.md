@@ -233,6 +233,7 @@
   * [SMN](best-practices/smn/)
     * [简介](best-practices/smn/index.md)
     * [部署CES事件告警规则](best-practices/smn/ces_event_alarm_rule.md)
+    * [部署消息发布](best-practices/smn/publish_message.md)
   * [SFS Turbo](best-practices/sfs-turbo/)
     * [简介](best-practices/sfs-turbo/index.md)
     * [部署文件系统](best-practices/sfs-turbo/file_system.md)
