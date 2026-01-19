@@ -238,6 +238,7 @@
   * [SWR](best-practices/swr/)
     * [Introduction](best-practices/swr/index.md)
     * [Deploy Organization](best-practices/swr/organization.md)
+    * [Deploy Repository](best-practices/swr/repository.md)
   * [SMN](best-practices/smn/)
     * [Introduction](best-practices/smn/index.md)
     * [Deploy CES Event Alarm Rule](best-practices/smn/ces_event_alarm_rule.md)
