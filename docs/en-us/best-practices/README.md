@@ -152,6 +152,10 @@ Server Migration Service (SMS) is a server migration service provided by Huawei 
 
 Software Repository for Container (SWR) is a container image hosting service provided by Huawei Cloud, supporting storage, management, and distribution of Docker images, helping you achieve rapid deployment and continuous integration of container applications. SWR service provides complete container image lifecycle management functions, supporting image building, pushing, pulling, scanning, and deletion operations, meeting full-process requirements of containerized applications.
 
+### [Tag Management Service (TMS) Best Practices](tms/index.md)
+
+Tag Management Service (TMS) is a tag management service provided by Huawei Cloud, supporting adding, modifying, and deleting tags for cloud resources, helping you achieve resource classification management and cost analysis. TMS service provides unified tag management capabilities, supporting batch adding tags to different types of cloud resources (such as ECS, VPC, RDS, etc.), achieving unified classification and identification of resources.
+
 ### [Simple Message Notification (SMN) Best Practices](smn/index.md)
 
 Simple Message Notification (SMN) is a reliable and scalable message notification service provided by Huawei Cloud, supporting multiple message notification methods including email, SMS, HTTP/HTTPS, etc. SMN service provides a unified message publishing and subscription mechanism, supporting topic subscription, message push, message filtering, and other functions, helping you achieve message communication between applications and users.
