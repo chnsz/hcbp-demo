@@ -168,6 +168,10 @@ Scalable File Service Turbo (SFS Turbo) is a high-performance file storage servi
 
 Virtual Private Cloud (VPC) is a logically isolated network environment provided by Huawei Cloud for users, supporting custom subnets, routes, ACLs, and other network resources, meeting enterprise-level network security and flexible networking requirements.
 
+### [VPC Endpoint (VPCEP) Best Practices](vpcep/index.md)
+
+VPC Endpoint (VPCEP) is a VPC internal resource mutual access service provided by Huawei Cloud, supporting the creation of endpoints and endpoint services within VPCs to achieve private network access to VPC resources. VPCEP service supports cross-VPC private network access, avoiding public network access, improving access security and stability, reducing network latency and costs.
+
 ### [Web Application Firewall (WAF) Best Practices](waf/index.md)
 
 Web Application Firewall (WAF) provides one-stop security protection for web applications, supporting multiple attack detection and interception, meeting enterprise-level security and compliance requirements.
