@@ -144,6 +144,10 @@ Resource Governance Center (RGC) is a resource governance service provided by Hu
 
 Relational Database Service (RDS) is a highly available, high-performance, and easily scalable relational database cloud service provided by Huawei Cloud, supporting multiple database engines such as MySQL, PostgreSQL, and SQL Server, providing enterprise-level functions such as automatic backup and monitoring alerts.
 
+### [Server Migration Service (SMS) Best Practices](sms/index.md)
+
+Server Migration Service (SMS) is a server migration service provided by Huawei Cloud, supporting migration of physical servers, virtual machines, or servers from other cloud platforms to Huawei Cloud, achieving seamless business migration. SMS service provides a complete migration solution, supporting migration of Windows and Linux operating systems, supporting both online migration and offline migration methods, meeting migration requirements for different scenarios.
+
 ### [Simple Message Notification (SMN) Best Practices](smn/index.md)
 
 Simple Message Notification (SMN) is a reliable and scalable message notification service provided by Huawei Cloud, supporting multiple message notification methods including email, SMS, HTTP/HTTPS, etc. SMN service provides a unified message publishing and subscription mechanism, supporting topic subscription, message push, message filtering, and other functions, helping you achieve message communication between applications and users.
