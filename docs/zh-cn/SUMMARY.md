@@ -243,6 +243,7 @@
   * [TMS](best-practices/tms/)
     * [简介](best-practices/tms/index.md)
     * [部署批量关联标签](best-practices/tms/batch_associate_tags.md)
+    * [部署预设标签](best-practices/tms/preset_tags.md)
   * [SMN](best-practices/smn/)
     * [简介](best-practices/smn/index.md)
     * [部署CES事件告警规则](best-practices/smn/ces_event_alarm_rule.md)
