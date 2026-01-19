@@ -238,6 +238,7 @@
   * [SWR](best-practices/swr/)
     * [Introduction](best-practices/swr/index.md)
     * [Deploy Organization](best-practices/swr/organization.md)
+    * [Deploy Retention Policy](best-practices/swr/retention_policy.md)
     * [Deploy Repository](best-practices/swr/repository.md)
   * [SMN](best-practices/smn/)
     * [Introduction](best-practices/smn/index.md)
