@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy CES Event Alarm Rule](ces_event_alarm_rule.md) - Introduces how to use Terraform to automatically deploy CES event alarm rules, including creating SMN topics and configuring CES alarm rules, achieving monitoring and alerting for SMN topic events.
 * [Deploy Message Publish](publish_message.md) - Introduces how to use Terraform to automatically deploy message publishing, including creating SMN topics, subscriptions, message templates (optional), and publishing messages.
+* [Deploy Topic with AOM Alarm Notification](topic_with_aom_alarm_notification.md) - Introduces how to use Terraform to automatically deploy topics with AOM alarm notifications, including creating SMN topics, LTS log groups and streams, SMN log tank configuration, and AOM alarm action rule configuration.
 
 ## Reference Information
 
