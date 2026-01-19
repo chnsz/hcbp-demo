@@ -234,6 +234,7 @@
     * [Introduction](best-practices/sms/index.md)
     * [Deploy Migration Project](best-practices/sms/migration_project.md)
     * [Deploy Migration Task](best-practices/sms/migration_task.md)
+    * [Deploy Server Template](best-practices/sms/server_template.md)
   * [SMN](best-practices/smn/)
     * [Introduction](best-practices/smn/index.md)
     * [Deploy CES Event Alarm Rule](best-practices/smn/ces_event_alarm_rule.md)

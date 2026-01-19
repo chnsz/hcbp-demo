@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy Migration Project](migration_project.md) - Introduces how to use Terraform to automatically deploy migration projects, including project basic information, region configuration, network configuration, and synchronization policy configuration.
 * [Deploy Migration Task](migration_task.md) - Introduces how to use Terraform to automatically deploy migration tasks, including querying availability zones and source servers, creating server templates, and creating migration tasks.
+* [Deploy Server Template](server_template.md) - Introduces how to use Terraform to automatically deploy server templates, including querying availability zones and creating server templates.
 
 ## Reference Information
 

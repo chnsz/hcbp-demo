@@ -234,6 +234,7 @@
     * [简介](best-practices/sms/index.md)
     * [部署迁移项目](best-practices/sms/migration_project.md)
     * [部署迁移任务](best-practices/sms/migration_task.md)
+    * [部署服务器模板](best-practices/sms/server_template.md)
   * [SMN](best-practices/smn/)
     * [简介](best-practices/smn/index.md)
     * [部署CES事件告警规则](best-practices/smn/ces_event_alarm_rule.md)

@@ -18,6 +18,7 @@ SMS服务支持多种源端环境，包括物理服务器、VMware、Hyper-V、K
 
 * [部署迁移项目](migration_project.md) - 介绍如何使用Terraform自动化部署迁移项目，包括项目基本信息、区域配置、网络配置和同步策略配置。
 * [部署迁移任务](migration_task.md) - 介绍如何使用Terraform自动化部署迁移任务，包括查询可用区和源服务器、创建服务器模板和创建迁移任务。
+* [部署服务器模板](server_template.md) - 介绍如何使用Terraform自动化部署服务器模板，包括查询可用区和创建服务器模板。
 
 ## 参考资料
 
