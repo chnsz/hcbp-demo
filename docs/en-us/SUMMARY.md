@@ -243,6 +243,7 @@
   * [TMS](best-practices/tms/)
     * [Introduction](best-practices/tms/index.md)
     * [Deploy Batch Associate Tags](best-practices/tms/batch_associate_tags.md)
+    * [Deploy Preset Tags](best-practices/tms/preset_tags.md)
   * [SMN](best-practices/smn/)
     * [Introduction](best-practices/smn/index.md)
     * [Deploy CES Event Alarm Rule](best-practices/smn/ces_event_alarm_rule.md)

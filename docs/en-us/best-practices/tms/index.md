@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the deployment process
 This section contains the following best practices:
 
 * [Deploy Batch Associate Tags](batch_associate_tags.md) - Introduces how to use Terraform to automatically deploy batch tag association, including querying project lists and batch associating tags.
+* [Deploy Preset Tags](preset_tags.md) - Introduces how to use Terraform to automatically deploy preset tags, including preset tag creation and configuration.
 
 ## Reference Information
 
