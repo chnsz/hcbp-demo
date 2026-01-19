@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the deployment process
 This section contains the following best practices:
 
 * [Deploy Organization](organization.md) - Introduces how to use Terraform to automatically deploy organizations, including organization basic information configuration.
+* [Deploy Repository](repository.md) - Introduces how to use Terraform to automatically deploy image repositories, including creating organizations and creating image repositories.
 
 ## Reference Information
 
