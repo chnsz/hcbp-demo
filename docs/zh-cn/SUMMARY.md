@@ -238,6 +238,7 @@
   * [SWR](best-practices/swr/)
     * [简介](best-practices/swr/index.md)
     * [部署组织](best-practices/swr/organization.md)
+    * [部署保留策略](best-practices/swr/retention_policy.md)
     * [部署镜像仓库](best-practices/swr/repository.md)
   * [SMN](best-practices/smn/)
     * [简介](best-practices/smn/index.md)
