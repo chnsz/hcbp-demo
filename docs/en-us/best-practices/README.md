@@ -148,6 +148,10 @@ Relational Database Service (RDS) is a highly available, high-performance, and e
 
 Server Migration Service (SMS) is a server migration service provided by Huawei Cloud, supporting migration of physical servers, virtual machines, or servers from other cloud platforms to Huawei Cloud, achieving seamless business migration. SMS service provides a complete migration solution, supporting migration of Windows and Linux operating systems, supporting both online migration and offline migration methods, meeting migration requirements for different scenarios.
 
+### [Software Repository for Container (SWR) Best Practices](swr/index.md)
+
+Software Repository for Container (SWR) is a container image hosting service provided by Huawei Cloud, supporting storage, management, and distribution of Docker images, helping you achieve rapid deployment and continuous integration of container applications. SWR service provides complete container image lifecycle management functions, supporting image building, pushing, pulling, scanning, and deletion operations, meeting full-process requirements of containerized applications.
+
 ### [Simple Message Notification (SMN) Best Practices](smn/index.md)
 
 Simple Message Notification (SMN) is a reliable and scalable message notification service provided by Huawei Cloud, supporting multiple message notification methods including email, SMS, HTTP/HTTPS, etc. SMN service provides a unified message publishing and subscription mechanism, supporting topic subscription, message push, message filtering, and other functions, helping you achieve message communication between applications and users.
