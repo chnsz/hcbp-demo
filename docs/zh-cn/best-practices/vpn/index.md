@@ -18,6 +18,7 @@ VPN服务提供完整的VPN网关生命周期管理功能，支持VPN网关、VP
 
 * [部署VPN网关](gateway.md) - 介绍如何使用Terraform自动化部署VPN网关，包括VPC、子网、EIP和VPN网关的创建。
 * [部署连接](connection.md) - 介绍如何使用Terraform自动化部署VPN连接，包括VPN网关可用区查询、VPC、子网、EIP、VPN网关、客户网关和VPN连接的创建。
+* [部署用户](user.md) - 介绍如何使用Terraform自动化部署VPN用户，包括VPN用户的创建和配置。
 
 ## 参考资料
 

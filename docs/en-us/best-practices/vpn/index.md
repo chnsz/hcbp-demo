@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy VPN Gateway](gateway.md) - Introduces how to use Terraform to automatically deploy a VPN gateway, including VPC, subnet, EIP, and VPN gateway creation.
 * [Deploy Connection](connection.md) - Introduces how to use Terraform to automatically deploy VPN connections, including VPN gateway availability zone query, VPC, subnet, EIP, VPN gateway, customer gateway, and VPN connection creation.
+* [Deploy User](user.md) - Introduces how to use Terraform to automatically deploy VPN users, including VPN user creation and configuration.
 
 ## Reference Materials
 
