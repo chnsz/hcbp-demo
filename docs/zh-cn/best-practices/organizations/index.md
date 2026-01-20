@@ -17,6 +17,7 @@ Organizations服务提供完整的组织架构管理功能，支持策略继承�
 本章节包含以下最佳实践：
 
 * [部署账户](organization_account.md) - 介绍如何使用Terraform自动化部署Organizations账户，包括账户的创建和配置。
+* [部署组织单元](organization_unit.md) - 介绍如何使用Terraform自动化部署Organizations组织单元，包括组织单元的创建和配置。
 
 ## 参考资料
 

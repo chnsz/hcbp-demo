@@ -211,6 +211,7 @@
   * [Organizations](best-practices/organizations/)
     * [Introduction](best-practices/organizations/index.md)
     * [Deploy Account](best-practices/organizations/organization_account.md)
+    * [Deploy Organizational Unit](best-practices/organizations/organization_unit.md)
   * [RAM](best-practices/ram/)
     * [Introduction](best-practices/ram/index.md)
     * [Deploy Automated Resource Share Invitation Processing](best-practices/ram/automated_resource_share_invitation_processing.md)
