@@ -268,6 +268,7 @@
     * [Introduction](best-practices/vpn/index.md)
     * [Deploy VPN Gateway](best-practices/vpn/gateway.md)
     * [Deploy Connection](best-practices/vpn/connection.md)
+    * [Deploy User](best-practices/vpn/user.md)
   * [WAF](best-practices/waf/)
     * [Introduction](best-practices/waf/index.md)
     * [Deploy Professional Edition Domain](best-practices/waf/dedicated_domain.md)

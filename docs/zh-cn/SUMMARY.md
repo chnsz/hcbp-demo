@@ -268,6 +268,7 @@
     * [简介](best-practices/vpn/index.md)
     * [部署VPN网关](best-practices/vpn/gateway.md)
     * [部署连接](best-practices/vpn/connection.md)
+    * [部署用户](best-practices/vpn/user.md)
   * [WAF](best-practices/waf/)
     * [简介](best-practices/waf/index.md)
     * [部署专业版Domain](best-practices/waf/dedicated_domain.md)
