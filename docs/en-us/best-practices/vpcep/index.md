@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Service](service.md) - Introduces how to use Terraform to automatically deploy endpoint services, including availability zone query, ECS flavor query, image query, VPC, subnet, security group, ECS instance, and endpoint service creation.
+* [Deploy Endpoint](endpoint.md) - Introduces how to use Terraform to automatically deploy endpoints, including availability zone query, ECS flavor query, image query, VPC, subnet, security group, ECS instance, endpoint service, and endpoint creation.
 
 ## Reference Materials
 

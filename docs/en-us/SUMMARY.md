@@ -264,6 +264,7 @@
   * [VPCEP](best-practices/vpcep/)
     * [Introduction](best-practices/vpcep/index.md)
     * [Deploy Service](best-practices/vpcep/service.md)
+    * [Deploy Endpoint](best-practices/vpcep/endpoint.md)
   * [VPN](best-practices/vpn/)
     * [Introduction](best-practices/vpn/index.md)
     * [Deploy VPN Gateway](best-practices/vpn/gateway.md)

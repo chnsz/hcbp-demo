@@ -264,6 +264,7 @@
   * [VPCEP](best-practices/vpcep/)
     * [简介](best-practices/vpcep/index.md)
     * [部署服务](best-practices/vpcep/service.md)
+    * [部署终端节点](best-practices/vpcep/endpoint.md)
   * [VPN](best-practices/vpn/)
     * [简介](best-practices/vpn/index.md)
     * [部署VPN网关](best-practices/vpn/gateway.md)
