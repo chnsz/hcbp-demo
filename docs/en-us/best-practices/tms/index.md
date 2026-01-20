@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy Batch Associate Tags](batch_associate_tags.md) - Introduces how to use Terraform to automatically deploy batch tag association, including querying project lists and batch associating tags.
 * [Deploy Preset Tags](preset_tags.md) - Introduces how to use Terraform to automatically deploy preset tags, including preset tag creation and configuration.
+* [Deploy Query Resource Types](query_resource_types.md) - Introduces how to use Terraform to automatically deploy resource type queries, including exact matching and fuzzy matching of service names, fuzzy matching of resource type names, and other query methods.
 
 ## Reference Information
 
