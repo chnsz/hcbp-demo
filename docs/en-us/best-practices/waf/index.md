@@ -16,6 +16,7 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
+* [Deploy Cloud Domain](cloud_domain.md) - Introduces how to use Terraform to automatically deploy WAF cloud mode domain, including WAF cloud instance and domain configuration creation.
 * [Deploy Professional Edition Domain](dedicated_domain.md) - Introduces how to use Terraform to automatically deploy WAF Professional Edition Domain, including WAF Professional Edition instance, WAF policy, and domain configuration creation.
 * [Deploy Professional Edition Instance](dedicated_instance.md) - Introduces how to use Terraform to automatically deploy WAF Professional Edition instances, including VPC, subnet, and security group creation.
 

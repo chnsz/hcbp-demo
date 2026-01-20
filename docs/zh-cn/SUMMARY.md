@@ -273,6 +273,7 @@
     * [部署用户](best-practices/vpn/user.md)
   * [WAF](best-practices/waf/)
     * [简介](best-practices/waf/index.md)
+    * [部署云模式域名](best-practices/waf/cloud_domain.md)
     * [部署专业版Domain](best-practices/waf/dedicated_domain.md)
     * [部署专业版实例](best-practices/waf/dedicated_instance.md)
   * [Workspace](best-practices/workspace/)

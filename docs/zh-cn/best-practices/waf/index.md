@@ -16,6 +16,7 @@ Web应用防火墙（Web Application Firewall，WAF）是华为云为Web应用�
 
 本章节包含以下最佳实践：
 
+* [部署云模式域名](cloud_domain.md) - 介绍如何使用Terraform自动化部署WAF云模式域名，包括WAF云实例和域名配置的创建。
 * [部署专业版Domain](dedicated_domain.md) - 介绍如何使用Terraform自动化部署WAF专业版Domain，包括WAF专业版实例、WAF策略和域名配置的创建。
 * [部署专业版实例](dedicated_instance.md) - 介绍如何使用Terraform自动化部署WAF专业版实例，包括VPC、子网和安全组的创建。
 

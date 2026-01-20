@@ -273,6 +273,7 @@
     * [Deploy User](best-practices/vpn/user.md)
   * [WAF](best-practices/waf/)
     * [Introduction](best-practices/waf/index.md)
+    * [Deploy Cloud Domain](best-practices/waf/cloud_domain.md)
     * [Deploy Professional Edition Domain](best-practices/waf/dedicated_domain.md)
     * [Deploy Professional Edition Instance](best-practices/waf/dedicated_instance.md)
   * [Workspace](best-practices/workspace/)
