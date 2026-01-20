@@ -211,6 +211,7 @@
   * [Organizations](best-practices/organizations/)
     * [简介](best-practices/organizations/index.md)
     * [部署账户](best-practices/organizations/organization_account.md)
+    * [部署组织单元](best-practices/organizations/organization_unit.md)
   * [RAM](best-practices/ram/)
     * [简介](best-practices/ram/index.md)
     * [部署自动化资源分享邀请处理](best-practices/ram/automated_resource_share_invitation_processing.md)
