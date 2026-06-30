@@ -17,7 +17,7 @@ Through the best practices in this chapter, you can learn the deployment workflo
 This chapter includes the following best practices:
 
 * [Deploy DataArts Factory Script Execute](factory_script_execute.md) - Introduces how to use Terraform to automatically deploy DataArts Factory scripts and script execution, including workspace query, DLI data connection query, DLI database and table, Factory script, and script execution creation.
-* [Deploy Data Recognition Rule Group](security_data_recognition_rule_group.md) - Introduces how to use Terraform to automatically deploy DataArts data recognition rule groups, including workspace query, data category query, data secrecy level, data recognition rule, and rule group creation and verification.
+* [Deploy DataArts Security Data Recognition Rule Group](security_data_recognition_rule_group.md) - Introduces how to use Terraform to automatically deploy DataArts Security data recognition rule groups, including workspace query, data category query, data secrecy level, data recognition rule, and rule group creation and verification.
 * [Deploy DataArts Studio Workspace User](studio_workspace_user.md) - Introduces how to use Terraform to automatically deploy DataArts Studio workspace users, including workspace query, user role query, IAM user query, and workspace user creation with role assignment.
 
 ## References
