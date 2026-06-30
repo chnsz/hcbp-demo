@@ -124,6 +124,10 @@ FunctionGraph is an event-driven serverless computing service that supports mult
 
 Log Tank Service (LTS) is a one-stop log management service provided by Huawei Cloud, supporting log collection, storage, query, and analysis, helping enterprises achieve efficient log management and monitoring.
 
+### [ModelArts Best Practices](modelarts/index.md)
+
+ModelArts is a model training and inference platform provided by Huawei Cloud for AI developers, offering end-to-end AI development capabilities from data processing, algorithm development, model training to model deployment, supporting dedicated resource pools, distributed training, and enterprise AI workflow management.
+
 ### [Object Storage Service (OBS) Best Practices](obs/index.md)
 
 Object Storage Service (OBS) is a high-availability, highly reliable, high-performance, secure, and low-cost object storage service provided by Huawei Cloud, providing massive, secure, highly reliable, and low-cost data storage capabilities.
