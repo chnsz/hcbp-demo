@@ -1,10 +1,10 @@
-# Deploy Data Recognition Rule Group
+# Deploy DataArts Security Data Recognition Rule Group
 
 ## Application Scenario
 
-DataArts Studio provides a data security module that supports data classification and sensitivity level identification through data recognition rules. Data recognition rule groups are used to organize multiple data recognition rules together for unified management and application, forming an important part of the data security governance system.
+DataArts Studio provides the DataArts Security module, which supports data classification and sensitivity level identification through data recognition rules. Data recognition rule groups are used to organize multiple data recognition rules together for unified management and application, forming an important part of the data security governance system.
 
-This best practice is suitable for scenarios where you need to create data secrecy levels, data recognition rules, and data recognition rule groups in a DataArts Studio workspace, covering workspace query, data category query, data secrecy level creation, data recognition rule creation, rule group creation, and creation result verification. This best practice will introduce how to use Terraform to automatically deploy the above resources for Infrastructure as Code management of DataArts data security recognition rule groups.
+This best practice is suitable for scenarios where you need to create data secrecy levels, data recognition rules, and data recognition rule groups in a DataArts Studio workspace, covering workspace query, data category query, data secrecy level creation, data recognition rule creation, rule group creation, and creation result verification. This best practice will introduce how to use Terraform to automatically deploy the above resources for Infrastructure as Code management of DataArts Security data recognition rule groups.
 
 ## Related Resources/Data Sources
 
@@ -302,11 +302,11 @@ After completing the above script configuration, execute the following steps to 
 
 1. Run `terraform init` to initialize the environment
 2. Run `terraform plan` to view the resource creation plan
-3. After confirming the resource plan is correct, run `terraform apply` to start creating the data recognition rule group and related resources
-4. Run `terraform show` to view details of the created data recognition rule group
+3. After confirming the resource plan is correct, run `terraform apply` to start creating the DataArts Security data recognition rule group and related resources
+4. Run `terraform show` to view details of the created DataArts Security data recognition rule group
 
 ## Reference Information
 
 - [Huawei Cloud DataArts Studio Product Documentation](https://support.huaweicloud.com/intl/en-us/dataartsstudio/index.html)
 - [Huawei Cloud Provider Documentation](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs)
-- [Best Practice Source Code Reference For DataArts Data Recognition Rule Group](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dataarts/security-data-recognition-rule-group)
+- [DataArts Security Data Recognition Rule Group Best Practice Source Code Reference](https://github.com/huaweicloud/terraform-provider-huaweicloud/tree/master/examples/dataarts/security-data-recognition-rule-group)
