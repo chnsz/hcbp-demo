@@ -99,6 +99,7 @@
   * [DataArts](best-practices/dataarts/)
     * [简介](best-practices/dataarts/index.md)
     * [部署DataArts Factory脚本执行](best-practices/dataarts/factory_script_execute.md)
+    * [部署DataArts Studio工作空间用户](best-practices/dataarts/studio_workspace_user.md)
   * [DC](best-practices/dc/)
     * [简介](best-practices/dc/index.md)
     * [部署互连网关](best-practices/dc/connect_gateway.md)
