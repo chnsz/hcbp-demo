@@ -200,6 +200,7 @@
   * [ModelArts](best-practices/modelarts/)
     * [简介](best-practices/modelarts/index.md)
     * [部署专属资源池自定义训练作业](best-practices/modelarts/custom_training_job_with_dedicated_resource_pool.md)
+    * [部署微调训练作业](best-practices/modelarts/fine_tuning_training_job.md)
   * [OBS](best-practices/obs/)
     * [简介](best-practices/obs/index.md)
     * [部署KMS加密桶](best-practices/obs/kms_encrypted_bucket.md)

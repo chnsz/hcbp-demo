@@ -17,6 +17,7 @@ Through the best practices in this chapter, you can learn the deployment workflo
 This chapter includes the following best practices:
 
 * [Deploy Custom Training Job with Dedicated Resource Pool](custom_training_job_with_dedicated_resource_pool.md) - Introduces how to use Terraform to automatically deploy a ModelArts dedicated resource pool and custom training job, including VPC network, SFS Turbo, ModelArts network, workspace, dedicated resource pool, and training job creation.
+* [Deploy Fine-Tuning Training Job](fine_tuning_training_job.md) - Introduces how to use Terraform to automatically deploy a ModelArts fine-tuning training job, including workspace, SMN topic, and fine-tuning training job creation, supporting dataset inputs, asset model, output model, and fine-tuning configuration.
 
 ## References
 
