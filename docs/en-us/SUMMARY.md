@@ -99,6 +99,7 @@
   * [DataArts](best-practices/dataarts/)
     * [Introduction](best-practices/dataarts/index.md)
     * [Deploy DataArts Factory Script Execute](best-practices/dataarts/factory_script_execute.md)
+    * [Deploy DataArts Studio Workspace User](best-practices/dataarts/studio_workspace_user.md)
   * [DC](best-practices/dc/)
     * [Introduction](best-practices/dc/index.md)
     * [Deploy Connect Gateway](best-practices/dc/connect_gateway.md)
