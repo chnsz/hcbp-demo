@@ -16,6 +16,7 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
+* [Deploy Organization](organization.md) - Introduces how to use Terraform to automatically deploy an Organizations organization, including organization creation and configuration of policy types and root organization tags.
 * [Deploy Account](organization_account.md) - Introduces how to use Terraform to automatically deploy Organizations accounts, including account creation and configuration.
 * [Deploy Organizational Unit](organization_unit.md) - Introduces how to use Terraform to automatically deploy Organizations organizational units, including organizational unit creation and configuration.
 

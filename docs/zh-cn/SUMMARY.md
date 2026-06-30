@@ -215,6 +215,7 @@
     * [部署通过任务迁移对象](best-practices/oms/task_migration.md)
   * [Organizations](best-practices/organizations/)
     * [简介](best-practices/organizations/index.md)
+    * [部署组织](best-practices/organizations/organization.md)
     * [部署账户](best-practices/organizations/organization_account.md)
     * [部署组织单元](best-practices/organizations/organization_unit.md)
   * [RAM](best-practices/ram/)
