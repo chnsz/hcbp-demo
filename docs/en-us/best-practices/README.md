@@ -64,6 +64,10 @@ Config, named as Resource Management Service (RMS) before, it is a one-stop comp
 
 Cloud Trace Service (CTS) is a security service provided by Huawei Cloud for recording all operations performed by users in cloud service accounts, providing operation record query, auditing, and problem positioning functions to meet security auditing and compliance check requirements.
 
+### [DataArts Studio Best Practices](dataarts/index.md)
+
+DataArts Studio is a one-stop data operations and governance platform provided by Huawei Cloud, offering full lifecycle data management and intelligent data management capabilities, supporting data integration, data development, data architecture, data quality, data catalog, data service, and data security to help enterprises build end-to-end intelligent data systems.
+
 ### [Direct Connect (DC) Best Practices](dc/index.md)
 
 Direct Connect (DC) is a high-performance, low-latency, secure and reliable dedicated line access service provided by Huawei Cloud, offering enterprises dedicated network connections from local data centers to Huawei Cloud. DC service supports multiple access methods, including physical dedicated lines and virtual dedicated lines, meeting network connection requirements for different scales and scenarios.
