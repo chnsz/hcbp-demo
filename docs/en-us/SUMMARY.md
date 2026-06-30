@@ -215,6 +215,7 @@
     * [Deploy Object Migration Through Task](best-practices/oms/task_migration.md)
   * [Organizations](best-practices/organizations/)
     * [Introduction](best-practices/organizations/index.md)
+    * [Deploy Organization](best-practices/organizations/organization.md)
     * [Deploy Account](best-practices/organizations/organization_account.md)
     * [Deploy Organizational Unit](best-practices/organizations/organization_unit.md)
   * [RAM](best-practices/ram/)
