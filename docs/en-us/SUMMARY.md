@@ -99,6 +99,7 @@
   * [DataArts](best-practices/dataarts/)
     * [Introduction](best-practices/dataarts/index.md)
     * [Deploy DataArts Factory Script Execute](best-practices/dataarts/factory_script_execute.md)
+    * [Deploy Data Recognition Rule Group](best-practices/dataarts/security_data_recognition_rule_group.md)
     * [Deploy DataArts Studio Workspace User](best-practices/dataarts/studio_workspace_user.md)
   * [DC](best-practices/dc/)
     * [Introduction](best-practices/dc/index.md)
