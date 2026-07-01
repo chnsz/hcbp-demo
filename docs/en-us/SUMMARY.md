@@ -205,6 +205,7 @@
   * [ModelArts](best-practices/modelarts/)
     * [Introduction](best-practices/modelarts/index.md)
     * [Deploy Custom Training Job with Dedicated Resource Pool](best-practices/modelarts/custom_training_job_with_dedicated_resource_pool.md)
+    * [Deploy Dedicated Resource Pool](best-practices/modelarts/dedicated_resource_pool.md)
     * [Deploy Fine-Tuning Training Job](best-practices/modelarts/fine_tuning_training_job.md)
     * [Deploy Notebook with Dedicated Resource Pool](best-practices/modelarts/notebook_with_dedicated_resource_pool.md)
   * [OBS](best-practices/obs/)
