@@ -32,25 +32,29 @@ Business Recovery Service (BRS) is a disaster recovery service for Elastic Cloud
 
 Cloud Bastion Host (CBH) is a secure operation and maintenance management service provided by Huawei Cloud, offering enterprises a unified secure operation and maintenance entry point. CBH helps enterprises establish secure and compliant operation and maintenance management systems through centralized identity authentication, permission management, operation auditing, and other functions.
 
+### [Cloud Backup and Recovery (CBR) Best Practices](cbr/index.md)
+
+Cloud Backup and Recovery (CBR) is a data protection service provided by Huawei Cloud, offering simple and easy-to-use backup services for cloud and on-premises resources. When events such as virus intrusion, human error deletion, or hardware/software failures occur, data can be restored to any backup point.
+
 ### [Cloud Connect (CC) Best Practices](cc/index.md)
 
 Cloud Connect (CC) is a global network connection service provided by Huawei Cloud, supporting multiple network instance access, helping customers build a global network. Cloud Connect service provides full network interconnection capabilities, enabling any two points in the cloud network to interconnect, ensuring one-hop network forwarding without transit.
 
-### [Content Delivery Network (CDN) Best Practices](cdn/index.md)
+### [Cloud Container Engine (CCE) Best Practices](cce/index.md)
 
-Content Delivery Network (CDN) is a content acceleration and distribution service provided by Huawei Cloud, which provides users with nearby access acceleration experience by caching content to globally distributed edge nodes. CDN service supports multiple scenarios such as static content acceleration, dynamic content acceleration, video on-demand and live streaming acceleration, helping users improve website access speed and reduce origin server pressure.
+Cloud Container Engine (CCE) is a highly reliable and high-performance enterprise-grade container management service that supports Kubernetes community-native applications and tools, providing full lifecycle management capabilities for containerized applications.
 
 ### [Cloud Container Instance (CCI) Best Practices](cci/index.md)
 
 Cloud Container Instance (CCI) is a Serverless container service provided by Huawei Cloud, allowing you to run container applications directly without creating and managing server clusters. CCI provides second-level startup, pay-as-you-go, and per-second billing container services, supporting Kubernetes native APIs.
 
-### [Cloud Backup and Recovery (CBR) Best Practices](cbr/index.md)
+### [Content Delivery Network (CDN) Best Practices](cdn/index.md)
 
-Cloud Backup and Recovery (CBR) is a data protection service provided by Huawei Cloud, offering simple and easy-to-use backup services for cloud and on-premises resources. When events such as virus intrusion, human error deletion, or hardware/software failures occur, data can be restored to any backup point.
+Content Delivery Network (CDN) is a content acceleration and distribution service provided by Huawei Cloud, which provides users with nearby access acceleration experience by caching content to globally distributed edge nodes. CDN service supports multiple scenarios such as static content acceleration, dynamic content acceleration, video on-demand and live streaming acceleration, helping users improve website access speed and reduce origin server pressure.
 
-### [Cloud Container Engine (CCE) Best Practices](cce/postpaid_cluster.md)
+### [Cloud Eye Service (CES) Best Practices](ces/index.md)
 
-Cloud Container Engine (CCE) is a highly reliable and high-performance enterprise-grade container management service that supports Kubernetes community-native applications and tools, providing full lifecycle management capabilities for containerized applications.
+Cloud Eye Service (CES) is a monitoring and alarm service provided by Huawei Cloud, used to monitor the running status and performance metrics of cloud resources in real time. CES service supports monitoring of various cloud resources, including Elastic Cloud Server, Elastic Load Balance, Relational Database Service, Object Storage Service, etc., providing rich monitoring metrics, flexible alarm rule configuration and multiple notification methods, helping users discover and handle resource anomalies in time, ensuring stable business operation.
 
 ### [Cloud Operations Center (COC) Best Practices](coc/index.md)
 
@@ -76,13 +80,21 @@ Direct Connect (DC) is a high-performance, low-latency, secure and reliable dedi
 
 Distributed Cache Service (DCS) is a high-performance, high-availability in-memory database service provided by Huawei Cloud, supporting mainstream cache engines such as Redis and Memcached. DCS service provides multiple instance specifications and deployment modes, including single-node, master-standby, and cluster, meeting cache requirements for different scales and scenarios.
 
-### [Domain Name Service (DNS) Best Practices](dns/index.md)
+### [Dedicated Host (DEH) Best Practices](deh/index.md)
 
-Domain Name Service (DNS) is a high-availability, high-performance domain name resolution service provided by Huawei Cloud, supporting public and private domain name resolution. DNS service provides intelligent resolution, load balancing, health check, and other functions, helping users achieve intelligent domain scheduling and failover.
+Dedicated Host (DEH) is a physical server resource provided by Huawei Cloud, used to meet business scenarios with special requirements for resource exclusivity, security compliance, etc. Dedicated Host provides full control of physical servers, achieves physical isolation of resources, and meets compliance requirements. Through Dedicated Host, enterprises can deploy ECS instances on dedicated physical servers, obtaining higher security and resource isolation.
+
+### [Data Encryption Workshop (DEW) Best Practices](dew/index.md)
+
+Data Encryption Workshop (DEW) is a data security service provided by Huawei Cloud, used to protect the security of cloud data and applications. DEW service provides key management, credential management, data encryption and other functions, supports multiple encryption algorithms and key types, helping users achieve encrypted storage and transmission of data, ensuring data security.
 
 ### [Distributed Message Service (DMS) Best Practices](dms/index.md)
 
 Distributed Message Service (DMS) is a message middleware service based on distributed architecture design, with the core function of implementing asynchronous communication, decoupling system components, peak shaving and valley filling in distributed systems, and ensuring reliable message transmission and efficient flow.
+
+### [Domain Name Service (DNS) Best Practices](dns/index.md)
+
+Domain Name Service (DNS) is a high-availability, high-performance domain name resolution service provided by Huawei Cloud, supporting public and private domain name resolution. DNS service provides intelligent resolution, load balancing, health check, and other functions, helping users achieve intelligent domain scheduling and failover.
 
 ### [Elastic Cloud Server (ECS) Best Practices](ecs/index.md)
 
@@ -91,6 +103,30 @@ Elastic Cloud Server (ECS) is a basic computing component composed of CPU, memor
 ### [EventGrid (EG) Best Practices](eg/index.md)
 
 EventGrid (EG) is an event-driven architecture service provided by Huawei Cloud, supporting event production, routing, transformation, and consumption, helping enterprises build loosely coupled and scalable distributed application systems.
+
+### [Elastic Load Balance (ELB) Best Practices](elb/index.md)
+
+Elastic Load Balance (ELB) is a service that automatically distributes access traffic to multiple cloud servers, enabling expansion of application system's external service capabilities and improving application availability. ELB automatically isolates abnormal backend servers through health checks to ensure high availability of services. Huawei Cloud ELB supports multiple load balancing algorithms, including round-robin, weighted round-robin, least connections, etc., to meet the needs of different business scenarios.
+
+### [Enterprise Router (ER) Best Practices](er/index.md)
+
+Enterprise Router (ER) is a high-performance, high-availability enterprise-grade router service provided by Huawei Cloud, supporting enterprise-level network functions such as multi-VPC interconnection, dedicated line access, and VPN connections.
+
+### [Enterprise Switch (ESW) Best Practices](esw/index.md)
+
+Enterprise Switch (ESW) is a high-performance, highly available enterprise-grade network switching service provided by Huawei Cloud, supporting large Layer 2 network interconnection and achieving Layer 2 network connections across availability zones. ESW service provides virtualized network switching capabilities, supporting Layer 2 network interconnection within VPCs and across VPCs, meeting enterprise-grade network requirements.
+
+### [Elastic Volume Service (EVS) Best Practices](evs/index.md)
+
+Elastic Volume Service (EVS) is a high-performance, highly reliable, and scalable block storage service provided by Huawei Cloud, providing persistent storage for ECS instances. EVS supports multiple storage types, including SSD, SAS, and SATA, meeting storage requirements for different business scenarios.
+
+### [FunctionGraph Best Practices](fgs/index.md)
+
+FunctionGraph is an event-driven serverless computing service that supports multiple programming languages and trigger methods, allowing you to quickly build applications without managing servers.
+
+### [Host Security Service (HSS) Best Practices](hss/index.md)
+
+Host Security Service (HSS) is a host security protection service provided by Huawei Cloud, offering asset management, vulnerability management, intrusion detection, baseline checks, and other functions to help you comprehensively protect the security of cloud hosts. HSS service supports multiple operating systems, including Linux and Windows, providing real-time monitoring, threat detection, security hardening, and other capabilities, meeting enterprise-grade host security protection requirements.
 
 ### [Identity and Access Management (IAM) Best Practices](iam/index.md)
 
@@ -103,26 +139,6 @@ Identity Center is a unified identity management service provided by Huawei Clou
 ### [Image Management Service (IMS) Best Practices](ims/index.md)
 
 Image Management Service (IMS) is an image management service provided by Huawei Cloud, supporting image creation, sharing, copying, importing, exporting, and other functions. IMS service provides various image types including private images, shared images, and market images, supporting image creation from cloud servers, cloud disks, external image files, and other methods, meeting image management requirements for different scenarios.
-
-### [Enterprise Router (ER) Best Practices](er/index.md)
-
-Enterprise Router (ER) is a high-performance, high-availability enterprise-grade router service provided by Huawei Cloud, supporting enterprise-level network functions such as multi-VPC interconnection, dedicated line access, and VPN connections.
-
-### [Enterprise Switch (ESW) Best Practices](esw/index.md)
-
-Enterprise Switch (ESW) is a high-performance, highly available enterprise-grade network switching service provided by Huawei Cloud, supporting large Layer 2 network interconnection and achieving Layer 2 network connections across availability zones. ESW service provides virtualized network switching capabilities, supporting Layer 2 network interconnection within VPCs and across VPCs, meeting enterprise-grade network requirements.
-
-### [Host Security Service (HSS) Best Practices](hss/index.md)
-
-Host Security Service (HSS) is a host security protection service provided by Huawei Cloud, offering asset management, vulnerability management, intrusion detection, baseline checks, and other functions to help you comprehensively protect the security of cloud hosts. HSS service supports multiple operating systems, including Linux and Windows, providing real-time monitoring, threat detection, security hardening, and other capabilities, meeting enterprise-grade host security protection requirements.
-
-### [Elastic Volume Service (EVS) Best Practices](evs/index.md)
-
-Elastic Volume Service (EVS) is a high-performance, highly reliable, and scalable block storage service provided by Huawei Cloud, providing persistent storage for ECS instances. EVS supports multiple storage types, including SSD, SAS, and SATA, meeting storage requirements for different business scenarios.
-
-### [FunctionGraph Best Practices](fgs/index.md)
-
-FunctionGraph is an event-driven serverless computing service that supports multiple programming languages and trigger methods, allowing you to quickly build applications without managing servers.
 
 ### [Log Tank Service (LTS) Best Practices](lts/index.md)
 
@@ -140,17 +156,33 @@ Object Storage Service (OBS) is a high-availability, highly reliable, high-perfo
 
 Object Storage Migration Service (OMS) is a one-stop data migration service provided by Huawei Cloud, helping users quickly, securely, and efficiently migrate data from other cloud service providers or local environments to Huawei Cloud Object Storage Service (OBS). OMS service supports multiple data sources, including mainstream cloud storage services such as AWS S3, Alibaba Cloud OSS, Tencent Cloud COS, and local file systems.
 
+### [Organizations Best Practices](organizations/index.md)
+
+Organizations is a multi-account management service provided by Huawei Cloud, supporting enterprises to centrally manage multiple Huawei Cloud accounts through organizational structure, achieving centralized resource management and unified permission control. Organizations service supports creating organizations, organizational units, and accounts, building multi-account architectures, achieving resource isolation, cost allocation, and fine-grained permission management.
+
 ### [Resource Access Manager (RAM) Best Practices](ram/index.md)
 
 Resource Access Manager (RAM) is a resource sharing service provided by Huawei Cloud, supporting cross-account resource sharing and management to help you achieve unified resource management and access control. RAM service provides centralized resource sharing capabilities, supporting cross-account resource sharing, permission management, and access control, meeting enterprise-level resource sharing and compliance requirements.
+
+### [Relational Database Service (RDS) Best Practices](rds/index.md)
+
+Relational Database Service (RDS) is a highly available, high-performance, and easily scalable relational database cloud service provided by Huawei Cloud, supporting multiple database engines such as MySQL, PostgreSQL, and SQL Server, providing enterprise-level functions such as automatic backup and monitoring alerts.
 
 ### [Resource Governance Center (RGC) Best Practices](rgc/index.md)
 
 Resource Governance Center (RGC) is a resource governance service provided by Huawei Cloud, supporting multi-account management, organizational unit management, blueprint configuration, and other functions to help you uniformly manage and govern cloud resources. RGC service provides centralized resource management capabilities, supporting cross-account resource governance, compliance checks, and automated deployment, meeting enterprise-level resource management and compliance requirements.
 
-### [Relational Database Service (RDS) Best Practices](rds/index.md)
+### [SecMaster Best Practices](secmaster/index.md)
 
-Relational Database Service (RDS) is a highly available, high-performance, and easily scalable relational database cloud service provided by Huawei Cloud, supporting multiple database engines such as MySQL, PostgreSQL, and SQL Server, providing enterprise-level functions such as automatic backup and monitoring alerts.
+SecMaster is a next-generation cloud native security operations center. Based on years of Huawei Cloud experience in cloud security, it enables integrated and automatic security operations through cloud asset management, security posture management, security information and incident management, security orchestration and automatic response, cloud security overview, simplified cloud security configuration, configurable defense policies, and intelligent and fast threat detection and response.
+
+### [Scalable File Service Turbo (SFS Turbo) Best Practices](sfs-turbo/index.md)
+
+Scalable File Service Turbo (SFS Turbo) is a high-performance file storage service provided by Huawei Cloud, specifically designed for high-performance computing and AI/ML workloads, supporting seamless integration with OBS object storage.
+
+### [Simple Message Notification (SMN) Best Practices](smn/index.md)
+
+Simple Message Notification (SMN) is a reliable and scalable message notification service provided by Huawei Cloud, supporting multiple message notification methods including email, SMS, HTTP/HTTPS, etc. SMN service provides a unified message publishing and subscription mechanism, supporting topic subscription, message push, message filtering, and other functions, helping you achieve message communication between applications and users.
 
 ### [Server Migration Service (SMS) Best Practices](sms/index.md)
 
@@ -164,14 +196,6 @@ Software Repository for Container (SWR) is a container image hosting service pro
 
 Tag Management Service (TMS) is a tag management service provided by Huawei Cloud, supporting adding, modifying, and deleting tags for cloud resources, helping you achieve resource classification management and cost analysis. TMS service provides unified tag management capabilities, supporting batch adding tags to different types of cloud resources (such as ECS, VPC, RDS, etc.), achieving unified classification and identification of resources.
 
-### [Simple Message Notification (SMN) Best Practices](smn/index.md)
-
-Simple Message Notification (SMN) is a reliable and scalable message notification service provided by Huawei Cloud, supporting multiple message notification methods including email, SMS, HTTP/HTTPS, etc. SMN service provides a unified message publishing and subscription mechanism, supporting topic subscription, message push, message filtering, and other functions, helping you achieve message communication between applications and users.
-
-### [Scalable File Service Turbo (SFS Turbo) Best Practices](sfs-turbo/index.md)
-
-Scalable File Service Turbo (SFS Turbo) is a high-performance file storage service provided by Huawei Cloud, specifically designed for high-performance computing and AI/ML workloads, supporting seamless integration with OBS object storage.
-
 ### [Virtual Private Cloud (VPC) Best Practices](vpc/index.md)
 
 Virtual Private Cloud (VPC) is a logically isolated network environment provided by Huawei Cloud for users, supporting custom subnets, routes, ACLs, and other network resources, meeting enterprise-level network security and flexible networking requirements.
@@ -179,6 +203,10 @@ Virtual Private Cloud (VPC) is a logically isolated network environment provided
 ### [VPC Endpoint (VPCEP) Best Practices](vpcep/index.md)
 
 VPC Endpoint (VPCEP) is a VPC internal resource mutual access service provided by Huawei Cloud, supporting the creation of endpoints and endpoint services within VPCs to achieve private network access to VPC resources. VPCEP service supports cross-VPC private network access, avoiding public network access, improving access security and stability, reducing network latency and costs.
+
+### [Virtual Private Network (VPN) Best Practices](vpn/index.md)
+
+Virtual Private Network (VPN) is a secure and reliable network connection service provided by Huawei Cloud, supporting the establishment of encrypted IPsec VPN connections between VPCs and local networks, enabling interconnection between cloud resources and local data centers. VPN service supports multiple connection methods, including site-to-site VPN, point-to-site VPN, etc., meeting network connection requirements for different scenarios.
 
 ### [Web Application Firewall (WAF) Best Practices](waf/index.md)
 
