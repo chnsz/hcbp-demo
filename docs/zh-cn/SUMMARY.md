@@ -31,6 +31,7 @@
   * [ASM](best-practices/asm/)
     * [简介](best-practices/asm/index.md)
     * [部署基础网格](best-practices/asm/basic.md)
+    * [部署多节点网格](best-practices/asm/multi_nodes.md)
   * [BMS](best-practices/bms/)
     * [简介](best-practices/bms/index.md)
     * [部署基础实例](best-practices/bms/basic.md)

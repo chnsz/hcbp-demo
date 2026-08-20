@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Basic Mesh](basic.md) - Introduces how to use Terraform to automatically deploy a basic ASM mesh associated with a single cluster, including specifying the mesh name, type, and version, and installing mesh components on the specified CCE cluster node.
+* [Deploy Multi-Nodes Mesh](multi_nodes.md) - Introduces how to use Terraform to automatically deploy an ASM mesh with multi-node installation and namespace sidecar injection, including creating a CCE namespace on demand, installing mesh components on multiple CCE nodes, and configuring sidecar injection for specified namespaces.
 
 ## Reference Materials
 
