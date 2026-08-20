@@ -20,6 +20,10 @@ API Gateway (APIG) is a high-performance, high-availability, and high-security c
 
 Auto Scaling (AS) is a service that automatically adjusts computing resources based on user business needs and strategies, helping you achieve dynamic resource allocation and cost optimization.
 
+### [Application Service Mesh (ASM) Best Practices](asm/index.md)
+
+Application Service Mesh (ASM) provides a non-intrusive microservice governance solution with complete lifecycle management and traffic governance. It is compatible with the Kubernetes and Istio ecosystems, and supports capabilities such as load balancing, circuit breaking, and fault injection. It also includes built-in canary and blue-green release processes for one-stop automated release management.
+
 ### [Bare Metal Server (BMS) Best Practices](bms/index.md)
 
 Bare Metal Server (BMS) is a physical server that can be obtained at any time, with high performance and high availability, providing dedicated physical server resources without virtualization overhead, meeting business scenarios with high performance requirements such as high-performance computing, databases, and big data analysis.
