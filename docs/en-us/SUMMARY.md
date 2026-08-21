@@ -32,6 +32,7 @@
     * [Introduction](best-practices/asm/index.md)
     * [Deploy Basic Mesh](best-practices/asm/basic.md)
     * [Deploy Multi-Nodes Mesh](best-practices/asm/multi_nodes.md)
+    * [Deploy Mesh with Namespace](best-practices/asm/with_namespace.md)
   * [BMS](best-practices/bms/)
     * [Introduction](best-practices/bms/index.md)
     * [Deploy Basic Instance](best-practices/bms/basic.md)

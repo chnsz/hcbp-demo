@@ -32,6 +32,7 @@
     * [简介](best-practices/asm/index.md)
     * [部署基础网格](best-practices/asm/basic.md)
     * [部署多节点网格](best-practices/asm/multi_nodes.md)
+    * [部署带命名空间的网格](best-practices/asm/with_namespace.md)
   * [BMS](best-practices/bms/)
     * [简介](best-practices/bms/index.md)
     * [部署基础实例](best-practices/bms/basic.md)
