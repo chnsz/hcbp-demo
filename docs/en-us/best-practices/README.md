@@ -64,6 +64,10 @@ Content Delivery Network (CDN) is a content acceleration and distribution servic
 
 Cloud Eye Service (CES) is a monitoring and alarm service provided by Huawei Cloud, used to monitor the running status and performance metrics of cloud resources in real time. CES service supports monitoring of various cloud resources, including Elastic Cloud Server, Elastic Load Balance, Relational Database Service, Object Storage Service, etc., providing rich monitoring metrics, flexible alarm rule configuration and multiple notification methods, helping users discover and handle resource anomalies in time, ensuring stable business operation.
 
+### [Cloud Firewall (CFW) Best Practices](cfw/index.md)
+
+Cloud Firewall (CFW) is a new-generation cloud-native firewall that provides protection for internet boundaries and VPC boundaries on the cloud, including real-time intrusion detection and prevention, global unified access control, full traffic analysis visualization, and log auditing and traceability analysis. It also supports on-demand elastic scaling and AI-enhanced intelligent defense, providing fundamental network security protection for cloud workloads.
+
 ### [Cloud Operations Center (COC) Best Practices](coc/index.md)
 
 Cloud Operations Center (COC) is a one-stop operation and maintenance management platform provided by Huawei Cloud, offering enterprises a unified operation and maintenance management entry point. COC helps enterprises achieve automated operation and maintenance and intelligent management through script management, task scheduling, monitoring and alerting, improving operation and maintenance efficiency and quality.
