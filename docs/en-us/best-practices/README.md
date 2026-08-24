@@ -24,6 +24,10 @@ Auto Scaling (AS) is a service that automatically adjusts computing resources ba
 
 Application Service Mesh (ASM) provides a non-intrusive microservice governance solution with complete lifecycle management and traffic governance. It is compatible with the Kubernetes and Istio ecosystems, and supports capabilities such as load balancing, circuit breaking, and fault injection. It also includes built-in canary and blue-green release processes for one-stop automated release management.
 
+### [Blockchain Service (BCS) Best Practices](bcs/index.md)
+
+Blockchain Service (BCS) is a blockchain technology service platform for enterprises and developers. It helps you quickly deploy, manage, and maintain blockchain networks, lowering the barrier to using blockchain so that you can focus on business development and innovation and rapidly bring services on-chain.
+
 ### [Bare Metal Server (BMS) Best Practices](bms/index.md)
 
 Bare Metal Server (BMS) is a physical server that can be obtained at any time, with high performance and high availability, providing dedicated physical server resources without virtualization overhead, meeting business scenarios with high performance requirements such as high-performance computing, databases, and big data analysis.
