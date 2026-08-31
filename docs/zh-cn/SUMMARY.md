@@ -93,6 +93,7 @@
     * [简介](best-practices/cfw/index.md)
     * [部署ACL规则配置](best-practices/cfw/acl_rule_config.md)
     * [部署基础防火墙](best-practices/cfw/basic_firewall.md)
+    * [部署黑白名单](best-practices/cfw/black_white_list.md)
   * [COC](best-practices/coc/)
     * [简介](best-practices/coc/index.md)
     * [部署脚本](best-practices/coc/script.md)
