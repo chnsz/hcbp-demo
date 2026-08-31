@@ -112,6 +112,7 @@
   * [CSS](best-practices/css/)
     * [简介](best-practices/css/index.md)
     * [部署AI Ops设置](best-practices/css/ai_ops_setting.md)
+    * [部署集群](best-practices/css/cluster.md)
   * [DataArts](best-practices/dataarts/)
     * [简介](best-practices/dataarts/index.md)
     * [部署DataArts Factory脚本执行](best-practices/dataarts/factory_script_execute.md)

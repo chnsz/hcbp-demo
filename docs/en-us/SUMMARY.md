@@ -112,6 +112,7 @@
   * [CSS](best-practices/css/)
     * [Introduction](best-practices/css/index.md)
     * [Deploy AI Ops Setting](best-practices/css/ai_ops_setting.md)
+    * [Deploy Cluster](best-practices/css/cluster.md)
   * [DataArts](best-practices/dataarts/)
     * [Introduction](best-practices/dataarts/index.md)
     * [Deploy DataArts Factory Script Execute](best-practices/dataarts/factory_script_execute.md)
