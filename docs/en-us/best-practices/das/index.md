@@ -10,7 +10,7 @@ DAS provides visualized database operations, including basic SQL operations, adv
 
 This section provides best practice examples for using Terraform to automatically deploy and manage Huawei Cloud Data Admin Service (DAS), helping you understand how to efficiently manage DAS resources on the cloud using Infrastructure as Code (IaC).
 
-Through the best practices in this section, you can learn the main deployment processes for DAS resources. These best practices will help you quickly get started with automated DAS deployment and lay a solid foundation for subsequent management and operations of database connections, lock analysis, database users, and shared connections.
+Through the best practices in this section, you can learn the main deployment processes for DAS resources. These best practices will help you quickly get started with automated DAS deployment and lay a solid foundation for subsequent management and operations of database connections, lock analysis, log analysis, database users, and shared connections.
 
 ## Best Practices List
 
@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy Database Connection](database_connection.md) - Introduces how to use Terraform to automatically deploy a DAS database instance connection, including creating a database instance connection, a database user, and sharing the connection with another IAM user.
 * [Deploy Lock Analysis](lock_analysis.md) - Introduces how to use Terraform to automatically deploy DAS lock analysis configurations, including enabling full deadlock detection, enabling the historical transaction switch, and creating a historical transaction export task.
+* [Deploy Log Analysis](log_analysis.md) - Introduces how to use Terraform to automatically deploy DAS log analysis configurations, including querying database users, creating a slow log export task, creating a Binlog parse task, and exporting Binlog parse results.
 
 ## Reference Materials
 
