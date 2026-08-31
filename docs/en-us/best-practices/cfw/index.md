@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy ACL Rule Configuration](acl_rule_config.md) - Introduces how to use Terraform to automatically deploy CFW ACL rule configuration, including querying firewall information and creating IP address groups, service groups, domain name groups, and multiple types of ACL access control rules.
+* [Deploy Basic Firewall](basic_firewall.md) - Introduces how to use Terraform to automatically deploy a basic CFW firewall, including purchasing a firewall instance, enabling EIP auto-protection, and optionally manually binding existing EIPs for protection.
 
 ## Reference Materials
 
