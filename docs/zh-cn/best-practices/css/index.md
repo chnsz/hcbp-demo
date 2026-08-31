@@ -18,6 +18,7 @@ CSS服务兼容Elasticsearch、OpenSearch、Logstash、Kibana、OpenSearch Dashb
 
 * [部署AI Ops设置](ai_ops_setting.md) - 介绍如何使用Terraform自动化部署CSS AI Ops设置，包括创建VPC、子网、安全组、CSS集群，以及配置AI Ops巡检设置。
 * [部署集群](cluster.md) - 介绍如何使用Terraform自动化部署一个CSS集群，包括创建VPC、子网、安全组，以及配置集群引擎类型、安全模式、HTTPS访问和计费方式等参数。
+* [部署Logstash集群](logstash_cluster.md) - 介绍如何使用Terraform自动化部署一个CSS Logstash集群，包括创建VPC、子网、安全组，以及配置节点规格、存储和计费方式等参数。
 
 ## 参考资料
 

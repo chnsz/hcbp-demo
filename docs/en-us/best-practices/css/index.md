@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy AI Ops Setting](ai_ops_setting.md) - Introduces how to use Terraform to automatically deploy CSS AI Ops settings, including creating VPC, subnet, security group, CSS cluster, and configuring AI Ops inspection settings.
 * [Deploy Cluster](cluster.md) - Introduces how to use Terraform to automatically deploy a CSS cluster, including creating VPC, subnet, security group, and configuring cluster engine type, security mode, HTTPS access, and billing mode.
+* [Deploy Logstash Cluster](logstash_cluster.md) - Introduces how to use Terraform to automatically deploy a CSS Logstash cluster, including creating VPC, subnet, security group, and configuring node flavor, storage, and billing mode.
 
 ## Reference Materials
 
