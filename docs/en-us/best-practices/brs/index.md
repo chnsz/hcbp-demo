@@ -17,8 +17,8 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Disaster Recovery Drill](disaster_recovery_drill.md) - Introduces how to use Terraform to automatically deploy BRS disaster recovery drill environment, including the creation of protection groups, protected instances, and disaster recovery drills.
-* [Deploy Protection Group](protection_group.md) - Introduces how to use Terraform to automatically deploy BRS protection group environment, including the creation of protection groups.
 * [Deploy Protected Instance](protected_instance.md) - Introduces how to use Terraform to automatically deploy BRS protected instance environment, including the creation of protection groups and protected instances.
+* [Deploy Protection Group](protection_group.md) - Introduces how to use Terraform to automatically deploy BRS protection group environment, including the creation of protection groups.
 
 ## Reference Materials
 

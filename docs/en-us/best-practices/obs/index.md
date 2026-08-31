@@ -17,10 +17,10 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy KMS Encrypted Bucket](kms_encrypted_bucket.md) - Introduces how to use Terraform to automatically deploy OBS KMS encrypted buckets, including KMS key creation and OBS bucket configuration.
-* [Deploy Bucket Static Website Hosting Configuration](static_website_hosting.md) - Introduces how to use Terraform to automatically deploy OBS bucket static website hosting configuration, including KMS key creation, OBS bucket configuration, website configuration, and access policy settings.
 * [Deploy Bucket Object Uploaded with Static Text](object_upload_with_content.md) - Introduces how to use Terraform to automatically deploy bucket objects uploaded with static text, including KMS key creation, OBS bucket configuration, and object upload.
 * [Deploy Bucket Object Uploaded with Encrypted Text](object_upload_with_encryption.md) - Introduces how to use Terraform to automatically deploy bucket objects uploaded with encrypted text, including KMS key creation, OBS bucket configuration, file compression, and encrypted upload.
 * [Deploy Bucket Object Uploaded with Local File](object_upload_with_source.md) - Introduces how to use Terraform to automatically deploy bucket objects uploaded with local files, including KMS key creation, OBS bucket configuration, file compression, and upload.
+* [Deploy Bucket Static Website Hosting Configuration](static_website_hosting.md) - Introduces how to use Terraform to automatically deploy OBS bucket static website hosting configuration, including KMS key creation, OBS bucket configuration, website configuration, and access policy settings.
 
 ## Reference Materials
 
