@@ -84,6 +84,10 @@ Cloud Search Service (CSS) is a fully managed online distributed search service 
 
 Cloud Trace Service (CTS) is a security service provided by Huawei Cloud for recording all operations performed by users in cloud service accounts, providing operation record query, auditing, and problem positioning functions to meet security auditing and compliance check requirements.
 
+### [Data Admin Service (DAS) Best Practices](das/index.md)
+
+Data Admin Service (DAS) is a Web service for logging in to and operating databases on Huawei Cloud. It provides a one-stop cloud database management platform for database development, O&M, and intelligent diagnosis, and supports visualized management and O&M for databases such as RDS, GaussDB, and DDS.
+
 ### [DataArts Studio Best Practices](dataarts/index.md)
 
 DataArts Studio is a one-stop data operations and governance platform provided by Huawei Cloud, offering full lifecycle data management and intelligent data management capabilities, supporting data integration, data development, data architecture, data quality, data catalog, data service, and data security to help enterprises build end-to-end intelligent data systems.
