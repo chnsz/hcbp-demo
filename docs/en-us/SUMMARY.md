@@ -93,6 +93,7 @@
     * [Introduction](best-practices/cfw/index.md)
     * [Deploy ACL Rule Configuration](best-practices/cfw/acl_rule_config.md)
     * [Deploy Basic Firewall](best-practices/cfw/basic_firewall.md)
+    * [Deploy Black and White List](best-practices/cfw/black_white_list.md)
   * [COC](best-practices/coc/)
     * [Introduction](best-practices/coc/index.md)
     * [Deploy Script](best-practices/coc/script.md)
