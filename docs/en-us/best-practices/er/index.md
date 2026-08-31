@@ -18,8 +18,8 @@ This section contains the following best practices:
 
 * [Deploy Flow Logs](flow_log.md) - Introduces how to use Terraform to automatically deploy flow logs, including VPC creation, ER instance creation, VPC connection, LTS log group creation, and flow log configuration.
 * [Deploy Route Table](route_table.md) - Introduces how to use Terraform to automatically deploy route tables, including VPC creation, ER instance creation, and route table configuration.
-* [Deploy VPC Connection](vpc_attachment.md) - Introduces how to use Terraform to automatically deploy VPC connections, including VPC creation, ER instance creation, and VPC connection configuration.
 * [Deploy Shared Instance](share_instance.md) - Introduces how to use Terraform to automatically deploy ER shared instances, including ER instance creation, RAM resource sharing, cross-account VPC connections, and attachment acceptance.
+* [Deploy VPC Connection](vpc_attachment.md) - Introduces how to use Terraform to automatically deploy VPC connections, including VPC creation, ER instance creation, and VPC connection configuration.
 
 ## Reference Materials
 

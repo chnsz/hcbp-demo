@@ -16,9 +16,9 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
+* [Deploy MySQL Read Replica Instance](mysql_read_replica_instance.md) - Introduces how to use Terraform to automatically deploy RDS MySQL primary-standby instances and read replica instances, including VPC network, security group, RDS instance, and read replica instance creation, supporting high availability and read-write separation functions.
 * [Deploy MySQL Single Instance](mysql_single_instance.md) - Introduces how to use Terraform to automatically deploy RDS MySQL single instances, including VPC network, security group, RDS instance, database account, and database creation, supporting complete MySQL database management functions.
 * [Deploy MySQL Single Instance with EIP](mysql_single_instance_with_eip.md) - Introduces how to use Terraform to automatically deploy RDS MySQL single instances with EIP binding, including VPC network, security group, RDS instance, EIP, and EIP binding creation, supporting MySQL database functions with public network access.
-* [Deploy MySQL Read Replica Instance](mysql_read_replica_instance.md) - Introduces how to use Terraform to automatically deploy RDS MySQL primary-standby instances and read replica instances, including VPC network, security group, RDS instance, and read replica instance creation, supporting high availability and read-write separation functions.
 * [Deploy PostgreSQL HA Instance](postgresql_ha_instance.md) - Introduces how to use Terraform to automatically deploy RDS PostgreSQL primary-standby instances, including VPC network, security group, RDS instance, PostgreSQL account, database, schema, and backup creation, supporting high-availability PostgreSQL database functions.
 * [Deploy SQL Server Single Instance](sqlserver_single_instance.md) - Introduces how to use Terraform to automatically deploy RDS SQL Server single instances, including VPC network, security group, and RDS instance creation, supporting complete SQL Server database management functions.
 

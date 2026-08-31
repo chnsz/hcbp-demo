@@ -76,13 +76,13 @@ Cloud Operations Center (COC) is a one-stop operation and maintenance management
 
 Config, named as Resource Management Service (RMS) before, it is a one-stop compliance management service provided by Huawei Cloud, helping users continuously monitor and evaluate the configuration compliance of cloud resources. Config service provides pre-configured compliance rule packages and custom rules, supporting multiple compliance frameworks and standards, helping enterprises establish comprehensive compliance management systems.
 
-### [Cloud Trace Service (CTS) Best Practices](cts/index.md)
-
-Cloud Trace Service (CTS) is a security service provided by Huawei Cloud for recording all operations performed by users in cloud service accounts, providing operation record query, auditing, and problem positioning functions to meet security auditing and compliance check requirements.
-
 ### [Cloud Search Service (CSS) Best Practices](css/index.md)
 
 Cloud Search Service (CSS) is a fully managed online distributed search service built on Elasticsearch and OpenSearch by Huawei Cloud. It supports efficient retrieval and analysis of structured, unstructured text, and AI vectors, and is suitable for scenarios such as log analysis, intelligent customer service, knowledge base Q&A, and personalized recommendations.
+
+### [Cloud Trace Service (CTS) Best Practices](cts/index.md)
+
+Cloud Trace Service (CTS) is a security service provided by Huawei Cloud for recording all operations performed by users in cloud service accounts, providing operation record query, auditing, and problem positioning functions to meet security auditing and compliance check requirements.
 
 ### [DataArts Studio Best Practices](dataarts/index.md)
 
