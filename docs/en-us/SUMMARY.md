@@ -119,6 +119,7 @@
     * [Deploy Database Connection](best-practices/das/database_connection.md)
     * [Deploy Lock Analysis](best-practices/das/lock_analysis.md)
     * [Deploy Log Analysis](best-practices/das/log_analysis.md)
+    * [Deploy Ops Management](best-practices/das/ops_management.md)
   * [DataArts](best-practices/dataarts/)
     * [Introduction](best-practices/dataarts/index.md)
     * [Deploy DataArts Factory Script Execute](best-practices/dataarts/factory_script_execute.md)
