@@ -119,6 +119,7 @@
     * [部署数据库连接](best-practices/das/database_connection.md)
     * [部署锁分析](best-practices/das/lock_analysis.md)
     * [部署日志分析](best-practices/das/log_analysis.md)
+    * [部署运维管理](best-practices/das/ops_management.md)
   * [DataArts](best-practices/dataarts/)
     * [简介](best-practices/dataarts/index.md)
     * [部署DataArts Factory脚本执行](best-practices/dataarts/factory_script_execute.md)
