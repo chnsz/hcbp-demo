@@ -130,6 +130,7 @@
     * [简介](best-practices/dbss/index.md)
     * [部署审计ECS数据库](best-practices/dbss/audit_ecs_database.md)
     * [部署审计RDS数据库](best-practices/dbss/audit_rds_database.md)
+    * [部署基础实例](best-practices/dbss/basic_instance.md)
   * [DC](best-practices/dc/)
     * [简介](best-practices/dc/index.md)
     * [部署互连网关](best-practices/dc/connect_gateway.md)

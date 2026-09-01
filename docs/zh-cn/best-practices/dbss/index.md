@@ -18,6 +18,7 @@
 
 * [部署审计ECS数据库](audit_ecs_database.md) - 介绍如何使用Terraform自动化部署DBSS审计实例并添加ECS自建数据库，包括创建VPC、子网、安全组、DBSS实例，以及配置自建数据库审计信息。
 * [部署审计RDS数据库](audit_rds_database.md) - 介绍如何使用Terraform自动化部署DBSS审计实例并添加RDS数据库，包括创建VPC、子网、安全组、RDS实例、DBSS实例，以及配置RDS数据库审计信息。
+* [部署基础实例](basic_instance.md) - 介绍如何使用Terraform自动化部署一个基础的DBSS实例，包括创建VPC、子网、安全组，以及配置DBSS实例规格、计费方式等参数。
 
 ## 参考资料
 

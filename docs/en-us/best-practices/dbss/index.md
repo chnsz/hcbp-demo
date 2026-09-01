@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy Audit ECS Database](audit_ecs_database.md) - Introduces how to use Terraform to automatically deploy a DBSS audit instance and add an ECS self-built database, including creating VPC, subnet, security group, and DBSS instance, as well as configuring self-built database audit information.
 * [Deploy Audit RDS Database](audit_rds_database.md) - Introduces how to use Terraform to automatically deploy a DBSS audit instance and add an RDS database, including creating VPC, subnet, security group, RDS instance, and DBSS instance, as well as configuring RDS database audit information.
+* [Deploy Basic Instance](basic_instance.md) - Introduces how to use Terraform to automatically deploy a basic DBSS instance, including creating VPC, subnet, and security group, as well as configuring DBSS instance flavor, billing mode, and other parameters.
 
 ## Reference Materials
 
