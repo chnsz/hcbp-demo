@@ -145,6 +145,7 @@
     * [Introduction](best-practices/ddm/index.md)
     * [Deploy Account](best-practices/ddm/account.md)
     * [Deploy Basic Instance](best-practices/ddm/basic_instance.md)
+    * [Deploy Schema](best-practices/ddm/schema.md)
   * [DEH](best-practices/deh/)
     * [Introduction](best-practices/deh/index.md)
     * [Deploy Associate ECS Instance](best-practices/deh/associate_ecs_instance.md)

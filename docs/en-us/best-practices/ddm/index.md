@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy Account](account.md) - Introduces how to use Terraform to automatically deploy a DDM instance and account, including creating VPC, subnet, and security group, configuring engine, flavor, and node number, and creating a DDM account with specified permissions.
 * [Deploy Basic Instance](basic_instance.md) - Introduces how to use Terraform to automatically deploy a basic DDM instance, including creating VPC, subnet, and security group, as well as configuring engine, flavor, node number, billing mode, and other parameters.
+* [Deploy Schema](schema.md) - Introduces how to use Terraform to automatically deploy a DDM schema, including creating VPC, subnet, and security group, deploying an RDS data node and a DDM instance, and creating a schema associated with the data node.
 
 ## Reference Materials
 
