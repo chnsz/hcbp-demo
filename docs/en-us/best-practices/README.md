@@ -92,6 +92,10 @@ Data Admin Service (DAS) is a Web service for logging in to and operating databa
 
 DataArts Studio is a one-stop data operations and governance platform provided by Huawei Cloud, offering full lifecycle data management and intelligent data management capabilities, supporting data integration, data development, data architecture, data quality, data catalog, data service, and data security to help enterprises build end-to-end intelligent data systems.
 
+### [Database Security Service (DBSS) Best Practices](dbss/index.md)
+
+Database Security Service (DBSS) provides database security audit, database security encryption, and database security O&M capabilities. It supports bypass auditing for Huawei Cloud RDS and self-built databases on ECS/BMS, helping enterprises locate improper operations and protect data assets.
+
 ### [Direct Connect (DC) Best Practices](dc/index.md)
 
 Direct Connect (DC) is a high-performance, low-latency, secure and reliable dedicated line access service provided by Huawei Cloud, offering enterprises dedicated network connections from local data centers to Huawei Cloud. DC service supports multiple access methods, including physical dedicated lines and virtual dedicated lines, meeting network connection requirements for different scales and scenarios.
