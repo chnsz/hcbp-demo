@@ -104,6 +104,10 @@ Direct Connect (DC) is a high-performance, low-latency, secure and reliable dedi
 
 Distributed Cache Service (DCS) is a high-performance, high-availability in-memory database service provided by Huawei Cloud, supporting mainstream cache engines such as Redis and Memcached. DCS service provides multiple instance specifications and deployment modes, including single-node, master-standby, and cluster, meeting cache requirements for different scales and scenarios.
 
+### [Distributed Database Middleware (DDM) Best Practices](ddm/index.md)
+
+Distributed Database Middleware (DDM) is a MySQL-compatible distributed relational database middleware that focuses on solving database distributed scaling issues. It provides capabilities such as database and table sharding, read/write splitting, and elastic scaling to enable highly concurrent access to massive volumes of data.
+
 ### [Dedicated Host (DEH) Best Practices](deh/index.md)
 
 Dedicated Host (DEH) is a physical server resource provided by Huawei Cloud, used to meet business scenarios with special requirements for resource exclusivity, security compliance, etc. Dedicated Host provides full control of physical servers, achieves physical isolation of resources, and meets compliance requirements. Through Dedicated Host, enterprises can deploy ECS instances on dedicated physical servers, obtaining higher security and resource isolation.
