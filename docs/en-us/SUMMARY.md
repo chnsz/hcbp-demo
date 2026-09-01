@@ -120,6 +120,7 @@
     * [Deploy Lock Analysis](best-practices/das/lock_analysis.md)
     * [Deploy Log Analysis](best-practices/das/log_analysis.md)
     * [Deploy Ops Management](best-practices/das/ops_management.md)
+    * [Deploy SQL Diagnostics](best-practices/das/sql_diagnostics.md)
   * [DataArts](best-practices/dataarts/)
     * [Introduction](best-practices/dataarts/index.md)
     * [Deploy DataArts Factory Script Execute](best-practices/dataarts/factory_script_execute.md)

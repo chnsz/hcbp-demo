@@ -120,6 +120,7 @@
     * [部署锁分析](best-practices/das/lock_analysis.md)
     * [部署日志分析](best-practices/das/log_analysis.md)
     * [部署运维管理](best-practices/das/ops_management.md)
+    * [部署SQL诊断](best-practices/das/sql_diagnostics.md)
   * [DataArts](best-practices/dataarts/)
     * [简介](best-practices/dataarts/index.md)
     * [部署DataArts Factory脚本执行](best-practices/dataarts/factory_script_execute.md)
