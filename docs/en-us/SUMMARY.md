@@ -130,6 +130,7 @@
     * [Introduction](best-practices/dbss/index.md)
     * [Deploy Audit ECS Database](best-practices/dbss/audit_ecs_database.md)
     * [Deploy Audit RDS Database](best-practices/dbss/audit_rds_database.md)
+    * [Deploy Basic Instance](best-practices/dbss/basic_instance.md)
   * [DC](best-practices/dc/)
     * [Introduction](best-practices/dc/index.md)
     * [Deploy Connect Gateway](best-practices/dc/connect_gateway.md)
