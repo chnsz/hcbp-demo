@@ -143,6 +143,7 @@
     * [部署单机Redis实例](best-practices/dcs/redis_single_instance.md)
   * [DDM](best-practices/ddm/)
     * [简介](best-practices/ddm/index.md)
+    * [部署账号](best-practices/ddm/account.md)
     * [部署基础实例](best-practices/ddm/basic_instance.md)
   * [DEH](best-practices/deh/)
     * [简介](best-practices/deh/index.md)
