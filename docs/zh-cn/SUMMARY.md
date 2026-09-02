@@ -145,6 +145,7 @@
     * [简介](best-practices/ddm/index.md)
     * [部署账号](best-practices/ddm/account.md)
     * [部署基础实例](best-practices/ddm/basic_instance.md)
+    * [部署逻辑库](best-practices/ddm/schema.md)
   * [DEH](best-practices/deh/)
     * [简介](best-practices/deh/index.md)
     * [部署关联ECS实例](best-practices/deh/associate_ecs_instance.md)
