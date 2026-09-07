@@ -116,6 +116,10 @@ Distributed Cache Service (DCS) is a high-performance, high-availability in-memo
 
 Distributed Database Middleware (DDM) is a MySQL-compatible distributed relational database middleware that focuses on solving database distributed scaling issues. It provides capabilities such as database and table sharding, read/write splitting, and elastic scaling to enable highly concurrent access to massive volumes of data.
 
+### [Document Database Service (DDS) Best Practices](dds/index.md)
+
+Document Database Service (DDS) is a high-performance, highly reliable, and secure distributed document database service provided by Huawei Cloud. It is fully compatible with the MongoDB protocol and supports multiple deployment architectures such as replica set, cluster, and single node, making it suitable for various business scenarios. DDS provides enterprise-level features such as automatic backup, monitoring and alarming, and elastic scaling, helping users easily build and manage document databases, reduce O&M costs, and improve business efficiency.
+
 ### [Dedicated Host (DEH) Best Practices](deh/index.md)
 
 Dedicated Host (DEH) is a physical server resource provided by Huawei Cloud, used to meet business scenarios with special requirements for resource exclusivity, security compliance, etc. Dedicated Host provides full control of physical servers, achieves physical isolation of resources, and meets compliance requirements. Through Dedicated Host, enterprises can deploy ECS instances on dedicated physical servers, obtaining higher security and resource isolation.
