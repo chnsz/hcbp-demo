@@ -80,6 +80,10 @@ Cloud Operations Center (COC) is a one-stop operation and maintenance management
 
 Config, named as Resource Management Service (RMS) before, it is a one-stop compliance management service provided by Huawei Cloud, helping users continuously monitor and evaluate the configuration compliance of cloud resources. Config service provides pre-configured compliance rule packages and custom rules, supporting multiple compliance frameworks and standards, helping enterprises establish comprehensive compliance management systems.
 
+### [Cloud Performance Test Service (CPTS) Best Practices](cpts/index.md)
+
+Cloud Performance Test Service (CPTS) is a performance testing service provided by Huawei Cloud, designed to help users perform stress tests on cloud applications and evaluate system performance under high concurrency scenarios. CPTS supports simulating real user behavior, providing various stress testing modes to help users identify system bottlenecks and optimize application performance.
+
 ### [Cloud Search Service (CSS) Best Practices](css/index.md)
 
 Cloud Search Service (CSS) is a fully managed online distributed search service built on Elasticsearch and OpenSearch by Huawei Cloud. It supports efficient retrieval and analysis of structured, unstructured text, and AI vectors, and is suitable for scenarios such as log analysis, intelligent customer service, knowledge base Q&A, and personalized recommendations.
