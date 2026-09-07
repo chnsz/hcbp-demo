@@ -4,6 +4,10 @@ Welcome to the Huawei Cloud Best Practices Documentation Center. This documentat
 
 ## Documentation Navigation
 
+### [Advanced Anti-DDoS (AAD) Best Practices](aad/index.md)
+
+Advanced Anti-DDoS (AAD) is a professional DDoS protection service provided by Huawei Cloud, designed to protect internet servers and applications from distributed denial-of-service (DDoS) attacks and other malicious traffic. AAD provides comprehensive protection capabilities, including DDoS traffic cleaning, CC (Challenge Collapsar) attack protection, and intelligent traffic analysis, ensuring the availability and stability of online services.
+
 ### [Anti-DDoS Best Practices](anti-ddos/index.md)
 
 Anti-DDoS (Anti-Distributed Denial of Service) is a distributed denial-of-service attack protection service provided by Huawei Cloud, which can effectively protect public IPs from DDoS attacks and ensure stable business operations.
