@@ -151,6 +151,7 @@
     * [Deploy Single-Node Redis Instance](best-practices/dcs/redis_single_instance.md)
   * [DDM](best-practices/ddm/)
     * [Deploy DDM Account](best-practices/ddm/ddm_account.md)
+    * [Deploy Schema](best-practices/ddm/ddm_schema.md)
     * [Introduction](best-practices/ddm/index.md)
     * [Deploy Account](best-practices/ddm/account.md)
     * [Deploy Basic Instance](best-practices/ddm/basic_instance.md)
