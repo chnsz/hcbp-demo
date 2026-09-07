@@ -165,6 +165,7 @@
     * [Deploy CSMS Secret](best-practices/dew/csms_secret.md)
     * [Deploy Keypair](best-practices/dew/keypair.md)
     * [Deploy KMS Key](best-practices/dew/kms_key.md)
+    * [Deploy Keypair](best-practices/dew/kps_keypair.md)
   * [DMS](best-practices/dms/)
     * [Introduction](best-practices/dms/index.md)
     * [Deploy Kafka Instance Configuration](best-practices/dms/kafka/instance_configuration.md)

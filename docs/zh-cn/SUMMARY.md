@@ -165,6 +165,7 @@
     * [部署CSMS密钥](best-practices/dew/csms_secret.md)
     * [部署密钥对](best-practices/dew/keypair.md)
     * [部署KMS密钥](best-practices/dew/kms_key.md)
+    * [部署密钥对](best-practices/dew/kps_keypair.md)
   * [DMS](best-practices/dms/)
     * [简介](best-practices/dms/index.md)
     * [部署Kafka实例配置](best-practices/dms/kafka/instance_configuration.md)

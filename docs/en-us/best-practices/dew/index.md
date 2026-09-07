@@ -24,3 +24,9 @@ This section contains the following best practices:
 
 - [Huawei Cloud DEW Product Documentation](https://support.huaweicloud.com/dew/index.html)
 - [Terraform Official Documentation](https://www.terraform.io/docs/index.html)
+
+## Best Practices List
+
+This section contains the following best practices:
+
+* [Deploy Keypair](kps_keypair.md) - Introduces how to use Terraform to automate «Deploy Keypair».
