@@ -145,6 +145,7 @@
     * [Deploy Virtual Interface](best-practices/dc/virtual_interface.md)
   * [DCS](best-practices/dcs/)
     * [Introduction](best-practices/dcs/index.md)
+    * [Deploy Redis Account Management](best-practices/dcs/redis_account.md)
     * [Deploy Master-Standby Redis Instance](best-practices/dcs/redis_ha_instance.md)
     * [Deploy Single-Node Redis Instance](best-practices/dcs/redis_single_instance.md)
   * [DDM](best-practices/ddm/)
