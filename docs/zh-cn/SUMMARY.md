@@ -147,6 +147,7 @@
     * [简介](best-practices/dcs/index.md)
     * [部署Redis账号管理](best-practices/dcs/redis_account.md)
     * [部署Redis实例全会话清理](best-practices/dcs/redis_all_sessions_kill.md)
+    * [部署Redis后台任务删除](best-practices/dcs/redis_background_task_delete.md)
     * [部署主备Redis实例](best-practices/dcs/redis_ha_instance.md)
     * [部署单机Redis实例](best-practices/dcs/redis_single_instance.md)
   * [DDM](best-practices/ddm/)
