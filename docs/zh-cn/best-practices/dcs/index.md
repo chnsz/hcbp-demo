@@ -20,6 +20,7 @@ DCS服务提供完整的缓存生命周期管理功能，支持自动备份、�
 * [部署Redis账号管理](redis_account.md) - 介绍如何使用Terraform自动化完成「部署Redis账号管理」。
 * [部署Redis后台任务删除](redis_background_task_delete.md) - 介绍如何使用Terraform自动化完成「部署Redis后台任务删除」。
 * [部署Redis实例全会话清理](redis_all_sessions_kill.md) - 介绍如何使用Terraform自动化完成「部署Redis实例全会话清理」。
+* [部署Redis实例备份](redis_backup.md) - 介绍如何使用Terraform自动化完成「部署Redis实例备份」。
 * [部署单机Redis实例](redis_single_instance.md) - 介绍如何使用Terraform自动化部署DCS单机Redis实例，包括VPC创建、实例配置和基础网络设置。
 
 ## 参考资料
