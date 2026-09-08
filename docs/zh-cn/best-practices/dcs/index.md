@@ -17,11 +17,11 @@ DCS服务提供完整的缓存生命周期管理功能，支持自动备份、�
 本章节包含以下最佳实践：
 
 * [部署主备Redis实例](redis_ha_instance.md) - 介绍如何使用Terraform自动化部署DCS主备Redis实例，包括VPC创建、实例配置、备份策略和白名单管理。
-* [部署Redis账号管理](redis_account.md) - 介绍如何使用Terraform自动化完成「部署Redis账号管理」。
-* [部署Redis后台任务删除](redis_background_task_delete.md) - 介绍如何使用Terraform自动化完成「部署Redis后台任务删除」。
-* [部署Redis大Key分析](redis_bigkey_analysis.md) - 介绍如何使用Terraform自动化部署Redis大Key分析，包括可用分区（huaweicloud_availability_zones）、DCS产品规格（huaweicloud_dcs_flavors）、虚拟私有云VPC（huaweicloud_vpc）、子网（huaweicloud_vpc_subnet）和随机密码（random_password）。
-* [部署Redis实例全会话清理](redis_all_sessions_kill.md) - 介绍如何使用Terraform自动化完成「部署Redis实例全会话清理」。
-* [部署Redis实例备份](redis_backup.md) - 介绍如何使用Terraform自动化完成「部署Redis实例备份」。
+* [部署Redis账号管理](redis_account.md) - 介绍如何使用Terraform自动化部署DCS Redis实例及账号，包括VPC创建、子网、实例配置和账号权限管理。
+* [部署Redis后台任务删除](redis_background_task_delete.md) - 介绍如何使用Terraform删除DCS Redis实例中指定的后台任务，适用于清理已完成或异常的后台任务。
+* [部署Redis大Key分析](redis_bigkey_analysis.md) - 介绍如何使用Terraform自动化部署DCS Redis实例并创建大Key分析任务，包括VPC创建、子网、实例配置和大Key分析。
+* [部署Redis实例全会话清理](redis_all_sessions_kill.md) - 介绍如何使用Terraform自动化部署DCS Redis实例并执行全会话清理，包括VPC创建、实例配置和会话清理操作。
+* [部署Redis实例备份](redis_backup.md) - 介绍如何使用Terraform自动化部署DCS Redis实例并创建手动备份，包括VPC创建、实例配置和备份资源管理。
 * [部署单机Redis实例](redis_single_instance.md) - 介绍如何使用Terraform自动化部署DCS单机Redis实例，包括VPC创建、实例配置和基础网络设置。
 
 ## 参考资料
