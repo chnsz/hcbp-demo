@@ -19,6 +19,7 @@ This section contains the following best practices:
 * [Deploy Master-Standby Redis Instance](redis_ha_instance.md) - Introduces how to use Terraform to automatically deploy DCS master-standby Redis instances, including VPC creation, instance configuration, backup policy, and whitelist management.
 * [Deploy Redis Account Management](redis_account.md) - Introduces how to use Terraform to automate «Deploy Redis Account Management».
 * [Deploy Redis Background Task Deletion](redis_background_task_delete.md) - Introduces how to use Terraform to automate «Deploy Redis Background Task Deletion».
+* [Deploy Redis Big Key Analysis](redis_bigkey_analysis.md) - Introduces how to use Terraform to automatically deploy Redis Big Key Analysis, including Availability Zones, DCS Flavors, VPC creation, subnet configuration, and Random Password.
 * [Deploy Redis Instance All Sessions Kill](redis_all_sessions_kill.md) - Introduces how to use Terraform to automate «Deploy Redis Instance All Sessions Kill».
 * [Deploy Redis Instance Backup](redis_backup.md) - Introduces how to use Terraform to automate «Deploy Redis Instance Backup».
 * [Deploy Single-Node Redis Instance](redis_single_instance.md) - Introduces how to use Terraform to automatically deploy DCS single-node Redis instances, including VPC creation, instance configuration, and basic network setup.
