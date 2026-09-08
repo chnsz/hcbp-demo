@@ -21,6 +21,7 @@ DCS服务提供完整的缓存生命周期管理功能，支持自动备份、�
 * [部署Redis后台任务删除](redis_background_task_delete.md) - 介绍如何使用Terraform删除DCS Redis实例中指定的后台任务，适用于清理已完成或异常的后台任务。
 * [部署Redis大Key分析](redis_bigkey_analysis.md) - 介绍如何使用Terraform自动化部署DCS Redis实例并创建大Key分析任务，包括VPC创建、子网、实例配置和大Key分析。
 * [部署Redis中心任务删除](redis_center_task_delete.md) - 介绍如何使用Terraform自动化部署Redis中心任务删除，包括DCS中心任务删除（huaweicloud_dcs_center_task_delete）。
+* [部署Redis自定义模板](redis_custom_template.md) - 介绍如何使用Terraform自动化部署Redis自定义模板，包括DCS自定义模板（huaweicloud_dcs_custom_template）。
 * [部署Redis实例全会话清理](redis_all_sessions_kill.md) - 介绍如何使用Terraform自动化部署DCS Redis实例并执行全会话清理，包括VPC创建、实例配置和会话清理操作。
 * [部署Redis实例备份](redis_backup.md) - 介绍如何使用Terraform自动化部署DCS Redis实例并创建手动备份，包括VPC创建、实例配置和备份资源管理。
 * [部署单机Redis实例](redis_single_instance.md) - 介绍如何使用Terraform自动化部署DCS单机Redis实例，包括VPC创建、实例配置和基础网络设置。
