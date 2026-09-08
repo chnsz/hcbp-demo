@@ -148,6 +148,7 @@
     * [Deploy Master-Standby Redis Instance](best-practices/dcs/redis_ha_instance.md)
     * [Deploy Redis Account Management](best-practices/dcs/redis_account.md)
     * [Deploy Redis Background Task Deletion](best-practices/dcs/redis_background_task_delete.md)
+    * [Deploy Redis Big Key Analysis](best-practices/dcs/redis_bigkey_analysis.md)
     * [Deploy Redis Instance All Sessions Kill](best-practices/dcs/redis_all_sessions_kill.md)
     * [Deploy Redis Instance Backup](best-practices/dcs/redis_backup.md)
     * [Deploy Single-Node Redis Instance](best-practices/dcs/redis_single_instance.md)
