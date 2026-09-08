@@ -19,6 +19,7 @@ DDS支持多种数据库版本和存储引擎，提供丰富的实例规格和�
 本章节包含以下最佳实践：
 
 * [部署DDS实例绑定弹性公网IP](dds_associate_eip.md) - 介绍如何使用Terraform创建DDS实例并绑定弹性公网IP，实现公网访问。
+* [部署DDS实例关联LTS](dds_associate_lts.md) - 介绍如何使用Terraform自动化完成「部署DDS实例关联LTS」。
 
 ## 参考资料
 
