@@ -128,6 +128,10 @@ Dedicated Host (DEH) is a physical server resource provided by Huawei Cloud, use
 
 Data Encryption Workshop (DEW) is a data security service provided by Huawei Cloud, used to protect the security of cloud data and applications. DEW service provides key management, credential management, data encryption and other functions, supports multiple encryption algorithms and key types, helping users achieve encrypted storage and transmission of data, ensuring data security.
 
+### [Data Ingestion Service (DIS) Best Practices](dis/index.md)
+
+Data Ingestion Service (DIS) is a real-time data ingestion service provided by Huawei Cloud, offering fully managed, high-performance, and highly reliable data ingestion capabilities for users who process or analyze streaming data. DIS can be widely applied in scenarios such as real-time monitoring, log analysis, and IoT device data collection, helping users easily build applications based on streaming data.
+
 ### [Distributed Message Service (DMS) Best Practices](dms/index.md)
 
 Distributed Message Service (DMS) is a message middleware service based on distributed architecture design, with the core function of implementing asynchronous communication, decoupling system components, peak shaving and valley filling in distributed systems, and ensuring reliable message transmission and efficient flow.
