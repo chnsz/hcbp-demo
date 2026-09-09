@@ -20,6 +20,7 @@ This section contains the following best practices:
 
 * [Deploy DDS Instance Associate EIP](dds_associate_eip.md) - Introduces how to use Terraform to create a DDS instance and associate it with an EIP for public network access.
 * [Deploy DDS Instance Associate LTS](dds_associate_lts.md) - Introduces how to use Terraform to automatically deploy DDS Instance Associate LTS, including Availability Zones (data.), DDS Flavors (data.), VPC creation, subnet configuration, and security group configuration.
+* [Deploy DDS Instance Associate NAT](dds_associate_nat.md) - Introduces how to use Terraform to automatically deploy DDS Instance Associate NAT, including Querying Availability Zones (data.), Querying DDS Instance Information (data.), VPC creation, subnet configuration, and security group configuration.
 
 ## Reference Materials
 
