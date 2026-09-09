@@ -163,6 +163,7 @@
   * [DDS](best-practices/dds/)
     * [Introduction](best-practices/dds/index.md)
     * [Deploy DDS Instance Associate EIP](best-practices/dds/dds_associate_eip.md)
+    * [Deploy DDS Instance Associate LTS](best-practices/dds/dds_associate_lts.md)
   * [DEH](best-practices/deh/)
     * [Introduction](best-practices/deh/index.md)
     * [Deploy Associate ECS Instance](best-practices/deh/associate_ecs_instance.md)
