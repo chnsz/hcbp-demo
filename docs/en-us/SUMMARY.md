@@ -152,6 +152,7 @@
     * [Deploy Redis Center Task Deletion](best-practices/dcs/redis_center_task_delete.md)
     * [Deploy Redis Custom Template](best-practices/dcs/redis_custom_template.md)
     * [Deploy Redis Data Synchronization](best-practices/dcs/redis_data_sync.md)
+    * [Deploy Redis Diagnosis Task](best-practices/dcs/redis_diagnosis_task.md)
     * [Deploy Redis Instance All Sessions Kill](best-practices/dcs/redis_all_sessions_kill.md)
     * [Deploy Redis Instance Backup](best-practices/dcs/redis_backup.md)
     * [Deploy Single-Node Redis Instance](best-practices/dcs/redis_single_instance.md)
