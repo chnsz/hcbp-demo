@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Flink Jar Job](flink_jar_job.md) - Introduces how to use Terraform to automatically deploy a Flink Jar job, including elastic resource pool creation, general queue configuration, and job parameter settings.
+* [Deploy Flink OpenSource SQL Job](flink_opensource_sql_job.md) - Introduces how to use Terraform to automatically deploy a Flink OpenSource SQL job, including elastic resource pool creation, general queue configuration, and job parameter settings.
 
 ## Reference Materials
 

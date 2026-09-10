@@ -179,6 +179,7 @@
   * [DLI](best-practices/dli/)
     * [简介](best-practices/dli/index.md)
     * [部署Flink Jar作业](best-practices/dli/flink_jar_job.md)
+    * [部署Flink OpenSource SQL作业](best-practices/dli/flink_opensource_sql_job.md)
   * [DMS](best-practices/dms/)
     * [简介](best-practices/dms/index.md)
     * [部署Kafka实例配置](best-practices/dms/kafka/instance_configuration.md)
