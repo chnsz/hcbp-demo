@@ -165,6 +165,7 @@
     * [简介](best-practices/dds/index.md)
     * [部署DDS实例绑定弹性公网IP](best-practices/dds/dds_associate_eip.md)
     * [部署DDS实例关联LTS](best-practices/dds/dds_associate_lts.md)
+    * [部署DDS实例绑定NAT网关](best-practices/dds/dds_associate_nat.md)
   * [DEH](best-practices/deh/)
     * [简介](best-practices/deh/index.md)
     * [部署关联ECS实例](best-practices/deh/associate_ecs_instance.md)
