@@ -165,6 +165,7 @@
     * [部署逻辑库](best-practices/ddm/schema.md)
   * [DDS](best-practices/dds/)
     * [简介](best-practices/dds/index.md)
+    * [部署数据库角色与用户](best-practices/dds/dds_database.md)
     * [部署DDS实例绑定弹性公网IP](best-practices/dds/dds_associate_eip.md)
     * [部署DDS实例关联LTS](best-practices/dds/dds_associate_lts.md)
     * [部署DDS实例绑定NAT网关](best-practices/dds/dds_associate_nat.md)
