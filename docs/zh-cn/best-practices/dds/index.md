@@ -21,6 +21,7 @@ DDS支持多种数据库版本和存储引擎，提供丰富的实例规格和�
 * [部署DDS实例绑定弹性公网IP](dds_associate_eip.md) - 介绍如何使用Terraform创建DDS实例并绑定弹性公网IP，实现公网访问。
 * [部署DDS实例关联LTS](dds_associate_lts.md) - 介绍如何使用Terraform自动化部署DDS实例关联LTS，包括可用分区（data.）、DDS规格（data.）、VPC创建、子网配置和安全组配置。
 * [部署DDS实例绑定NAT网关](dds_associate_nat.md) - 介绍如何使用Terraform自动化部署DDS实例绑定NAT网关，包括查询可用分区（data.）、查询DDS实例信息（data.）、VPC创建、子网配置和安全组配置。
+* [部署DDS实例备份](dds_backup.md) - 介绍如何使用Terraform自动化部署DDS实例备份，包括可用分区列表（data.）、VPC创建、子网配置、安全组配置和实例配置。
 
 ## 参考资料
 
