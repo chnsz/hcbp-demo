@@ -128,6 +128,10 @@ Dedicated Host (DEH) is a physical server resource provided by Huawei Cloud, use
 
 Data Encryption Workshop (DEW) is a data security service provided by Huawei Cloud, used to protect the security of cloud data and applications. DEW service provides key management, credential management, data encryption and other functions, supports multiple encryption algorithms and key types, helping users achieve encrypted storage and transmission of data, ensuring data security.
 
+### [Data Ingestion Service (DIS) Best Practices](dis/index.md)
+
+Data Ingestion Service (DIS) is a real-time data ingestion service provided by Huawei Cloud, used to collect and transmit massive amounts of data to the cloud in real time. DIS provides fully managed stream capabilities, supports the ingestion of various data sources and data types, and helps users build real-time data pipelines from data collection and transmission to processing and analysis, widely used in scenarios such as log collection, IoT data ingestion, real-time monitoring, and streaming analytics.
+
 ### [Data Lake Insight (DLI) Best Practices](dli/index.md)
 
 Data Lake Insight (DLI) is a big data computing and analysis service provided by Huawei Cloud, supporting multiple computing engines such as SQL, Flink, and Spark, helping users quickly build data lake analysis businesses. DLI provides fully managed computing resources, allowing users to process massive data easily without worrying about the operation and maintenance of underlying infrastructure, achieving data insights and business innovation.
