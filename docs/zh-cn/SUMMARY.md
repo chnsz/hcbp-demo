@@ -153,6 +153,7 @@
     * [部署Redis自定义模板](best-practices/dcs/redis_custom_template.md)
     * [部署Redis数据同步](best-practices/dcs/redis_data_sync.md)
     * [部署Redis诊断任务](best-practices/dcs/redis_diagnosis_task.md)
+    * [部署Redis过期Key扫描](best-practices/dcs/redis_expired_key_scan.md)
     * [部署Redis实例全会话清理](best-practices/dcs/redis_all_sessions_kill.md)
     * [部署Redis实例备份](best-practices/dcs/redis_backup.md)
     * [部署单机Redis实例](best-practices/dcs/redis_single_instance.md)
