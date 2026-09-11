@@ -20,6 +20,7 @@ DLI还提供完善的数据安全与权限管理功能，支持细粒度的访�
 
 * [部署Flink Jar作业](flink_jar_job.md) - 介绍如何使用Terraform自动化部署Flink Jar作业，包括弹性资源池创建、通用队列配置和作业参数设置。
 * [部署Flink OpenSource SQL作业](flink_opensource_sql_job.md) - 介绍如何使用Terraform自动化部署Flink OpenSource SQL作业，包括弹性资源池创建、通用队列配置和作业参数设置。
+* [部署队列公网连通](queue_public_network_connectivity.md) - 介绍如何使用Terraform自动化部署DLI队列公网连通，包括弹性资源池与队列创建、VPC与子网配置、增强型跨源连接关联、弹性公网IP与NAT网关创建和SNAT规则配置。
 
 ## 参考资料
 
