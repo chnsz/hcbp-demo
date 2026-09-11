@@ -181,6 +181,7 @@
   * [DLI](best-practices/dli/)
     * [Introduction](best-practices/dli/index.md)
     * [Deploy Flink Jar Job](best-practices/dli/flink_jar_job.md)
+    * [Deploy Flink OpenSource SQL Job](best-practices/dli/flink_opensource_sql_job.md)
   * [DMS](best-practices/dms/)
     * [Introduction](best-practices/dms/index.md)
     * [Deploy Kafka Instance Configuration](best-practices/dms/kafka/instance_configuration.md)
