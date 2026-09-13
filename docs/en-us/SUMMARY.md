@@ -209,6 +209,7 @@
     * [Deploy Basic Instance](best-practices/ecs/simple_instance.md)
     * [Deploy Instance with EIP](best-practices/ecs/instance_with_eip.md)
     * [Deploy Instance with Network Interface](best-practices/ecs/instance_with_interface.md)
+    * [Deploy Instance with Network Interface](best-practices/ecs/attached_interface.md)
     * [Deploy Instance with Provisioner Remote Login](best-practices/ecs/instance_with_provisioner.md)
     * [Deploy Instance with UserData Script Execution](best-practices/ecs/instance_with_userdata.md)
     * [Deploy Instance with Volume](best-practices/ecs/instance_with_volume.md)
