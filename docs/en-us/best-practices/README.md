@@ -144,6 +144,10 @@ Distributed Message Service (DMS) is a message middleware service based on distr
 
 Domain Name Service (DNS) is a high-availability, high-performance domain name resolution service provided by Huawei Cloud, supporting public and private domain name resolution. DNS service provides intelligent resolution, load balancing, health check, and other functions, helping users achieve intelligent domain scheduling and failover.
 
+### [Data Warehouse Service (DWS) Best Practices](dws/index.md)
+
+Data Warehouse Service (DWS) is an enterprise-grade cloud data warehouse service provided by Huawei Cloud. Built on Huawei Cloud infrastructure, it is designed for massive data analysis scenarios and delivers high-performance, highly reliable, and elastically scalable data warehouse capabilities. DWS adopts a distributed architecture and columnar storage technology, enabling efficient processing of complex queries and analysis over petabyte-scale data, helping enterprises quickly build data warehouses, data marts, and real-time analytics services.
+
 ### [Elastic Cloud Server (ECS) Best Practices](ecs/index.md)
 
 Elastic Cloud Server (ECS) is a basic computing component composed of CPU, memory, operating system, and cloud disk, providing reliable, secure, flexible, and efficient computing environment for your applications.
