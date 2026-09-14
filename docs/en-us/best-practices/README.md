@@ -156,6 +156,10 @@ Elastic Cloud Server (ECS) is a basic computing component composed of CPU, memor
 
 EventGrid (EG) is an event-driven architecture service provided by Huawei Cloud, supporting event production, routing, transformation, and consumption, helping enterprises build loosely coupled and scalable distributed application systems.
 
+### [Elastic IP (EIP) Best Practices](eip/index.md)
+
+Elastic IP (EIP) is an independently applicable and bindable public IP address resource provided by Huawei Cloud, offering cloud resources the ability to access the public network and be accessed from it. An EIP can be flexibly bound to and unbound from cloud resources such as Elastic Cloud Servers, Bare Metal Servers, Elastic Load Balancers, NAT Gateways, and virtual IP addresses, helping users build public access entries on demand without configuring a fixed public address for each server.
+
 ### [Elastic Load Balance (ELB) Best Practices](elb/index.md)
 
 Elastic Load Balance (ELB) is a service that automatically distributes access traffic to multiple cloud servers, enabling expansion of application system's external service capabilities and improving application availability. ELB automatically isolates abnormal backend servers through health checks to ensure high availability of services. Huawei Cloud ELB supports multiple load balancing algorithms, including round-robin, weighted round-robin, least connections, etc., to meet the needs of different business scenarios.
