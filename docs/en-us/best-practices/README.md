@@ -144,6 +144,10 @@ Distributed Message Service (DMS) is a message middleware service based on distr
 
 Domain Name Service (DNS) is a high-availability, high-performance domain name resolution service provided by Huawei Cloud, supporting public and private domain name resolution. DNS service provides intelligent resolution, load balancing, health check, and other functions, helping users achieve intelligent domain scheduling and failover.
 
+### [Data Security Center (DSC) Best Practices](dsc/index.md)
+
+Data Security Center (DSC) is a one-stop data security governance service provided by Huawei Cloud. It delivers capabilities such as sensitive data identification, data masking, data watermarking, and data security auditing across the full data lifecycle, helping enterprises build a visible, controllable, and auditable data security protection system that meets compliance requirements.
+
 ### [Elastic Cloud Server (ECS) Best Practices](ecs/index.md)
 
 Elastic Cloud Server (ECS) is a basic computing component composed of CPU, memory, operating system, and cloud disk, providing reliable, secure, flexible, and efficient computing environment for your applications.
