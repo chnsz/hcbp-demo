@@ -206,6 +206,7 @@
     * [Deploy Custom Line](best-practices/dns/custom_line.md)
     * [Deploy Endpoint](best-practices/dns/endpoint.md)
     * [Deploy Public Zone](best-practices/dns/public_zone.md)
+    * [Deploy Public Zone](best-practices/dns/zone.md)
     * [Deploy Public Zone Cross Accounts](best-practices/dns/public_zone_cross_accounts.md)
   * [DSC](best-practices/dsc/)
     * [Introduction](best-practices/dsc/index.md)
