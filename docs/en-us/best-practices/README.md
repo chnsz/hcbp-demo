@@ -144,6 +144,10 @@ Distributed Message Service (DMS) is a message middleware service based on distr
 
 Domain Name Service (DNS) is a high-availability, high-performance domain name resolution service provided by Huawei Cloud, supporting public and private domain name resolution. DNS service provides intelligent resolution, load balancing, health check, and other functions, helping users achieve intelligent domain scheduling and failover.
 
+### [Data Replication Service (DRS) Best Practices](drs/index.md)
+
+Data Replication Service (DRS) is a one-stop data replication service provided by Huawei Cloud, dedicated to solving data flow problems in scenarios such as database cloud migration, database migration, real-time database synchronization, and database disaster recovery. DRS supports multiple mainstream database engines, including MySQL, PostgreSQL, SQL Server, MongoDB, and Oracle, and can achieve efficient data replication between on-cloud, off-cloud, and cross-cloud environments while ensuring business continuity.
+
 ### [Data Security Center (DSC) Best Practices](dsc/index.md)
 
 Data Security Center (DSC) is a one-stop data security governance service provided by Huawei Cloud. It delivers capabilities such as sensitive data identification, data masking, data watermarking, and data security auditing across the full data lifecycle, helping enterprises build a visible, controllable, and auditable data security protection system that meets compliance requirements.
