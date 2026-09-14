@@ -193,6 +193,7 @@
   * [DMS](best-practices/dms/)
     * [Introduction](best-practices/dms/index.md)
     * [Deploy Kafka Instance Configuration](best-practices/dms/kafka/instance_configuration.md)
+    * [Deploy Kafka Instance Configuration](best-practices/dms/instance_configuration.md)
     * [Deploy Kafka Instance Data Replication](best-practices/dms/kafka/replicate_instance_data.md)
     * [Deploy Kafka Public Access Instance Network](best-practices/dms/kafka/public_access_instance_network.md)
     * [Deploy Kafka Topic Message Produce](best-practices/dms/kafka/topic_message_produce.md)
