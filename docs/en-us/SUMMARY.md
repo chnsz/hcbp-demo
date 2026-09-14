@@ -166,6 +166,7 @@
     * [Deploy Schema](best-practices/ddm/schema.md)
   * [DDS](best-practices/dds/)
     * [Introduction](best-practices/dds/index.md)
+    * [Deploy Cluster Instance](best-practices/dds/cluster_instance.md)
     * [Deploy Database Role and User](best-practices/dds/dds_database.md)
     * [Deploy DDS Instance Associate EIP](best-practices/dds/dds_associate_eip.md)
     * [Deploy DDS Instance Associate LTS](best-practices/dds/dds_associate_lts.md)

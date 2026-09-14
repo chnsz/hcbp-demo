@@ -18,6 +18,7 @@ DDS支持多种数据库版本和存储引擎，提供丰富的实例规格和�
 
 本章节包含以下最佳实践：
 
+* [部署集群实例](cluster_instance.md) - 介绍如何使用Terraform自动化部署集群实例，包括可用分区列表（data.）、VPC创建、子网配置、安全组配置和实例配置。
 * [部署数据库角色与用户](dds_database.md) - 介绍如何使用Terraform自动化部署数据库角色与用户，包括可用分区列表（data.）、VPC创建、子网配置、安全组配置和随机密码（random_password）。
 * [部署DDS实例绑定弹性公网IP](dds_associate_eip.md) - 介绍如何使用Terraform创建DDS实例并绑定弹性公网IP，实现公网访问。
 * [部署DDS实例关联LTS](dds_associate_lts.md) - 介绍如何使用Terraform自动化部署DDS实例关联LTS，包括可用分区（data.）、DDS规格（data.）、VPC创建、子网配置和安全组配置。
