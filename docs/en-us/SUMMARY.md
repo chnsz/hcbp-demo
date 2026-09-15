@@ -158,6 +158,7 @@
     * [Deploy Redis Hot Key Analysis](best-practices/dcs/redis_hotkey_analysis.md)
     * [Deploy Redis Instance All Sessions Kill](best-practices/dcs/redis_all_sessions_kill.md)
     * [Deploy Redis Instance Backup](best-practices/dcs/redis_backup.md)
+    * [Deploy Redis Web CLI Logout](best-practices/dcs/redis_logout_web_cli.md)
     * [Deploy Single-Node Redis Instance](best-practices/dcs/redis_single_instance.md)
   * [DDM](best-practices/ddm/)
     * [Deploy DDM Account](best-practices/ddm/ddm_account.md)
