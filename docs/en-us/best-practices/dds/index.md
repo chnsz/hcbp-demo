@@ -24,6 +24,7 @@ This section contains the following best practices:
 * [Deploy DDS Instance Associate LTS](dds_associate_lts.md) - Introduces how to use Terraform to automatically deploy DDS Instance Associate LTS, including Availability Zones (data.), DDS Flavors (data.), VPC creation, subnet configuration, and security group configuration.
 * [Deploy DDS Instance Associate NAT](dds_associate_nat.md) - Introduces how to use Terraform to automatically deploy DDS Instance Associate NAT, including Querying Availability Zones (data.), Querying DDS Instance Information (data.), VPC creation, subnet configuration, and security group configuration.
 * [Deploy DDS Instance Backup](dds_backup.md) - Introduces how to use Terraform to automatically deploy DDS Instance Backup, including Availability Zones (data.), VPC creation, subnet configuration, security group configuration, and instance configuration.
+* [Deploy Parameter Template](parameter_template.md) - Introduces how to use Terraform to automatically deploy Parameter Template, including DDS Parameter Template.
 * [Deploy Replica Set Instance](replicaset_instance.md) - Introduces how to use Terraform to automatically deploy Replica Set Instance, including Availability Zones (data.), DDS Flavors (data.), VPC creation, subnet configuration, and security group configuration.
 
 ## Reference Materials
