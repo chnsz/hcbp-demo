@@ -155,6 +155,7 @@
     * [部署Redis诊断任务](best-practices/dcs/redis_diagnosis_task.md)
     * [部署Redis过期Key扫描](best-practices/dcs/redis_expired_key_scan.md)
     * [部署Redis高可用实例](best-practices/dcs/redis_high_availability_instance.md)
+    * [部署Redis热Key分析](best-practices/dcs/redis_hotkey_analysis.md)
     * [部署Redis实例全会话清理](best-practices/dcs/redis_all_sessions_kill.md)
     * [部署Redis实例备份](best-practices/dcs/redis_backup.md)
     * [部署单机Redis实例](best-practices/dcs/redis_single_instance.md)

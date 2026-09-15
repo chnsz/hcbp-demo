@@ -155,6 +155,7 @@
     * [Deploy Redis Diagnosis Task](best-practices/dcs/redis_diagnosis_task.md)
     * [Deploy Redis Expired Key Scan](best-practices/dcs/redis_expired_key_scan.md)
     * [Deploy Redis High Availability Instance](best-practices/dcs/redis_high_availability_instance.md)
+    * [Deploy Redis Hot Key Analysis](best-practices/dcs/redis_hotkey_analysis.md)
     * [Deploy Redis Instance All Sessions Kill](best-practices/dcs/redis_all_sessions_kill.md)
     * [Deploy Redis Instance Backup](best-practices/dcs/redis_backup.md)
     * [Deploy Single-Node Redis Instance](best-practices/dcs/redis_single_instance.md)
