@@ -197,6 +197,7 @@
     * [部署Kafka实例配置](best-practices/dms/kafka/instance_configuration.md)
     * [部署Kafka实例配置](best-practices/dms/instance_configuration.md)
     * [部署Kafka实例数据复制](best-practices/dms/kafka/replicate_instance_data.md)
+    * [部署Kafka实例数据复制](best-practices/dms/replicate_instance_data.md)
     * [部署Kafka公网访问实例网络](best-practices/dms/kafka/public_access_instance_network.md)
     * [部署Kafka公网访问实例网络](best-practices/dms/public_access_instance_network.md)
     * [部署Kafka主题消息生产](best-practices/dms/kafka/topic_message_produce.md)
