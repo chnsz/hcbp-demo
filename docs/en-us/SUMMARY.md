@@ -173,6 +173,7 @@
     * [Deploy DDS Instance Associate LTS](best-practices/dds/dds_associate_lts.md)
     * [Deploy DDS Instance Associate NAT](best-practices/dds/dds_associate_nat.md)
     * [Deploy DDS Instance Backup](best-practices/dds/dds_backup.md)
+    * [Deploy Replica Set Instance](best-practices/dds/replicaset_instance.md)
   * [DEH](best-practices/deh/)
     * [Introduction](best-practices/deh/index.md)
     * [Deploy Associate ECS Instance](best-practices/deh/associate_ecs_instance.md)
