@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy MongoDB Sharding Connection](drs_connection_mongodb.md) - Introduces how to use Terraform to automatically deploy a MongoDB sharding connection, including DRS connection creation, primary node access information configuration, shard node access information configuration, SSL configuration, and driver configuration.
+* [Deploy RDS MySQL Connection](drs_connection_rds_mysql.md) - Introduces how to use Terraform to automatically deploy an RDS MySQL connection, including VPC creation, subnet creation, security group configuration, RDS MySQL instance creation, and DRS connection configuration.
 
 ## Reference Materials
 
