@@ -175,6 +175,7 @@
     * [部署DDS实例绑定NAT网关](best-practices/dds/dds_associate_nat.md)
     * [部署DDS实例备份](best-practices/dds/dds_backup.md)
     * [部署参数模板](best-practices/dds/parameter_template.md)
+    * [部署只读节点](best-practices/dds/readonly_node.md)
     * [部署副本集实例](best-practices/dds/replicaset_instance.md)
   * [DEH](best-practices/deh/)
     * [简介](best-practices/deh/index.md)
