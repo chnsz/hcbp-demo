@@ -217,6 +217,7 @@
   * [DRS](best-practices/drs/)
     * [简介](best-practices/drs/index.md)
     * [部署MongoDB分片连接](best-practices/drs/drs_connection_mongodb.md)
+    * [部署RDS MySQL连接](best-practices/drs/drs_connection_rds_mysql.md)
   * [DSC](best-practices/dsc/)
     * [简介](best-practices/dsc/index.md)
     * [部署自定义字符掩码算法](best-practices/dsc/custom_character_mask_algorithm.md)
