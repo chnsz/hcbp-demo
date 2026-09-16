@@ -29,6 +29,7 @@ This section contains the following best practices:
 * [Deploy Redis Hot Key Analysis](redis_hotkey_analysis.md) - Introduces how to use Terraform to automatically deploy Redis Hot Key Analysis, including Availability Zones (data.), DCS Flavors (data.), VPC creation, subnet configuration, and Random Password (random_password).
 * [Deploy Redis Instance All Sessions Kill](redis_all_sessions_kill.md) - Introduces how to use Terraform to automatically deploy a DCS Redis instance and kill all sessions, including VPC creation, instance configuration, and session cleanup.
 * [Deploy Redis Instance Backup](redis_backup.md) - Introduces how to use Terraform to automatically deploy a DCS Redis instance and create a manual backup, including VPC creation, instance configuration, and backup resource management.
+* [Deploy Redis Web CLI Logout](redis_logout_web_cli.md) - Introduces how to use Terraform to automatically deploy Redis Web CLI Logout, including Availability Zones (data.), DCS Flavors (data.), VPC creation, subnet configuration, and Random Password (random_password).
 * [Deploy Single-Node Redis Instance](redis_single_instance.md) - Introduces how to use Terraform to automatically deploy DCS single-node Redis instances, including VPC creation, instance configuration, and basic network setup.
 
 ## Reference Materials
