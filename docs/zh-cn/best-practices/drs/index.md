@@ -18,6 +18,7 @@ DRS提供实时迁移、实时同步和实时灾备三大核心能力。实时�
 
 本章节包含以下最佳实践：
 
+* [部署迁移任务](drs_job_migration.md) - 介绍如何使用Terraform自动化部署迁移任务，包括VPC创建、子网创建、安全组配置、源端与目标端RDS MySQL实例创建和DRS迁移任务配置。
 * [部署MongoDB分片连接](drs_connection_mongodb.md) - 介绍如何使用Terraform自动化部署MongoDB分片连接，包括DRS连接创建、主节点接入信息配置、分片节点接入信息配置、SSL配置和驱动配置。
 * [部署RDS MySQL连接](drs_connection_rds_mysql.md) - 介绍如何使用Terraform自动化部署RDS MySQL连接，包括VPC创建、子网创建、安全组配置、RDS MySQL实例创建和DRS连接配置。
 
