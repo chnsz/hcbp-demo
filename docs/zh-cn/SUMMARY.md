@@ -158,6 +158,7 @@
     * [部署Redis热Key分析](best-practices/dcs/redis_hotkey_analysis.md)
     * [部署Redis实例全会话清理](best-practices/dcs/redis_all_sessions_kill.md)
     * [部署Redis实例备份](best-practices/dcs/redis_backup.md)
+    * [部署Redis实例小版本升级](best-practices/dcs/redis_minor_version_upgrade.md)
     * [部署Redis Web CLI登出](best-practices/dcs/redis_logout_web_cli.md)
     * [部署单机Redis实例](best-practices/dcs/redis_single_instance.md)
   * [DDM](best-practices/ddm/)
