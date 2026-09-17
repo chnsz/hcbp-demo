@@ -219,6 +219,7 @@
     * [跨账号创建公网域名](best-practices/dns/public_zone_cross_accounts.md)
   * [DRS](best-practices/drs/)
     * [简介](best-practices/drs/index.md)
+    * [部署任务LTS配置与对比策略](best-practices/drs/job_lts_config_with_compare_policy.md)
     * [部署迁移任务](best-practices/drs/drs_job_migration.md)
     * [部署MongoDB分片连接](best-practices/drs/drs_connection_mongodb.md)
     * [部署RDS MySQL连接](best-practices/drs/drs_connection_rds_mysql.md)
