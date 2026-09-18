@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Job LTS Configuration and Compare Policy](job_lts_config_with_compare_policy.md) - Introduces how to use Terraform to automatically deploy Job LTS Configuration and Compare Policy, including LTS Log Group, LTS Log Stream, DRS Job LTS Configuration, and DRS Job Compare Policy.
+* [Deploy LTS Configuration](lts_config.md) - Introduces how to use Terraform to automatically deploy LTS Configuration, including Availability Zones (data.), RDS Flavors (data.), VPC creation, subnet configuration, and security group configuration.
 * [Deploy Migration Job](drs_job_migration.md) - Introduces how to use Terraform to automatically deploy a DRS migration job, including VPC creation, subnet creation, security group configuration, source and destination RDS MySQL instance creation, and DRS migration job configuration.
 * [Deploy MongoDB Sharding Connection](drs_connection_mongodb.md) - Introduces how to use Terraform to automatically deploy a MongoDB sharding connection, including DRS connection creation, primary node access information configuration, shard node access information configuration, SSL configuration, and driver configuration.
 * [Deploy RDS MySQL Connection](drs_connection_rds_mysql.md) - Introduces how to use Terraform to automatically deploy an RDS MySQL connection, including VPC creation, subnet creation, security group configuration, RDS MySQL instance creation, and DRS connection configuration.
