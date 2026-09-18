@@ -208,6 +208,7 @@
     * [Deploy Kafka Topic Message Produce](best-practices/dms/kafka/topic_message_produce.md)
     * [Deploy Kafka Topic Message Produce](best-practices/dms/topic_message_produce.md)
     * [Deploy RabbitMQ Basic Instance](best-practices/dms/basic_instance.md)
+    * [Deploy RabbitMQ Message Producer and Consumer](best-practices/dms/message_producer_and_consumer.md)
     * [Deploy RocketMQ Basic Instance](best-practices/dms/rocketmq/basic_instance.md)
     * [Deploy RocketMQ Consumer Group](best-practices/dms/rocketmq/consumer_group.md)
     * [Deploy RocketMQ Message Send](best-practices/dms/rocketmq/message_send.md)
