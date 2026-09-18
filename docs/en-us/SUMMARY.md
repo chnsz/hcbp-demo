@@ -159,6 +159,7 @@
     * [Deploy Redis Instance All Sessions Kill](best-practices/dcs/redis_all_sessions_kill.md)
     * [Deploy Redis Instance Backup](best-practices/dcs/redis_backup.md)
     * [Deploy Redis Instance Minor Version Upgrade](best-practices/dcs/redis_minor_version_upgrade.md)
+    * [Deploy Redis Node Priority Config](best-practices/dcs/redis_node_priority_config.md)
     * [Deploy Redis Web CLI Logout](best-practices/dcs/redis_logout_web_cli.md)
     * [Deploy Single-Node Redis Instance](best-practices/dcs/redis_single_instance.md)
   * [DDM](best-practices/ddm/)
