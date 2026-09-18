@@ -27,6 +27,7 @@ DMS支持多种消息模式，包括点对点、发布订阅等，能够满足�
 * [部署Kafka主题消息生产](kafka/topic_message_produce.md) - 介绍如何使用Terraform自动化部署Kafka主题消息生产，包括创建Kafka实例、主题和消息生产。
 * [部署Kafka主题消息生产](topic_message_produce.md) - 介绍如何使用Terraform自动化部署Kafka主题消息生产，包括可用区列表（data.）、Kafka实例规格（data.）、VPC创建、子网配置和安全组配置。
 * [部署RabbitMQ基础实例](basic_instance.md) - 介绍如何使用Terraform自动化部署RabbitMQ基础实例，包括可用区列表（data.）、RabbitMQ实例规格（data.）、VPC创建、子网配置和安全组配置。
+* [部署RabbitMQ消息生产与消费](message_producer_and_consumer.md) - 介绍如何使用Terraform自动化部署RabbitMQ消息生产与消费，包括可用区列表（data.）、RabbitMQ实例规格（data.）、ECS规格（data.）、镜像列表（data.）和VPC创建。
 * [部署RocketMQ基础实例](rocketmq/basic_instance.md) - 介绍如何使用Terraform自动化部署一个基础的RocketMQ实例，包括VPC、子网、安全组和EIP的创建。
 * [部署RocketMQ消费组](rocketmq/consumer_group.md) - 介绍如何使用Terraform自动化部署一个RocketMQ消费组，包括RocketMQ实例和消费组的创建。
 * [部署RocketMQ消息发送](rocketmq/message_send.md) - 介绍如何使用Terraform自动化部署RocketMQ消息发送功能，包括RocketMQ实例、主题和消息发送的创建。
