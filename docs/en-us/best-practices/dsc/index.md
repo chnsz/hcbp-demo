@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Custom Character Mask Algorithm](custom_character_mask_algorithm.md) - Introduces how to use Terraform to automatically deploy a custom character mask algorithm, including mask algorithm name configuration, prefix and suffix character retention settings, and replacement character configuration.
+* [Deploy Custom Scan Security Level](custom_scan_security_level.md) - Introduces how to use Terraform to automatically deploy a custom scan security level, including security level name configuration, console color number setting, and security level description configuration.
 
 ## Reference Materials
 

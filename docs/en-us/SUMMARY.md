@@ -228,6 +228,7 @@
   * [DSC](best-practices/dsc/)
     * [Introduction](best-practices/dsc/index.md)
     * [Deploy Custom Character Mask Algorithm](best-practices/dsc/custom_character_mask_algorithm.md)
+    * [Deploy Custom Scan Security Level](best-practices/dsc/custom_scan_security_level.md)
   * [ECS](best-practices/ecs/)
     * [Introduction](best-practices/ecs/index.md)
     * [Deploy Basic Instance](best-practices/ecs/simple_instance.md)
