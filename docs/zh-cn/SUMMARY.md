@@ -244,6 +244,7 @@
     * [部署自定义事件订阅](best-practices/eg/custom.md)
     * [部署事件订阅（自定义事件源，EG事件目标）](best-practices/eg/event_subscription_custom_to_eg.md)
     * [部署事件订阅（OBS事件源、Kafka事件目标）](best-practices/eg/event_subscription_obs_to_kafka.md)
+    * [部署事件订阅（OBS事件源、Kafka事件目标）](best-practices/eg/obs_to_kafka.md)
     * [部署事件订阅（VPC事件源、EG事件目标）](best-practices/eg/event_subscription_vpc_to_eg.md)
   * [EIP](best-practices/eip/)
     * [简介](best-practices/eip/index.md)

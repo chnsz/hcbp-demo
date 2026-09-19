@@ -244,6 +244,7 @@
     * [Deploy Custom Event Subscription](best-practices/eg/custom.md)
     * [Deploy Event Subscription (Custom Event Source, EG Event Target)](best-practices/eg/event_subscription_custom_to_eg.md)
     * [Deploy Event Subscription (OBS Event Source, Kafka Event Target)](best-practices/eg/event_subscription_obs_to_kafka.md)
+    * [Deploy Event Subscription (OBS Event Source, Kafka Event Target)](best-practices/eg/obs_to_kafka.md)
     * [Deploy Event Subscription (VPC Event Source, EG Event Target)](best-practices/eg/event_subscription_vpc_to_eg.md)
   * [EIP](best-practices/eip/)
     * [Introduction](best-practices/eip/index.md)
