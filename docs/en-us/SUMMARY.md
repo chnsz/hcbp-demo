@@ -238,6 +238,7 @@
     * [Deploy Instance with Provisioner Remote Login](best-practices/ecs/instance_with_provisioner.md)
     * [Deploy Instance with UserData Script Execution](best-practices/ecs/instance_with_userdata.md)
     * [Deploy Instance with Volume](best-practices/ecs/instance_with_volume.md)
+    * [Deploy Instance with Volume](best-practices/ecs/attached_volume.md)
     * [Deploy PrePaid Instance](best-practices/ecs/prepaid_instance.md)
   * [EG](best-practices/eg/)
     * [Introduction](best-practices/eg/index.md)
