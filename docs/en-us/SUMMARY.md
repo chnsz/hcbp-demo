@@ -229,6 +229,7 @@
     * [Introduction](best-practices/dsc/index.md)
     * [Deploy Custom Character Mask Algorithm](best-practices/dsc/custom_character_mask_algorithm.md)
     * [Deploy Custom Scan Security Level](best-practices/dsc/custom_scan_security_level.md)
+    * [Deploy OBS Asset with Authorization](best-practices/dsc/obs_asset_with_authorization.md)
   * [ECS](best-practices/ecs/)
     * [Introduction](best-practices/ecs/index.md)
     * [Deploy Basic Instance](best-practices/ecs/simple_instance.md)
