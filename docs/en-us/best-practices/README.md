@@ -152,6 +152,10 @@ Data Replication Service (DRS) is a one-stop data replication service provided b
 
 Data Security Center (DSC) is a one-stop data security governance service provided by Huawei Cloud. It delivers capabilities such as sensitive data identification, data masking, data watermarking, and data security auditing across the full data lifecycle, helping enterprises build a visible, controllable, and auditable data security protection system that meets compliance requirements.
 
+### [Data Warehouse Service (DWS) Best Practices](dws/index.md)
+
+Data Warehouse Service (DWS) is an online analytical processing (OLAP) database service provided by Huawei Cloud. Built on Huawei Cloud infrastructure, it is designed for enterprise-level data warehouse scenarios and delivers fast query and analysis capabilities for massive data. DWS adopts a distributed architecture and columnar storage technology, enabling efficient processing of petabyte-scale data and helping enterprises quickly build high-performance, highly reliable data analysis platforms on the cloud.
+
 ### [Elastic Cloud Server (ECS) Best Practices](ecs/index.md)
 
 Elastic Cloud Server (ECS) is a basic computing component composed of CPU, memory, operating system, and cloud disk, providing reliable, secure, flexible, and efficient computing environment for your applications.
