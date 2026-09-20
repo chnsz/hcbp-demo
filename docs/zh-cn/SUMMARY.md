@@ -160,6 +160,7 @@
     * [部署Redis实例小版本升级](best-practices/dcs/redis_minor_version_upgrade.md)
     * [部署Redis节点优先级配置](best-practices/dcs/redis_node_priority_config.md)
     * [部署Redis节点状态变更](best-practices/dcs/redis_node_status_change.md)
+    * [部署Redis离线Key分析](best-practices/dcs/redis_offline_key_analysis.md)
     * [部署Redis Web CLI登出](best-practices/dcs/redis_logout_web_cli.md)
     * [部署单机Redis实例](best-practices/dcs/redis_single_instance.md)
   * [DDM](best-practices/ddm/)

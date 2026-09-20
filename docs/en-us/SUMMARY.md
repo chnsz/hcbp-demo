@@ -160,6 +160,7 @@
     * [Deploy Redis Instance Minor Version Upgrade](best-practices/dcs/redis_minor_version_upgrade.md)
     * [Deploy Redis Node Priority Config](best-practices/dcs/redis_node_priority_config.md)
     * [Deploy Redis Node Status Change](best-practices/dcs/redis_node_status_change.md)
+    * [Deploy Redis Offline Key Analysis](best-practices/dcs/redis_offline_key_analysis.md)
     * [Deploy Redis Web CLI Logout](best-practices/dcs/redis_logout_web_cli.md)
     * [Deploy Single-Node Redis Instance](best-practices/dcs/redis_single_instance.md)
   * [DDM](best-practices/ddm/)
