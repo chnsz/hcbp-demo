@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Custom Character Mask Algorithm](custom_character_mask_algorithm.md) - Introduces how to use Terraform to automatically deploy a custom character mask algorithm, including mask algorithm name configuration, prefix and suffix character retention settings, and replacement character configuration.
+* [Deploy Custom Scan Rule with Template](scan_rule_with_custom_template.md) - Introduces how to use Terraform to automatically deploy a custom scan rule with a template, including scan security level creation, scan template and classification configuration, and regular expression scan rule association.
 * [Deploy Custom Scan Security Level](custom_scan_security_level.md) - Introduces how to use Terraform to automatically deploy a custom scan security level, including security level name configuration, console color number setting, and security level description configuration.
 * [Deploy OBS Asset with Authorization](obs_asset_with_authorization.md) - Introduces how to use Terraform to automatically deploy OBS Asset with Authorization, including OBS Bucket, DSC Asset Authorization, and DSC OBS Asset.
 

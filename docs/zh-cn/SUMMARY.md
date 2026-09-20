@@ -223,6 +223,7 @@
   * [DSC](best-practices/dsc/)
     * [简介](best-practices/dsc/index.md)
     * [部署自定义字符掩码算法](best-practices/dsc/custom_character_mask_algorithm.md)
+    * [部署自定义模板扫描规则](best-practices/dsc/scan_rule_with_custom_template.md)
     * [部署自定义扫描安全级别](best-practices/dsc/custom_scan_security_level.md)
     * [部署OBS资产授权与资产添加](best-practices/dsc/obs_asset_with_authorization.md)
   * [ECS](best-practices/ecs/)
