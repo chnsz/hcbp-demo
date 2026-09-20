@@ -20,6 +20,7 @@ DSC支持对云上数据库、大数据、对象存储等多种数据源进行�
 
 * [部署自定义字符掩码算法](custom_character_mask_algorithm.md) - 介绍如何使用Terraform自动化部署自定义字符掩码算法，包括掩码算法名称配置、首尾保留字符数量设置和替换字符配置。
 * [部署自定义扫描安全级别](custom_scan_security_level.md) - 介绍如何使用Terraform自动化部署自定义扫描安全级别，包括安全级别名称配置、控制台颜色编号设置和安全级别描述配置。
+* [部署OBS资产授权与资产添加](obs_asset_with_authorization.md) - 介绍如何使用Terraform自动化部署OBS资产授权与资产添加，包括OBS桶、DSC资产授权和DSC OBS资产。
 
 ## 参考资料
 
