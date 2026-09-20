@@ -23,7 +23,6 @@ This section contains the following best practices:
 * [Deploy Instance with Provisioner Remote Login](instance_with_provisioner.md) - Introduces how to use Terraform to automatically deploy ECS instances with provisioner remote login, including key pair creation, network environment configuration, EIP binding, and remote command execution.
 * [Deploy Instance with UserData Script Execution](instance_with_userdata.md) - Introduces how to use Terraform to automatically deploy ECS instances with UserData script execution, including network environment creation, security group configuration, key pair creation, instance creation, and script execution.
 * [Deploy Instance with Volume](instance_with_volume.md) - Introduces how to use Terraform to automatically deploy ECS instances with attached cloud volume, including network environment creation, security group configuration, instance creation, and cloud volume attachment.
-* [Deploy Instance with Volume](attached_volume.md) - Introduces how to use Terraform to automatically deploy Instance with Volume, including Availability Zones, ECS Flavors, IMS Images, VPC creation, and subnet configuration.
 * [Deploy PrePaid Instance](prepaid_instance.md) - Introduces how to use Terraform to automatically deploy a PrePaid ECS instance, including VPC, subnet, and security group creation, as well as PrePaid billing mode configuration.
 
 ## Reference Materials
