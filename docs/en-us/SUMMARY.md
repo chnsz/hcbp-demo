@@ -217,6 +217,7 @@
   * [DRS](best-practices/drs/)
     * [Introduction](best-practices/drs/index.md)
     * [Deploy Job LTS Configuration and Compare Policy](best-practices/drs/job_lts_config_with_compare_policy.md)
+    * [Deploy LTS Configuration](best-practices/drs/lts_config.md)
     * [Deploy Migration Job](best-practices/drs/drs_job_migration.md)
     * [Deploy MongoDB Sharding Connection](best-practices/drs/drs_connection_mongodb.md)
     * [Deploy RDS MySQL Connection](best-practices/drs/drs_connection_rds_mysql.md)
