@@ -31,6 +31,7 @@ DCS服务提供完整的缓存生命周期管理功能，支持自动备份、�
 * [部署Redis实例备份](redis_backup.md) - 介绍如何使用Terraform自动化部署DCS Redis实例并创建手动备份，包括VPC创建、实例配置和备份资源管理。
 * [部署Redis实例小版本升级](redis_minor_version_upgrade.md) - 介绍如何使用Terraform自动化部署Redis实例小版本升级，包括可用分区列表（data.）、DCS产品规格列表（data.）、VPC创建、子网配置和随机密码（random_password）。
 * [部署Redis节点优先级配置](redis_node_priority_config.md) - 介绍如何使用Terraform自动化部署Redis节点优先级配置，包括可用分区列表（data.）、DCS产品规格列表（data.）、DCS实例分片列表（data.）、VPC创建和子网配置。
+* [部署Redis节点状态变更](redis_node_status_change.md) - 介绍如何使用Terraform自动化部署Redis节点状态变更，包括可用分区列表（data.）、DCS产品规格列表（data.）、VPC创建、子网配置和随机密码（random_password）。
 * [部署Redis Web CLI登出](redis_logout_web_cli.md) - 介绍如何使用Terraform自动化部署Redis Web CLI登出，包括可用分区列表（data.）、DCS产品规格列表（data.）、VPC创建、子网配置和随机密码（random_password）。
 * [部署单机Redis实例](redis_single_instance.md) - 介绍如何使用Terraform自动化部署DCS单机Redis实例，包括VPC创建、实例配置和基础网络设置。
 
