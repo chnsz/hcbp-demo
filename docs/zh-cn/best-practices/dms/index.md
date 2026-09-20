@@ -19,13 +19,9 @@ DMS支持多种消息模式，包括点对点、发布订阅等，能够满足�
 ### Kafka最佳实践
 
 * [部署Kafka实例配置](kafka/instance_configuration.md) - 介绍如何使用Terraform自动化配置Kafka实例，包括VPC、子网、安全组和Kafka实例的创建。
-* [部署Kafka实例配置](instance_configuration.md) - 介绍如何使用Terraform自动化部署Kafka实例配置，包括可用区列表（data.）、Kafka实例规格（data.）、VPC创建、子网配置和安全组配置。
 * [部署Kafka实例数据复制](kafka/replicate_instance_data.md) - 介绍如何使用Terraform自动化部署Kafka实例数据复制，包括创建多个Kafka实例、Smart Connect和Smart Connect任务。
-* [部署Kafka实例数据复制](replicate_instance_data.md) - 介绍如何使用Terraform自动化部署Kafka实例数据复制，包括可用区列表（data.）、Kafka实例规格（data.）、VPC创建、子网配置和安全组配置。
 * [部署Kafka公网访问实例网络](kafka/public_access_instance_network.md) - 介绍如何使用Terraform自动化部署支持公网访问的Kafka实例网络配置，包括VPC、子网、安全组、EIP和Kafka实例的公网访问配置。
-* [部署Kafka公网访问实例网络](public_access_instance_network.md) - 介绍如何使用Terraform自动化部署Kafka公网访问实例网络，包括可用区列表（data.）、Kafka实例规格（data.）、VPC创建、子网配置和安全组配置。
 * [部署Kafka主题消息生产](kafka/topic_message_produce.md) - 介绍如何使用Terraform自动化部署Kafka主题消息生产，包括创建Kafka实例、主题和消息生产。
-* [部署Kafka主题消息生产](topic_message_produce.md) - 介绍如何使用Terraform自动化部署Kafka主题消息生产，包括可用区列表（data.）、Kafka实例规格（data.）、VPC创建、子网配置和安全组配置。
 * [部署RabbitMQ基础实例](basic_instance.md) - 介绍如何使用Terraform自动化部署RabbitMQ基础实例，包括可用区列表（data.）、RabbitMQ实例规格（data.）、VPC创建、子网配置和安全组配置。
 * [部署RabbitMQ消息生产与消费](message_producer_and_consumer.md) - 介绍如何使用Terraform自动化部署RabbitMQ消息生产与消费，包括可用区列表（data.）、RabbitMQ实例规格（data.）、ECS规格（data.）、镜像列表（data.）和VPC创建。
 * [部署RocketMQ基础实例](rocketmq/basic_instance.md) - 介绍如何使用Terraform自动化部署一个基础的RocketMQ实例，包括VPC、子网、安全组和EIP的创建。
