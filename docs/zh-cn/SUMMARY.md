@@ -205,6 +205,7 @@
     * [部署Kafka主题消息生产](best-practices/dms/kafka/topic_message_produce.md)
     * [部署RabbitMQ基础实例](best-practices/dms/basic_instance.md)
     * [部署RabbitMQ消息生产与消费](best-practices/dms/message_producer_and_consumer.md)
+    * [部署RabbitMQ监控与CES告警通知](best-practices/dms/rabbitmq/monitoring_with_ces_smn_alarm.md)
     * [部署RocketMQ基础实例](best-practices/dms/rocketmq/basic_instance.md)
     * [部署RocketMQ消费组](best-practices/dms/rocketmq/consumer_group.md)
     * [部署RocketMQ消息发送](best-practices/dms/rocketmq/message_send.md)
