@@ -246,6 +246,7 @@
   * [EIP](best-practices/eip/)
     * [简介](best-practices/eip/index.md)
     * [部署EIP绑定共享带宽](best-practices/eip/eip_associate_shared_bandwidth.md)
+    * [部署EIP绑定共享带宽](best-practices/eip/eip_with_shared_bandwidth.md)
   * [ELB](best-practices/elb/)
     * [简介](best-practices/elb/index.md)
     * [部署专用负载均衡器与弹性伸缩](best-practices/elb/dedicated_loadbalancer_with_as.md)

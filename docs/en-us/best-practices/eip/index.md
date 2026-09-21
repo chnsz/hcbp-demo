@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy EIP Bound to Shared Bandwidth](eip_associate_shared_bandwidth.md) - Introduces how to use Terraform to automatically deploy an EIP bound to shared bandwidth, including shared bandwidth creation, elastic IP creation, and EIP-to-shared-bandwidth association management.
+* [Deploy EIP Bound to Shared Bandwidth](eip_with_shared_bandwidth.md) - Introduces how to use Terraform to automatically deploy EIP Bound to Shared Bandwidth, including Shared Bandwidth and Elastic IP.
 
 ## Reference Materials
 
