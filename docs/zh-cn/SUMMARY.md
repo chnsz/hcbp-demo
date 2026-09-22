@@ -267,6 +267,7 @@
     * [部署云硬盘](best-practices/evs/volume.md)
     * [部署磁盘快照](best-practices/evs/snapshot.md)
     * [部署磁盘快照组](best-practices/evs/snapshot_group.md)
+    * [部署V3云硬盘与快照](best-practices/evs/v3_volume_snapshot.md)
   * [FunctionGraph](best-practices/fgs/)
     * [简介](best-practices/fgs/index.md)
     * [部署CTS触发器](best-practices/fgs/cts_trigger.md)
