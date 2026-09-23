@@ -56,6 +56,10 @@ API网关（API Gateway）是为企业和开发者提供的高性能、高可用
 
 云容器引擎（Cloud Container Engine, CCE）是一个高可靠高性能的企业级容器管理服务，支持Kubernetes社区原生应用和工具，提供容器化应用的全生命周期管理能力。
 
+### [云容器引擎（CCE）Autopilot最佳实践](cceautopilot/index.md)
+
+云容器引擎（Cloud Container Engine，CCE）Autopilot是华为云提供的Serverless化Kubernetes集群形态，面向云原生应用提供免运维的容器运行环境。Autopilot集群将集群节点的管理与运维工作交由华为云负责，用户无需创建、配置和扩缩节点，只需关注业务负载本身，即可获得高可靠、高弹性的容器运行能力。
+
 ### [云容器实例（CCI）最佳实践](cci/index.md)
 
 云容器实例（Cloud Container Instance, CCI）是华为云提供的Serverless容器服务，无需创建和管理服务器集群，即可直接运行容器应用。CCI提供秒级启动、按需付费、按秒计费的容器服务，支持Kubernetes原生API。
