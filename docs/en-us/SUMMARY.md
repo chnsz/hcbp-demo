@@ -250,6 +250,7 @@
   * [EIP](best-practices/eip/)
     * [Introduction](best-practices/eip/index.md)
     * [Deploy EIP Bound to Shared Bandwidth](best-practices/eip/eip_associate_shared_bandwidth.md)
+    * [Deploy EIP on Shared Bandwidth](best-practices/eip/eip_with_shared_bandwidth.md)
   * [ELB](best-practices/elb/)
     * [Introduction](best-practices/elb/index.md)
     * [Deploy Dedicated Load Balancer with Auto Scaling](best-practices/elb/dedicated_loadbalancer_with_as.md)

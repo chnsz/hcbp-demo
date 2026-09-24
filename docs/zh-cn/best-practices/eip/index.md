@@ -19,6 +19,7 @@ EIP支持按带宽计费和按流量计费两种计费模式，并可与共享�
 本章节包含以下最佳实践：
 
 * [部署EIP绑定共享带宽](eip_associate_shared_bandwidth.md) - 介绍如何使用Terraform自动化部署EIP绑定共享带宽，包括共享带宽创建、弹性公网IP创建和EIP与共享带宽的绑定管理。
+* [部署共享带宽上的弹性公网IP](eip_with_shared_bandwidth.md) - 介绍如何使用Terraform自动化部署共享带宽上的弹性公网IP，包括共享带宽和弹性公网IP。
 
 ## 参考资料
 
