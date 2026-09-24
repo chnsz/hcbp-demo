@@ -172,6 +172,10 @@ Elastic IP (EIP) is an independently applicable and bindable public IP address r
 
 Elastic Load Balance (ELB) is a service that automatically distributes access traffic to multiple cloud servers, enabling expansion of application system's external service capabilities and improving application availability. ELB automatically isolates abnormal backend servers through health checks to ensure high availability of services. Huawei Cloud ELB supports multiple load balancing algorithms, including round-robin, weighted round-robin, least connections, etc., to meet the needs of different business scenarios.
 
+### [Enterprise Project Management Service (EPS) Best Practices](eps/index.md)
+
+Enterprise Project Management Service (EPS) is an enterprise-level resource management service provided by Huawei Cloud, allowing enterprises to group, authorize, and perform cost accounting on cloud resources by project. With enterprise projects, enterprises can divide resources of different businesses, departments, or environments into isolated projects, achieving logical isolation and unified management of resources to meet the management requirements of multi-business and multi-team collaboration scenarios.
+
 ### [Enterprise Router (ER) Best Practices](er/index.md)
 
 Enterprise Router (ER) is a high-performance, high-availability enterprise-grade router service provided by Huawei Cloud, supporting enterprise-level network functions such as multi-VPC interconnection, dedicated line access, and VPN connections.
