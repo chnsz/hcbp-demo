@@ -162,6 +162,7 @@
     * [Deploy Redis Node Status Change](best-practices/dcs/redis_node_status_change.md)
     * [Deploy Redis Offline Key Analysis](best-practices/dcs/redis_offline_key_analysis.md)
     * [Deploy Redis Run Log Collect](best-practices/dcs/redis_run_log_collect.md)
+    * [Deploy Redis Sessions Kill](best-practices/dcs/redis_sessions_kill.md)
     * [Deploy Redis Web CLI Logout](best-practices/dcs/redis_logout_web_cli.md)
     * [Deploy Single-Node Redis Instance](best-practices/dcs/redis_single_instance.md)
   * [DDM](best-practices/ddm/)
