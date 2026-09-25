@@ -188,6 +188,10 @@ Elastic Volume Service (EVS) is a high-performance, highly reliable, and scalabl
 
 FunctionGraph is an event-driven serverless computing service that supports multiple programming languages and trigger methods, allowing you to quickly build applications without managing servers.
 
+### [GaussDB Best Practices](gaussdb/index.md)
+
+GaussDB is a high-performance, highly available, and highly secure enterprise-grade distributed relational database service provided by Huawei Cloud. Built on Huawei's years of database technology accumulation and software-hardware collaborative optimization, it supports both centralized and distributed deployment modes, meeting diverse requirements ranging from small and medium-sized businesses to massive-data core systems.
+
 ### [Host Security Service (HSS) Best Practices](hss/index.md)
 
 Host Security Service (HSS) is a host security protection service provided by Huawei Cloud, offering asset management, vulnerability management, intrusion detection, baseline checks, and other functions to help you comprehensively protect the security of cloud hosts. HSS service supports multiple operating systems, including Linux and Windows, providing real-time monitoring, threat detection, security hardening, and other capabilities, meeting enterprise-grade host security protection requirements.
