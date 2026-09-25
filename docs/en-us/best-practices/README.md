@@ -188,6 +188,10 @@ Elastic Volume Service (EVS) is a high-performance, highly reliable, and scalabl
 
 FunctionGraph is an event-driven serverless computing service that supports multiple programming languages and trigger methods, allowing you to quickly build applications without managing servers.
 
+### [Global Accelerator (GA) Best Practices](ga/index.md)
+
+Global Accelerator (GA) is a global network acceleration service provided by Huawei Cloud. Leveraging Huawei Cloud's globally distributed points of presence and backbone network, GA provides nearby access and global acceleration capabilities for internet applications. By bringing user traffic into the Huawei Cloud backbone network from the nearest point of presence and forwarding it to origin servers over high-quality backbone links, GA effectively reduces latency and jitter for cross-region and cross-carrier access, improving the access experience and stability of services.
+
 ### [Host Security Service (HSS) Best Practices](hss/index.md)
 
 Host Security Service (HSS) is a host security protection service provided by Huawei Cloud, offering asset management, vulnerability management, intrusion detection, baseline checks, and other functions to help you comprehensively protect the security of cloud hosts. HSS service supports multiple operating systems, including Linux and Windows, providing real-time monitoring, threat detection, security hardening, and other capabilities, meeting enterprise-grade host security protection requirements.
