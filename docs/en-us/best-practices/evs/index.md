@@ -16,9 +16,10 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
+* [Deploy Cloud Volume](volume.md) - Introduces how to use Terraform to automatically deploy EVS cloud volumes, including availability zone selection, storage type configuration, and performance parameter settings.
 * [Deploy Disk Snapshot](snapshot.md) - Introduces how to use Terraform to automatically deploy EVS disk snapshots, including cloud volume creation and snapshot configuration.
 * [Deploy Disk Snapshot Group](snapshot_group.md) - Introduces how to use Terraform to automatically deploy EVS disk snapshot groups, including ECS instance creation, cloud volume creation, mounting, and disk snapshot group configuration.
-* [Deploy Cloud Volume](volume.md) - Introduces how to use Terraform to automatically deploy EVS cloud volumes, including availability zone selection, storage type configuration, and performance parameter settings.
+* [Deploy V3 Volume and Snapshot](v3_volume_snapshot.md) - Introduces how to use Terraform to automatically deploy V3 Volume and Snapshot, including Availability Zones (data.), Images (data.), V3 Volume, and V3 Volume Snapshot.
 
 ## Reference Materials
 

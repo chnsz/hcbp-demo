@@ -271,6 +271,7 @@
     * [Deploy Cloud Volume](best-practices/evs/volume.md)
     * [Deploy Disk Snapshot](best-practices/evs/snapshot.md)
     * [Deploy Disk Snapshot Group](best-practices/evs/snapshot_group.md)
+    * [Deploy V3 Volume and Snapshot](best-practices/evs/v3_volume_snapshot.md)
   * [FunctionGraph](best-practices/fgs/)
     * [Introduction](best-practices/fgs/index.md)
     * [Deploy CTS Trigger](best-practices/fgs/cts_trigger.md)
