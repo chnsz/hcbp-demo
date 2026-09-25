@@ -188,6 +188,10 @@ API网关（API Gateway）是为企业和开发者提供的高性能、高可用
 
 函数工作流（FunctionGraph）是一项基于事件驱动的无服务器计算服务，支持多种编程语言和触发方式，让您无需管理服务器即可快速构建应用。
 
+### [GeminiDB最佳实践](geminidb/index.md)
+
+GeminiDB是华为云提供的多模NoSQL数据库服务，兼容Cassandra、MongoDB、InfluxDB、Redis等多种主流NoSQL引擎协议，具备高可用、高可靠、弹性扩展、安全可信等特性，能够满足海量数据存储、高并发读写以及多样化数据模型等业务需求。
+
 ### [主机安全服务（HSS）最佳实践](hss/index.md)
 
 主机安全服务（Host Security Service, HSS）是华为云提供的主机安全防护服务，提供资产管理、漏洞管理、入侵检测、基线检查等功能，帮助您全面保护云上主机的安全。HSS服务支持多种操作系统，包括Linux和Windows，提供实时监控、威胁检测、安全加固等能力，满足企业级主机安全防护需求。

@@ -188,6 +188,10 @@ Elastic Volume Service (EVS) is a high-performance, highly reliable, and scalabl
 
 FunctionGraph is an event-driven serverless computing service that supports multiple programming languages and trigger methods, allowing you to quickly build applications without managing servers.
 
+### [GeminiDB Best Practices](geminidb/index.md)
+
+GeminiDB is a multi-model NoSQL database service provided by Huawei Cloud that is compatible with multiple mainstream NoSQL engine protocols such as Cassandra, MongoDB, InfluxDB, and Redis. It offers high availability, high reliability, elastic scaling, and security, and can meet business requirements such as massive data storage, high-concurrency read and write, and diverse data models.
+
 ### [Host Security Service (HSS) Best Practices](hss/index.md)
 
 Host Security Service (HSS) is a host security protection service provided by Huawei Cloud, offering asset management, vulnerability management, intrusion detection, baseline checks, and other functions to help you comprehensively protect the security of cloud hosts. HSS service supports multiple operating systems, including Linux and Windows, providing real-time monitoring, threat detection, security hardening, and other capabilities, meeting enterprise-grade host security protection requirements.
