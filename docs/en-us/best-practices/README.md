@@ -212,6 +212,10 @@ Log Tank Service (LTS) is a one-stop log management service provided by Huawei C
 
 ModelArts is a model training and inference platform provided by Huawei Cloud for AI developers, offering end-to-end AI development capabilities from data processing, algorithm development, model training to model deployment, supporting dedicated resource pools, distributed training, and enterprise AI workflow management.
 
+### [Media Processing Center (MPC) Best Practices](mpc/index.md)
+
+Media Processing Center (MPC) is a one-stop media processing service provided by Huawei Cloud for the production, processing, and distribution of audio and video content. It offers capabilities such as transcoding, screenshot, watermarking, video encryption, and audio extraction. Built on elastic cloud computing resources, MPC helps users quickly convert uploaded source audio and video files into output formats suitable for different terminals and network conditions, without the need to build and maintain transcoding clusters.
+
 ### [Object Storage Service (OBS) Best Practices](obs/index.md)
 
 Object Storage Service (OBS) is a high-availability, highly reliable, high-performance, secure, and low-cost object storage service provided by Huawei Cloud, providing massive, secure, highly reliable, and low-cost data storage capabilities.
