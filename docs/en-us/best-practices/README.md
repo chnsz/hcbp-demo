@@ -204,6 +204,10 @@ Identity Center is a unified identity management service provided by Huawei Clou
 
 Image Management Service (IMS) is an image management service provided by Huawei Cloud, supporting image creation, sharing, copying, importing, exporting, and other functions. IMS service provides various image types including private images, shared images, and market images, supporting image creation from cloud servers, cloud disks, external image files, and other methods, meeting image management requirements for different scenarios.
 
+### [IoT Device Access (IoTDA) Best Practices](iotda/index.md)
+
+IoT Device Access (IoTDA) is an IoT platform service provided by Huawei Cloud, offering secure and reliable connectivity, data collection, and command delivery capabilities for massive devices. IoTDA supports multiple access protocols and network modes, helping users quickly build IoT applications and enabling bidirectional communication between devices and the cloud.
+
 ### [Log Tank Service (LTS) Best Practices](lts/index.md)
 
 Log Tank Service (LTS) is a one-stop log management service provided by Huawei Cloud, supporting log collection, storage, query, and analysis, helping enterprises achieve efficient log management and monitoring.
