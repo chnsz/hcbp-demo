@@ -188,6 +188,10 @@ Elastic Volume Service (EVS) is a high-performance, highly reliable, and scalabl
 
 FunctionGraph is an event-driven serverless computing service that supports multiple programming languages and trigger methods, allowing you to quickly build applications without managing servers.
 
+### [Graph Engine Service (GES) Best Practices](ges/index.md)
+
+Graph Engine Service (GES) is a one-stop graph data management and analysis service provided by Huawei Cloud, designed for scenarios such as social networks, knowledge graphs, financial risk control, and recommendation systems. It delivers graph data storage for billions of vertices and edges, millisecond-level query, and graph analysis capabilities. GES encapsulates graph storage, computing, and analysis as a cloud service, helping users quickly build graph applications without building and maintaining their own graph database clusters.
+
 ### [Host Security Service (HSS) Best Practices](hss/index.md)
 
 Host Security Service (HSS) is a host security protection service provided by Huawei Cloud, offering asset management, vulnerability management, intrusion detection, baseline checks, and other functions to help you comprehensively protect the security of cloud hosts. HSS service supports multiple operating systems, including Linux and Windows, providing real-time monitoring, threat detection, security hardening, and other capabilities, meeting enterprise-grade host security protection requirements.
