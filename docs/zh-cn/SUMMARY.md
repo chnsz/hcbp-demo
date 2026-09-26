@@ -300,6 +300,7 @@
     * [简介](best-practices/lts/index.md)
     * [部署日志流](best-practices/lts/log_stream.md)
     * [部署日志转储](best-practices/lts/log_transfer.md)
+    * [部署搜索条件](best-practices/lts/search_criteria.md)
     * [部署SQL告警规则](best-practices/lts/sql_alarm_rule.md)
   * [ModelArts](best-practices/modelarts/)
     * [简介](best-practices/modelarts/index.md)

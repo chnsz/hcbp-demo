@@ -300,6 +300,7 @@
     * [Introduction](best-practices/lts/index.md)
     * [Deploy Log Stream](best-practices/lts/log_stream.md)
     * [Deploy Log Transfer](best-practices/lts/log_transfer.md)
+    * [Deploy Search Criteria](best-practices/lts/search_criteria.md)
     * [Deploy SQL Alarm Rule](best-practices/lts/sql_alarm_rule.md)
   * [ModelArts](best-practices/modelarts/)
     * [Introduction](best-practices/modelarts/index.md)
