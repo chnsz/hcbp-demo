@@ -16,6 +16,7 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
+* [Deploy Migration Synchronization Task](migrate_sync_task.md) - Introduces how to use Terraform to automatically deploy Migration Synchronization Task, including Source OBS Bucket, Destination OBS Bucket, and Migration Synchronization Task.
 * [Deploy Object Migration Through Task Groups](group_migration.md) - Introduces how to use Terraform to automatically deploy OMS task group migration tasks, including KMS key creation, OBS bucket configuration, object upload, bucket policy settings, and migration task group creation.
 * [Deploy Object Migration Through Tasks](task_migration.md) - Introduces how to use Terraform to automatically deploy OMS task migration, including KMS key creation, OBS bucket configuration, object upload, bucket policy settings, and migration task creation.
 
