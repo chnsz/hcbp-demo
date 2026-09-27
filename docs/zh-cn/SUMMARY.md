@@ -317,6 +317,7 @@
     * [部署KMS加密桶](best-practices/obs/kms_encrypted_bucket.md)
   * [OMS](best-practices/oms/)
     * [简介](best-practices/oms/index.md)
+    * [部署迁移同步任务](best-practices/oms/migrate_sync_task.md)
     * [部署通过任务迁移对象](best-practices/oms/task_migration.md)
     * [部署通过任务分组迁移对象](best-practices/oms/group_migration.md)
   * [Organizations](best-practices/organizations/)

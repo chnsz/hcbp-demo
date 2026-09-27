@@ -317,6 +317,7 @@
     * [Deploy KMS Encrypted Bucket](best-practices/obs/kms_encrypted_bucket.md)
   * [OMS](best-practices/oms/)
     * [Introduction](best-practices/oms/index.md)
+    * [Deploy Migration Synchronization Task](best-practices/oms/migrate_sync_task.md)
     * [Deploy Object Migration Through Task](best-practices/oms/task_migration.md)
     * [Deploy Object Migration Through Task Group](best-practices/oms/group_migration.md)
   * [Organizations](best-practices/organizations/)
