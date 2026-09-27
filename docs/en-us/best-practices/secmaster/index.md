@@ -16,6 +16,7 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
+* [Deploy Configuration Dictionary](configuration_dictionary.md) - Introduces how to use Terraform to automatically deploy Configuration Dictionary, including SecMaster Configuration Dictionary.
 * [Deploy Playbook Rule and Trigger by Event](playbook_rule_trigger_by_event.md) - Introduces how to use Terraform to automatically deploy a security playbook rule and trigger it by event, including workspace query, playbook creation, version management, rule configuration, action configuration, approval, and enablement steps.
 * [Deploy Workflow Version](workflow_version.md) - Introduces how to use Terraform to automatically deploy workflow versions, including workspace query, workflow query, and workflow version creation.
 * [Deploy Workspace](workspace.md) - Introduces how to use Terraform to automatically deploy workspaces, including workspace basic information, project configuration, enterprise project configuration, and tag configuration.
@@ -24,4 +25,3 @@ This section contains the following best practices:
 
 - [Huawei Cloud SecMaster Product Documentation](https://support.huaweicloud.com/intl/en-us/secmaster/index.html)
 - [Terraform Official Documentation](https://www.terraform.io/docs/index.html)
-

@@ -16,6 +16,7 @@
 
 本章节包含以下最佳实践：
 
+* [部署配置字典](configuration_dictionary.md) - 介绍如何使用Terraform自动化部署配置字典，包括安全云脑配置字典。
 * [部署剧本规则并通过事件触发](playbook_rule_trigger_by_event.md) - 介绍如何使用Terraform自动化部署一个安全剧本规则并通过事件触发，包括工作空间查询、剧本创建、版本管理、规则配置、动作配置、审批和启用等步骤。
 * [部署工作流版本](workflow_version.md) - 介绍如何使用Terraform自动化部署工作流版本，包括工作空间查询、工作流查询和工作流版本的创建。
 * [部署工作空间](workspace.md) - 介绍如何使用Terraform自动化部署工作空间，包括工作空间基本信息、项目配置、企业项目配置和标签配置。
@@ -24,4 +25,3 @@
 
 - [华为云安全编排产品文档](https://support.huaweicloud.com/secmaster/index.html)
 - [Terraform官方文档](https://www.terraform.io/docs/index.html)
-
