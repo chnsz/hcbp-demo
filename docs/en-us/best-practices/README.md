@@ -232,6 +232,10 @@ Resource Access Manager (RAM) is a resource sharing service provided by Huawei C
 
 Relational Database Service (RDS) is a highly available, high-performance, and easily scalable relational database cloud service provided by Huawei Cloud, supporting multiple database engines such as MySQL, PostgreSQL, and SQL Server, providing enterprise-level functions such as automatic backup and monitoring alerts.
 
+### [Resource Formation Service (RFS) Best Practices](rfs/index.md)
+
+Resource Formation Service (RFS) is an Infrastructure as Code (IaC) service provided by Huawei Cloud, helping users define, orchestrate, and automatically deploy cloud resources in a code-based manner. Through template-based resource descriptions, RFS packages complex combinations of cloud resources into reusable templates, enabling standardized delivery and consistent management of infrastructure while reducing the risk of errors caused by manual configuration.
+
 ### [Resource Governance Center (RGC) Best Practices](rgc/index.md)
 
 Resource Governance Center (RGC) is a resource governance service provided by Huawei Cloud, supporting multi-account management, organizational unit management, blueprint configuration, and other functions to help you uniformly manage and govern cloud resources. RGC service provides centralized resource management capabilities, supporting cross-account resource governance, compliance checks, and automated deployment, meeting enterprise-level resource management and compliance requirements.
