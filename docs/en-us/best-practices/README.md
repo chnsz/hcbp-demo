@@ -212,6 +212,10 @@ Log Tank Service (LTS) is a one-stop log management service provided by Huawei C
 
 ModelArts is a model training and inference platform provided by Huawei Cloud for AI developers, offering end-to-end AI development capabilities from data processing, algorithm development, model training to model deployment, supporting dedicated resource pools, distributed training, and enterprise AI workflow management.
 
+### [NAT Gateway Best Practices](nat/index.md)
+
+NAT Gateway is a high-performance, high-availability public address translation service provided by Huawei Cloud, offering enterprises secure and convenient public network access capabilities. NAT Gateway supports both SNAT (Source Network Address Translation) and DNAT (Destination Network Address Translation) modes, helping cloud servers in a VPC access the Internet or be accessed from the Internet without binding an elastic IP, effectively reducing public IP resource costs and improving network security.
+
 ### [Object Storage Service (OBS) Best Practices](obs/index.md)
 
 Object Storage Service (OBS) is a high-availability, highly reliable, high-performance, secure, and low-cost object storage service provided by Huawei Cloud, providing massive, secure, highly reliable, and low-cost data storage capabilities.
