@@ -149,6 +149,7 @@
     * [部署Redis后台任务删除](best-practices/dcs/redis_background_task_delete.md)
     * [部署Redis大Key分析](best-practices/dcs/redis_bigkey_analysis.md)
     * [部署Redis中心任务删除](best-practices/dcs/redis_center_task_delete.md)
+    * [部署Redis客户端会话查询](best-practices/dcs/redis_sessions_query.md)
     * [部署Redis自定义模板](best-practices/dcs/redis_custom_template.md)
     * [部署Redis数据同步](best-practices/dcs/redis_data_sync.md)
     * [部署Redis诊断任务](best-practices/dcs/redis_diagnosis_task.md)
