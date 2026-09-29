@@ -77,7 +77,7 @@
     * [部署节点池](best-practices/cce/node_pool.md)
     * [部署Standard集群](best-practices/cce/standard_cluster.md)
     * [部署Turbo集群](best-practices/cce/turbo_cluster.md)
-  * [CCEAUTOPILOT](best-practices/cceautopilot/)
+  * [CCE Autopilot](best-practices/cceautopilot/)
     * [简介](best-practices/cceautopilot/index.md)
     * [部署CCE Autopilot集群插件](best-practices/cceautopilot/cce_autopilot_addons.md)
   * [CCI](best-practices/cci/)
