@@ -149,6 +149,7 @@
     * [Deploy Redis Background Task Deletion](best-practices/dcs/redis_background_task_delete.md)
     * [Deploy Redis Big Key Analysis](best-practices/dcs/redis_bigkey_analysis.md)
     * [Deploy Redis Center Task Deletion](best-practices/dcs/redis_center_task_delete.md)
+    * [Deploy Redis Client Sessions Query](best-practices/dcs/redis_sessions_query.md)
     * [Deploy Redis Custom Template](best-practices/dcs/redis_custom_template.md)
     * [Deploy Redis Data Synchronization](best-practices/dcs/redis_data_sync.md)
     * [Deploy Redis Diagnosis Task](best-practices/dcs/redis_diagnosis_task.md)
