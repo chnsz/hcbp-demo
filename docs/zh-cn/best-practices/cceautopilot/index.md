@@ -19,6 +19,7 @@ CCE Autopilot集群采用ENI容器网络模式，支持Kubernetes社区原生API
 本章节包含以下最佳实践：
 
 * [部署CCE Autopilot集群插件](cce_autopilot_addons.md) - 介绍如何使用Terraform自动化部署CCE Autopilot集群插件，包括VPC和子网创建、CCE Autopilot集群创建、SWR组织创建和log-agent插件部署。
+* [部署CCE Autopilot应用](cce_autopilot_chart_release.md) - 介绍如何使用Terraform自动化部署CCE Autopilot应用，包括VPC和子网创建、CCE Autopilot集群创建、Helm Chart上传和Release部署。
 
 ## 参考资料
 
