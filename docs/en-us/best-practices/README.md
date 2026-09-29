@@ -56,6 +56,10 @@ Cloud Connect (CC) is a global network connection service provided by Huawei Clo
 
 Cloud Container Engine (CCE) is a highly reliable and high-performance enterprise-grade container management service that supports Kubernetes community-native applications and tools, providing full lifecycle management capabilities for containerized applications.
 
+### [Cloud Container Engine (CCE) Autopilot Best Practices](cceautopilot/index.md)
+
+Cloud Container Engine (CCE) Autopilot is a serverless Kubernetes cluster mode provided by Huawei Cloud, delivering O&M-free container orchestration for cloud-native applications. Autopilot clusters fully manage the control plane and node resources, so you do not need to create or manage nodes; you only need to submit workloads to run containerized applications, allowing you to focus on business development and innovation.
+
 ### [Cloud Container Instance (CCI) Best Practices](cci/index.md)
 
 Cloud Container Instance (CCI) is a Serverless container service provided by Huawei Cloud, allowing you to run container applications directly without creating and managing server clusters. CCI provides second-level startup, pay-as-you-go, and per-second billing container services, supporting Kubernetes native APIs.
