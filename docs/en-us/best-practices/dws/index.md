@@ -20,6 +20,7 @@ This section contains the following best practices:
 
 * [Deploy Event Subscription](event_subscription.md) - Introduces how to use Terraform to automatically deploy a DWS event subscription, including VPC creation, subnet and security group configuration, DWS cluster creation, SMN topic and subscription creation, and event subscription configuration.
 * [Deploy Real-Time MySQL-to-DWS Data Synchronization](real_time_sync_mysql_to_dws.md) - Introduces how to use Terraform to automatically deploy the infrastructure for real-time MySQL-to-DWS data synchronization, including VPC, subnet, and security group creation, RDS MySQL instance creation, DWS cluster creation, DLI elastic resource pool and queue creation, and enhanced datasource connection association.
+* [Deploy Snapshot](snapshot.md) - Introduces how to use Terraform to automatically deploy a DWS cluster snapshot, including VPC, subnet, and security group creation, DWS cluster creation, and snapshot creation.
 
 ## Reference Materials
 
