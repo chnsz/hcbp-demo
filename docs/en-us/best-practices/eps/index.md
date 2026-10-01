@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Enterprise Project](basic.md) - Introduces how to use Terraform to automatically deploy an enterprise project, including the configuration of the project name, description, type, enable status, and destroy behavior.
+* [Deploy Enterprise Project Enable/Disable Action](enterprise_project_action.md) - Introduces how to use Terraform to automatically perform enable or disable actions on an enterprise project, including creating a new enterprise project or using an existing one, and configuring the action type.
 
 ## Reference Materials
 
