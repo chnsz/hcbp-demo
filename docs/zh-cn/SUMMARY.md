@@ -265,6 +265,7 @@
   * [EPS](best-practices/eps/)
     * [简介](best-practices/eps/index.md)
     * [部署企业项目](best-practices/eps/basic.md)
+    * [部署企业项目启用/禁用操作](best-practices/eps/enterprise_project_action.md)
   * [ER](best-practices/er/)
     * [简介](best-practices/er/index.md)
     * [部署流日志](best-practices/er/flow_log.md)
