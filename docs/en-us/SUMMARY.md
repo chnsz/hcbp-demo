@@ -255,6 +255,7 @@
     * [Deploy Event Subscription (VPC Event Source, EG Event Target)](best-practices/eg/event_subscription_vpc_to_eg.md)
   * [EIP](best-practices/eip/)
     * [Introduction](best-practices/eip/index.md)
+    * [Deploy Cross-Region IPv4 Network](best-practices/eip/geip_ipv4_cross_region.md)
     * [Deploy EIP Bound to Shared Bandwidth](best-practices/eip/eip_associate_shared_bandwidth.md)
     * [Deploy EIP on Shared Bandwidth](best-practices/eip/eip_with_shared_bandwidth.md)
   * [ELB](best-practices/elb/)
