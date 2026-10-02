@@ -350,6 +350,7 @@
   * [RFS](best-practices/rfs/)
     * [简介](best-practices/rfs/index.md)
     * [部署私有模块及模块版本](best-practices/rfs/private_module_with_version.md)
+    * [部署基于FunctionGraph后端的私有Provider](best-practices/rfs/private_provider_with_functiongraph.md)
   * [RGC](best-practices/rgc/)
     * [简介](best-practices/rgc/index.md)
     * [部署账号](best-practices/rgc/account.md)

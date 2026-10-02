@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Private Module with Version](private_module_with_version.md) - Introduces how to use Terraform to automatically deploy a private module with a version, including private module creation, module version configuration, and OBS module package reference.
+* [Deploy Private Provider with FunctionGraph Backend](private_provider_with_functiongraph.md) - Introduces how to use Terraform to automatically deploy a private provider with a FunctionGraph backend, including FunctionGraph function creation, private provider creation, and private provider version publishing.
 
 ## Reference Materials
 

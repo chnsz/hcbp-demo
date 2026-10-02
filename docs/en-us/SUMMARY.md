@@ -350,6 +350,7 @@
   * [RFS](best-practices/rfs/)
     * [Introduction](best-practices/rfs/index.md)
     * [Deploy Private Module with Version](best-practices/rfs/private_module_with_version.md)
+    * [Deploy Private Provider with FunctionGraph Backend](best-practices/rfs/private_provider_with_functiongraph.md)
   * [RGC](best-practices/rgc/)
     * [Introduction](best-practices/rgc/index.md)
     * [Deploy Account](best-practices/rgc/account.md)
