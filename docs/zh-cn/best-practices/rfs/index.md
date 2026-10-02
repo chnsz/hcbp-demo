@@ -19,6 +19,7 @@ RFS 支持模板的创建、更新、删除以及执行计划的预览，用户�
 本章节包含以下最佳实践：
 
 * [部署私有模块及模块版本](private_module_with_version.md) - 介绍如何使用Terraform自动化部署私有模块及模块版本，包括私有模块创建、模块版本配置和OBS模块包引用。
+* [部署基于FunctionGraph后端的私有Provider](private_provider_with_functiongraph.md) - 介绍如何使用Terraform自动化部署基于FunctionGraph后端的私有Provider，包括FunctionGraph函数创建、私有Provider创建和私有Provider版本发布。
 
 ## 参考资料
 
