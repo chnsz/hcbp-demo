@@ -272,6 +272,10 @@ Software Repository for Container (SWR) is a container image hosting service pro
 
 Tag Management Service (TMS) is a tag management service provided by Huawei Cloud, supporting adding, modifying, and deleting tags for cloud resources, helping you achieve resource classification management and cost analysis. TMS service provides unified tag management capabilities, supporting batch adding tags to different types of cloud resources (such as ECS, VPC, RDS, etc.), achieving unified classification and identification of resources.
 
+### [Video on Demand (VOD) Best Practices](vod/index.md)
+
+Video on Demand (VOD) is a one-stop video on-demand service provided by Huawei Cloud for scenarios such as audio and video websites, online education, e-commerce live streaming, and enterprise training. It delivers end-to-end capabilities from audio and video upload, transcoding, and storage to acceleration, distribution, and playback. You can quickly build a stable, smooth, and secure video on-demand service without building a complex audio and video processing and distribution system yourself.
+
 ### [Virtual Private Cloud (VPC) Best Practices](vpc/index.md)
 
 Virtual Private Cloud (VPC) is a logically isolated network environment provided by Huawei Cloud for users, supporting custom subnets, routes, ACLs, and other network resources, meeting enterprise-level network security and flexible networking requirements.
