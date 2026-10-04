@@ -268,6 +268,10 @@ Server Migration Service (SMS) is a server migration service provided by Huawei 
 
 Software Repository for Container (SWR) is a container image hosting service provided by Huawei Cloud, supporting storage, management, and distribution of Docker images, helping you achieve rapid deployment and continuous integration of container applications. SWR service provides complete container image lifecycle management functions, supporting image building, pushing, pulling, scanning, and deletion operations, meeting full-process requirements of containerized applications.
 
+### [TaurusDB Best Practices](taurusdb/index.md)
+
+TaurusDB is an enterprise-grade cloud-native database service provided by Huawei Cloud, fully compatible with the MySQL protocol and built on a compute-storage separation architecture. By decoupling compute nodes from storage nodes, TaurusDB supports on-demand storage scaling and second-level elastic scaling of compute nodes, enabling it to handle fluctuating business workloads and helping enterprises build high-performance, highly reliable database services on the cloud.
+
 ### [Tag Management Service (TMS) Best Practices](tms/index.md)
 
 Tag Management Service (TMS) is a tag management service provided by Huawei Cloud, supporting adding, modifying, and deleting tags for cloud resources, helping you achieve resource classification management and cost analysis. TMS service provides unified tag management capabilities, supporting batch adding tags to different types of cloud resources (such as ECS, VPC, RDS, etc.), achieving unified classification and identification of resources.
