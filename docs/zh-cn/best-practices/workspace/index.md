@@ -23,9 +23,7 @@
 * [部署云应用策略组](app_policy_group.md) - 介绍如何使用Terraform自动化部署Workspace云应用策略组，包括云应用服务器组创建、云应用组创建和策略组配置。
 * [部署云应用策略组伸缩策略](app_policy_group_scaling_policy.md) - 介绍如何使用Terraform自动化部署Workspace云应用策略组伸缩策略，包括云应用服务器组创建、云应用组创建、策略组配置和伸缩策略配置。
 * [部署云应用服务器组](app_server_group.md) - 介绍如何使用Terraform自动化部署Workspace云应用服务器组，包括服务查询、服务器组创建和配置管理。
-
-### 云桌面最佳实践
-
+* [部署云桌面](desktop/basic.md) - 介绍如何使用Terraform自动化部署云桌面，包括可用区列表（data.）、云桌面规格列表（data.）、镜像列表（data.）、云桌面服务（data.）和VPC创建。
 * [部署按需计费的云桌面](postpaid_desktop.md) - 介绍如何使用Terraform自动化部署按需计费的云桌面实例，包括VPC、子网、安全组以及云桌面服务和用户的创建。
 
 ## 参考资料
