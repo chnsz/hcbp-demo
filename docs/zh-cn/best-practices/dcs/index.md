@@ -20,6 +20,7 @@ DCS服务提供完整的缓存生命周期管理功能，支持自动备份、�
 * [部署Redis后台任务删除](redis_background_task_delete.md) - 介绍如何使用Terraform删除DCS Redis实例中指定的后台任务，适用于清理已完成或异常的后台任务。
 * [部署Redis大Key分析](redis_bigkey_analysis.md) - 介绍如何使用Terraform自动化部署DCS Redis实例并创建大Key分析任务，包括VPC创建、子网、实例配置和大Key分析。
 * [部署Redis中心任务删除](redis_center_task_delete.md) - 介绍如何使用Terraform自动化部署Redis中心任务删除，包括DCS中心任务删除（huaweicloud_dcs_center_task_delete）。
+* [部署Redis客户端会话查询](redis_sessions_query.md) - 介绍如何使用Terraform自动化部署Redis客户端会话查询，包括可用分区列表（data.）、DCS产品规格列表（data.）、DCS实例分片列表（data.）、VPC创建和子网配置。
 * [部署Redis自定义模板](redis_custom_template.md) - 介绍如何使用Terraform自动化部署Redis自定义模板，包括DCS自定义模板（huaweicloud_dcs_custom_template）。
 * [部署Redis数据同步](redis_data_sync.md) - 介绍如何使用Terraform自动化部署Redis数据同步，包括可用分区（data.）、DCS产品规格（data.）、VPC创建、子网配置和安全组配置。
 * [部署Redis诊断任务](redis_diagnosis_task.md) - 介绍如何使用Terraform自动化部署Redis诊断任务，包括DCS Redis诊断任务。
@@ -33,6 +34,7 @@ DCS服务提供完整的缓存生命周期管理功能，支持自动备份、�
 * [部署Redis节点状态变更](redis_node_status_change.md) - 介绍如何使用Terraform自动化部署Redis节点状态变更，包括可用分区列表（data.）、DCS产品规格列表（data.）、VPC创建、子网配置和随机密码（random_password）。
 * [部署Redis离线Key分析](redis_offline_key_analysis.md) - 介绍如何使用Terraform自动化部署DCS Redis高可用实例并执行离线Key分析任务，包括VPC创建、子网配置、可用分区与产品规格查询、实例配置、节点查询和离线Key分析。
 * [部署Redis运行日志采集](redis_run_log_collect.md) - 介绍如何使用Terraform自动化部署Redis运行日志采集，包括可用分区列表（data.）、DCS产品规格列表（data.）、DCS实例节点列表（data.）、VPC创建和子网配置。
+* [部署Redis会话清理](redis_sessions_kill.md) - 介绍如何使用Terraform自动化部署Redis会话清理，包括可用分区列表（data.）、DCS产品规格列表（data.）、DCS实例分片列表（data.）、VPC创建和子网配置。
 * [部署Redis Web CLI登出](redis_logout_web_cli.md) - 介绍如何使用Terraform自动化部署Redis Web CLI登出，包括可用分区列表（data.）、DCS产品规格列表（data.）、VPC创建、子网配置和随机密码（random_password）。
 * [部署单机Redis实例](redis_single_instance.md) - 介绍如何使用Terraform自动化部署DCS单机Redis实例，包括VPC创建、实例配置和基础网络设置。
 
