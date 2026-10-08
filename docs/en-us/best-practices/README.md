@@ -56,6 +56,10 @@ Cloud Connect (CC) is a global network connection service provided by Huawei Clo
 
 Cloud Container Engine (CCE) is a highly reliable and high-performance enterprise-grade container management service that supports Kubernetes community-native applications and tools, providing full lifecycle management capabilities for containerized applications.
 
+### [Cloud Container Engine (CCE) Autopilot Best Practices](cceautopilot/index.md)
+
+Cloud Container Engine (CCE) Autopilot is a serverless Kubernetes cluster mode provided by Huawei Cloud, delivering O&M-free container orchestration for cloud-native applications. Autopilot clusters fully manage the control plane and node resources, so you do not need to create or manage nodes; you only need to submit workloads to run containerized applications, allowing you to focus on business development and innovation.
+
 ### [Cloud Container Instance (CCI) Best Practices](cci/index.md)
 
 Cloud Container Instance (CCI) is a Serverless container service provided by Huawei Cloud, allowing you to run container applications directly without creating and managing server clusters. CCI provides second-level startup, pay-as-you-go, and per-second billing container services, supporting Kubernetes native APIs.
@@ -172,6 +176,10 @@ Elastic IP (EIP) is an independently applicable and bindable public IP address r
 
 Elastic Load Balance (ELB) is a service that automatically distributes access traffic to multiple cloud servers, enabling expansion of application system's external service capabilities and improving application availability. ELB automatically isolates abnormal backend servers through health checks to ensure high availability of services. Huawei Cloud ELB supports multiple load balancing algorithms, including round-robin, weighted round-robin, least connections, etc., to meet the needs of different business scenarios.
 
+### [Enterprise Project Management Service (EPS) Best Practices](eps/index.md)
+
+Enterprise Project Management Service (EPS) is an enterprise-level resource management service provided by Huawei Cloud, allowing enterprises to group, authorize, and perform cost accounting on cloud resources by project. With enterprise projects, enterprises can divide resources of different businesses, departments, or environments into isolated projects, achieving logical isolation and unified management of resources to meet the management requirements of multi-business and multi-team collaboration scenarios.
+
 ### [Enterprise Router (ER) Best Practices](er/index.md)
 
 Enterprise Router (ER) is a high-performance, high-availability enterprise-grade router service provided by Huawei Cloud, supporting enterprise-level network functions such as multi-VPC interconnection, dedicated line access, and VPN connections.
@@ -187,6 +195,10 @@ Elastic Volume Service (EVS) is a high-performance, highly reliable, and scalabl
 ### [FunctionGraph Best Practices](fgs/index.md)
 
 FunctionGraph is an event-driven serverless computing service that supports multiple programming languages and trigger methods, allowing you to quickly build applications without managing servers.
+
+### [Global Accelerator (GA) Best Practices](ga/index.md)
+
+Global Accelerator (GA) is a global network acceleration service provided by Huawei Cloud. Leveraging Huawei Cloud's globally distributed points of presence and backbone network, GA provides nearby access and global acceleration capabilities for internet applications. By bringing user traffic into the Huawei Cloud backbone network from the nearest point of presence and forwarding it to origin servers over high-quality backbone links, GA effectively reduces latency and jitter for cross-region and cross-carrier access, improving the access experience and stability of services.
 
 ### [GaussDB Best Practices](gaussdb/index.md)
 
@@ -235,6 +247,10 @@ Resource Access Manager (RAM) is a resource sharing service provided by Huawei C
 ### [Relational Database Service (RDS) Best Practices](rds/index.md)
 
 Relational Database Service (RDS) is a highly available, high-performance, and easily scalable relational database cloud service provided by Huawei Cloud, supporting multiple database engines such as MySQL, PostgreSQL, and SQL Server, providing enterprise-level functions such as automatic backup and monitoring alerts.
+
+### [Resource Formation Service (RFS) Best Practices](rfs/index.md)
+
+Resource Formation Service (RFS) is an Infrastructure as Code (IaC) service provided by Huawei Cloud, helping users define, orchestrate, and automatically deploy cloud resources in a code-based manner. Through template-based resource descriptions, RFS packages complex combinations of cloud resources into reusable templates, enabling standardized delivery and consistent management of infrastructure while reducing the risk of errors caused by manual configuration.
 
 ### [Resource Governance Center (RGC) Best Practices](rgc/index.md)
 
