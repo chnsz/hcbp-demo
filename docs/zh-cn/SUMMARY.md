@@ -296,7 +296,7 @@
     * [部署跨账号迁移数据镜像](best-practices/ims/cross_account_migration_with_data_image.md)
     * [部署跨账号迁移整机镜像](best-practices/ims/cross_account_migration_with_whole_image.md)
     * [部署导出镜像到OBS](best-practices/ims/export_image_to_obs.md)
-  * [IOTDA](best-practices/iotda/)
+  * [IoTDA](best-practices/iotda/)
     * [简介](best-practices/iotda/index.md)
     * [部署数据流转控制与积压策略](best-practices/iotda/data_processing_policies.md)
   * [LTS](best-practices/lts/)
