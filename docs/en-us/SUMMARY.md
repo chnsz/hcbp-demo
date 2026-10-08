@@ -276,7 +276,7 @@
     * [Deploy CTS Trigger](best-practices/fgs/cts_trigger.md)
     * [Deploy EG Trigger](best-practices/fgs/eg_trigger.md)
     * [Deploy Timer Trigger](best-practices/fgs/timer_trigger.md)
-  * [GAUSSDB](best-practices/gaussdb/)
+  * [GaussDB](best-practices/gaussdb/)
     * [Introduction](best-practices/gaussdb/index.md)
     * [Deploy Client Access Authentication Configuration Restore](best-practices/gaussdb/client_auth_config_restore.md)
   * [HSS](best-practices/hss/)
