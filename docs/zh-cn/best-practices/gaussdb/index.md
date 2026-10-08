@@ -19,6 +19,7 @@ GaussDB完全兼容主流数据库生态，支持标准SQL以及存储过程、�
 本章节包含以下最佳实践：
 
 * [部署客户端接入认证配置恢复](client_auth_config_restore.md) - 介绍如何使用Terraform自动化部署客户端接入认证配置恢复，包括GaussDB实例指定、历史记录版本选择以及默认配置恢复。
+* [部署数据备份](data_backup.md) - 介绍如何使用Terraform自动化部署数据备份，包括VPC创建、子网配置、安全组规则、GaussDB实例配置和手动备份创建。
 
 ## 参考资料
 
