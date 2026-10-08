@@ -290,6 +290,7 @@
   * [GA](best-practices/ga/)
     * [简介](best-practices/ga/index.md)
     * [部署全球加速访问日志](best-practices/ga/ga_access_log.md)
+    * [部署全球加速终端节点](best-practices/ga/ga_endpoint.md)
   * [GaussDB](best-practices/gaussdb/)
     * [简介](best-practices/gaussdb/index.md)
     * [部署客户端接入认证配置恢复](best-practices/gaussdb/client_auth_config_restore.md)
