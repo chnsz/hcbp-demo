@@ -20,6 +20,7 @@ DWS 提供标准数仓、实时数仓和云数仓等多种形态，兼容标准 
 
 * [部署事件订阅](event_subscription.md) - 介绍如何使用Terraform自动化部署DWS事件订阅，包括VPC创建、子网与安全组配置、DWS集群创建、SMN主题与订阅创建以及事件订阅配置。
 * [部署MySQL到DWS的实时数据同步](real_time_sync_mysql_to_dws.md) - 介绍如何使用Terraform自动化部署MySQL到DWS的实时数据同步基础设施，包括VPC、子网与安全组创建、RDS MySQL实例创建、DWS集群创建、DLI弹性资源池与队列创建以及增强型数据源连接关联。
+* [部署快照](snapshot.md) - 介绍如何使用Terraform自动化部署快照，包括可用区列表（data.）、DWS集群规格（data.）、VPC创建、子网配置和安全组配置。
 
 ## 参考资料
 
