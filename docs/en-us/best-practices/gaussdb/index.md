@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Client Access Authentication Configuration Restore](client_auth_config_restore.md) - Introduces how to use Terraform to automatically deploy client access authentication configuration restore, including GaussDB instance specification, history record version selection, and default configuration restoration.
+* [Deploy Data Backup](data_backup.md) - Introduces how to use Terraform to automatically deploy data backup, including VPC creation, subnet configuration, security group rules, GaussDB instance configuration, and manual backup creation.
 
 ## Reference Materials
 
