@@ -18,6 +18,7 @@ This section contains the following best practices:
 
 * [Deploy Log Stream](log_stream.md) - Introduces how to use Terraform to automatically deploy LTS log streams, including log group and log stream creation, supporting log lifecycle management and tag classification functions.
 * [Deploy Log Transfer](log_transfer.md) - Introduces how to use Terraform to automatically deploy LTS log transfer, including log group, log stream, OBS bucket, and log transfer task creation, supporting long-term storage and backup of log data.
+* [Deploy Search Criteria](search_criteria.md) - Introduces how to use Terraform to automatically deploy Search Criteria, including Log Group, Log Stream, and Search Criteria.
 * [Deploy SQL Alarm Rule](sql_alarm_rule.md) - Introduces how to use Terraform to automatically deploy LTS SQL alarm rules, including SMN topic, log group, log stream, and SQL alarm rule creation, supporting real-time monitoring and alert notifications based on SQL query results.
 
 ## Reference Materials
