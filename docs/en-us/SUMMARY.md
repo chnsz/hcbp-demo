@@ -290,6 +290,7 @@
   * [GA](best-practices/ga/)
     * [Introduction](best-practices/ga/index.md)
     * [Deploy GA Access Log](best-practices/ga/ga_access_log.md)
+    * [Deploy GA Endpoint](best-practices/ga/ga_endpoint.md)
   * [GaussDB](best-practices/gaussdb/)
     * [Introduction](best-practices/gaussdb/index.md)
     * [Deploy Client Access Authentication Configuration Restore](best-practices/gaussdb/client_auth_config_restore.md)

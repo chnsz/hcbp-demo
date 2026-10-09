@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy GA Access Log](ga_access_log.md) - Introduces how to use Terraform to automatically deploy a GA access log, including accelerator creation, listener configuration, LTS log group and log stream creation, and access log delivery.
+* [Deploy GA Endpoint](ga_endpoint.md) - Introduces how to use Terraform to automatically deploy a GA endpoint, including accelerator creation, listener configuration, endpoint group creation, backend EIP creation, and endpoint registration.
 
 ## Reference Materials
 
