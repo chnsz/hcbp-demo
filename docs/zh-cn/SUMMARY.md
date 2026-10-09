@@ -256,6 +256,7 @@
     * [部署事件订阅（VPC事件源、EG事件目标）](best-practices/eg/event_subscription_vpc_to_eg.md)
   * [EIP](best-practices/eip/)
     * [简介](best-practices/eip/index.md)
+    * [部署跨区域IPv4网络](best-practices/eip/geip_ipv4_cross_region.md)
     * [部署EIP绑定共享带宽](best-practices/eip/eip_associate_shared_bandwidth.md)
     * [部署共享带宽上的弹性公网IP](best-practices/eip/eip_with_shared_bandwidth.md)
   * [ELB](best-practices/elb/)
