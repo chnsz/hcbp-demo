@@ -379,6 +379,7 @@
   * [SecMaster](best-practices/secmaster/)
     * [Introduction](best-practices/secmaster/index.md)
     * [Deploy Configuration Dictionary](best-practices/secmaster/configuration_dictionary.md)
+    * [Deploy Dataspace](best-practices/secmaster/dataspace.md)
     * [Deploy Playbook Rule and Trigger by Event](best-practices/secmaster/playbook_rule_trigger_by_event.md)
     * [Deploy Workflow Version](best-practices/secmaster/workflow_version.md)
     * [Deploy Workspace](best-practices/secmaster/workspace.md)
