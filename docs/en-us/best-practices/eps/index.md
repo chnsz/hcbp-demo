@@ -20,6 +20,7 @@ This section contains the following best practices:
 
 * [Deploy Enterprise Project](basic.md) - Introduces how to use Terraform to automatically deploy an enterprise project, including the configuration of the project name, description, type, enable status, and destroy behavior.
 * [Deploy Enterprise Project Enable/Disable Action](enterprise_project_action.md) - Introduces how to use Terraform to automatically perform enable or disable actions on an enterprise project, including creating a new enterprise project or using an existing one, and configuring the action type.
+* [Deploy Enterprise Project Supported Services Query](query_supported_services.md) - Introduces how to use Terraform to automatically query the services supported by enterprise projects, including display language, fuzzy service name, and exact service name filtering.
 
 ## Reference Materials
 
