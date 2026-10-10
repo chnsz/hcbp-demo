@@ -21,6 +21,7 @@ This section contains the following best practices:
 * [Deploy Cross-Region IPv4 Network](geip_ipv4_cross_region.md) - Introduces how to use Terraform to automatically deploy Cross-Region IPv4 Network, including Availability Zones (data.), ECS Flavors (data.), Images (data.), Global EIP Pools (data.), and IAM Projects (data.).
 * [Deploy EIP Bound to Shared Bandwidth](eip_associate_shared_bandwidth.md) - Introduces how to use Terraform to automatically deploy an EIP bound to shared bandwidth, including shared bandwidth creation, elastic IP creation, and EIP-to-shared-bandwidth association management.
 * [Deploy EIP on Shared Bandwidth](eip_with_shared_bandwidth.md) - Introduces how to use Terraform to automatically deploy EIP on Shared Bandwidth, including Shared Bandwidth and Elastic IP.
+* [Deploy VPC Internet Gateway](vpc_with_internet_gateway.md) - Introduces how to use Terraform to automatically deploy VPC Internet Gateway, including VPC creation, subnet configuration, and VPC Internet Gateway.
 
 ## Reference Materials
 
