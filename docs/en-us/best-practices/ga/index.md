@@ -20,6 +20,7 @@ This section contains the following best practices:
 
 * [Deploy GA Access Log](ga_access_log.md) - Introduces how to use Terraform to automatically deploy a GA access log, including accelerator creation, listener configuration, LTS log group and log stream creation, and access log delivery.
 * [Deploy GA Endpoint](ga_endpoint.md) - Introduces how to use Terraform to automatically deploy a GA endpoint, including accelerator creation, listener configuration, endpoint group creation, backend EIP creation, and endpoint registration.
+* [Deploy GA Health Check](ga_health_check.md) - Introduces how to use Terraform to automatically deploy a GA health check, including accelerator creation, listener configuration, endpoint group creation, and health check configuration.
 
 ## Reference Materials
 
