@@ -381,7 +381,7 @@
     * [Deploy Organization](best-practices/swr/organization.md)
     * [Deploy Repository](best-practices/swr/repository.md)
     * [Deploy Retention Policy](best-practices/swr/retention_policy.md)
-  * [TAURUSDB](best-practices/taurusdb/)
+  * [TaurusDB](best-practices/taurusdb/)
     * [Introduction](best-practices/taurusdb/index.md)
     * [Deploy TaurusDB Instance](best-practices/taurusdb/taurusdb_instance.md)
   * [TMS](best-practices/tms/)
