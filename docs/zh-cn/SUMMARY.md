@@ -259,6 +259,7 @@
     * [部署跨区域IPv4网络](best-practices/eip/geip_ipv4_cross_region.md)
     * [部署EIP绑定共享带宽](best-practices/eip/eip_associate_shared_bandwidth.md)
     * [部署共享带宽上的弹性公网IP](best-practices/eip/eip_with_shared_bandwidth.md)
+    * [部署VPC互联网网关](best-practices/eip/vpc_with_internet_gateway.md)
   * [ELB](best-practices/elb/)
     * [简介](best-practices/elb/index.md)
     * [部署专用负载均衡器与弹性伸缩](best-practices/elb/dedicated_loadbalancer_with_as.md)
