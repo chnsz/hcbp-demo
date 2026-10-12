@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy CCE Autopilot Addon](cce_autopilot_addons.md) - Introduces how to use Terraform to automatically deploy a CCE Autopilot cluster add-on, including VPC and subnet creation, CCE Autopilot cluster creation, SWR organization creation, and log-agent add-on deployment.
+* [Deploy CCE Autopilot Application](cce_autopilot_chart_release.md) - Introduces how to use Terraform to automatically deploy a CCE Autopilot application, including VPC and subnet creation, CCE Autopilot cluster creation, Helm chart upload, and Helm release deployment.
 
 ## Reference Materials
 
