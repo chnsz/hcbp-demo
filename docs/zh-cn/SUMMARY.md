@@ -381,7 +381,7 @@
     * [部署组织](best-practices/swr/organization.md)
     * [部署镜像仓库](best-practices/swr/repository.md)
     * [部署保留策略](best-practices/swr/retention_policy.md)
-  * [TAURUSDB](best-practices/taurusdb/)
+  * [TaurusDB](best-practices/taurusdb/)
     * [简介](best-practices/taurusdb/index.md)
     * [部署TaurusDB实例](best-practices/taurusdb/taurusdb_instance.md)
   * [TMS](best-practices/tms/)
