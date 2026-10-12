@@ -268,6 +268,7 @@
     * [Introduction](best-practices/eps/index.md)
     * [Deploy Enterprise Project](best-practices/eps/basic.md)
     * [Deploy Enterprise Project Enable/Disable Action](best-practices/eps/enterprise_project_action.md)
+    * [Deploy Enterprise Project Supported Services Query](best-practices/eps/query_supported_services.md)
   * [ER](best-practices/er/)
     * [Introduction](best-practices/er/index.md)
     * [Deploy Flow Log](best-practices/er/flow_log.md)
