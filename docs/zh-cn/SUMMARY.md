@@ -242,6 +242,7 @@
     * [部署事件订阅](best-practices/dws/event_subscription.md)
     * [部署MySQL到DWS的实时数据同步](best-practices/dws/real_time_sync_mysql_to_dws.md)
     * [部署快照](best-practices/dws/snapshot.md)
+    * [部署工作负载管理](best-practices/dws/workload_management.md)
   * [ECS](best-practices/ecs/)
     * [简介](best-practices/ecs/index.md)
     * [部署基础实例](best-practices/ecs/simple_instance.md)
