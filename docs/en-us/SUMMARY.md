@@ -81,6 +81,7 @@
     * [Introduction](best-practices/cceautopilot/index.md)
     * [Deploy CCE Autopilot Addon](best-practices/cceautopilot/cce_autopilot_addons.md)
     * [Deploy CCE Autopilot Application](best-practices/cceautopilot/cce_autopilot_chart_release.md)
+    * [Deploy CCE Autopilot Cluster](best-practices/cceautopilot/cce_autopilot_cluster.md)
   * [CCI](best-practices/cci/)
     * [Introduction](best-practices/cci/index.md)
     * [Deploy Network](best-practices/cci/network.md)
