@@ -243,6 +243,7 @@
     * [Deploy Event Subscription](best-practices/dws/event_subscription.md)
     * [Deploy Real-Time MySQL-to-DWS Data Synchronization](best-practices/dws/real_time_sync_mysql_to_dws.md)
     * [Deploy Snapshot](best-practices/dws/snapshot.md)
+    * [Deploy Workload Management](best-practices/dws/workload_management.md)
   * [ECS](best-practices/ecs/)
     * [Introduction](best-practices/ecs/index.md)
     * [Deploy Basic Instance](best-practices/ecs/simple_instance.md)
