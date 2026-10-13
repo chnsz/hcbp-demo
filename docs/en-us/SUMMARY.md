@@ -303,6 +303,7 @@
     * [Deploy GA Health Check](best-practices/ga/ga_health_check.md)
   * [GaussDB](best-practices/gaussdb/)
     * [Introduction](best-practices/gaussdb/index.md)
+    * [Deploy Agency Permission Policy](best-practices/gaussdb/gaussdb_agency_permission_policy.md)
     * [Deploy Client Access Authentication Configuration Restore](best-practices/gaussdb/client_auth_config_restore.md)
     * [Deploy Data Backup](best-practices/gaussdb/data_backup.md)
     * [Deploy Disaster Recovery Architecture](best-practices/gaussdb/dr_architecture.md)
