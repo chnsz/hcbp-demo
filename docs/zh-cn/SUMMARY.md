@@ -81,6 +81,7 @@
     * [简介](best-practices/cceautopilot/index.md)
     * [部署CCE Autopilot集群插件](best-practices/cceautopilot/cce_autopilot_addons.md)
     * [部署CCE Autopilot应用](best-practices/cceautopilot/cce_autopilot_chart_release.md)
+    * [部署CCE Autopilot集群](best-practices/cceautopilot/cce_autopilot_cluster.md)
   * [CCI](best-practices/cci/)
     * [简介](best-practices/cci/index.md)
     * [部署网络](best-practices/cci/network.md)
