@@ -306,7 +306,7 @@
     * [Deploy Client Access Authentication Configuration Restore](best-practices/gaussdb/client_auth_config_restore.md)
     * [Deploy Data Backup](best-practices/gaussdb/data_backup.md)
     * [Deploy Disaster Recovery Architecture](best-practices/gaussdb/dr_architecture.md)
-  * [GEMINIDB](best-practices/geminidb/)
+  * [GeminiDB](best-practices/geminidb/)
     * [Introduction](best-practices/geminidb/index.md)
     * [Deploy GeminiDB Cassandra Instance](best-practices/geminidb/geminidb_cassandra_instance.md)
   * [GES](best-practices/ges/)
