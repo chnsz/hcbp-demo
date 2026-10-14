@@ -310,6 +310,7 @@
   * [GES](best-practices/ges/)
     * [简介](best-practices/ges/index.md)
     * [部署图备份](best-practices/ges/backup.md)
+    * [部署图实例](best-practices/ges/graph.md)
   * [HSS](best-practices/hss/)
     * [简介](best-practices/hss/index.md)
     * [部署主机组](best-practices/hss/host_group.md)
