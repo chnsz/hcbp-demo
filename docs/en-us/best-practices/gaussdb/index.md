@@ -18,6 +18,7 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
+* [Deploy Agency Permission Policy](gaussdb_agency_permission_policy.md) - Introduces how to use Terraform to automatically deploy an agency permission policy, including agency name specification, permission policy binding, and permission policy unbinding.
 * [Deploy Client Access Authentication Configuration Restore](client_auth_config_restore.md) - Introduces how to use Terraform to automatically deploy client access authentication configuration restore, including GaussDB instance specification, history record version selection, and default configuration restoration.
 * [Deploy Data Backup](data_backup.md) - Introduces how to use Terraform to automatically deploy data backup, including VPC creation, subnet configuration, security group rules, GaussDB instance configuration, and manual backup creation.
 * [Deploy Disaster Recovery Architecture](dr_architecture.md) - Introduces how to use Terraform to automatically deploy Disaster Recovery Architecture, including IAM Projects (data.), VPC creation, subnet configuration, security group configuration, and Cloud Connection.

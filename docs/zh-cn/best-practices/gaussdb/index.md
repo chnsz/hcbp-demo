@@ -18,6 +18,7 @@ GaussDB完全兼容主流数据库生态，支持标准SQL以及存储过程、�
 
 本章节包含以下最佳实践：
 
+* [部署委托权限策略](gaussdb_agency_permission_policy.md) - 介绍如何使用Terraform自动化部署委托权限策略，包括委托名称指定、权限策略绑定和权限策略解绑。
 * [部署客户端接入认证配置恢复](client_auth_config_restore.md) - 介绍如何使用Terraform自动化部署客户端接入认证配置恢复，包括GaussDB实例指定、历史记录版本选择以及默认配置恢复。
 * [部署数据备份](data_backup.md) - 介绍如何使用Terraform自动化部署数据备份，包括VPC创建、子网配置、安全组规则、GaussDB实例配置和手动备份创建。
 * [部署容灾架构](dr_architecture.md) - 介绍如何使用Terraform自动化部署容灾架构，包括IAM项目（data.）、VPC创建、子网配置、安全组配置和云连接。
