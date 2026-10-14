@@ -306,7 +306,7 @@
     * [部署客户端接入认证配置恢复](best-practices/gaussdb/client_auth_config_restore.md)
     * [部署数据备份](best-practices/gaussdb/data_backup.md)
     * [部署容灾架构](best-practices/gaussdb/dr_architecture.md)
-  * [GEMINIDB](best-practices/geminidb/)
+  * [GeminiDB](best-practices/geminidb/)
     * [简介](best-practices/geminidb/index.md)
     * [部署GeminiDB Cassandra实例](best-practices/geminidb/geminidb_cassandra_instance.md)
   * [GES](best-practices/ges/)
