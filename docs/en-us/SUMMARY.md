@@ -311,6 +311,7 @@
   * [GES](best-practices/ges/)
     * [Introduction](best-practices/ges/index.md)
     * [Deploy Graph Backup](best-practices/ges/backup.md)
+    * [Deploy Graph Instance](best-practices/ges/graph.md)
   * [HSS](best-practices/hss/)
     * [Introduction](best-practices/hss/index.md)
     * [Deploy Host Group](best-practices/hss/host_group.md)
