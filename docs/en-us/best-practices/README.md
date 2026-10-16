@@ -204,6 +204,10 @@ Global Accelerator (GA) is a global network acceleration service provided by Hua
 
 GaussDB is a high-performance, highly available, and highly secure enterprise-grade distributed relational database service provided by Huawei Cloud. Built on Huawei's years of database technology accumulation and software-hardware collaborative optimization, it supports both centralized and distributed deployment modes, meeting diverse requirements ranging from small and medium-sized businesses to massive-data core systems.
 
+### [GeminiDB Best Practices](geminidb/index.md)
+
+GeminiDB is a cloud-native multi-model NoSQL database service provided by Huawei Cloud, built on a compute-storage separation architecture and compatible with multiple mainstream NoSQL interfaces such as Cassandra, MongoDB, Redis, and InfluxDB. Designed for high-concurrency read and write scenarios with massive data volumes, GeminiDB delivers high availability, high reliability, and elastic scalability, helping enterprises build a modern data storage foundation with lower O&M costs.
+
 ### [Graph Engine Service (GES) Best Practices](ges/index.md)
 
 Graph Engine Service (GES) is a one-stop graph data management and analysis service provided by Huawei Cloud, designed for scenarios such as social networks, knowledge graphs, financial risk control, and recommendation systems. It delivers graph data storage for billions of vertices and edges, millisecond-level query, and graph analysis capabilities. GES encapsulates graph storage, computing, and analysis as a cloud service, helping users quickly build graph applications without building and maintaining their own graph database clusters.
