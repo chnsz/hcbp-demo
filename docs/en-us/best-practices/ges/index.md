@@ -18,6 +18,7 @@ Through the best practices in this section, you can learn the main deployment pr
 
 This section contains the following best practices:
 
+* [Deploy GES Metadata](metadata.md) - Introduces how to use Terraform to automatically deploy GES Metadata, including Object Storage Bucket and Graph Engine Service Metadata.
 * [Deploy Graph Backup](backup.md) - Introduces how to use Terraform to automatically deploy a graph backup, including VPC creation, subnet configuration, security group creation, graph instance configuration, and graph backup creation.
 * [Deploy Graph Instance](graph.md) - Introduces how to use Terraform to automatically deploy a GES graph instance, including VPC creation, subnet configuration, security group creation, and graph instance configuration.
 

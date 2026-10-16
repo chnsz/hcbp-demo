@@ -310,6 +310,7 @@
     * [Deploy Disaster Recovery Architecture](best-practices/gaussdb/dr_architecture.md)
   * [GES](best-practices/ges/)
     * [Introduction](best-practices/ges/index.md)
+    * [Deploy GES Metadata](best-practices/ges/metadata.md)
     * [Deploy Graph Backup](best-practices/ges/backup.md)
     * [Deploy Graph Instance](best-practices/ges/graph.md)
   * [HSS](best-practices/hss/)
