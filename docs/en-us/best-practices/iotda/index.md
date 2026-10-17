@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Data Flow Control and Backlog Policies](data_processing_policies.md) - Introduces how to use Terraform to automatically deploy data flow control and backlog policies, including data flow control policy creation, data backlog policy creation, and input parameter configuration.
+* [Deploy Device Access Environment](device_access.md) - Introduces how to use Terraform to automatically deploy Device Access Environment, including IoTDA Resource Space, IoTDA Product, and IoTDA Device.
 
 ## Reference Materials
 
