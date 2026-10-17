@@ -335,6 +335,7 @@
   * [IoTDA](best-practices/iotda/)
     * [Introduction](best-practices/iotda/index.md)
     * [Deploy Data Flow Control and Backlog Policies](best-practices/iotda/data_processing_policies.md)
+    * [Deploy Device Access Environment](best-practices/iotda/device_access.md)
   * [LTS](best-practices/lts/)
     * [Introduction](best-practices/lts/index.md)
     * [Deploy Log Stream](best-practices/lts/log_stream.md)

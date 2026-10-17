@@ -335,6 +335,7 @@
   * [IoTDA](best-practices/iotda/)
     * [简介](best-practices/iotda/index.md)
     * [部署数据流转控制与积压策略](best-practices/iotda/data_processing_policies.md)
+    * [部署设备接入环境](best-practices/iotda/device_access.md)
   * [LTS](best-practices/lts/)
     * [简介](best-practices/lts/index.md)
     * [部署日志流](best-practices/lts/log_stream.md)
