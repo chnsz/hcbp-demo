@@ -311,6 +311,7 @@
     * [部署容灾架构](best-practices/gaussdb/dr_architecture.md)
   * [GES](best-practices/ges/)
     * [简介](best-practices/ges/index.md)
+    * [部署图元数据](best-practices/ges/metadata.md)
     * [部署图备份](best-practices/ges/backup.md)
     * [部署图实例](best-practices/ges/graph.md)
   * [HSS](best-practices/hss/)
