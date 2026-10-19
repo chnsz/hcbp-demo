@@ -309,6 +309,7 @@
     * [部署客户端接入认证配置恢复](best-practices/gaussdb/client_auth_config_restore.md)
     * [部署数据备份](best-practices/gaussdb/data_backup.md)
     * [部署容灾架构](best-practices/gaussdb/dr_architecture.md)
+    * [部署GaussDB数据库](best-practices/gaussdb/gaussdb_database.md)
   * [GES](best-practices/ges/)
     * [简介](best-practices/ges/index.md)
     * [部署图元数据](best-practices/ges/metadata.md)

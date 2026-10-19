@@ -309,6 +309,7 @@
     * [Deploy Client Access Authentication Configuration Restore](best-practices/gaussdb/client_auth_config_restore.md)
     * [Deploy Data Backup](best-practices/gaussdb/data_backup.md)
     * [Deploy Disaster Recovery Architecture](best-practices/gaussdb/dr_architecture.md)
+    * [Deploy GaussDB Database](best-practices/gaussdb/gaussdb_database.md)
   * [GES](best-practices/ges/)
     * [Introduction](best-practices/ges/index.md)
     * [Deploy GES Metadata](best-practices/ges/metadata.md)
