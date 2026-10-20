@@ -354,6 +354,7 @@
   * [MPC](best-practices/mpc/)
     * [Introduction](best-practices/mpc/index.md)
     * [Deploy Transcoding Template](best-practices/mpc/transcoding_template.md)
+    * [Deploy Transcoding Template Group](best-practices/mpc/transcoding_template_group.md)
   * [OBS](best-practices/obs/)
     * [Introduction](best-practices/obs/index.md)
     * [Deploy Bucket Object Uploaded with Encrypted Text](best-practices/obs/object_upload_with_encryption.md)

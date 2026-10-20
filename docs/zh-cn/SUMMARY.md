@@ -354,6 +354,7 @@
   * [MPC](best-practices/mpc/)
     * [简介](best-practices/mpc/index.md)
     * [部署转码模板](best-practices/mpc/transcoding_template.md)
+    * [部署转码模板组](best-practices/mpc/transcoding_template_group.md)
   * [OBS](best-practices/obs/)
     * [简介](best-practices/obs/index.md)
     * [部署通过加密文本上传的桶对象](best-practices/obs/object_upload_with_encryption.md)

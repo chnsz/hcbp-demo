@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Transcoding Template](transcoding_template.md) - Introduces how to use Terraform to automatically deploy a transcoding template, including output format configuration, audio parameter configuration, and video parameter configuration.
+* [Deploy Transcoding Template Group](transcoding_template_group.md) - Introduces how to use Terraform to automatically deploy a transcoding template group, including output format and segment duration configuration, audio parameter configuration, shared video parameter configuration, and multiple video output quality definitions.
 
 ## Reference Materials
 
