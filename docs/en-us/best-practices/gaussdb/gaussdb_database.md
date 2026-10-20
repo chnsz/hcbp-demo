@@ -1,10 +1,10 @@
-# Deploy GaussDB Database
+# Deploy Database
 
 ## Application Scenario
 
 GaussDB is a high-performance, highly available, and highly secure enterprise-grade distributed relational database service provided by Huawei Cloud, supporting both centralized and distributed deployment modes. In real-world scenarios, users often need to create dedicated business databases within a GaussDB OpenGauss instance and specify attributes such as character set, owner, and collation to meet the compatibility and data isolation requirements of different applications.
 
-This best practice will introduce how to use Terraform to automatically deploy a GaussDB database, including VPC creation, subnet configuration, security group and security group rule configuration, availability zone query, GaussDB instance creation, and database creation.
+This best practice will introduce how to use Terraform to automatically deploy a database, including VPC creation, subnet configuration, security group and security group rule configuration, availability zone query, GaussDB instance creation, and database creation.
 
 ## Related Resources/Data Sources
 
@@ -275,12 +275,12 @@ resource "huaweicloud_gaussdb_instance" "test" {
 - **volume.type**: The storage type, assigned by referencing the input variable instance_volume_type
 - **volume.size**: The storage size, assigned by referencing the input variable instance_volume_size
 
-### 8. Create a GaussDB Database
+### 8. Create a database
 
 Add the following script in the TF file (such as main.tf) to create a database in the GaussDB instance:
 
 ```hcl
-# Create a GaussDB database resource in the specified region (if the region parameter is omitted, it inherits the region specified in the current provider block)
+# Create a database resource in the specified region (if the region parameter is omitted, it inherits the region specified in the current provider block)
 variable "database_name" {
   description = "The name of the database"
   type        = string
