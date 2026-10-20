@@ -394,6 +394,7 @@
   * [SecMaster](best-practices/secmaster/)
     * [简介](best-practices/secmaster/index.md)
     * [部署配置字典](best-practices/secmaster/configuration_dictionary.md)
+    * [部署数据管道](best-practices/secmaster/pipe.md)
     * [部署数据空间](best-practices/secmaster/dataspace.md)
     * [部署剧本规则并通过事件触发](best-practices/secmaster/playbook_rule_trigger_by_event.md)
     * [部署工作流版本](best-practices/secmaster/workflow_version.md)
