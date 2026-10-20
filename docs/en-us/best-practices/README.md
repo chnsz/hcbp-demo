@@ -240,6 +240,10 @@ ModelArts is a model training and inference platform provided by Huawei Cloud fo
 
 Media Processing Center (MPC) is a one-stop media processing service provided by Huawei Cloud for the production, processing, and distribution of audio and video content. It offers capabilities such as transcoding, screenshot, watermarking, video encryption, and audio extraction. Built on elastic cloud computing resources, MPC helps users quickly convert uploaded source audio and video files into output formats suitable for different terminals and network conditions, without the need to build and maintain transcoding clusters.
 
+### [NAT Gateway Best Practices](nat/index.md)
+
+NAT Gateway is a network address translation service provided by Huawei Cloud. It enables cloud resources in a Virtual Private Cloud (VPC) to access the internet or to be accessed from the internet through a public NAT gateway, without requiring each server to have a public IP address. NAT Gateway supports SNAT, which allows instances in a VPC to share an Elastic IP to access the internet, and DNAT, which maps a public EIP port to a port on a backend server so that external clients can reach internal services.
+
 ### [Object Storage Service (OBS) Best Practices](obs/index.md)
 
 Object Storage Service (OBS) is a high-availability, highly reliable, high-performance, secure, and low-cost object storage service provided by Huawei Cloud, providing massive, secure, highly reliable, and low-cost data storage capabilities.
