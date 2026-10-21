@@ -20,10 +20,11 @@ This section contains the following best practices:
 
 * [Deploy Agency Permission Policy](gaussdb_agency_permission_policy.md) - Introduces how to use Terraform to automatically deploy an agency permission policy, including agency name specification, permission policy binding, and permission policy unbinding.
 * [Deploy ASP Collect](gaussdb_asp_collect.md) - Introduces how to use Terraform to automatically deploy ASP Collect, including Availability Zones (data.), VPC creation, subnet configuration, security group configuration, and Random Password (random_password).
+* [Deploy Backup Download Authorization](gaussdb_download_backups_authorize.md) - Introduces how to use Terraform to automatically deploy Backup Download Authorization, including backup policy.
 * [Deploy Client Access Authentication Configuration](gaussdb_client_auth_config.md) - Introduces how to use Terraform to automatically deploy Client Access Authentication Configuration, including GaussDB Client Access Authentication Configuration.
 * [Deploy Client Access Authentication Configuration Restore](client_auth_config_restore.md) - Introduces how to use Terraform to automatically deploy client access authentication configuration restore, including GaussDB instance specification, history record version selection, and default configuration restoration.
-* [Deploy Database](gaussdb_database.md) - Introduces how to use Terraform to automatically deploy database, including Availability Zones (data.), VPC creation, subnet configuration, security group configuration, and Random Password (random_password).
 * [Deploy Data Backup](data_backup.md) - Introduces how to use Terraform to automatically deploy data backup, including VPC creation, subnet configuration, security group rules, GaussDB instance configuration, and manual backup creation.
+* [Deploy Database](gaussdb_database.md) - Introduces how to use Terraform to automatically deploy database, including Availability Zones (data.), VPC creation, subnet configuration, security group configuration, and Random Password (random_password).
 * [Deploy Disaster Recovery Architecture](dr_architecture.md) - Introduces how to use Terraform to automatically deploy Disaster Recovery Architecture, including IAM Projects (data.), VPC creation, subnet configuration, security group configuration, and Cloud Connection.
 
 ## Reference Materials
