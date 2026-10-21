@@ -313,6 +313,7 @@
   * [GeminiDB](best-practices/geminidb/)
     * [Introduction](best-practices/geminidb/index.md)
     * [Deploy GeminiDB Cassandra Instance](best-practices/geminidb/geminidb_cassandra_instance.md)
+    * [Deploy GeminiDB DynamoDB-Compatible Instance](best-practices/geminidb/geminidb_dynamodb_instance.md)
   * [GES](best-practices/ges/)
     * [Introduction](best-practices/ges/index.md)
     * [Deploy GES Metadata](best-practices/ges/metadata.md)

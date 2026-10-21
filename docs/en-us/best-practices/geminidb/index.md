@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy GeminiDB Cassandra Instance](geminidb_cassandra_instance.md) - Introduces how to use Terraform to automatically deploy a GeminiDB Cassandra instance, including VPC and subnet creation, availability zone and flavor query, security group configuration, instance creation, and instance backup.
+* [Deploy GeminiDB DynamoDB-Compatible Instance](geminidb_dynamodb_instance.md) - Introduces how to use Terraform to automatically deploy a GeminiDB DynamoDB-compatible instance, including VPC and subnet creation, availability zone and flavor query, security group configuration, random password generation, instance creation, and instance backup.
 
 ## Reference Materials
 
