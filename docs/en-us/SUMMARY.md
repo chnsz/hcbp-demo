@@ -307,6 +307,7 @@
     * [Deploy ASP Collect](best-practices/gaussdb/gaussdb_asp_collect.md)
     * [Deploy Client Access Authentication Configuration](best-practices/gaussdb/gaussdb_client_auth_config.md)
     * [Deploy Client Access Authentication Configuration Restore](best-practices/gaussdb/client_auth_config_restore.md)
+    * [Deploy Database](best-practices/gaussdb/gaussdb_database.md)
     * [Deploy Data Backup](best-practices/gaussdb/data_backup.md)
     * [Deploy Disaster Recovery Architecture](best-practices/gaussdb/dr_architecture.md)
   * [GES](best-practices/ges/)

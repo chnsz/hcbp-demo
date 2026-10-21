@@ -22,6 +22,7 @@ GaussDB完全兼容主流数据库生态，支持标准SQL以及存储过程、�
 * [部署ASP采集](gaussdb_asp_collect.md) - 介绍如何使用Terraform自动化部署ASP采集，包括可用区列表（data.）、VPC创建、子网配置、安全组配置和随机密码（random_password）。
 * [部署客户端接入认证配置](gaussdb_client_auth_config.md) - 介绍如何使用Terraform自动化部署客户端接入认证配置，包括GaussDB客户端接入认证配置。
 * [部署客户端接入认证配置恢复](client_auth_config_restore.md) - 介绍如何使用Terraform自动化部署客户端接入认证配置恢复，包括GaussDB实例指定、历史记录版本选择以及默认配置恢复。
+* [部署数据库](gaussdb_database.md) - 介绍如何使用Terraform自动化部署GaussDB数据库，包括可用区列表（data.）、VPC创建、子网配置、安全组配置和随机密码（random_password）。
 * [部署数据备份](data_backup.md) - 介绍如何使用Terraform自动化部署数据备份，包括VPC创建、子网配置、安全组规则、GaussDB实例配置和手动备份创建。
 * [部署容灾架构](dr_architecture.md) - 介绍如何使用Terraform自动化部署容灾架构，包括IAM项目（data.）、VPC创建、子网配置、安全组配置和云连接。
 
