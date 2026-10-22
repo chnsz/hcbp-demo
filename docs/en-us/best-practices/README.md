@@ -276,6 +276,10 @@ Resource Governance Center (RGC) is a resource governance service provided by Hu
 
 SecMaster is a next-generation cloud native security operations center. Based on years of Huawei Cloud experience in cloud security, it enables integrated and automatic security operations through cloud asset management, security posture management, security information and incident management, security orchestration and automatic response, cloud security overview, simplified cloud security configuration, configurable defense policies, and intelligent and fast threat detection and response.
 
+### [ServiceStage Best Practices](servicestage/index.md)
+
+ServiceStage is a one-stop application hosting platform provided by Huawei Cloud, delivering full lifecycle management capabilities for enterprise and cloud-native applications, covering application development, build, deployment, and operations. ServiceStage supports multiple deployment forms such as virtual machines, containers, and serverless, helping enterprises quickly build and run applications on the cloud while reducing the complexity of application migration and operations.
+
 ### [Scalable File Service Turbo (SFS Turbo) Best Practices](sfs-turbo/index.md)
 
 Scalable File Service Turbo (SFS Turbo) is a high-performance file storage service provided by Huawei Cloud, specifically designed for high-performance computing and AI/ML workloads, supporting seamless integration with OBS object storage.
