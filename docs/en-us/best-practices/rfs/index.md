@@ -20,6 +20,7 @@ This section contains the following best practices:
 
 * [Deploy Private Module with Version](private_module_with_version.md) - Introduces how to use Terraform to automatically deploy a private module with a version, including private module creation, module version configuration, and OBS module package reference.
 * [Deploy Private Provider with FunctionGraph Backend](private_provider_with_functiongraph.md) - Introduces how to use Terraform to automatically deploy a private provider with a FunctionGraph backend, including FunctionGraph function creation, private provider configuration, and private provider version publishing.
+* [Deploy Resource Stack with Execution Plan](stack_with_execution_plan.md) - Introduces how to use Terraform to automatically deploy a resource stack with an execution plan, including resource stack creation, execution plan configuration, and inline template body preview.
 
 ## Reference Materials
 
