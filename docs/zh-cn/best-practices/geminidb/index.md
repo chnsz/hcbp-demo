@@ -19,6 +19,7 @@ GeminiDB采用存算分离与分布式共享存储架构，支持秒级弹性扩
 本章节包含以下最佳实践：
 
 * [部署GeminiDB Cassandra实例](geminidb_cassandra_instance.md) - 介绍如何使用Terraform自动化部署GeminiDB Cassandra实例，包括VPC与子网创建、可用区与规格查询、安全组配置、实例创建和实例备份。
+* [部署GeminiDB DynamoDB兼容实例](geminidb_dynamodb_instance.md) - 介绍如何使用Terraform自动化部署GeminiDB DynamoDB兼容实例，包括VPC与子网创建、可用区与规格查询、安全组配置、随机密码生成、实例创建和实例备份。
 
 ## 参考资料
 
