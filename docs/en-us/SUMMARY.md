@@ -404,7 +404,7 @@
     * [Deploy Playbook Rule and Trigger by Event](best-practices/secmaster/playbook_rule_trigger_by_event.md)
     * [Deploy Workflow Version](best-practices/secmaster/workflow_version.md)
     * [Deploy Workspace](best-practices/secmaster/workspace.md)
-  * [SERVICESTAGE](best-practices/servicestage/)
+  * [ServiceStage](best-practices/servicestage/)
     * [Introduction](best-practices/servicestage/index.md)
     * [Deploy Configuration Group with Configuration File](best-practices/servicestage/configuration_group_with_configuration.md)
   * [SFS Turbo](best-practices/sfs-turbo/)
