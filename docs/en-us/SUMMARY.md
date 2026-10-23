@@ -355,7 +355,7 @@
     * [Introduction](best-practices/mpc/index.md)
     * [Deploy Transcoding Template](best-practices/mpc/transcoding_template.md)
     * [Deploy Transcoding Template Group](best-practices/mpc/transcoding_template_group.md)
-  * [NAT](best-practices/nat/)
+  * [NAT Gateway](best-practices/nat/)
     * [Introduction](best-practices/nat/index.md)
     * [Deploy DNAT Rule](best-practices/nat/dnat_basic.md)
   * [OBS](best-practices/obs/)
