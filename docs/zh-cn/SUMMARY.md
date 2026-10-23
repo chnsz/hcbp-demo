@@ -355,7 +355,7 @@
     * [简介](best-practices/mpc/index.md)
     * [部署转码模板](best-practices/mpc/transcoding_template.md)
     * [部署转码模板组](best-practices/mpc/transcoding_template_group.md)
-  * [NAT](best-practices/nat/)
+  * [NAT Gateway](best-practices/nat/)
     * [简介](best-practices/nat/index.md)
     * [部署DNAT规则](best-practices/nat/dnat_basic.md)
   * [OBS](best-practices/obs/)
