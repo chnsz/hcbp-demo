@@ -364,6 +364,7 @@
   * [NAT Gateway](best-practices/nat/)
     * [Introduction](best-practices/nat/index.md)
     * [Deploy DNAT Rule](best-practices/nat/dnat_basic.md)
+    * [Deploy NAT Gateway Shared via VPC Peering](best-practices/nat/nat_gateway_vpc_peering.md)
   * [OBS](best-practices/obs/)
     * [Introduction](best-practices/obs/index.md)
     * [Deploy Bucket Object Uploaded with Encrypted Text](best-practices/obs/object_upload_with_encryption.md)
