@@ -19,6 +19,7 @@ TaurusDB提供一写多读能力，单个实例最多可挂载多个只读节点
 本章节包含以下最佳实践：
 
 * [部署TaurusDB实例](taurusdb_instance.md) - 介绍如何使用Terraform自动化部署TaurusDB实例，包括VPC创建、子网创建、安全组配置、参数模板、实例配置、账号和数据库管理。
+* [部署TaurusDB实例并绑定弹性公网IP](taurusdb_instance_associate_eip.md) - 介绍如何使用Terraform自动化部署TaurusDB实例并绑定弹性公网IP，包括VPC与子网创建、安全组配置、实例规格查询、实例创建以及EIP的创建或复用与绑定。
 
 ## 参考资料
 
