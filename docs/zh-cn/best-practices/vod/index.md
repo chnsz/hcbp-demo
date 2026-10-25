@@ -19,6 +19,7 @@
 本章节包含以下最佳实践：
 
 * [部署媒资分类与媒资](media_asset_with_category.md) - 介绍如何使用Terraform自动化部署媒资分类与媒资，包括媒资分类创建、URL拉取方式创建媒资以及媒资与分类的关联。
+* [部署媒资分类与转码模板组](media_category_with_transcoding_template_group.md) - 介绍如何使用Terraform自动化部署媒资分类与转码模板组，包括媒资分类创建以及转码模板组创建（含音频、视频质量信息配置）。
 
 ## 参考资料
 
