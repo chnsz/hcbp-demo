@@ -317,6 +317,7 @@
     * [部署GeminiDB Cassandra实例](best-practices/geminidb/geminidb_cassandra_instance.md)
     * [部署GeminiDB DynamoDB兼容实例](best-practices/geminidb/geminidb_dynamodb_instance.md)
     * [部署GeminiDB HBase实例](best-practices/geminidb/geminidb_hbase_instance.md)
+    * [部署GeminiDB InfluxDB实例](best-practices/geminidb/geminidb_influxdb_instance.md)
   * [GES](best-practices/ges/)
     * [简介](best-practices/ges/index.md)
     * [部署图元数据](best-practices/ges/metadata.md)
