@@ -364,6 +364,7 @@
   * [NAT Gateway](best-practices/nat/)
     * [简介](best-practices/nat/index.md)
     * [部署DNAT规则](best-practices/nat/dnat_basic.md)
+    * [部署通过VPC对等连接共享网关](best-practices/nat/nat_gateway_vpc_peering.md)
   * [OBS](best-practices/obs/)
     * [简介](best-practices/obs/index.md)
     * [部署通过加密文本上传的桶对象](best-practices/obs/object_upload_with_encryption.md)
