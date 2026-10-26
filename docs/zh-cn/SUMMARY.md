@@ -306,6 +306,7 @@
     * [部署委托权限策略](best-practices/gaussdb/gaussdb_agency_permission_policy.md)
     * [部署ASP采集](best-practices/gaussdb/gaussdb_asp_collect.md)
     * [部署备份下载授权](best-practices/gaussdb/gaussdb_download_backups_authorize.md)
+    * [部署备份停止](best-practices/gaussdb/gaussdb_instance_backup_stop.md)
     * [部署客户端接入认证配置](best-practices/gaussdb/gaussdb_client_auth_config.md)
     * [部署客户端接入认证配置恢复](best-practices/gaussdb/client_auth_config_restore.md)
     * [部署数据备份](best-practices/gaussdb/data_backup.md)
