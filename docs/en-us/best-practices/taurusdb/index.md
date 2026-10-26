@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy TaurusDB Instance](taurusdb_instance.md) - Introduces how to use Terraform to automatically deploy a TaurusDB instance, including VPC creation, subnet creation, security group configuration, parameter template, instance configuration, account and database management.
+* [Deploy TaurusDB Instance and Associate EIP](taurusdb_instance_associate_eip.md) - Introduces how to use Terraform to automatically deploy a TaurusDB instance and associate an EIP, including VPC and subnet creation, security group configuration, flavor query, instance creation, and EIP creation or reuse and association.
 
 ## Reference Materials
 
