@@ -311,6 +311,7 @@
     * [Deploy Data Backup](best-practices/gaussdb/data_backup.md)
     * [Deploy Database](best-practices/gaussdb/gaussdb_database.md)
     * [Deploy Disaster Recovery Architecture](best-practices/gaussdb/dr_architecture.md)
+    * [Deploy Instance Account Permission](best-practices/gaussdb/gaussdb_instance_account_permission.md)
   * [GeminiDB](best-practices/geminidb/)
     * [Introduction](best-practices/geminidb/index.md)
     * [Deploy GeminiDB Cassandra Instance](best-practices/geminidb/geminidb_cassandra_instance.md)
