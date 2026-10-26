@@ -306,6 +306,7 @@
     * [Deploy Agency Permission Policy](best-practices/gaussdb/gaussdb_agency_permission_policy.md)
     * [Deploy ASP Collect](best-practices/gaussdb/gaussdb_asp_collect.md)
     * [Deploy Backup Download Authorization](best-practices/gaussdb/gaussdb_download_backups_authorize.md)
+    * [Deploy Backup Stop](best-practices/gaussdb/gaussdb_instance_backup_stop.md)
     * [Deploy Client Access Authentication Configuration](best-practices/gaussdb/gaussdb_client_auth_config.md)
     * [Deploy Client Access Authentication Configuration Restore](best-practices/gaussdb/client_auth_config_restore.md)
     * [Deploy Data Backup](best-practices/gaussdb/data_backup.md)
