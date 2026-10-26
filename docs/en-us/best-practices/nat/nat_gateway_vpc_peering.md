@@ -1,4 +1,4 @@
-# Deploy NAT Gateway Shared via VPC Peering
+# Deploy Gateway Shared via VPC Peering
 
 ## Application Scenario
 
