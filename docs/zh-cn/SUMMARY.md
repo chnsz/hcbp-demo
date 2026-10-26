@@ -450,6 +450,7 @@
   * [VOD](best-practices/vod/)
     * [简介](best-practices/vod/index.md)
     * [部署媒资分类与媒资](best-practices/vod/media_asset_with_category.md)
+    * [部署媒资分类与转码模板组](best-practices/vod/media_category_with_transcoding_template_group.md)
   * [VPC](best-practices/vpc/)
     * [简介](best-practices/vpc/index.md)
     * [部署基础网络](best-practices/vpc/basic.md)
