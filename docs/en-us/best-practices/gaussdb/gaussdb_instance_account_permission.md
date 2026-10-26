@@ -1,4 +1,4 @@
-# Deploy GaussDB Instance Account Permission
+# Deploy Instance Account Permission
 
 ## Application Scenario
 
