@@ -311,7 +311,7 @@
     * [部署数据备份](best-practices/gaussdb/data_backup.md)
     * [部署数据库](best-practices/gaussdb/gaussdb_database.md)
     * [部署容灾架构](best-practices/gaussdb/dr_architecture.md)
-    * [部署GaussDB实例账号权限](best-practices/gaussdb/gaussdb_instance_account_permission.md)
+    * [部署实例账号权限](best-practices/gaussdb/gaussdb_instance_account_permission.md)
   * [GeminiDB](best-practices/geminidb/)
     * [简介](best-practices/geminidb/index.md)
     * [部署GeminiDB Cassandra实例](best-practices/geminidb/geminidb_cassandra_instance.md)
