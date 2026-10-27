@@ -418,6 +418,7 @@
   * [ServiceStage](best-practices/servicestage/)
     * [Introduction](best-practices/servicestage/index.md)
     * [Deploy Configuration Group with Configuration File](best-practices/servicestage/configuration_group_with_configuration.md)
+    * [Deploy Environment with Application and Its Application Configuration](best-practices/servicestage/environment_with_application.md)
   * [SFS Turbo](best-practices/sfs-turbo/)
     * [Introduction](best-practices/sfs-turbo/index.md)
     * [Deploy OBS Target Configuration](best-practices/sfs-turbo/obs_target_configuration.md)
