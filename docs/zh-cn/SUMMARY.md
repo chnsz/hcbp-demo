@@ -418,6 +418,7 @@
   * [ServiceStage](best-practices/servicestage/)
     * [简介](best-practices/servicestage/index.md)
     * [部署配置组与配置文件](best-practices/servicestage/configuration_group_with_configuration.md)
+    * [部署环境与应用及其应用配置](best-practices/servicestage/environment_with_application.md)
   * [SFS Turbo](best-practices/sfs-turbo/)
     * [简介](best-practices/sfs-turbo/index.md)
     * [部署OBS目标配置](best-practices/sfs-turbo/obs_target_configuration.md)

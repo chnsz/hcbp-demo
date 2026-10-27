@@ -19,6 +19,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Configuration Group with Configuration File](configuration_group_with_configuration.md) - Introduces how to use Terraform to automatically deploy a configuration group with a configuration file, including configuration group creation, configuration file creation, and configuration content setting.
+* [Deploy Environment with Application and Its Application Configuration](environment_with_application.md) - Introduces how to use Terraform to automatically deploy a ServiceStage environment with an application and its application configuration, including VPC creation, environment creation, application creation, and environment variable configuration.
 
 ## Reference Materials
 
