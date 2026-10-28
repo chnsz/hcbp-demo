@@ -442,6 +442,7 @@
     * [Introduction](best-practices/taurusdb/index.md)
     * [Deploy TaurusDB Instance](best-practices/taurusdb/taurusdb_instance.md)
     * [Deploy TaurusDB Instance and Associate EIP](best-practices/taurusdb/taurusdb_instance_associate_eip.md)
+    * [Deploy TaurusDB Instance with HTAP StarRocks Instance](best-practices/taurusdb/taurusdb_instance_with_htap.md)
   * [TMS](best-practices/tms/)
     * [Introduction](best-practices/tms/index.md)
     * [Deploy Batch Associate Tags](best-practices/tms/batch_associate_tags.md)
