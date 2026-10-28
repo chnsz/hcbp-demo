@@ -451,6 +451,7 @@
     * [Introduction](best-practices/vod/index.md)
     * [Deploy Media Category and Media Asset](best-practices/vod/media_asset_with_category.md)
     * [Deploy Media Category and Transcoding Template Group](best-practices/vod/media_category_with_transcoding_template_group.md)
+    * [Deploy Watermark Template and Transcoding Template Group](best-practices/vod/watermark_template_with_transcoding_template_group.md)
   * [VPC](best-practices/vpc/)
     * [Introduction](best-practices/vpc/index.md)
     * [Deploy Basic Network](best-practices/vpc/basic.md)
