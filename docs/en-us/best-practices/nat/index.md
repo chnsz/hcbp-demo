@@ -20,6 +20,7 @@ This section contains the following best practices:
 
 * [Deploy DNAT Rule](dnat_basic.md) - Introduces how to use Terraform to automatically deploy a DNAT rule, including VPC and subnet creation, NAT gateway creation, EIP creation, backend ECS instance and security group configuration, and DNAT port mapping.
 * [Deploy Gateway Shared via VPC Peering](nat_gateway_vpc_peering.md) - Introduces how to use Terraform to automatically deploy a NAT gateway shared across VPCs through VPC peering, including VPC and subnet creation, security group configuration, ECS instances, VPC peering connection and routes, EIPs, NAT gateway, SNAT rules, and DNAT rules.
+* [Deploy SNAT Rule](snat_basic.md) - Introduces how to use Terraform to automatically deploy SNAT Rule, including Availability Zones (data.), Compute Flavors (data.), Images (data.), VPC creation, and subnet configuration.
 
 ## Reference Materials
 

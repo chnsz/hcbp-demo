@@ -20,6 +20,7 @@ NAT网关提供从小型到超大型的多种规格，并可通过弹性公网IP
 
 * [部署DNAT规则](dnat_basic.md) - 介绍如何使用Terraform自动化部署DNAT规则，包括VPC与子网创建、NAT网关创建、EIP创建、后端ECS实例与安全组配置以及DNAT端口映射。
 * [部署通过VPC对等连接共享网关](nat_gateway_vpc_peering.md) - 介绍如何使用Terraform自动化部署通过VPC对等连接共享NAT网关，包括VPC与子网创建、安全组配置、ECS实例、VPC对等连接与路由、EIP、NAT网关、SNAT规则和DNAT规则。
+* [部署SNAT规则](snat_basic.md) - 介绍如何使用Terraform自动化部署SNAT规则，包括可用区列表（data.）、计算规格列表（data.）、镜像列表（data.）、VPC创建和子网配置。
 
 ## 参考资料
 
