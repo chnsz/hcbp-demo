@@ -19,6 +19,7 @@ ServiceStage提供应用编排、环境管理、配置管理、微服务治理�
 本章节包含以下最佳实践：
 
 * [部署配置组与配置文件](configuration_group_with_configuration.md) - 介绍如何使用Terraform自动化部署配置组与配置文件，包括配置组创建、配置文件创建和配置文件内容设置。
+* [部署环境与应用及其应用配置](environment_with_application.md) - 介绍如何使用Terraform自动化部署环境与应用及其应用配置，包括VPC创建、环境创建、应用创建和环境变量配置。
 
 ## 参考资料
 
