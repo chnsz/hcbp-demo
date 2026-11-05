@@ -20,6 +20,7 @@ This section contains the following best practices:
 
 * [Deploy Media Category and Media Asset](media_asset_with_category.md) - Introduces how to use Terraform to automatically deploy a media category and a media asset, including media category creation, media asset creation by URL pulling, and association between the media asset and the category.
 * [Deploy Media Category and Transcoding Template Group](media_category_with_transcoding_template_group.md) - Introduces how to use Terraform to automatically deploy a media category and a transcoding template group, including media category creation and transcoding template group creation with audio and video quality information.
+* [Deploy Watermark Template and Transcoding Template Group](watermark_template_with_transcoding_template_group.md) - Introduces how to use Terraform to automatically deploy a watermark template and a transcoding template group, including watermark template creation with a local PNG image and transcoding template group creation that references the watermark template.
 
 ## Reference Materials
 
