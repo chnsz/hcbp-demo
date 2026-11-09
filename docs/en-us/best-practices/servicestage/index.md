@@ -20,6 +20,7 @@ This section contains the following best practices:
 
 * [Deploy Configuration Group with Configuration File](configuration_group_with_configuration.md) - Introduces how to use Terraform to automatically deploy a configuration group with a configuration file, including configuration group creation, configuration file creation, and configuration content setting.
 * [Deploy Environment with Application and Its Application Configuration](environment_with_application.md) - Introduces how to use Terraform to automatically deploy a ServiceStage environment with an application and its application configuration, including VPC creation, environment creation, application creation, and environment variable configuration.
+* [Deploy Environment with Associated EIP](environment_with_associated_eip.md) - Introduces how to use Terraform to automatically deploy a ServiceStage environment with an associated EIP, including VPC creation, EIP creation, environment creation, and EIP association.
 
 ## Reference Materials
 
