@@ -28,6 +28,7 @@ This section contains the following best practices:
 * [Deploy Database](gaussdb_database.md) - Introduces how to use Terraform to automatically deploy database, including Availability Zones (data.), VPC creation, subnet configuration, security group configuration, and Random Password (random_password).
 * [Deploy Disaster Recovery Architecture](dr_architecture.md) - Introduces how to use Terraform to automatically deploy Disaster Recovery Architecture, including IAM Projects (data.), VPC creation, subnet configuration, security group configuration, and Cloud Connection.
 * [Deploy Instance Account Permission](gaussdb_instance_account_permission.md) - Introduces how to use Terraform to automatically deploy GaussDB instance account permission, including VPC creation, subnet configuration, security group configuration, GaussDB instance creation, database creation, database account creation, schema creation, and account permission setting.
+* [Deploy Instance Database Account](gaussdb_instance_database_account.md) - Introduces how to use Terraform to automatically deploy a GaussDB instance database account, including VPC creation, subnet configuration, security group configuration, GaussDB instance creation, and database account creation.
 
 ## Reference Materials
 
