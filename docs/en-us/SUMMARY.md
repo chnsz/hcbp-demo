@@ -314,6 +314,7 @@
     * [Deploy Disaster Recovery Architecture](best-practices/gaussdb/dr_architecture.md)
     * [Deploy Instance Account Permission](best-practices/gaussdb/gaussdb_instance_account_permission.md)
     * [Deploy Instance Database Account](best-practices/gaussdb/gaussdb_instance_database_account.md)
+    * [Deploy Instance Database Role](best-practices/gaussdb/gaussdb_instance_database_role.md)
   * [GeminiDB](best-practices/geminidb/)
     * [Introduction](best-practices/geminidb/index.md)
     * [Deploy GeminiDB Cassandra Instance](best-practices/geminidb/geminidb_cassandra_instance.md)
