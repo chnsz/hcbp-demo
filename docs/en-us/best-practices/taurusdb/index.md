@@ -21,6 +21,7 @@ This section contains the following best practices:
 * [Deploy TaurusDB Instance](taurusdb_instance.md) - Introduces how to use Terraform to automatically deploy a TaurusDB instance, including VPC creation, subnet creation, security group configuration, parameter template, instance configuration, account and database management.
 * [Deploy TaurusDB Instance and Associate EIP](taurusdb_instance_associate_eip.md) - Introduces how to use Terraform to automatically deploy a TaurusDB instance and associate an EIP, including VPC and subnet creation, security group configuration, flavor query, instance creation, and EIP creation or reuse and association.
 * [Deploy TaurusDB Instance with HTAP StarRocks Instance](taurusdb_instance_with_htap.md) - Introduces how to use Terraform to automatically deploy a TaurusDB instance with an HTAP StarRocks instance, including VPC and subnet creation, security group configuration, flavor and engine version query, TaurusDB instance creation, and HTAP StarRocks instance creation and parameter configuration.
+* [Deploy TaurusDB Instance with LTS Log](taurusdb_instance_with_lts_log.md) - Introduces how to use Terraform to automatically deploy a TaurusDB instance with an LTS log, including VPC and subnet creation, security group configuration, flavor query, instance creation, LTS log group and log stream creation, and instance log association.
 
 ## Reference Materials
 
