@@ -315,6 +315,7 @@
     * [部署实例账号权限](best-practices/gaussdb/gaussdb_instance_account_permission.md)
     * [部署实例数据库账号](best-practices/gaussdb/gaussdb_instance_database_account.md)
     * [部署实例数据库角色](best-practices/gaussdb/gaussdb_instance_database_role.md)
+    * [部署实例数据库角色权限](best-practices/gaussdb/gaussdb_instance_role_permission.md)
   * [GeminiDB](best-practices/geminidb/)
     * [简介](best-practices/geminidb/index.md)
     * [部署GeminiDB Cassandra实例](best-practices/geminidb/geminidb_cassandra_instance.md)
