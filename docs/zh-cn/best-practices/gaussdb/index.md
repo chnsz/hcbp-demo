@@ -30,6 +30,7 @@ GaussDB完全兼容主流数据库生态，支持标准SQL以及存储过程、�
 * [部署实例账号权限](gaussdb_instance_account_permission.md) - 介绍如何使用Terraform自动化部署GaussDB实例账号权限，包括VPC创建、子网配置、安全组配置、GaussDB实例创建、数据库创建、数据库账号创建、Schema创建和账号权限设置。
 * [部署实例数据库账号](gaussdb_instance_database_account.md) - 介绍如何使用Terraform自动化部署GaussDB实例数据库账号，包括VPC创建、子网配置、安全组配置、GaussDB实例创建和数据库账号创建。
 * [部署实例数据库角色](gaussdb_instance_database_role.md) - 介绍如何使用Terraform自动化部署GaussDB实例数据库角色，包括VPC创建、子网配置、安全组配置、GaussDB实例创建和数据库角色创建。
+* [部署实例数据库角色权限](gaussdb_instance_role_permission.md) - 介绍如何使用Terraform自动化部署GaussDB实例数据库角色权限，包括VPC创建、子网配置、安全组配置、GaussDB实例创建、数据库创建、数据库角色创建、Schema创建和数据库角色权限设置。
 
 ## 参考资料
 

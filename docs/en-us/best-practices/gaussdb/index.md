@@ -30,6 +30,7 @@ This section contains the following best practices:
 * [Deploy Instance Account Permission](gaussdb_instance_account_permission.md) - Introduces how to use Terraform to automatically deploy GaussDB instance account permission, including VPC creation, subnet configuration, security group configuration, GaussDB instance creation, database creation, database account creation, schema creation, and account permission setting.
 * [Deploy Instance Database Account](gaussdb_instance_database_account.md) - Introduces how to use Terraform to automatically deploy a GaussDB instance database account, including VPC creation, subnet configuration, security group configuration, GaussDB instance creation, and database account creation.
 * [Deploy Instance Database Role](gaussdb_instance_database_role.md) - Introduces how to use Terraform to automatically deploy a GaussDB instance database role, including VPC creation, subnet configuration, security group configuration, GaussDB instance creation, and database role creation.
+* [Deploy Instance Database Role Permission](gaussdb_instance_role_permission.md) - Introduces how to use Terraform to automatically deploy GaussDB instance database role permission, including VPC creation, subnet configuration, security group configuration, GaussDB instance creation, database creation, database role creation, schema creation, and database role permission setting.
 
 ## Reference Materials
 
