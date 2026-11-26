@@ -232,6 +232,7 @@
     * [Deploy Migration Job](best-practices/drs/drs_job_migration.md)
     * [Deploy MongoDB Sharding Connection](best-practices/drs/drs_connection_mongodb.md)
     * [Deploy RDS MySQL Connection](best-practices/drs/drs_connection_rds_mysql.md)
+    * [Deploy Two-Way Synchronization Jobs](best-practices/drs/drs_job_two_way_synchronization.md)
   * [DSC](best-practices/dsc/)
     * [Introduction](best-practices/dsc/index.md)
     * [Deploy Custom Character Mask Algorithm](best-practices/dsc/custom_character_mask_algorithm.md)
