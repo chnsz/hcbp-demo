@@ -17,6 +17,7 @@ Through the best practices in this section, you can learn the main deployment pr
 This section contains the following best practices:
 
 * [Deploy Alarm Policy](alarm_policy.md) - Introduces how to use Terraform to automatically deploy alarm policies, including the creation of VPC network, security groups, key pairs, AS configuration, AS group, SMN topic, CES alarm rules, and alarm policies.
+* [Deploy Bandwidth Policy](bandwidth_policy.md) - Introduces how to use Terraform to automatically deploy a bandwidth policy, including the creation of a shared bandwidth, a CES alarm rule, and an AS bandwidth policy.
 * [Deploy Scaling Configuration](scaling_configuration.md) - Introduces how to use Terraform to automatically deploy a scaling configuration, including the creation of security groups, key pairs, and scaling configuration.
 * [Deploy Scaling Group](scaling_group.md) - Introduces how to use Terraform to automatically deploy a scaling group, including querying availability zones, instance flavors, and images, as well as creating security groups, key pairs, AS configuration, VPC network, and scaling group.
 

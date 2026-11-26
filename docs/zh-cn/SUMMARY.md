@@ -29,6 +29,7 @@
   * [AS](best-practices/as/)
     * [简介](best-practices/as/index.md)
     * [部署告警策略](best-practices/as/alarm_policy.md)
+    * [部署带宽策略](best-practices/as/bandwidth_policy.md)
     * [部署伸缩配置](best-practices/as/scaling_configuration.md)
     * [部署弹性伸缩组](best-practices/as/scaling_group.md)
   * [ASM](best-practices/asm/)

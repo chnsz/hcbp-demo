@@ -29,6 +29,7 @@
   * [AS](best-practices/as/)
     * [Introduction](best-practices/as/index.md)
     * [Deploy Alarm Policy](best-practices/as/alarm_policy.md)
+    * [Deploy Bandwidth Policy](best-practices/as/bandwidth_policy.md)
     * [Deploy Scaling Configuration](best-practices/as/scaling_configuration.md)
     * [Deploy Scaling Group](best-practices/as/scaling_group.md)
   * [ASM](best-practices/asm/)
