@@ -20,6 +20,7 @@
 * [部署磁盘快照](snapshot.md) - 介绍如何使用Terraform自动化部署EVS磁盘快照，包括云硬盘创建和快照配置。
 * [部署磁盘快照组](snapshot_group.md) - 介绍如何使用Terraform自动化部署EVS磁盘快照组，包括ECS实例创建、云硬盘创建、挂载和磁盘快照组配置。
 * [部署V3云硬盘与快照](v3_volume_snapshot.md) - 介绍如何使用Terraform自动化部署V3云硬盘与快照，包括可用区列表（data.）、镜像列表（data.）、V3云硬盘和V3云硬盘快照。
+* [部署云硬盘与V5快照](volume_v5_snapshot.md) - 介绍如何使用Terraform自动化部署云硬盘与V5快照，包括可用区列表（data.）、云服务器规格列表（data.）、镜像列表（data.）、VPC创建和子网配置。
 
 ## 参考资料
 
