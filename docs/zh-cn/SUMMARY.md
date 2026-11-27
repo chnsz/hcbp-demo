@@ -312,6 +312,7 @@
     * [部署数据备份](best-practices/gaussdb/data_backup.md)
     * [部署数据库](best-practices/gaussdb/gaussdb_database.md)
     * [部署容灾架构](best-practices/gaussdb/dr_architecture.md)
+    * [部署空闲会话查询与清理](best-practices/gaussdb/idle_sessions_query_and_kill.md)
     * [部署实例账号权限](best-practices/gaussdb/gaussdb_instance_account_permission.md)
     * [部署实例数据库账号](best-practices/gaussdb/gaussdb_instance_database_account.md)
     * [部署实例数据库角色](best-practices/gaussdb/gaussdb_instance_database_role.md)
