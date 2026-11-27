@@ -312,6 +312,7 @@
     * [Deploy Data Backup](best-practices/gaussdb/data_backup.md)
     * [Deploy Database](best-practices/gaussdb/gaussdb_database.md)
     * [Deploy Disaster Recovery Architecture](best-practices/gaussdb/dr_architecture.md)
+    * [Deploy Idle Sessions Query and Kill](best-practices/gaussdb/idle_sessions_query_and_kill.md)
     * [Deploy Instance Account Permission](best-practices/gaussdb/gaussdb_instance_account_permission.md)
     * [Deploy Instance Database Account](best-practices/gaussdb/gaussdb_instance_database_account.md)
     * [Deploy Instance Database Role](best-practices/gaussdb/gaussdb_instance_database_role.md)
