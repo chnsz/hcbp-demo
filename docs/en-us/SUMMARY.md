@@ -449,6 +449,7 @@
     * [Introduction](best-practices/taurusdb/index.md)
     * [Deploy TaurusDB Instance](best-practices/taurusdb/taurusdb_instance.md)
     * [Deploy TaurusDB Instance and Associate EIP](best-practices/taurusdb/taurusdb_instance_associate_eip.md)
+    * [Deploy TaurusDB Instance with Database Proxy](best-practices/taurusdb/taurusdb_instance_with_proxy.md)
     * [Deploy TaurusDB Instance with HTAP StarRocks Instance](best-practices/taurusdb/taurusdb_instance_with_htap.md)
     * [Deploy TaurusDB Instance with LTS Log](best-practices/taurusdb/taurusdb_instance_with_lts_log.md)
   * [TMS](best-practices/tms/)
