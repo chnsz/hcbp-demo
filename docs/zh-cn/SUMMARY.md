@@ -449,6 +449,7 @@
     * [简介](best-practices/taurusdb/index.md)
     * [部署TaurusDB实例](best-practices/taurusdb/taurusdb_instance.md)
     * [部署TaurusDB实例并绑定弹性公网IP](best-practices/taurusdb/taurusdb_instance_associate_eip.md)
+    * [部署TaurusDB实例并开启数据库代理](best-practices/taurusdb/taurusdb_instance_with_proxy.md)
     * [部署TaurusDB实例并挂载HTAP StarRocks实例](best-practices/taurusdb/taurusdb_instance_with_htap.md)
     * [部署TaurusDB实例并关联LTS日志](best-practices/taurusdb/taurusdb_instance_with_lts_log.md)
   * [TMS](best-practices/tms/)
